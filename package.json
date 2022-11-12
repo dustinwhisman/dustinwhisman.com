@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-starter",
-  "version": "1.0.0",
-  "description": "",
+  "name": "dustinwhisman-com",
+  "version": "0.1.0",
+  "description": "My very own personal website. How indie, how 2006.",
   "main": "index.js",
   "engines": {
     "node": ">=16"
@@ -30,8 +30,8 @@
     "postupdate-deps": "npm install"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Dustin Whisman",
+  "license": "CC BY 4.0",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@babel/core": "^7.20.2",
