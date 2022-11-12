@@ -1,0 +1,10 @@
+@use '../tools/functions';
+
+.cmp-navigation {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: functions.fluid-size('base');
+  padding-inline: 0;
+  font-size: functions.fluid-size('base');
+}

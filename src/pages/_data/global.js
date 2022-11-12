@@ -6,4 +6,7 @@ module.exports = {
 
     return `${segment()}-${segment()}-${segment()}`;
   },
+  year() {
+    return new Date().getFullYear();
+  },
 };

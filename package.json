@@ -1,22 +1,22 @@
 {
-  "name": "eleventy-starter",
-  "version": "1.0.0",
-  "description": "",
+  "name": "dustinwhisman-com",
+  "version": "0.1.0",
+  "description": "My very own personal website. How indie, how 2006.",
   "main": "index.js",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "scripts": {
     "prestart": "check-node-version --package && npm run clean",
     "prebuild": "check-node-version --package && npm run clean",
-    "start": "run-p eleventy:dev sass:dev js:dev js:dev:legacy",
+    "start": "run-p eleventy:dev sass:dev js:dev",
     "build": "run-s eleventy:build sass:build js:build js:build:legacy",
     "eleventy:dev": "eleventy --serve",
     "eleventy:build": "eleventy",
     "sass:dev": "sass --watch --embed-source-map src/scss:dist",
     "sass:build": "sass --no-source-map --style=compressed src/scss:dist",
-    "js:dev": "esbuild src/js/*.js  src/js/*.ts --format=esm --bundle=true --splitting=true --outdir=dist --watch --sourcemap=inline",
-    "js:build": "esbuild src/js/*.js  src/js/*.ts --format=esm --bundle=true --splitting=true --outdir=dist --minify=true",
+    "js:dev": "esbuild src/js/*.ts --format=esm --bundle=true --splitting=true --outdir=dist --watch --sourcemap=inline",
+    "js:build": "esbuild src/js/*.ts --format=esm --bundle=true --splitting=true --outdir=dist --minify=true",
     "js:dev:legacy": "NODE_ENV=development webpack --progress -w",
     "js:build:legacy": "NODE_ENV=production webpack --progress",
     "clean": "rimraf dist",
@@ -30,8 +30,8 @@
     "postupdate-deps": "npm install"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Dustin Whisman",
+  "license": "CC BY 4.0",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@babel/core": "^7.20.2",

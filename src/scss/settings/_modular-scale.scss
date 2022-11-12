@@ -14,7 +14,7 @@ $scale-ratios: (
 );
 
 // choose from the list, depending on your preference
-$scale-ratio: map.get($scale-ratios, 'perfectFourth');
+$scale-ratio: map.get($scale-ratios, 'majorSecond');
 
 // multipliers to be used for spacing and font-sizes
 $scale-values: (

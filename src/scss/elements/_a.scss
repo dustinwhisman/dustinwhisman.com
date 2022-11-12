@@ -1,0 +1,13 @@
+a {
+  color: currentcolor;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &[aria-current='page'] {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
