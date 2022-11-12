@@ -16,6 +16,7 @@
 // components for more specific styles, use BEM style for selectors
 @use 'components/container';
 @use 'components/stack';
+@use 'components/skip-to-content';
 
 // utilities, prefix with `.util-` and include last for the cascade
 @use 'utilities/utilities';

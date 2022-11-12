@@ -13,12 +13,15 @@
     <link rel="apple-touch-icon" href="/maskable_icon.png">
     <link rel="manifest" href="/manifest.json">
 
+    <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=recia@500&display=swap" rel="stylesheet">
+
     <meta name="theme-color" content="#f8f8f8">
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     {% block header %}
       <header>
+        <a href="#main-content" class="util-visually-hidden cmp-skip-to-content">Skip to content</a>
         <div class="cmp-container">
           <nav>
             <ul>
@@ -39,7 +42,7 @@
         </div>
       </header>
     {% endblock %}
-    <main>
+    <main id="main-content">
       {% block content %}
         <article class="cmp-container">
           {{ content | safe }}
