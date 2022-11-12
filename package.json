@@ -9,7 +9,7 @@
   "scripts": {
     "prestart": "check-node-version --package && npm run clean",
     "prebuild": "check-node-version --package && npm run clean",
-    "start": "run-p eleventy:dev sass:dev js:dev js:dev:legacy",
+    "start": "run-p eleventy:dev sass:dev js:dev",
     "build": "run-s eleventy:build sass:build js:build js:build:legacy",
     "eleventy:dev": "eleventy --serve",
     "eleventy:build": "eleventy",
