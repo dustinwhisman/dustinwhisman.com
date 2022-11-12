@@ -49,7 +49,17 @@
     {% block footer %}
       <footer>
         <div class="cmp-container">
-          <p>This is the footer.</p>
+          <ul>
+            <li>
+              <a href="https://github.com/dustinwhisman/dustinwhisman.com">View Source</a>
+            </li>
+            <li>
+              <a href="https://creativecommons.org/licenses/by/4.0/">Content License</a>
+            </li>
+            <li>
+              © Copyright {{ global.year() }}
+            </li>
+          </ul>
         </div>
       </footer>
     {% endblock %}
