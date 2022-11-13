@@ -68,3 +68,16 @@ layout: layout.njk
     {% endfor %}
   </ul>
 </div>
+
+<div class="cmp-stack">
+  <h2>Recent Pictures of Cats</h2>
+  <div class="cmp-pictures-of-cats__grid">
+    {% for image in global.picturesOfCats | reverse %}
+      {% if loop.index <= 2 %}
+        <div>
+          <img src="/images/cats/{{ image }}" alt="" class="cmp-pictures-of-cats__image" {% if loop.index >= 6 %}loading="lazy"{% endif %}>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
