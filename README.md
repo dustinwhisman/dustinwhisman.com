@@ -36,3 +36,13 @@ npm run test -- --coverage
 # update any outdated npm dependencies
 npm run update-deps
 ```
+
+## Optimizing Images
+
+Since I'll forget otherwise, here's the ImageMagick command I used to compress the images. From the folder where all the images are:
+
+```sh
+magick mogrify -strip -resize 640000@ -quality 70 -path ../optimized *.jpg
+```
+
+Then drop the contents of `optimized` into `src/public/images/cats`.
