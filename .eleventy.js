@@ -28,5 +28,6 @@ module.exports = function (eleventyConfig) {
       output: 'dist',
       includes: '../partials',
     },
+    markdownTemplateEngine: 'njk',
   };
 };

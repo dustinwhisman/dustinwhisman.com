@@ -21,6 +21,7 @@
 @use 'components/navigation';
 @use 'components/project';
 @use 'components/badge';
+@use 'components/article-listing';
 
 // utilities, prefix with `.util-` and include last for the cascade
 @use 'utilities/utilities';
