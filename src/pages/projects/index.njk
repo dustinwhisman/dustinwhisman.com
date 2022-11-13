@@ -16,12 +16,12 @@ layout: layout.njk
 
   {% for projectType in breakdown %}
     <div>
-      <h2>{{ projectType[0] }}</h2>
-      <ul>
+      <h2 class="cmp-project__group-heading">{{ projectType[0] }}</h2>
+      <ul class="cmp-project__list">
         {% for project in projectType[1] %}
           <li>
-            <article>
-              <h3>
+            <article class="cmp-project__card">
+              <h3 class="cmp-project__heading">
                 {% if project.siteLink %}
                   <a href="{{ project.siteLink }}">{{ project.name }}</a>
                 {% else %}
@@ -34,9 +34,9 @@ layout: layout.njk
                   <a href="{{ project.repoLink }}">View Source</a>
                 </p>
               {% endif %}
-              <ul>
+              <ul class="cmp-badge__list">
                 {% for role in project.roles %}
-                  <li>{{ role }}</li>
+                  <li class="cmp-badge">{{ role }}</li>
                 {% endfor %}
               </ul>
             </article>
