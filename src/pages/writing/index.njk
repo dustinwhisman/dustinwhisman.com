@@ -1,11 +1,21 @@
 ---
 title: Writing | Dustin Whisman
-description: I write words sometimes, feel free to read them if you like.
+description: I write words sometimes.
 layout: layout.njk
 ---
 
 <h1>Writing</h1>
 
-<p>
-  I feel like there should be a really low resolution GIF of a construction worker here. This is a work-in-progress is what I'm saying.
-</p>
+<ul class="cmp-article-listing__list">
+  {% for article in collections.writing | reverse %}
+    <li>
+      <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+      <span>
+        <span class="util-visually-hidden">Published:</span>
+        <time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+          {{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+        </time>
+      </span>
+    </li>
+  {% endfor %}
+</ul>
