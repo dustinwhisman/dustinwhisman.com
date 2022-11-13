@@ -1,0 +1,21 @@
+@use '../tools/functions';
+
+.cmp-it-me {
+  display: flex;
+  flex-wrap: wrap;
+  gap: functions.fluid-size('base');
+
+  &__image-wrapper {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+
+  &__bio {
+    flex-basis: 72%;
+    flex-grow: 1;
+  }
+}
