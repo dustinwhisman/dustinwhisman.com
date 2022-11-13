@@ -1,0 +1,13 @@
+@use '../tools/functions';
+
+.cmp-badge {
+  font-size: functions.fluid-size('centi');
+
+  &__list {
+    list-style: none;
+    padding-inline: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: functions.fluid-size('base');
+  }
+}
