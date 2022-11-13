@@ -25,3 +25,27 @@ layout: layout.njk
     </p>
   </div>
 </div>
+
+<div class="cmp-stack">
+  <h2>Recent Projects</h2>
+  <ul class="cmp-project__list">
+    {% for project in global.recentProjects %}
+      <li>
+        <article class="cmp-project__card">
+          <h3 class="cmp-project__heading">
+            {% if project.siteLink %}
+              <a href="{{ project.siteLink }}">{{ project.name }}</a>
+            {% else %}
+              {{ project.name }}
+            {% endif %}
+          </h3>
+          <ul class="cmp-badge__list">
+            {% for role in project.roles %}
+              <li class="cmp-badge">{{ role }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

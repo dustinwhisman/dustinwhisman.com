@@ -111,7 +111,7 @@ module.exports = {
   year() {
     return new Date().getFullYear();
   },
-  projects,
+  recentProjects: projects.slice(0, 4),
   breakdown: Object.entries(breakdown),
   picturesOfCats: getImagePaths(),
 };
