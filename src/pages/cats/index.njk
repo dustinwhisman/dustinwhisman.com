@@ -1,0 +1,23 @@
+---
+title: Pictures of Cats | Dustin Whisman
+description: Look at Goose and Barry! They're so cute, those little monsters.
+layout: layout.njk
+---
+
+<h1>Pictures of Cats</h1>
+
+<p class="util-visually-hidden">
+  I do apologize if you can't see the cat pictures. I didn't add alt text to the
+  images because there are a lot of them, and I doubt that descriptions of cats
+  are interesting to read or hear. Most of them would just say "Goose looking
+  concerned about something", "Barry flopped over on his back, exposing his
+  fuzzy belly", or "The brothers cuddling in an adorable way".
+</p>
+
+<div class="cmp-pictures-of-cats__grid">
+  {% for image in images | reverse %}
+    <div>
+      <img src="/images/cats/{{ image }}" alt="" class="cmp-pictures-of-cats__image" {% if loop.index >= 6 %}loading="lazy"{% endif %}>
+    </div>
+  {% endfor %}
+</div>
