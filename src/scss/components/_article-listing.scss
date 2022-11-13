@@ -1,0 +1,14 @@
+@use '../tools/functions';
+
+.cmp-article-listing {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: functions.fluid-size('base');
+    font-size: functions.fluid-size('base');
+  }
+
+  &__link {
+    display: block;
+  }
+}
