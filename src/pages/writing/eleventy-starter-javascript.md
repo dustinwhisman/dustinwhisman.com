@@ -1,12 +1,20 @@
 ---
 title: "Eleventy Starter: JavaScript | Writing | Dustin Whisman"
 description: This article goes into detail about setting up a modern JS bundling process for an Eleventy project, including some details about linting and testing.
+articleTitle: "Building an Eleventy Starter Template: JavaScript"
 layout: layout.njk
-date: 2022-07-22
+date: 2022-07-27
 tags: writing
 ---
 
-# Building an Eleventy Starter Template: CSS
+# Building an Eleventy Starter Template: JavaScript
+
+<p>
+  Published:
+  <time datetime="{{ page.date.toISOString() }}">
+    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+  </time>
+</p>
 
 In 2022, I wrote a series of articles for [Sparkbox's
 Foundry](https://sparkbox.com/foundry) about how to build a starter template for

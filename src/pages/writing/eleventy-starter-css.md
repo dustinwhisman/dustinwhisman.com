@@ -1,12 +1,20 @@
 ---
 title: "Eleventy Starter: CSS | Writing | Dustin Whisman"
 description: This article covers supporting CSS, or SCSS more specifically, in an Eleventy project.
+articleTitle: "Building an Eleventy Starter Template: CSS"
 layout: layout.njk
 date: 2022-06-15
 tags: writing
 ---
 
 # Building an Eleventy Starter Template: CSS
+
+<p>
+  Published:
+  <time datetime="{{ page.date.toISOString() }}">
+    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+  </time>
+</p>
 
 In 2022, I wrote a series of articles for [Sparkbox's
 Foundry](https://sparkbox.com/foundry) about how to build a starter template for

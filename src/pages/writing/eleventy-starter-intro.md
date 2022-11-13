@@ -1,12 +1,20 @@
 ---
 title: "Eleventy Starter: Introduction | Writing | Dustin Whisman"
 description: This introduces the series of articles I wrote for Sparkbox's Foundry about how to build an Eleventy Starter Template.
+articleTitle: Setting up Future Projects for Success with Template Repositories
 layout: layout.njk
 date: 2022-03-23
 tags: writing
 ---
 
 # Setting up Future Projects for Success with Template Repositories
+
+<p>
+  Published:
+  <time datetime="{{ page.date.toISOString() }}">
+    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+  </time>
+</p>
 
 In 2022, I wrote a series of articles for [Sparkbox's
 Foundry](https://sparkbox.com/foundry) about how to build a starter template for

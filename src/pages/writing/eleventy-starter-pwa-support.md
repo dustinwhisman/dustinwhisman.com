@@ -1,12 +1,20 @@
 ---
 title: "Eleventy Starter: Progressive Web App Support | Writing | Dustin Whisman"
 description: This article goes over a minimal approach to turn an Eleventy site into a Progressive Web App.
+articleTitle: "Building an Eleventy Starter Template: Progressive Web App Support"
 layout: layout.njk
 date: 2022-09-28
 tags: writing
 ---
 
 # Building an Eleventy Starter Template: Progressive Web App Support
+
+<p>
+  Published:
+  <time datetime="{{ page.date.toISOString() }}">
+    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+  </time>
+</p>
 
 In 2022, I wrote a series of articles for [Sparkbox's
 Foundry](https://sparkbox.com/foundry) about how to build a starter template for

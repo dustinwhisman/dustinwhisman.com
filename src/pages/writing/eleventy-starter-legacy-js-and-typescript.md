@@ -1,12 +1,20 @@
 ---
 title: "Eleventy Starter: Legacy JS Builds and TypeScript Support | Writing | Dustin Whisman"
 description: This article is about supporting older browsers while still writing modern JS, and it extends what's already there to support TypeScript.
+articleTitle: "Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support"
 layout: layout.njk
 date: 2022-08-24
 tags: writing
 ---
 
 # Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support
+
+<p>
+  Published:
+  <time datetime="{{ page.date.toISOString() }}">
+    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+  </time>
+</p>
 
 In 2022, I wrote a series of articles for [Sparkbox's
 Foundry](https://sparkbox.com/foundry) about how to build a starter template for
