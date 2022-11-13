@@ -15,7 +15,7 @@ layout: layout.njk
 </p>
 
 <div class="cmp-pictures-of-cats__grid">
-  {% for image in images | reverse %}
+  {% for image in global.picturesOfCats | reverse %}
     <div>
       <img src="/images/cats/{{ image }}" alt="" class="cmp-pictures-of-cats__image" {% if loop.index >= 6 %}loading="lazy"{% endif %}>
     </div>
