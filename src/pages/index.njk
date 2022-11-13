@@ -49,3 +49,22 @@ layout: layout.njk
     {% endfor %}
   </ul>
 </div>
+
+<div class="cmp-stack">
+  <h2>Recent Writing</h2>
+  <ul class="cmp-article-listing__list">
+    {% for article in collections.writing | reverse %}
+      {% if loop.index <= 3 %}
+        <li>
+          <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+          <span>
+            <span class="util-visually-hidden">Published:</span>
+            <time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+              {{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+            </time>
+          </span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
