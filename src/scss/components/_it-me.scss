@@ -1,4 +1,5 @@
 @use '../tools/functions';
+@use '../tools/mixins';
 
 .cmp-it-me {
   display: flex;
@@ -11,6 +12,8 @@
   }
 
   &__image {
+    @include mixins.img-drop-shadow;
+
     border-radius: 50%;
   }
 
