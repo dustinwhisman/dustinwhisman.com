@@ -57,7 +57,7 @@ const projects = [
   },
   {
     name: 'Unnamed Client Project',
-    description: 'Building out new versions of their home page, search features, product, and quote pages, among other things.',
+    description: 'Building out new versions of their home page, search features, and product/quote pages, among other things.',
     startDate: '2021-04-19',
     classification: 'Client Projects',
     roles: ['Individual Contributor', 'Tech Lead'],
