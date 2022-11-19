@@ -39,10 +39,21 @@ npm run update-deps
 
 ## Optimizing Images
 
-Since I'll forget otherwise, here's the ImageMagick command I used to compress the images. From the folder where all the images are:
+To optimize images, paste a batch of `jpg` images into a folder at the root called `pictures-of-cats`. Then run any of these scripts to optimize them.
 
 ```sh
-magick mogrify -strip -resize 640000@ -quality 70 -path ../optimized *.jpg
-```
+# do everything in one go
+npm run optimize-images
 
-Then drop the contents of `optimized` into `src/public/images/cats`.
+# only optimize in jpg format
+npm run images:jpg
+
+# only optimize in webp format
+npm run images:webp
+
+# only optimize in avif format
+npm run images:avif
+
+# remove all jpg images from the `pictures-of-cats` folder
+npm run images:clean
+```
