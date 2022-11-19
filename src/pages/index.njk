@@ -76,7 +76,11 @@ layout: layout.njk
       {% for image in global.picturesOfCats | reverse %}
         {% if loop.index <= 2 %}
           <div>
-            <img src="/images/cats/{{ image }}" alt="" class="cmp-pictures-of-cats__image" {% if loop.index >= 6 %}loading="lazy"{% endif %}>
+            <picture>
+              <source srcset="/images/cats/avif/{{ image.replace('.jpg', '.avif') }}" type="image/avif">
+              <source srcset="/images/cats/webp/{{ image.replace('.jpg', '.webp') }}" type="image/webp">
+              <img src="/images/cats/{{ image }}" alt="" class="cmp-pictures-of-cats__image" {% if loop.index >= 6 %}loading="lazy"{% endif %}>
+            </picture>
           </div>
         {% endif %}
       {% endfor %}
