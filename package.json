@@ -27,7 +27,10 @@
     "lint:js": "eslint . --ext .js,.ts",
     "test": "jest",
     "update-deps": "ncu -u",
-    "postupdate-deps": "npm install"
+    "postupdate-deps": "npm install",
+    "optimize-images": "run-s images:resize images:clean",
+    "images:resize": "cd pictures-of-cats && magick mogrify -strip -resize 640000@ -quality 70 -path ../src/public/images/cats *.jpg",
+    "images:clean": "rimraf pictures-of-cats/*.jpg"
   },
   "keywords": [],
   "author": "Dustin Whisman",
