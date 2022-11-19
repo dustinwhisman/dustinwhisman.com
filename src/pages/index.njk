@@ -73,15 +73,10 @@ layout: layout.njk
   <div class="cmp-stack">
     <h2>Recent Pictures of Cats</h2>
     <div class="cmp-pictures-of-cats__grid">
+      {% from 'macros/cat-picture.njk' import catPicture %}
       {% for image in global.picturesOfCats | reverse %}
         {% if loop.index <= 2 %}
-          <div>
-            <picture>
-              <source srcset="/images/cats/avif/{{ image.replace('.jpg', '.avif') }}" type="image/avif">
-              <source srcset="/images/cats/webp/{{ image.replace('.jpg', '.webp') }}" type="image/webp">
-              <img src="/images/cats/{{ image }}" alt="" class="cmp-pictures-of-cats__image" {% if loop.index >= 6 %}loading="lazy"{% endif %}>
-            </picture>
-          </div>
+          {{ catPicture(image, loop.index) }}
         {% endif %}
       {% endfor %}
     </div>
