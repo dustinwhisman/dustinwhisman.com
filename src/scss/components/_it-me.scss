@@ -2,23 +2,18 @@
 @use '../tools/mixins';
 
 .cmp-it-me {
-  display: flex;
-  flex-wrap: wrap;
-  gap: functions.fluid-size('base');
-
-  &__image-wrapper {
-    flex-basis: 25%;
-    flex-grow: 1;
-  }
-
   &__image {
     @include mixins.img-drop-shadow;
 
-    border-radius: 50%;
+    float: inline-start;
+    max-width: min(30vw, 200px);
+    clip-path: circle(50%);
+    shape-outside: circle(50%);
+    margin-block-end: functions.fluid-size('micro');
+    margin-inline-end: functions.fluid-size('base');
   }
 
-  &__bio {
-    flex-basis: 72%;
-    flex-grow: 1;
+  > p + p {
+    margin-block-start: functions.fluid-size('base');
   }
 }
