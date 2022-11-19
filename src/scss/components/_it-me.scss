@@ -5,6 +5,7 @@
   &__image {
     @include mixins.img-drop-shadow;
 
+    float: left;
     float: inline-start;
     max-width: min(30vw, 200px);
     clip-path: circle(50%);
