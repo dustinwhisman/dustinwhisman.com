@@ -10,7 +10,11 @@ layout: layout.njk
 
 <div class="cmp-stack cmp-stack--giga">
   <div class="cmp-it-me">
-    <img src="/images/beautiful-shining-face.jpg" alt="One of few salvageable photos of me from vacation in Switzerland. I'm almost smiling like a normal person." class="cmp-it-me__image">
+    <picture>
+      <source srcset="/images/beautiful-shining-face.avif" type="image/avif">
+      <source srcset="/images/beautiful-shining-face.webp" type="image/webp">
+      <img src="/images/beautiful-shining-face.jpg" alt="One of few salvageable photos of me from vacation in Switzerland. I'm almost smiling like a normal person." class="cmp-it-me__image">
+    </picture>
     <p>
       Hi, I'm Dustin. I'm a full stack developer at <a
       href="https://sparkbox.com">Sparkbox</a>, where I write HTML, CSS,
