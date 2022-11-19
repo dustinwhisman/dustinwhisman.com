@@ -4,7 +4,10 @@ const path = require('path');
 
 const getImagePaths = () => {
   const directoryPath = path.join(__dirname, '../../public/images/cats');
-  const files = fs.readdirSync(directoryPath);
+  const files = fs
+    .readdirSync(directoryPath, { withFileTypes: true })
+    .filter((file) => !file.isDirectory())
+    .map((file) => file.name);
 
   return files;
 };
