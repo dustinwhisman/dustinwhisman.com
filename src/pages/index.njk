@@ -74,7 +74,7 @@ layout: layout.njk
     <h2>Recent Pictures of Cats</h2>
     <div class="cmp-pictures-of-cats__grid">
       {% from 'macros/cat-picture.njk' import catPicture %}
-      {% for image in global.picturesOfCats | reverse %}
+      {% for image in global.picturesOfCats %}
         {% if loop.index <= 2 %}
           {{ catPicture(image, loop.index) }}
         {% endif %}

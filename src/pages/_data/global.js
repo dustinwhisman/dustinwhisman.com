@@ -1,13 +1,45 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs');
 const path = require('path');
+const sizeOf = require('image-size');
 
 const getImagePaths = () => {
   const directoryPath = path.join(__dirname, '../../public/images/cats');
   const files = fs
     .readdirSync(directoryPath, { withFileTypes: true })
-    .filter((file) => !file.isDirectory())
-    .map((file) => file.name);
+    .filter((file) => !file.isDirectory() && file.name.endsWith('.jpg'))
+    .sort((a, b) => {
+      if (a.name < b.name) {
+        return 1;
+      }
+
+      if (a.name > b.name) {
+        return -1;
+      }
+
+      return 0;
+    })
+    .map((file) => {
+      const STANDARD_WIDTH = 400;
+      const { width, height } = sizeOf(`${directoryPath}/${file.name}`);
+      const adjustmentPercentage = STANDARD_WIDTH / width;
+      const adjustedHeight = height * adjustmentPercentage;
+      return {
+        name: file.name,
+        width: STANDARD_WIDTH,
+        height: adjustedHeight,
+        rowSpan: Math.ceil(adjustedHeight),
+      };
+    });
+
+  for (let i = 0; i < files.length; i += 1) {
+    const previousInColumn = files[i - 2];
+    if (!previousInColumn) {
+      files[i].rowStart = 0;
+    } else {
+      files[i].rowStart = previousInColumn.rowStart + previousInColumn.rowSpan;
+    }
+  }
 
   return files;
 };
