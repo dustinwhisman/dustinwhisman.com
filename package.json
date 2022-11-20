@@ -74,6 +74,8 @@
     "not supports es6-module"
   ],
   "dependencies": {
-    "image-size": "^1.0.2"
+    "highlight.js": "^11.6.0",
+    "image-size": "^1.0.2",
+    "markdown-it": "^13.0.1"
   }
 }
