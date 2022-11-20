@@ -8,6 +8,7 @@
     float: left;
     float: inline-start;
     max-width: min(30vw, 200px);
+    height: auto;
     clip-path: circle(50%);
     shape-outside: circle(50%);
     margin-block-end: functions.fluid-size('micro');
