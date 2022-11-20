@@ -27,6 +27,7 @@
 @use 'components/pictures-of-cats';
 @use 'components/it-me';
 @use 'components/fine-print';
+@use 'components/article';
 
 // utilities, prefix with `.util-` and include last for the cascade
 @use 'utilities/utilities';
