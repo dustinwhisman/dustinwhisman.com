@@ -2,4 +2,12 @@
 
 code {
   font-family: functions.font-family('mono');
+  font-size: 85%;
+  background-color: hsl(200deg 100% 90%);
+  padding-inline: 0.25ch;
+  border-radius: 0.25em;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(200deg 100% 15%);
+  }
 }
