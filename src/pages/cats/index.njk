@@ -14,9 +14,9 @@ layout: layout.njk
   fuzzy belly", or "The brothers cuddling in an adorable way".
 </p>
 
-<div class="cmp-pictures-of-cats__grid">
+<div class="cmp-pictures-of-cats__grid" style="--row-count: {{ global.catPictureRows }}">
   {% from 'macros/cat-picture.njk' import catPicture %}
-  {% for image in global.picturesOfCats | reverse %}
+  {% for image in global.picturesOfCats %}
     {{ catPicture(image, loop.index) }}
   {% endfor %}
 </div>

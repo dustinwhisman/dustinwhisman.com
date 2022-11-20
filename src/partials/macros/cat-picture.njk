@@ -1,9 +1,17 @@
 {% macro catPicture(image, index) %}
-<div>
+<div class="cmp-pictures-of-cats__cell" style="--row-start: {{ image.rowStart }}; --row-span: {{ image.rowSpan }}">
   <picture>
-    <source srcset="/images/cats/avif/{{ image.replace('.jpg', '.avif') }}" type="image/avif">
-    <source srcset="/images/cats/webp/{{ image.replace('.jpg', '.webp') }}" type="image/webp">
-    <img src="/images/cats/{{ image }}" alt="" class="cmp-pictures-of-cats__image" {% if index >= 6 %}loading="lazy"{% endif %}>
+    <source srcset="/images/cats/avif/{{ image.name.replace('.jpg', '.avif') }}" type="image/avif">
+    <source srcset="/images/cats/webp/{{ image.name.replace('.jpg', '.webp') }}" type="image/webp">
+    <img
+      src="/images/cats/{{ image.name }}"
+      alt=""
+      width="{{ image.width }}"
+      height="{{ image.height }}"
+      style="--aspect-ratio: {{ image.aspectRatio }}"
+      class="cmp-pictures-of-cats__image"
+      {% if index >= 6 %}loading="lazy"{% endif %}
+    >
   </picture>
 </div>
 {% endmacro %}
