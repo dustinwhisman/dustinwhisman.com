@@ -2,4 +2,8 @@
 
 code {
   font-family: functions.font-family('mono');
+  font-size: 85%;
+  background-color: var(--terminal);
+  padding-inline: 0.25ch;
+  border-radius: 0.25em;
 }

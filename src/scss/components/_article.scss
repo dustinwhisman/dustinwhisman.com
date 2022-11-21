@@ -1,0 +1,7 @@
+@use '../tools/functions';
+
+.cmp-article {
+  &__image {
+    margin: functions.fluid-size('base') auto;
+  }
+}

@@ -1,6 +1,21 @@
 @use '../tools/functions';
 
 :root {
+  --ink: hsl(0deg 0% 10%);
+  --paper: hsl(0deg 0% 95%);
+  --terminal: hsl(200deg 55% 90%);
+
   font-family: functions.font-family('serif');
   color-scheme: light dark;
+  background-color: var(--paper);
+  color: var(--ink);
+
+  @media (prefers-color-scheme: dark) {
+    --ink: hsl(0deg 0% 95%);
+    --paper: hsl(0deg 0% 10%);
+    --terminal: hsl(200deg 100% 15%);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

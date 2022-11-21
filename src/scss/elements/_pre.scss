@@ -1,0 +1,17 @@
+@use '../tools/functions';
+
+pre {
+  font-family: functions.font-family('mono');
+  background-color: var(--terminal);
+  border-radius: 0.25rem;
+  padding: functions.fluid-size('kilo');
+  white-space: pre;
+  overflow-x: auto;
+
+  code {
+    background-color: var(--terminal);
+    display: inline-block;
+    font-size: 100%;
+    padding-inline: 0 functions.fluid-size('kilo');
+  }
+}

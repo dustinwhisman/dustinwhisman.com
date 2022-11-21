@@ -3,6 +3,9 @@
     "runners": [
       "axe",
       "htmlcs"
+    ],
+    "ignore": [
+      "color-contrast"
     ]
   }
 }
