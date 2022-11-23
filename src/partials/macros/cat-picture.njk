@@ -1,5 +1,5 @@
 {% macro catPicture(image, index) %}
-<div class="cmp-pictures-of-cats__cell" style="--row-start: {{ image.rowStart }}; --row-span: {{ image.rowSpan }}">
+<div class="cmp-pictures-of-cats__cell" style="--aspect-ratio: {{ image.aspectRatio }}">
   <picture>
     <source srcset="/images/cats/avif/{{ image.name.replace('.jpg', '.avif') }}" type="image/avif">
     <source srcset="/images/cats/webp/{{ image.name.replace('.jpg', '.webp') }}" type="image/webp">
@@ -8,7 +8,6 @@
       alt=""
       width="{{ image.width }}"
       height="{{ image.height }}"
-      style="--aspect-ratio: {{ image.aspectRatio }}"
       class="cmp-pictures-of-cats__image"
       {% if index >= 6 %}loading="lazy"{% endif %}
     >

@@ -17,10 +17,9 @@ $bp-two-column: 52rem;
       }
 
       @supports not (grid-template-rows: masonry) {
-        --row-count: auto;
-
-        row-gap: 0;
-        grid-template-rows: repeat(var(--row-count, auto), 10px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
       }
     }
   }
@@ -28,15 +27,10 @@ $bp-two-column: 52rem;
   &__cell {
     @media (min-width: $bp-two-column) {
       @supports not (grid-template-rows: masonry) {
-        --row-start: 1;
-        --row-span: auto;
+        --aspect-ratio: 1;
 
-        grid-row: var(--row-start, 1) / span var(--row-span, auto);
-        grid-column: 1 / span 1;
-
-        &:nth-child(2n) {
-          grid-column: 2 / span 1;
-        }
+        flex-basis: 17.5rem;
+        flex-grow: max((var(--aspect-ratio) - 1) * 1000, 1);
       }
     }
   }
@@ -47,12 +41,5 @@ $bp-two-column: 52rem;
     border-radius: functions.fluid-size('nano');
     width: 100%;
     height: auto;
-
-    @supports not (grid-template-rows: masonry) {
-      --aspect-ratio: 4 / 3;
-
-      aspect-ratio: var(--aspect-ratio);
-      object-fit: cover;
-    }
   }
 }
