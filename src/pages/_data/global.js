@@ -3,32 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const sizeOf = require('image-size');
 
-const commonAspectRatios = [
-  1 / 1,
-  3 / 2,
-  4 / 3,
-  16 / 9,
-  9 / 16,
-  3 / 4,
-  2 / 3,
-];
-
-const closestAspectRatio = (width, height) => {
-  const rawAspectRatio = width / height;
-  let resultIndex = 0;
-  let difference = Number.POSITIVE_INFINITY;
-
-  commonAspectRatios.forEach((aspectRatio, index) => {
-    const currentDifference = Math.abs(aspectRatio - rawAspectRatio);
-    if (currentDifference < difference) {
-      difference = currentDifference;
-      resultIndex = index;
-    }
-  });
-
-  return commonAspectRatios[resultIndex];
-};
-
 const getImagePaths = () => {
   const directoryPath = path.join(__dirname, '../../public/images/cats');
   const files = fs
@@ -46,27 +20,14 @@ const getImagePaths = () => {
       return 0;
     })
     .map((file) => {
-      const STANDARD_WIDTH = 400;
       const { width, height } = sizeOf(`${directoryPath}/${file.name}`);
-      const aspectRatio = closestAspectRatio(width, height);
-      const adjustedHeight = STANDARD_WIDTH / aspectRatio;
       return {
         name: file.name,
         width,
         height,
-        aspectRatio,
-        rowSpan: Math.ceil(adjustedHeight / 10),
+        aspectRatio: width / height,
       };
     });
-
-  for (let i = 0; i < files.length; i += 1) {
-    const previousInColumn = files[i - 2];
-    if (!previousInColumn) {
-      files[i].rowStart = 1;
-    } else {
-      files[i].rowStart = previousInColumn.rowStart + previousInColumn.rowSpan + 2;
-    }
-  }
 
   return files;
 };
