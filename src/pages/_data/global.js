@@ -44,7 +44,7 @@ const projects = [
     siteLink: 'https://cashcache.io/',
     description: 'This is how I keep track of what I spend my money on. Why use a popular budgeting app when you can build your own, right?',
     startDate: '2020-12-21',
-    classification: 'Side Projects',
+    classification: 'Side Project',
     roles: ['Individual Contributor'],
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     siteLink: 'https://rpg-spacedoor.netlify.app/',
     description: "A totally homebrewed RPG system for a sci-fi adventure setting. We could call this version 3, and there's very likely to be a version 4 within a year.",
     startDate: '2022-03-13',
-    classification: 'Side Projects',
+    classification: 'Side Project',
     roles: ['Individual Contributor'],
   },
   {
@@ -62,7 +62,7 @@ const projects = [
     siteLink: 'https://fellowship-availability.netlify.app/',
     description: "One does not simply walk into Mordor without checking everyone's schedules first.",
     startDate: '2022-04-12',
-    classification: 'Apprenticeship Capstone Projects',
+    classification: 'Apprenticeship Capstone Project',
     roles: ['Tech Lead'],
   },
   {
@@ -71,7 +71,7 @@ const projects = [
     siteLink: 'https://accessible-components-cheatsheet.netlify.app/',
     description: 'Building things accessibly is hard, so why not make it a little easier?',
     startDate: '2022-09-29',
-    classification: 'Apprenticeship Capstone Projects',
+    classification: 'Apprenticeship Capstone Project',
     roles: ['Tech Lead', 'Product Owner'],
   },
   {
@@ -80,28 +80,28 @@ const projects = [
     siteLink: 'https://sparkbox.com/foundry/series/building_an_eleventy_starter_template',
     description: 'How do you set up a project for success? Using Eleventy as an example, this Foundry series explores common architectural decisions that need to be made when starting a project.',
     startDate: '2022-03-22',
-    classification: 'Side Projects',
+    classification: 'Side Project',
     roles: ['Individual Contributor'],
   },
   {
     name: 'Unnamed Client Project',
     description: 'Building out new versions of their home page, search features, and product/quote pages, among other things.',
     startDate: '2021-04-19',
-    classification: 'Client Projects',
+    classification: 'Client Project',
     roles: ['Individual Contributor', 'Tech Lead'],
   },
   {
     name: 'Mysterious UI Component Library',
     description: 'Built a handful of components for their design system, most notably the checkbox and radio group form components, as well as supporting color themes.',
     startDate: '2022-05-16',
-    classification: 'Client Projects',
+    classification: 'Client Project',
     roles: ['Individual Contributor', 'Tech Lead'],
   },
   {
     name: 'Secretive CMS Migration',
     description: 'Helped with the migration of thousands of pages from their old CMS, Drupal 7, to their new one, Contentful. This involved content modeling, building new components, and lots of scripting.',
     startDate: '2022-08-01',
-    classification: 'Client Projects',
+    classification: 'Client Project',
     roles: ['Individual Contributor', 'Feature Lead'],
   },
 ].sort((a, b) => {
@@ -116,15 +116,6 @@ const projects = [
   return 0;
 });
 
-const breakdown = projects
-  .reduce((acc, project) => ({
-    ...acc,
-    [project.classification]: [
-      ...(acc[project.classification] ?? []),
-      project,
-    ],
-  }), {});
-
 module.exports = {
   // generate a random string for service worker versioning, such as "36f4-1234-8c7a"
   random() {
@@ -136,8 +127,8 @@ module.exports = {
   year() {
     return new Date().getFullYear();
   },
+  projects,
   recentProjects: projects.slice(0, 4),
-  breakdown: Object.entries(breakdown),
   picturesOfCats: getImagePaths(),
   catPictureRows,
 };
