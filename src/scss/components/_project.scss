@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../tools/functions';
 
 .cmp-project {
@@ -13,6 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: functions.fluid-size('base');
+    align-items: flex-start;
   }
 
   &__heading {
@@ -23,5 +25,36 @@
   &__group-heading {
     margin-block-start: functions.fluid-size('giga');
     margin-block-end: functions.fluid-size('kilo');
+  }
+
+  &__type {
+    color: var(--ink);
+    font-size: functions.fluid-size('deci');
+    padding-inline-start: functions.fluid-size('micro');
+    border-inline-start: 0.125em solid var(--ink);
+
+    &--apprenticeship-capstone-project {
+      --ink: #{color.hwb(200deg 10% 50%)};
+
+      @media (prefers-color-scheme: dark) {
+        --ink: #{color.hwb(200deg 50% 10%)};
+      }
+    }
+
+    &--side-project {
+      --ink: #{color.hwb(220deg 0% 50%)};
+
+      @media (prefers-color-scheme: dark) {
+        --ink: #{color.hwb(220deg 50% 0%)};
+      }
+    }
+
+    &--client-project {
+      --ink: #{color.hwb(170deg 0% 60%)};
+
+      @media (prefers-color-scheme: dark) {
+        --ink: #{color.hwb(170deg 50% 10%)};
+      }
+    }
   }
 }

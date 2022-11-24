@@ -7,7 +7,7 @@
       {{ project.name }}
     {% endif %}
   </h3>
-  <p class="cmp-project__type cmp-project__type--{{ project.classification.replace(' ', '-') | lower }}">
+  <p class="cmp-project__type cmp-project__type--{{ project.classification.replaceAll(' ', '-') | lower }}">
     {{ project.classification }}
   </p>
   <p>{{ project.description }}</p>
