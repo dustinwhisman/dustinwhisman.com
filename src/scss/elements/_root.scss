@@ -1,9 +1,10 @@
+@use "sass:color";
 @use '../tools/functions';
 
 :root {
-  --ink: hsl(0deg 0% 10%);
-  --paper: hsl(0deg 0% 95%);
-  --terminal: hsl(200deg 55% 90%);
+  --ink: #{color.hwb(0deg 10% 90%)};
+  --paper: #{color.hwb(0deg 95% 5%)};
+  --terminal: #{color.hwb(180deg 85% 5%)};
 
   font-family: functions.font-family('serif');
   color-scheme: light dark;
@@ -11,9 +12,9 @@
   color: var(--ink);
 
   @media (prefers-color-scheme: dark) {
-    --ink: hsl(0deg 0% 95%);
-    --paper: hsl(0deg 0% 10%);
-    --terminal: hsl(200deg 100% 15%);
+    --ink: #{color.hwb(0deg 95% 5%)};
+    --paper: #{color.hwb(0deg 10% 90%)};
+    --terminal: #{hwb(200deg 0% 80%)};
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
