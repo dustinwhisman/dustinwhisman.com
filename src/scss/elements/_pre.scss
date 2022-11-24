@@ -8,6 +8,11 @@ pre {
   white-space: pre;
   overflow-x: auto;
 
+  &[tabindex='0']:focus {
+    outline: 0.125em solid var(--ink);
+    outline-offset: 0.25em;
+  }
+
   code {
     background-color: var(--terminal);
     display: inline-block;

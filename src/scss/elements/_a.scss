@@ -6,6 +6,11 @@ a {
     text-decoration: none;
   }
 
+  &:focus {
+    outline: 0.125em solid var(--ink);
+    outline-offset: 0.25em;
+  }
+
   &[aria-current='page'] {
     text-transform: uppercase;
     text-decoration: none;
