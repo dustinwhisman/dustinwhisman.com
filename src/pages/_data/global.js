@@ -104,6 +104,15 @@ const projects = [
     classification: 'Client Project',
     roles: ['Individual Contributor', 'Feature Lead'],
   },
+  {
+    name: 'dustinwhisman.com',
+    repoLink: 'http://github.com/dustinwhisman/dustinwhisman.com',
+    siteLink: '/',
+    description: "Hey, that's what this is! You're looking at it right now!",
+    startDate: '2022-11-12',
+    classification: 'Side Project',
+    roles: ['Individual Contributor'],
+  },
 ].sort((a, b) => {
   if (a.startDate < b.startDate) {
     return 1;
