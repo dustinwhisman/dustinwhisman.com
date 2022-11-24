@@ -97,7 +97,7 @@ So far, we’ve only changed simple text. How about more complicated markup?
 
 For something like the `header` and `footer` that we want to be dynamic, we can use Nunjucks blocks to override them at the page level. We will also need a block for our main content. Let’s define the blocks in our layout partial.
 
-```html
+```hbs
 {% raw %}<body>
   {% block header %}
     <header>
@@ -121,7 +121,7 @@ By wrapping our dynamic blocks this way, the default markup and content will be 
 
 Let’s change `about.md` to `about.njk`, and let’s add a `contact.njk` file for contrast. In the About page, we’ll override the header and footer with page-specific content.
 
-```md
+```hbs
 ---
 title: About
 description: This is the about page. You might put biographical information here if it's for a personal website or portfolio.
