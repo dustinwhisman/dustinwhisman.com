@@ -14,31 +14,10 @@ layout: layout.njk
 </p>
 
 <ul class="cmp-project__list">
+  {% from 'macros/project-card.njk' import projectCard %}
   {% for project in global.projects %}
     <li>
-      <article class="cmp-project__card">
-        <h3 class="cmp-project__heading">
-          {% if project.siteLink %}
-            <a href="{{ project.siteLink }}">{{ project.name }}</a>
-          {% else %}
-            {{ project.name }}
-          {% endif %}
-        </h3>
-        <p class="cmp-project__type cmp-project__type--{{ project.classification.replace(' ', '-') | lower }}">
-          {{ project.classification }}
-        </p>
-        <p>{{ project.description }}</p>
-        {% if project.repoLink %}
-          <p>
-            <a href="{{ project.repoLink }}">View Source</a>
-          </p>
-        {% endif %}
-        <ul class="cmp-badge__list">
-          {% for role in project.roles %}
-            <li class="cmp-badge">{{ role }}</li>
-          {% endfor %}
-        </ul>
-      </article>
+      {{ projectCard(project) }}
     </li>
   {% endfor %}
 </ul>
