@@ -28,16 +28,16 @@
       <nav aria-label="main navigation">
         <ul class="cmp-navigation">
           <li>
-            <a href="/">Home</a>
+            <a href="/" {% if page.url === '/' %}aria-current="page"{% endif %}>Home</a>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <a href="/projects" {% if page.url === '/projects/' %}aria-current="page"{% endif %}>Projects</a>
           </li>
           <li>
-            <a href="/writing">Writing</a>
+            <a href="/writing" {% if page.url === '/writing/' %}aria-current="page"{% endif %}>Writing</a>
           </li>
           <li>
-            <a href="/cats">Pictures of Cats</a>
+            <a href="/cats" {% if page.url === '/cats/' %}aria-current="page"{% endif %}>Pictures of Cats</a>
           </li>
         </ul>
       </nav>
@@ -80,8 +80,6 @@
   {% endblock %}
 
   <!-- global scripts, should render on every page -->
-  <script src="/index.js" type="module"></script>
-  <script src="/index.legacy.js" nomodule></script>
 
   <!-- page-specific scripts, should be set within the page template -->
   {% block scripts %}{% endblock %}
