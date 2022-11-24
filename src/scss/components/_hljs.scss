@@ -1,28 +1,21 @@
-@use "sass:color";
+@use 'sass:color';
 
+/* stylelint-disable selector-class-pattern */
 .hljs {
   &-attr,
   &-attribute,
   &-built_in,
-  &-bullet,
-  &-code,
   &-comment,
-  &-doctag,
-  &-function,
   &-keyword,
-  &-link,
-  &-literal,
   &-meta,
   &-name,
   &-number,
   &-params,
   &-property,
-  &-punctuation,
   &-regexp,
   &-section,
   &-selector-tag,
   &-string,
-  &-subst,
   &-tag,
   &-title,
   &-variable {
@@ -30,27 +23,20 @@
   }
 
   &-attr,
+  &-attribute,
   &-params {
     --ink: #{color.hwb(200deg 10% 50%)};
   }
 
-  &-attribute {}
-
-  &-built_in {
+  &-built_in,
+  &-title.function_,
+  &-number {
     --ink: #{color.hwb(72deg 0% 60%)};
   }
-
-  &-bullet {}
-
-  &-code {}
 
   &-comment {
     --ink: #{color.hwb(120deg 0% 60%)};
   }
-
-  &-doctag {}
-
-  &-function {}
 
   &-tag {
     --ink: #{color.hwb(220deg 50% 70%)};
@@ -58,64 +44,44 @@
 
   &-keyword,
   &-meta,
-  &-tag &-name {
+  &-tag &-name,
+  &-selector-tag {
     --ink: #{color.hwb(220deg 0% 50%)};
   }
-
-  &-link {}
-
-  &-literal {}
-
-  &-name {}
-
-  &-number {}
 
   &-property,
   &-variable {
     --ink: #{color.hwb(170deg 0% 60%)};
   }
 
-  &-punctuation {}
-
-  &-regexp {}
+  &-regexp {
+    --ink: #{color.hwb(0deg 0% 50%)};
+  }
 
   &-section {
     --ink: #{color.hwb(206deg 0% 30%)};
   }
 
-  &-selector-tag {}
-
   &-string {
     --ink: #{color.hwb(36deg 0% 50%)};
   }
 
-  &-subst {}
-
-  &-title {}
-
   @media (prefers-color-scheme: dark) {
     &-attr,
+    &-attribute,
     &-params {
       --ink: #{color.hwb(200deg 50% 10%)};
     }
 
-    &-attribute {}
-
-    &-built_in {
+    &-built_in,
+    &-title.function_,
+    &-number {
       --ink: #{color.hwb(72deg 50% 10%)};
     }
-
-    &-bullet {}
-
-    &-code {}
 
     &-comment {
       --ink: #{color.hwb(120deg 50% 35%)};
     }
-
-    &-doctag {}
-
-    &-function {}
 
     &-tag {
       --ink: #{color.hwb(220deg 100% 50%)};
@@ -123,40 +89,26 @@
 
     &-keyword,
     &-meta,
-    &-tag &-name {
+    &-tag &-name,
+    &-selector-tag {
       --ink: #{color.hwb(220deg 50% 0%)};
     }
-
-    &-link {}
-
-    &-literal {}
-
-
-    &-name {}
-
-    &-number {}
 
     &-property,
     &-variable {
       --ink: #{color.hwb(170deg 50% 10%)};
     }
 
-    &-punctuation {}
-
-    &-regexp {}
+    &-regexp {
+      --ink: #{color.hwb(0deg 50% 0%)};
+    }
 
     &-section {
       --ink: #{color.hwb(206deg 50% 0%)};
     }
 
-    &-selector-tag {}
-
     &-string {
       --ink: #{color.hwb(36deg 50% 0%)};
     }
-
-    &-subst {}
-
-    &-title {}
   }
 }
