@@ -1,0 +1,16 @@
+@use '../tools/functions';
+
+dl {
+  font-size: functions.fluid-size('base');
+  line-height: calc(1em + 0.5rem);
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-block-start: functions.fluid-size('nano');
+  padding-inline-start: functions.fluid-size('centi');
+  border-inline-start: 0.125em solid var(--ink);
+}
