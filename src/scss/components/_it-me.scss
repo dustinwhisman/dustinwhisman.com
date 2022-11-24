@@ -9,7 +9,7 @@
     float: inline-start;
     max-width: min(30vw, 200px);
     height: auto;
-    clip-path: circle(50%);
+    border-radius: 50%;
     shape-outside: circle(50%);
     margin-block-end: functions.fluid-size('micro');
     margin-inline-end: functions.fluid-size('base');
