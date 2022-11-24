@@ -13,34 +13,11 @@ layout: layout.njk
   logistics applications…
 </p>
 
-{% for projectType in global.breakdown %}
-  <div>
-    <h2 class="cmp-project__group-heading">{{ projectType[0] }}</h2>
-    <ul class="cmp-project__list">
-      {% for project in projectType[1] %}
-        <li>
-          <article class="cmp-project__card">
-            <h3 class="cmp-project__heading">
-              {% if project.siteLink %}
-                <a href="{{ project.siteLink }}">{{ project.name }}</a>
-              {% else %}
-                {{ project.name }}
-              {% endif %}
-            </h3>
-            <p>{{ project.description }}</p>
-            {% if project.repoLink %}
-              <p>
-                <a href="{{ project.repoLink }}">View Source</a>
-              </p>
-            {% endif %}
-            <ul class="cmp-badge__list">
-              {% for role in project.roles %}
-                <li class="cmp-badge">{{ role }}</li>
-              {% endfor %}
-            </ul>
-          </article>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
+<ul class="cmp-project__list">
+  {% from 'macros/project-card.njk' import projectCard %}
+  {% for project in global.projects %}
+    <li>
+      {{ projectCard(project) }}
+    </li>
+  {% endfor %}
+</ul>

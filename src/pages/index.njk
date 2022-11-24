@@ -36,22 +36,10 @@ layout: layout.njk
   <div class="cmp-stack">
     <h2>Recent Projects</h2>
     <ul class="cmp-project__list">
+      {% from 'macros/project-card.njk' import projectCard %}
       {% for project in global.recentProjects %}
         <li>
-          <article class="cmp-project__card">
-            <h3 class="cmp-project__heading">
-              {% if project.siteLink %}
-                <a href="{{ project.siteLink }}">{{ project.name }}</a>
-              {% else %}
-                {{ project.name }}
-              {% endif %}
-            </h3>
-            <ul class="cmp-badge__list">
-              {% for role in project.roles %}
-                <li class="cmp-badge">{{ role }}</li>
-              {% endfor %}
-            </ul>
-          </article>
+          {{ projectCard(project) }}
         </li>
       {% endfor %}
     </ul>
@@ -61,7 +49,7 @@ layout: layout.njk
     <h2>Recent Writing</h2>
     <ul class="cmp-article-listing__list">
       {% for article in collections.writing | reverse %}
-        {% if loop.index <= 3 %}
+        {% if loop.index <= 5 %}
           <li>
             <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
             <span>
@@ -81,7 +69,7 @@ layout: layout.njk
     <div class="cmp-pictures-of-cats__grid">
       {% from 'macros/cat-picture.njk' import catPicture %}
       {% for image in global.picturesOfCats %}
-        {% if loop.index <= 2 %}
+        {% if loop.index <= 4 %}
           {{ catPicture(image, loop.index) }}
         {% endif %}
       {% endfor %}
