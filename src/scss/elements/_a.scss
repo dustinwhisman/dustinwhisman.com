@@ -9,6 +9,10 @@ a {
   &:focus {
     outline: 0.125em solid var(--ink);
     outline-offset: 0.25em;
+
+    &:not(:focus-visible) {
+      outline-color: transparent;
+    }
   }
 
   &[aria-current='page'] {
