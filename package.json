@@ -31,7 +31,7 @@
     "optimize-images": "run-s images:jpg images:webp images:avif images:clean",
     "images:jpg": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -path ../src/public/images/cats *.jpg",
     "images:webp": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -format webP -path ../src/public/images/cats/webp *.jpg",
-    "images:avif": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -format avif -path ../src/public/images/cats/avif *.jpg",
+    "images:avif": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 50 -format avif -path ../src/public/images/cats/avif *.jpg",
     "images:clean": "rimraf pictures-of-cats/*.jpg"
   },
   "keywords": [],
