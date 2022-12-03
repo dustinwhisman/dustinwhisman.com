@@ -1,0 +1,4 @@
+Sitemap: https://dustinwhisman.com/sitemap.xml
+
+User-agent: *
+Disallow:
