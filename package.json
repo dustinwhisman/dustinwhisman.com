@@ -21,7 +21,7 @@
     "js:build:legacy": "NODE_ENV=production webpack --progress",
     "clean": "rimraf dist",
     "lint": "run-s lint:css lint:js",
-    "lint:html": "pa11y-ci -c .pa11yci.json --sitemap https://dustinwhisman.com/sitemap.xml",
+    "lint:html": "echo \"TODO: implement axe-core/cli\"",
     "lint:css": "stylelint 'src/scss/**/*.scss' --color --formatter verbose",
     "lint:js": "eslint . --ext .js,.ts",
     "test": "jest",
