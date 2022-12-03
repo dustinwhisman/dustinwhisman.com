@@ -1,9 +1,7 @@
 {
   "defaults": {
-    "timeout": 60000,
     "runners": [
-      "axe",
-      "htmlcs"
+      "axe"
     ]
   }
 }
