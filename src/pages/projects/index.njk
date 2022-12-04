@@ -21,7 +21,7 @@ layout: layout.njk
   {% from 'macros/project-card.njk' import projectCard %}
   {% for project in global.projects %}
     <li>
-      {{ projectCard(project) }}
+      {{ projectCard(project, 'h2') }}
     </li>
   {% endfor %}
 </ul>

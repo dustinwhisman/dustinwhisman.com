@@ -1,19 +1,24 @@
-{% macro projectCard(project) %}
+{% macro projectCard(project, headingLevel) %}
 <article class="cmp-project__card">
-  <h3 class="cmp-project__heading">
+  <{{ headingLevel }} class="cmp-project__heading">
     {% if project.siteLink %}
       <a href="{{ project.siteLink }}">{{ project.name }}</a>
     {% else %}
       {{ project.name }}
     {% endif %}
-  </h3>
+  </{{ headingLevel }}>
   <p class="cmp-project__type cmp-project__type--{{ project.classification.replaceAll(' ', '-') | lower }}">
     {{ project.classification }}
   </p>
   <p>{{ project.description }}</p>
   {% if project.repoLink %}
     <p>
-      <a href="{{ project.repoLink }}">View Source</a>
+      <a href="{{ project.repoLink }}">
+        View Source
+        <span class="util-visually-hidden">
+          for {{ project.name }}
+        </span>
+      </a>
     </p>
   {% endif %}
   <ul class="cmp-badge__list">
