@@ -16,5 +16,5 @@ jobs:
           node-version: "18.x"
       - name: install npm dependencies
         run: npm ci
-      - name: run html linter
-        run: npm run lint:html
+      - name: run automated accessibility checks
+        run: npm run test:e2e
