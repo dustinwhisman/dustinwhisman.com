@@ -4,3 +4,6 @@ dist
 coverage
 pictures-of-cats
 .DS_Store
+cypress/videos
+cypress/screenshots
+cypress/downloads
