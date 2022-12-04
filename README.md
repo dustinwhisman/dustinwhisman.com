@@ -57,3 +57,17 @@ npm run images:avif
 # remove all jpg images from the `pictures-of-cats` folder
 npm run images:clean
 ```
+
+## Cypress Testing
+
+To run Cypress tests locally, you will need to create a `.env` file. Use `.env.example` as a starting point for filling in the variables you need. `BASE_URL` should point to where the site is running, typically `http://localhost:8080`, but you can point it at the production site or a deploy preview for some manual testing.
+
+For local testing, you will need to have the site running already (`npm start`), then in a different terminal, you can run one of these commands to run Cypress.
+
+```sh
+# open Cypress and watch the tests as they happen
+npm run test:open
+
+# run Cypress in CI mode
+npm run test:e2e
+```

@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+// eslint-disable-next-line import/no-extraneous-dependencies
+require('dotenv').config();
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { defineConfig } = require('cypress');
 
 const sitemapLocations = async () => {
-  const res = await fetch('https://dustinwhisman.com/sitemap.xml', {
+  const res = await fetch(`${process.env.BASE_URL}/sitemap.xml`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/xml',
@@ -17,6 +20,7 @@ const sitemapLocations = async () => {
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: process.env.BASE_URL,
     chromeWebSecurity: false,
     setupNodeEvents: async (on, config) => {
       on('task', {
