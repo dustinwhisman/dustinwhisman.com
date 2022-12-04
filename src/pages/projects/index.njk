@@ -17,11 +17,13 @@ layout: layout.njk
   <a href="#role-descriptions">Description of roles</a>
 </p>
 
+<h2 class="util-visually-hidden">List of projects, from 2021 to now</h2>
+
 <ul class="cmp-project__list">
   {% from 'macros/project-card.njk' import projectCard %}
   {% for project in global.projects %}
     <li>
-      {{ projectCard(project, 'h2') }}
+      {{ projectCard(project, 'h3') }}
     </li>
   {% endfor %}
 </ul>
