@@ -21,7 +21,7 @@
     "js:build:legacy": "NODE_ENV=production webpack --progress",
     "clean": "rimraf dist",
     "lint": "run-s lint:css lint:js",
-    "lint:html": "echo \"TODO: implement accessibility linting\"",
+    "lint:html": "cypress run",
     "lint:css": "stylelint 'src/scss/**/*.scss' --color --formatter verbose",
     "lint:js": "eslint . --ext .js,.ts",
     "test": "jest",
