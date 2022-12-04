@@ -24,7 +24,7 @@ const checkAccessibility = () => {
   });
 };
 
-describe('accessibility', () => {
+describe('automated accessibility checks', () => {
   const pages = Cypress.env('pages');
   it.each(pages)('passes automated accessibility checks: %s', (page) => {
     cy.visit(page);
