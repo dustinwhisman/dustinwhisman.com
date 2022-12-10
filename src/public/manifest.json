@@ -20,9 +20,9 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#f8f8f8",
+  "background_color": "#1a1a1a",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#f8f8f8",
+  "theme_color": "#1a1a1a",
   "description": "Dustin Whisman's very own personal website. How indie, how 2006."
 }
