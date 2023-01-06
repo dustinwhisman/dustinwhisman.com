@@ -1,0 +1,23 @@
+---
+title: Learning in Public | Dustin Whisman
+description: Let us learn together. By sharing what I'm learning, I'll have a reference to go back to, and you might learn something as well.
+layout: layout.njk
+---
+
+<h1>Learning in Public</h1>
+
+<p>Anything that I would consider to be learning in public lives here. That could be notes from studying something specific, or random posts about something I learned about recently.</p>
+
+<ul class="cmp-article-listing__list">
+  {% for article in collections['learning in public'] | reverse %}
+    <li>
+      <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+      <span>
+        <span class="util-visually-hidden">Published:</span>
+        <time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+          {{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+        </time>
+      </span>
+    </li>
+  {% endfor %}
+</ul>
