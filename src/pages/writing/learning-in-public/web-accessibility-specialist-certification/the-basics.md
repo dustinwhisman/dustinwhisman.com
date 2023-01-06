@@ -12,6 +12,15 @@ tags:
 
 # WAS Notes: The Basics
 
+_I'm studying for the WAS certification. These are some of the notes I've taken recently._
+
+<p class="cmp-fine-print">
+  Published:
+  <time datetime="{{ page.date.toISOString() }}">
+    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+  </time>
+</p>
+
 - The World Health Organization (WHO) estimates that over 15% of the world’s population has a disability (I’ve heard numbers as high as 25%, depending on population)
 - These are the main types of disabilities to be aware of
     - Visual impairments (blindness, low vision, and color blindness)
