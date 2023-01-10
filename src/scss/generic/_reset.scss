@@ -18,6 +18,12 @@ html {
   text-size-adjust: none;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   -webkit-font-smoothing: antialiased;
 }
