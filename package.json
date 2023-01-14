@@ -19,7 +19,7 @@
     "js:build": "esbuild src/js/*.ts --format=esm --bundle=true --splitting=true --outdir=dist --minify=true",
     "js:dev:legacy": "NODE_ENV=development webpack --progress -w",
     "js:build:legacy": "NODE_ENV=production webpack --progress",
-    "clean": "rimraf dist",
+    "clean": "rm -rf dist",
     "lint": "run-s lint:css lint:js",
     "lint:css": "stylelint 'src/scss/**/*.scss' --color --formatter verbose",
     "lint:js": "eslint . --ext .js,.ts",
@@ -32,7 +32,7 @@
     "images:jpg": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -path ../src/public/images/cats *.jpg",
     "images:webp": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -format webP -path ../src/public/images/cats/webp *.jpg",
     "images:avif": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 50 -format avif -path ../src/public/images/cats/avif *.jpg",
-    "images:clean": "rimraf pictures-of-cats/*.jpg"
+    "images:clean": "rm -rf pictures-of-cats/*.jpg"
   },
   "keywords": [],
   "author": "Dustin Whisman",
