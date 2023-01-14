@@ -68,7 +68,7 @@ const projects = [
   {
     name: 'Accessible Components Cheatsheet',
     repoLink: 'https://github.com/sparkbox/accessible-components',
-    siteLink: 'https://accessible-components-cheatsheet.netlify.app/',
+    siteLink: 'https://accessible-components.sparkbox.com/',
     description: 'Building things accessibly is hard, so why not make it a little easier?',
     startDate: '2022-09-29',
     classification: 'Apprenticeship Capstone Project',
