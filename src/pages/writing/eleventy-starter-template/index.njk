@@ -1,0 +1,29 @@
+---
+title: Eleventy Starter Template Series | Dustin Whisman
+description: This series details how to build a starter template for Eleventy projects, going deep into architectural decisions and strategies to make it as easy as possible to start a new project.
+layout: layout.njk
+---
+
+<h1>Eleventy Starter Template Series</h1>
+
+<p>
+  I wrote this tutorial series for the
+  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">Sparkbox Foundry</a>
+  in 2022. It goes deep into architectural decisions and strategies for creating
+  a starter template that has all of the typical project needs covered right out
+  of the box.
+</p>
+
+<ol class="cmp-article-listing__list">
+  {% for article in collections['eleventy starter template'] %}
+    <li>
+      <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+      <span>
+        <span class="util-visually-hidden">Published:</span>
+        <time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+          {{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+        </time>
+      </span>
+    </li>
+  {% endfor %}
+<ol>

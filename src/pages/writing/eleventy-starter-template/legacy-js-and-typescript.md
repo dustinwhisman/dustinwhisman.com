@@ -4,7 +4,9 @@ description: This article is about supporting older browsers while still writing
 articleTitle: "Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support"
 layout: layout.njk
 date: 2022-08-24
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support

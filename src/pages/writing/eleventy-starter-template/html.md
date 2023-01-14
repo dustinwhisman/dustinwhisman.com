@@ -4,7 +4,9 @@ description: This article goes into detail about setting up HTML layouts and pag
 articleTitle: "Building an Eleventy Starter Template: HTML"
 layout: layout.njk
 date: 2022-05-18
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Building an Eleventy Starter Template: HTML

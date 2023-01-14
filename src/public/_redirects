@@ -1,1 +1,9 @@
+/writing/eleventy-starter-intro /writing/eleventy-starter-template/intro
+/writing/eleventy-starter-structure /writing/eleventy-starter-template/structure
+/writing/eleventy-starter-html /writing/eleventy-starter-template/html
+/writing/eleventy-starter-css /writing/eleventy-starter-template/css
+/writing/eleventy-starter-javascript /writing/eleventy-starter-template/javascript
+/writing/eleventy-starter-legacy-js-and-typescript /writing/eleventy-starter-template/legacy-js-and-typescript
+/writing/eleventy-starter-pwa-support /writing/eleventy-starter-template/pwa-support
+/writing/eleventy-starter-maintenance-and-collaboration /writing/eleventy-starter-template/maintenance-and-collaboration
 /* /404/index.html 404
