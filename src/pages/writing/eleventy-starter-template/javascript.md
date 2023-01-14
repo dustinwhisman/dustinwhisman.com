@@ -4,7 +4,9 @@ description: This article goes into detail about setting up a modern JS bundling
 articleTitle: "Building an Eleventy Starter Template: JavaScript"
 layout: layout.njk
 date: 2022-07-27
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Building an Eleventy Starter Template: JavaScript

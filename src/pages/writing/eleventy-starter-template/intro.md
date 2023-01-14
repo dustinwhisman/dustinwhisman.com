@@ -4,7 +4,9 @@ description: This introduces the series of articles I wrote for Sparkbox's Found
 articleTitle: Setting up Future Projects for Success with Template Repositories
 layout: layout.njk
 date: 2022-03-23
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Setting up Future Projects for Success with Template Repositories

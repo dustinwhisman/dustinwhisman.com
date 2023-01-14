@@ -4,7 +4,9 @@ description: This article goes over a minimal approach to turn an Eleventy site 
 articleTitle: "Building an Eleventy Starter Template: Progressive Web App Support"
 layout: layout.njk
 date: 2022-09-28
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Building an Eleventy Starter Template: Progressive Web App Support

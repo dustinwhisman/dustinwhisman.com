@@ -4,7 +4,9 @@ description: This article is about handling dependency updates, maintaining code
 articleTitle: "Building an Eleventy Starter Template: Maintenance and Collaboration"
 layout: layout.njk
 date: 2022-11-02
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Building an Eleventy Starter Template: Maintenance and Collaboration

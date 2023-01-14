@@ -4,7 +4,9 @@ description: This article covers supporting CSS, or SCSS more specifically, in a
 articleTitle: "Building an Eleventy Starter Template: CSS"
 layout: layout.njk
 date: 2022-06-15
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Building an Eleventy Starter Template: CSS

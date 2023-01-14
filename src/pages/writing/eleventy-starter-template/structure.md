@@ -4,7 +4,9 @@ description: This article covers the basics of setting up an Eleventy project's 
 articleTitle: "Building an Eleventy Starter Template: Project Setup and Configuration"
 layout: layout.njk
 date: 2022-04-06
-tags: writing
+tags:
+  - writing
+  - eleventy starter template
 ---
 
 # Building an Eleventy Starter Template: Project Setup and Configuration
