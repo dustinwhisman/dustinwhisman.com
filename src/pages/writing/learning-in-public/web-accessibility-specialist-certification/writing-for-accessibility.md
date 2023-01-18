@@ -21,8 +21,6 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   </time>
 </p>
 
-# Writing for Accessibility
-
 - Provide informative, unique page titles that go from more specific to less specific
   - “Page Name | Page Section | Site Name”
   - “Buy Your Thing (Step 1 of 3) | E-commerce Site”
