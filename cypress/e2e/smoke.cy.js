@@ -1,4 +1,4 @@
-/* global cy Cypress */
+/* global cy Cypress describe it */
 require('cypress-each');
 
 const terminalLog = (violations) => {

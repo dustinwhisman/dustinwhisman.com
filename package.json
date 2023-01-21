@@ -21,7 +21,7 @@
     "js:build:legacy": "webpack --progress",
     "clean": "rm -rf dist",
     "lint": "run-s lint:css lint:js",
-    "lint:css": "stylelint 'src/scss/**/*.scss' --color --formatter verbose",
+    "lint:css": "stylelint \"src/scss/**/*.scss\" --color --formatter verbose",
     "lint:js": "eslint . --ext .js",
     "test": "vitest --passWithNoTests --run",
     "test:e2e": "cypress run --e2e",
