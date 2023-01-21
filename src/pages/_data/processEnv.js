@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies, @typescript-eslint/no-var-requires
+// eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config();
 
 module.exports = {

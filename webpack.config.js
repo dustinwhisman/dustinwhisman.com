@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
@@ -12,25 +11,19 @@ const getEntryPoints = (directory) => fs.readdirSync(path.join(__dirname, direct
   }), {});
 
 module.exports = {
-  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  mode: process.env.NODE_ENV === 'development' ? 'development' : 'production',
   entry: () => getEntryPoints('src/js'),
   module: {
     rules: [
       {
-        test: /\.(j|t)s$/,
+        test: /\.js$/,
         use: 'babel-loader',
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.ts$/,
-        use: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
     extensions: [
-      '.ts',
       '.js',
     ],
   },
