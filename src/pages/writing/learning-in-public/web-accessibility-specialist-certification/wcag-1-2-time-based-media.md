@@ -3,7 +3,7 @@ title: "WAS Notes: WCAG 1.2 Time-based Media | Writing | Dustin Whisman"
 description: How do you meet all of the success criteria for WCAG 1.2 Time-based Media?
 articleTitle: "WAS Notes: WCAG 1.2 Time-based Media"
 layout: layout.njk
-date: 2023-01-26T00:00:00Z
+date: 2023-01-26
 tags:
   - writing
   - learning in public
