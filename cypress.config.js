@@ -10,9 +10,9 @@ const sitemapLocations = async () => {
     },
   });
   const xml = await res.text();
-  const locations = [
-    ...xml.matchAll(/<loc>(.|\n)*?<\/loc>/g),
-  ].map(([loc]) => loc.replace('<loc>', '').replace('</loc>', ''));
+  const locations = [...xml.matchAll(/<loc>(.|\n)*?<\/loc>/g)].map(([loc]) =>
+    loc.replace('<loc>', '').replace('</loc>', ''),
+  );
   return locations;
 };
 

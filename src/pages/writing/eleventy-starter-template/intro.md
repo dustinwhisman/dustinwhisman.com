@@ -1,5 +1,5 @@
 ---
-title: "Eleventy Starter: Introduction | Writing | Dustin Whisman"
+title: 'Eleventy Starter: Introduction | Writing | Dustin Whisman'
 description: This introduces the series of articles I wrote for Sparkbox's Foundry about how to build an Eleventy Starter Template.
 articleTitle: Setting up Future Projects for Success with Template Repositories
 layout: layout.njk
@@ -49,10 +49,10 @@ On the “Settings” page for your repository, there is an option called “tem
 
 If you click that button (or navigate to `github.com/ownername/reponame/generate`), you will see a form that lets you:
 
-* Choose a name for your new repository
-* Add a description
-* Set the repo to public or private
-* Choose whether to include all branches from the template repo
+- Choose a name for your new repository
+- Add a description
+- Set the repo to public or private
+- Choose whether to include all branches from the template repo
 
 <img src="/images/eleventy-series/create-from-template.png" alt="" class="cmp-article__image">
 
@@ -62,13 +62,13 @@ Once you submit that form, you should have a brand new repo that’s identical t
 
 By the end of this series, we want to have a starter template that covers the vast majority of behind-the-scenes project needs, so that we can start building the thing right away. At a minimum, we want the following to be good to go out of the box:
 
-* [Basic project structure and configuration (Part One)](../eleventy-starter-structure)
-* [HTML files generated from templates (Part Two)](../eleventy-starter-html)
-* [CSS support (Part Three)](../eleventy-starter-css)
-* [JavaScript support (Part Four)](../eleventy-starter-javascript)
-* [Legacy JavaScript Builds and TypeScript Support (Part Five)](../eleventy-starter-legacy-js-and-typescript)
-* [Minimum PWA requirements met (Part Six)](../eleventy-starter-pwa-support)
-* [Code quality and maintenance tools in place (Part Seven)](../eleventy-starter-maintenance-and-collaboration)
+- [Basic project structure and configuration (Part One)](../eleventy-starter-structure)
+- [HTML files generated from templates (Part Two)](../eleventy-starter-html)
+- [CSS support (Part Three)](../eleventy-starter-css)
+- [JavaScript support (Part Four)](../eleventy-starter-javascript)
+- [Legacy JavaScript Builds and TypeScript Support (Part Five)](../eleventy-starter-legacy-js-and-typescript)
+- [Minimum PWA requirements met (Part Six)](../eleventy-starter-pwa-support)
+- [Code quality and maintenance tools in place (Part Seven)](../eleventy-starter-maintenance-and-collaboration)
 
 Let’s break these down and define some goals for what we want our project starter to do.
 
@@ -110,12 +110,12 @@ In Part Five of this series, we’ll work through the checklist of things that n
 
 From the earlier sections, we should have linting and testing set up, but we can take further steps to ensure a high level of code quality. Some things worth considering:
 
-* Ensuring linting and test scripts pass before merging Pull Requests
-* Tracking test coverage levels
-* Putting in performance budgets and regularly testing deploys
-* Keeping third-party dependencies up to date
-* Creating templates for Issues and Pull Requests, if you’ll be working with others
-* Setting up automatic deployments, for production and/or branch deploys
+- Ensuring linting and test scripts pass before merging Pull Requests
+- Tracking test coverage levels
+- Putting in performance budgets and regularly testing deploys
+- Keeping third-party dependencies up to date
+- Creating templates for Issues and Pull Requests, if you’ll be working with others
+- Setting up automatic deployments, for production and/or branch deploys
 
 Part Six of this series will go into more depth on these topics, and we’ll set up the tooling to make sure our code is high quality and easy to maintain.
 

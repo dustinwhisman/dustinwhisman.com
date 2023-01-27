@@ -5,47 +5,15 @@
   --terminal: hwb(180deg 85% 5%);
 
   /* font families */
-  --serif:
-    'Supreme',
-    'Iowan Old Style',
-    'Apple Garamond',
-    'Baskerville',
-    'Times New Roman',
-    'Droid Serif',
-    'Times',
-    'Source Serif Pro',
-    serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  --sans:
-    'Recia',
-    -apple-system,
-    'BlinkMacSystemFont',
-    'avenir next',
-    'avenir',
-    'segoe ui',
-    'helvetica neue',
-    'helvetica',
-    'Ubuntu',
-    'roboto',
-    'noto',
-    'arial',
-    sans-serif;
-  --mono:
-    ui-monospace,
-    menlo,
-    monaco,
-    'Cascadia Mono',
-    'Segoe UI Mono',
-    'Roboto Mono',
-    'Oxygen Mono',
-    'Ubuntu Monospace',
-    'Source Code Pro',
-    'Fira Mono',
-    'Droid Sans Mono',
-    'Courier New',
-    monospace;
+  --serif: 'Supreme', 'Iowan Old Style', 'Apple Garamond', 'Baskerville',
+    'Times New Roman', 'Droid Serif', 'Times', 'Source Serif Pro', serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --sans: 'Recia', -apple-system, 'BlinkMacSystemFont', 'avenir next', 'avenir',
+    'segoe ui', 'helvetica neue', 'helvetica', 'Ubuntu', 'roboto', 'noto',
+    'arial', sans-serif;
+  --mono: ui-monospace, menlo, monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   /* sizes */
   --size-s5: clamp(2.5rem, 2rem + 1.65vw, 3rem);

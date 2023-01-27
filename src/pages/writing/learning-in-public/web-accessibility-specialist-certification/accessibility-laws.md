@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: Accessibility Laws | Writing | Dustin Whisman"
+title: 'WAS Notes: Accessibility Laws | Writing | Dustin Whisman'
 description: This is an overview of accessibility laws throughout the world and how they apply to digital accessibility.
-articleTitle: "WAS Notes: Accessibility Laws"
+articleTitle: 'WAS Notes: Accessibility Laws'
 layout: layout.njk
 date: 2023-01-13T00:00:01Z
 tags:
@@ -69,7 +69,7 @@ The Canadian government published web standards for [accessibility](http://www.t
 
 ### Ontario: The Accessibility for Ontarians with Disabilities Act (AODA)
 
-The [AODA](http://www.e-laws.gov.on.ca/html/statutes/english/elaws_statutes_05a11_e.htm) applies to *basically anyone* who does anything in Ontario.
+The [AODA](http://www.e-laws.gov.on.ca/html/statutes/english/elaws_statutes_05a11_e.htm) applies to _basically anyone_ who does anything in Ontario.
 
 ### Quebec: Standards sur l’accessibilitié du Web
 

@@ -1,7 +1,7 @@
 ---
-title: "Eleventy Starter: Legacy JS Builds and TypeScript Support | Writing | Dustin Whisman"
+title: 'Eleventy Starter: Legacy JS Builds and TypeScript Support | Writing | Dustin Whisman'
 description: This article is about supporting older browsers while still writing modern JS, and it extends what's already there to support TypeScript.
-articleTitle: "Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support"
+articleTitle: 'Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support'
 layout: layout.njk
 date: 2022-08-24
 tags:
@@ -55,12 +55,17 @@ const fs = require('fs');
 const path = require('path');
 
 // return any files matching in the directory (non-recursively)
-const getEntryPoints = (directory) => fs.readdirSync(path.join(__dirname, directory))
-  .filter((file) => !fs.statSync(path.join(directory, file)).isDirectory())
-  .reduce((entries, file) => ({
-    ...entries,
-    [file.split('.')[0]]: `./${directory}/${file}`,
-  }), {});
+const getEntryPoints = (directory) =>
+  fs
+    .readdirSync(path.join(__dirname, directory))
+    .filter((file) => !fs.statSync(path.join(directory, file)).isDirectory())
+    .reduce(
+      (entries, file) => ({
+        ...entries,
+        [file.split('.')[0]]: `./${directory}/${file}`,
+      }),
+      {},
+    );
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -217,13 +222,9 @@ We need to update our `.eslintrc.json` file to support the new parser, plugins, 
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "tsconfigRootDir": ".",
-    "project": [
-      "./tsconfig.json"
-    ]
+    "project": ["./tsconfig.json"]
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -312,10 +313,7 @@ These will enable both `babel` and `webpack` to understand and process TypeScrip
 
 ```json
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-typescript"
-  ]
+  "presets": ["@babel/preset-env", "@babel/preset-typescript"]
 }
 ```
 
@@ -340,10 +338,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [
-      '.ts',
-      '.js',
-    ],
+    extensions: ['.ts', '.js'],
   },
   output: {
     filename: '[name].legacy.js',
@@ -373,8 +368,8 @@ Then in another page, such as `about.njk`, we can add a `scripts` block and put 
 
 ```html
 {% raw %}{% block scripts %}
-  <script src="/multiplicative-math.js" type="module"></script>
-  <script src="/multiplicative-math.legacy.js" nomodule></script>
+<script src="/multiplicative-math.js" type="module"></script>
+<script src="/multiplicative-math.legacy.js" nomodule></script>
 {% endblock %}{% endraw %}
 ```
 

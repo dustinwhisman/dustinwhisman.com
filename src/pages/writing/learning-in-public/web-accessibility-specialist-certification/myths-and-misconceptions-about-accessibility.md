@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: Myths and Misconceptions About Accessibility | Writing | Dustin Whisman"
+title: 'WAS Notes: Myths and Misconceptions About Accessibility | Writing | Dustin Whisman'
 description: This is a summary of some common arguments used to avoid building for accessibility and why those arguments are ultimately wrong.
-articleTitle: "WAS Notes: Myths and Misconceptions About Accessibility"
+articleTitle: 'WAS Notes: Myths and Misconceptions About Accessibility'
 layout: layout.njk
 date: 2023-01-17
 tags:
@@ -26,15 +26,15 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 ### Truth: Accessibility benefits a wide variety of people
 
 - Making things easier for disabled people to use also makes them easier for everyone to use
-    - Accessible websites work better on different devices, browsers, and operating systems (including older versions)
-    - They’re also easier for SEO bots to index and catalog, making them easier to find
-    - They’re easier to use in different situations (bright sunlight, one-handed, etc.)
+  - Accessible websites work better on different devices, browsers, and operating systems (including older versions)
+  - They’re also easier for SEO bots to index and catalog, making them easier to find
+  - They’re easier to use in different situations (bright sunlight, one-handed, etc.)
 - Anyone can acquire a disability, such as:
-    - Diminished senses or cognition due to age
-    - Injuries and illnesses, both temporary and long-term
+  - Diminished senses or cognition due to age
+  - Injuries and illnesses, both temporary and long-term
 - Disabilities are a sizeable minority
-    - About 20% of the population has some sort of disability
-    - It’s not a nice-to-have, it’s necessary and non-negotiable
+  - About 20% of the population has some sort of disability
+  - It’s not a nice-to-have, it’s necessary and non-negotiable
 
 ## Myth: Accessibility is a short-term project
 

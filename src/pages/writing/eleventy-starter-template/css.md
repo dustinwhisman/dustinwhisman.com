@@ -1,7 +1,7 @@
 ---
-title: "Eleventy Starter: CSS | Writing | Dustin Whisman"
+title: 'Eleventy Starter: CSS | Writing | Dustin Whisman'
 description: This article covers supporting CSS, or SCSS more specifically, in an Eleventy project.
-articleTitle: "Building an Eleventy Starter Template: CSS"
+articleTitle: 'Building an Eleventy Starter Template: CSS'
 layout: layout.njk
 date: 2022-06-15
 tags:
@@ -115,28 +115,28 @@ Now that we have our SCSS being compiled and written to `dist/styles.css`, we ne
 
 ```html
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>{% raw %}{{ title }}{% endraw %}</title>
-  <meta name="description" content="{% raw %}{{ description }}{% endraw %}">
+  <meta name="description" content="{% raw %}{{ description }}{% endraw %}" />
 
   <!-- TODO: add link tags, other meta tags, open graph info, etc. -->
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 ```
 
 If you run `npm start` and open the site (`http://localhost:8080`), you should see a bright pink heading followed by a purple paragraph. However, you may notice that if you change `styles.scss`, the page doesn’t reload, even though `sass` recompiled the styles. We can fix that by updating our `.eleventy.js` file.
 
 ```js
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/scss/');
 
   return {
     dir: {
-    input: 'src/pages',
-    output: 'dist',
-    includes: '../partials',
+      input: 'src/pages',
+      output: 'dist',
+      includes: '../partials',
     },
   };
 };
@@ -156,9 +156,7 @@ We’ll need to configure `stylelint` with some basic rules, so we’ll add a `.
 
 ```json
 {
-  "extends": [
-    "stylelint-config-standard-scss"
-  ],
+  "extends": ["stylelint-config-standard-scss"],
   "rules": {
     "function-no-unknown": null,
     "string-quotes": "single"
@@ -196,12 +194,12 @@ Now we’ll be able to lint our HTML and our CSS all in one go by running `npm r
 
 For this template repo, I organized my default styles following [ITCSS conventions](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), so my `src/scss` folder contains the following folders:
 
-* `settings`: variables used elsewhere
-* `tools`: functions and mixins
-* `generic`: CSS resets and low-specificity styles
-* `elements`: default styles for HTML tags, such as h1, p, ul, etc.
-* `components`: specific component styles (for the starter template, these are mostly layout components)
-* `utilities`: helpful utility styles
+- `settings`: variables used elsewhere
+- `tools`: functions and mixins
+- `generic`: CSS resets and low-specificity styles
+- `elements`: default styles for HTML tags, such as h1, p, ul, etc.
+- `components`: specific component styles (for the starter template, these are mostly layout components)
+- `utilities`: helpful utility styles
 
 The details of those default styles are beyond the scope of this series, but for the curious, you can see the boilerplate styles I used in the [repo](https://github.com/dustin-jw/eleventy-starter/tree/main/src/scss).
 

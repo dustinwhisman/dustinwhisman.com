@@ -9,11 +9,11 @@ jobs:
       - name: Check commit message type
         uses: gsactions/commit-message-checker@v1
         with:
-          pattern: "^(feat|fix|docs|style|refactor|test|chore).+"
-          error: "Commit messages must begin with a valid commit type."
-          excludeDescription: "true"
-          excludeTitle: "true"
-          checkAllCommitMessages: "true"
+          pattern: '^(feat|fix|docs|style|refactor|test|chore).+'
+          error: 'Commit messages must begin with a valid commit type.'
+          excludeDescription: 'true'
+          excludeTitle: 'true'
+          checkAllCommitMessages: 'true'
           accessToken: ${{ secrets.GITHUB_TOKEN }}
 
   lint-and-test:
@@ -23,7 +23,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18.x"
+          node-version: '18.x'
       - name: install npm dependencies
         run: npm ci
       - name: run linters

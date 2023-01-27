@@ -1,9 +1,9 @@
 ---
-name: "Contact"
-about: "Send Dustin a message... but, like, not in a threatening way."
-title: "[Contact] _Treat this like a subject line_"
-labels: "contact"
-assignees: ""
+name: 'Contact'
+about: 'Send Dustin a message... but, like, not in a threatening way.'
+title: '[Contact] _Treat this like a subject line_'
+labels: 'contact'
+assignees: ''
 ---
 
 # Hello, Dustin

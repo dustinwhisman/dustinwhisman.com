@@ -4,17 +4,14 @@ const md = require('markdown-it');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setServerOptions({
-    watch: [
-      'dist/**/*.css',
-      'dist/**/*.js',
-    ],
+    watch: ['dist/**/*.css', 'dist/**/*.js'],
   });
 
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
 
   const markdownOptions = {
     html: true,
-    highlight: function(str, lang) {
+    highlight: function (str, lang) {
       if (lang && hljs.getLanguage(lang)) {
         try {
           return `<pre tabindex="0"><code class="language-${lang}">${
@@ -29,7 +26,7 @@ module.exports = function (eleventyConfig) {
       }
 
       return `<pre tabindex="0"><code>${md.utils.escapeHtml(str)}</code></pre>`;
-    }
+    },
   };
 
   eleventyConfig.setLibrary('md', md(markdownOptions));
