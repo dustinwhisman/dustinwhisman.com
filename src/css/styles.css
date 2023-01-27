@@ -3,53 +3,53 @@
 @import './elements/_root.css';
 
 h1 {
-  font-size: clamp(2rem, 1.65rem + 1.4vw, 2.5rem);
+  font-size: var(--size-s4);
   font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-bottom: 0.65em;
 }
 
 h2 {
-  font-size: clamp(1.7rem, 1.4rem + 1.15vw, 2rem);
+  font-size: var(--size-s3);
   font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-block-start: 0.65em;
 }
 
 h3 {
-  font-size: clamp(1.44rem, 1.15rem + 0.96vw, 1.7rem);
+  font-size: var(--size-s2);
   font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-block-start: 0.65em;
 }
 
 h4 {
-  font-size: clamp(1.2rem, 0.96rem + 0.8vw, 1.44rem);
+  font-size: var(--size-s1);
   font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-block-start: 0.65em;
 }
 
 p {
-  font-size: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  font-size: var(--size-s0);
   line-height: calc(1em + 0.5rem);
 }
 
 header {
-  padding-block: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
-  margin-block-end: clamp(2rem, 1.65rem + 1.4vw, 2.5rem);
+  padding-block: var(--size-s0);
+  margin-block-end: var(--size-s4);
 }
 
 footer {
-  padding-block: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
-  margin-block-start: clamp(2rem, 1.65rem + 1.4vw, 2.5rem);
+  padding-block: var(--size-s0);
+  margin-block-start: var(--size-s4);
 }
 
 pre {
   font-family: var(--mono);
   background-color: var(--terminal);
   border-radius: 0.25rem;
-  padding: clamp(1.7rem, 1.4rem + 1.15vw, 2rem);
+  padding: var(--size-s3);
   white-space: pre;
   overflow-x: auto;
 }
@@ -67,7 +67,7 @@ pre code {
   background-color: var(--terminal);
   display: inline-block;
   font-size: 100%;
-  padding-inline: 0 clamp(1.7rem, 1.4rem + 1.15vw, 2rem);
+  padding-inline: 0 var(--size-s3);
 }
 
 code {
@@ -101,17 +101,17 @@ a[aria-current=page] {
 }
 
 ul {
-  font-size: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  font-size: var(--size-s0);
   line-height: calc(1em + 0.5rem);
 }
 
 ol {
-  font-size: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  font-size: var(--size-s0);
   line-height: calc(1em + 0.5rem);
 }
 
 dl {
-  font-size: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  font-size: var(--size-s0);
   line-height: calc(1em + 0.5rem);
 }
 
@@ -120,8 +120,8 @@ dt {
 }
 
 dd {
-  margin-block-start: clamp(0.4rem, 0.33rem + 0.25vw, 0.5rem);
-  padding-inline-start: clamp(0.7rem, 0.55rem + 0.45vw, 0.83rem);
+  margin-block-start: var(--size-s-5);
+  padding-inline-start: var(--size-s-1);
   border-inline-start: 0.125em solid var(--ink);
 }
 
@@ -133,11 +133,11 @@ dd {
 .cmp-stack {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  gap: var(--size-s0);
 }
 
 .cmp-stack--giga {
-  gap: clamp(2.5rem, 2rem + 1.65vw, 3rem);
+  gap: var(--size-s5);
 }
 
 .cmp-skip-to-content:focus {
@@ -153,9 +153,9 @@ dd {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  gap: var(--size-s0);
   padding-inline: 0;
-  font-size: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  font-size: var(--size-s0);
 }
 
 .cmp-project__list {
@@ -163,30 +163,30 @@ dd {
   padding-inline: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: clamp(2.5rem, 2rem + 1.65vw, 3rem);
+  gap: var(--size-s5);
 }
 
 .cmp-project__card {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  gap: var(--size-s0);
   align-items: flex-start;
 }
 
 .cmp-project__heading {
-  font-size: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  font-size: var(--size-s0);
   margin: 0;
 }
 
 .cmp-project__group-heading {
-  margin-block-start: clamp(2.5rem, 2rem + 1.65vw, 3rem);
-  margin-block-end: clamp(1.7rem, 1.4rem + 1.15vw, 2rem);
+  margin-block-start: var(--size-s5);
+  margin-block-end: var(--size-s3);
 }
 
 .cmp-project__type {
   color: var(--ink);
-  font-size: clamp(0.83rem, 0.67rem + 0.55vw, 1rem);
-  padding-inline-start: clamp(0.5rem, 0.4rem + 0.33vw, 0.6rem);
+  font-size: var(--size-s-1);
+  padding-inline-start: var(--size-s-4);
   border-inline-start: 0.125em solid var(--ink);
 }
 
@@ -221,11 +221,11 @@ dd {
 }
 
 .cmp-project__skip-link {
-  margin-block-end: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  margin-block-end: var(--size-s0);
 }
 
 .cmp-badge {
-  font-size: clamp(0.7rem, 0.55rem + 0.45vw, 0.83rem);
+  font-size: var(--size-s-1);
 }
 
 .cmp-badge__list {
@@ -233,14 +233,14 @@ dd {
   padding-inline: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  gap: var(--size-s0);
 }
 
 .cmp-article-listing__list {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
-  font-size: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  gap: var(--size-s0);
+  font-size: var(--size-s0);
 }
 
 .cmp-article-listing__link {
@@ -250,7 +250,7 @@ dd {
 
 .cmp-pictures-of-cats__grid {
   display: grid;
-  gap: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  gap: var(--size-s0);
   grid-template-columns: 1fr;
 }
 
@@ -287,7 +287,7 @@ dd {
 .cmp-pictures-of-cats__image {
   --shadow-color: 0deg 0% 0%;
   box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color)/10%), 1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color)/10%), 2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color)/10%), 4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color)/10%), 7.1px 14.3px 18px -1.4px hsl(var(--shadow-color)/10%), 11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color)/10%), 17px 33.9px 42.7px -2.1px hsl(var(--shadow-color)/10%), 25px 50px 62.9px -2.5px hsl(var(--shadow-color)/10%);
-  border-radius: clamp(0.4rem, 0.33rem + 0.25vw, 0.5rem);
+  border-radius: var(--size-s-5);
   width: 100%;
   height: auto;
 }
@@ -301,21 +301,21 @@ dd {
   height: auto;
   border-radius: 50%;
   shape-outside: circle(50%);
-  margin-block-end: clamp(0.5rem, 0.4rem + 0.33vw, 0.6rem);
-  margin-inline-end: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  margin-block-end: var(--size-s-4);
+  margin-inline-end: var(--size-s0);
 }
 
 .cmp-it-me > p + p {
-  margin-block-start: clamp(1rem, 0.8rem + 0.67vw, 1.2rem);
+  margin-block-start: var(--size-s0);
 }
 
 .cmp-fine-print {
-  font-size: clamp(0.83rem, 0.67rem + 0.55vw, 1rem);
+  font-size: var(--size-s-1);
   font-style: italic;
 }
 
 .cmp-article__image {
-  margin: clamp(1rem, 0.8rem + 0.67vw, 1.2rem) auto;
+  margin: var(--size-s0) auto;
 }
 
 .hljs-attr, .hljs-attribute, .hljs-built_in, .hljs-comment, .hljs-keyword, .hljs-meta, .hljs-name, .hljs-number, .hljs-params, .hljs-property, .hljs-regexp, .hljs-section, .hljs-selector-tag, .hljs-string, .hljs-tag, .hljs-title, .hljs-variable {
