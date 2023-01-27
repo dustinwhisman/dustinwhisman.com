@@ -13,6 +13,8 @@
     "build": "run-s eleventy:build sass:build",
     "eleventy:dev": "eleventy --serve --incremental",
     "eleventy:build": "eleventy",
+    "css:dev": "postcss src/css/*.css --dir dist --watch",
+    "css:build": "postcss src/css/*.css --dir dist --no-map",
     "sass:dev": "sass --watch --embed-source-map src/scss:dist",
     "sass:build": "sass --no-source-map --style=compressed src/scss:dist",
     "clean": "rm -rf dist",
