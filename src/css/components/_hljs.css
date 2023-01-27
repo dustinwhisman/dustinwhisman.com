@@ -1,0 +1,109 @@
+.hljs-attr,
+.hljs-attribute,
+.hljs-built_in,
+.hljs-comment,
+.hljs-keyword,
+.hljs-meta,
+.hljs-name,
+.hljs-number,
+.hljs-params,
+.hljs-property,
+.hljs-regexp,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-string,
+.hljs-tag,
+.hljs-title,
+.hljs-variable {
+  color: var(--ink);
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-params {
+  --ink: hwb(200deg 10% 50%);
+}
+
+.hljs-built_in,
+.hljs-title.function_,
+.hljs-number {
+  --ink: hwb(72deg 0% 60%);
+}
+
+.hljs-comment {
+  --ink: hwb(120deg 0% 60%);
+}
+
+.hljs-tag {
+  --ink: hwb(220deg 50% 70%);
+}
+
+.hljs-keyword,
+.hljs-meta,
+.hljs-tag .hljs-name,
+.hljs-selector-tag {
+  --ink: hwb(220deg 0% 50%);
+}
+
+.hljs-property,
+.hljs-variable {
+  --ink: hwb(170deg 0% 60%);
+}
+
+.hljs-regexp {
+  --ink: hwb(0deg 0% 50%);
+}
+
+.hljs-section {
+  --ink: hwb(206deg 0% 30%);
+}
+
+.hljs-string {
+  --ink: hwb(36deg 0% 50%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .hljs-attr,
+  .hljs-attribute,
+  .hljs-params {
+    --ink: hwb(200deg 50% 10%);
+  }
+
+  .hljs-built_in,
+  .hljs-title.function_,
+  .hljs-number {
+    --ink: hwb(72deg 50% 10%);
+  }
+
+  .hljs-comment {
+    --ink: hwb(120deg 50% 35%);
+  }
+
+  .hljs-tag {
+    --ink: hwb(220deg 100% 50%);
+  }
+
+  .hljs-keyword,
+  .hljs-meta,
+  .hljs-tag .hljs-name,
+  .hljs-selector-tag {
+    --ink: hwb(220deg 50% 0%);
+  }
+
+  .hljs-property,
+  .hljs-variable {
+    --ink: hwb(170deg 50% 10%);
+  }
+
+  .hljs-regexp {
+    --ink: hwb(0deg 50% 0%);
+  }
+
+  .hljs-section {
+    --ink: hwb(206deg 50% 0%);
+  }
+
+  .hljs-string {
+    --ink: hwb(36deg 50% 0%);
+  }
+}

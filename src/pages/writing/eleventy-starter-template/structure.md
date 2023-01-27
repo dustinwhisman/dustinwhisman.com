@@ -1,7 +1,7 @@
 ---
-title: "Eleventy Starter: Project Setup | Writing | Dustin Whisman"
+title: 'Eleventy Starter: Project Setup | Writing | Dustin Whisman'
 description: This article covers the basics of setting up an Eleventy project's file structure and basic configuration.
-articleTitle: "Building an Eleventy Starter Template: Project Setup and Configuration"
+articleTitle: 'Building an Eleventy Starter Template: Project Setup and Configuration'
 layout: layout.njk
 date: 2022-04-06
 tags:
@@ -108,13 +108,13 @@ The ideal project structure should be easy to navigate so that newcomers can und
 
 Within `src`, we will want a couple of folders to start with:
 
-* `pages`: this will be where we put our individual pages
-* `partials`: this will be where we put layouts and reusable HTML templates
+- `pages`: this will be where we put our individual pages
+- `partials`: this will be where we put layouts and reusable HTML templates
 
 We can configure this with Eleventy by adding a config file named `.eleventy.js` at the project root.
 
 ```js
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   return {
     // configuration object for directories
     dir: {
@@ -144,16 +144,19 @@ If we run `npm run build`, we should see that file get transformed into HTML and
 Our HTML layout is going to be a shell that will surround the content from individual pages. It will be reused by different pages, so our main concern is the document structure. We’ll use Nunjucks as our templating language throughout this project, so let’s create a `layout.njk` file in the `src/partials` folder and set up our bare minimum HTML structure.
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- TODO: make these dynamic -->
     <title>Eleventy Starter</title>
-    <meta name="description" content="This describes the content of the page.">
+    <meta
+      name="description"
+      content="This describes the content of the page."
+    />
 
     <!-- TODO: add link tags, other meta tags, open graph info, etc. -->
   </head>
@@ -162,9 +165,7 @@ Our HTML layout is going to be a shell that will surround the content from indiv
     <header>
       <p>This is the header.</p>
     </header>
-    <main>
-      {% raw %}{{ content | safe }}{% endraw %}
-    </main>
+    <main>{% raw %}{{ content | safe }}{% endraw %}</main>
     <footer>
       <p>This is the footer.</p>
     </footer>

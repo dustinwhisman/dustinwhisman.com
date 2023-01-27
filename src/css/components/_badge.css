@@ -1,0 +1,11 @@
+.cmp-badge {
+  font-size: var(--size-s-1);
+}
+
+.cmp-badge__list {
+  list-style: none;
+  padding-inline: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-s0);
+}

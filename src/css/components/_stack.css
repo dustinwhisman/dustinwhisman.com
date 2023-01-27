@@ -1,0 +1,9 @@
+.cmp-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-s0);
+}
+
+.cmp-stack--s5 {
+  gap: var(--size-s5);
+}

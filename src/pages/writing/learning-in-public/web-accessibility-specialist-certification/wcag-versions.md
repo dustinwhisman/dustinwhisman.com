@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: WCAG Versions | Writing | Dustin Whisman"
+title: 'WAS Notes: WCAG Versions | Writing | Dustin Whisman'
 description: What do the different WCAG version numbers actually mean, and which ones apply right now?
-articleTitle: "WAS Notes: WCAG Versions"
+articleTitle: 'WAS Notes: WCAG Versions'
 layout: layout.njk
 date: 2023-01-18T00:00:00Z
 tags:
@@ -27,5 +27,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - These subsequent version numbers only add new success criteria, so if you meet the 2.1 criteria, you also meet the 2.0 criteria
   - [New in 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
   - [New in 2.2 Draft](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/)
-- WCAG 3 is an early draft (at time of writing) and will take a *****while***** before it is published
+- WCAG 3 is an early draft (at time of writing) and will take a **\***while**\*** before it is published
 - The Web Content Accessibility Guidelines are developed by the Accessibility Guidelines Working Group, which is part of the World Wide Web Consortium Web Accessibility Initiative. Or put another way: WCAG is developed by the AG WG, which is part of the W3C WAI.

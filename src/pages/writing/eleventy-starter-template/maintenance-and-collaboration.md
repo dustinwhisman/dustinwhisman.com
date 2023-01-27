@@ -1,7 +1,7 @@
 ---
-title: "Eleventy Starter: Maintenance and Collaboration | Writing | Dustin Whisman"
+title: 'Eleventy Starter: Maintenance and Collaboration | Writing | Dustin Whisman'
 description: This article is about handling dependency updates, maintaining code quality, and providing templates for pull requests and issues for better collaboration.
-articleTitle: "Building an Eleventy Starter Template: Maintenance and Collaboration"
+articleTitle: 'Building an Eleventy Starter Template: Maintenance and Collaboration'
 layout: layout.njk
 date: 2022-11-02
 tags:
@@ -118,10 +118,10 @@ jobs:
 
 In this configuration file, we’ve done the following:
 
-* Named the action
-* Set this workflow to run on all pull requests
-* Told the action to run on the latest version of Ubuntu, using Node v16
-* Defined the steps to perform (installing dependencies, then running our linting and testing scripts)
+- Named the action
+- Set this workflow to run on all pull requests
+- Told the action to run on the latest version of Ubuntu, using Node v16
+- Defined the steps to perform (installing dependencies, then running our linting and testing scripts)
 
 If packages can’t be installed or if either of the `lint` or `test` scripts fail, the workflow will fail, which will be visible on the PR. If everything works and there are no errors, the workflow will succeed and let reviewers know that the code can at least pass the linting and testing bar.
 
@@ -256,13 +256,13 @@ To see how the Bug Report template looks when fully filled out, you can see [thi
 
 Look how far we’ve come! We started with nothing, and now we have a starter template with all this great stuff:
 
-* A project file structure that’s easy to navigate
-* Simple HTML templates that makes adding new pages easy
-* SCSS support, including linting
-* JavaScript _and_ TypeScript support, including linting and testing
-* Accessibility checks that run on our production-ready site
-* Legacy JS bundles for the older browsers still out in the wild
-* Progressive Web App support
-* Tooling to make maintenance and collaboration easier
+- A project file structure that’s easy to navigate
+- Simple HTML templates that makes adding new pages easy
+- SCSS support, including linting
+- JavaScript _and_ TypeScript support, including linting and testing
+- Accessibility checks that run on our production-ready site
+- Legacy JS bundles for the older browsers still out in the wild
+- Progressive Web App support
+- Tooling to make maintenance and collaboration easier
 
 That’s a wrap on this series, but the project will live on! If you have ideas for how to make this starter template even more robust, please [create issues on the repo](https://github.com/dustin-jw/eleventy-starter/issues), or [fork it](https://github.com/dustin-jw/eleventy-starter/fork) and make tweaks to suit your own project needs.

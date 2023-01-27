@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: WAI-ARIA Overview | Writing | Dustin Whisman"
+title: 'WAS Notes: WAI-ARIA Overview | Writing | Dustin Whisman'
 description: This is an overview of what the Accessible Rich Internet Applications are and what they're used for.
-articleTitle: "WAS Notes: WAI-ARIA Overview"
+articleTitle: 'WAS Notes: WAI-ARIA Overview'
 layout: layout.njk
 date: 2023-01-13T00:00:00Z
 tags:

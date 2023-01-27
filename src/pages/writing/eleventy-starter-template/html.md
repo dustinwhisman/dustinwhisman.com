@@ -1,7 +1,7 @@
 ---
-title: "Eleventy Starter: HTML | Writing | Dustin Whisman"
+title: 'Eleventy Starter: HTML | Writing | Dustin Whisman'
 description: This article goes into detail about setting up HTML layouts and page structures using Eleventy, as well as setting up an HTML linter to check for accessibility issues.
-articleTitle: "Building an Eleventy Starter Template: HTML"
+articleTitle: 'Building an Eleventy Starter Template: HTML'
 layout: layout.njk
 date: 2022-05-18
 tags:
@@ -37,6 +37,7 @@ Previously, we created a `layout.njk` file with our HTML structure and an `index
 
 ```md
 ---
+
 title: Home Page
 description: This is the home page. It isn't very interesting right now.
 layout: layout.njk
@@ -48,15 +49,15 @@ However, our `layout.njk` has static values for title and description, so the on
 Nunjucks uses curly braces, similar to Handlebars, Vue, or Angular, to include dynamic content. If we change the `title` and meta description tags, we’ll be able to reference those front matter variables in the layout. Here’s our updated `layout.njk` file:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>{% raw %}{{ title }}{% endraw %}</title>
-    <meta name="description" content="{% raw %}{{ description }}{% endraw %}">
+    <meta name="description" content="{% raw %}{{ description }}{% endraw %}" />
 
     <!-- TODO: add link tags, other meta tags, open graph info, etc. -->
   </head>
@@ -65,9 +66,7 @@ Nunjucks uses curly braces, similar to Handlebars, Vue, or Angular, to include d
     <header>
       <p>This is the header.</p>
     </header>
-    <main>
-      {% raw %}{{ content | safe }}{% endraw %}
-    </main>
+    <main>{% raw %}{{ content | safe }}{% endraw %}</main>
     <footer>
       <p>This is the footer.</p>
     </footer>
@@ -124,35 +123,27 @@ By wrapping our dynamic blocks this way, the default markup and content will be 
 Let’s change `about.md` to `about.njk`, and let’s add a `contact.njk` file for contrast. In the About page, we’ll override the header and footer with page-specific content.
 
 ```hbs
----
-title: About
-description: This is the about page. You might put biographical information here if it's for a personal website or portfolio.
----
-
-{% raw %}{% extends 'layout.njk' %}
-
-{% block header %}
-  <header>
-    <p>
-      This header has custom content specific to the current page.
-    </p>
-  </header>
-{% endblock %}
-
-{% block footer %}
-  <footer>
-    <p>
-      This footer has custom content specific to the current page.
-    </p>
-  </footer>
-{% endblock %}
-
-{% block content %}
-  <h1>About</h1>
-
+--- title: About description: This is the about page. You might put biographical
+information here if it's for a personal website or portfolio. --- {% raw %}{%
+extends 'layout.njk' %} {% block header %}
+<header>
   <p>
-    This is the About page. You may not want or need this, so feel free to delete it if it isn't useful to you!
+    This header has custom content specific to the current page.
   </p>
+</header>
+{% endblock %} {% block footer %}
+<footer>
+  <p>
+    This footer has custom content specific to the current page.
+  </p>
+</footer>
+{% endblock %} {% block content %}
+<h1>About</h1>
+
+<p>
+  This is the About page. You may not want or need this, so feel free to delete
+  it if it isn't useful to you!
+</p>
 {% endblock %}{% endraw %}
 ```
 
@@ -165,9 +156,7 @@ description: This is the contact page. You might use this to provide methods for
 layout: layout.njk
 ---
 
-<h1>
-  Contact Page
-</h1>
+<h1>Contact Page</h1>
 
 <p>
   This is the Contact Page. If you wanted people to be able to reach you, you
@@ -207,10 +196,7 @@ Let’s create a configuration file at the root of our project and call it `.pa1
 ```json
 {
   "defaults": {
-    "runners": [
-      "axe",
-      "htmlcs"
-    ]
+    "runners": ["axe", "htmlcs"]
   }
 }
 ```

@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: ATAG Guidelines | Writing | Dustin Whisman"
+title: 'WAS Notes: ATAG Guidelines | Writing | Dustin Whisman'
 description: This is an overview of what the Authoring Tool Accessibility Guidelines are for and how they're structured.
-articleTitle: "WAS Notes: ATAG Guidelines"
+articleTitle: 'WAS Notes: ATAG Guidelines'
 layout: layout.njk
 date: 2023-01-12T00:00:01Z
 tags:

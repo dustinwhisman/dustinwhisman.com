@@ -1,7 +1,7 @@
 ---
-title: "Eleventy Starter: JavaScript | Writing | Dustin Whisman"
+title: 'Eleventy Starter: JavaScript | Writing | Dustin Whisman'
 description: This article goes into detail about setting up a modern JS bundling process for an Eleventy project, including some details about linting and testing.
-articleTitle: "Building an Eleventy Starter Template: JavaScript"
+articleTitle: 'Building an Eleventy Starter Template: JavaScript'
 layout: layout.njk
 date: 2022-07-27
 tags:
@@ -98,9 +98,9 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-    input: 'src/pages',
-    output: 'dist',
-    includes: '../partials',
+      input: 'src/pages',
+      output: 'dist',
+      includes: '../partials',
     },
   };
 };
@@ -131,10 +131,7 @@ We’ll need to do some configuration to let `eslint` know what rules to use. Le
 ```json
 {
   "root": true,
-  "extends": [
-    "eslint:recommended",
-    "airbnb-base"
-  ],
+  "extends": ["eslint:recommended", "airbnb-base"],
   "rules": {
     "import/prefer-default-export": 0
   }
@@ -173,10 +170,10 @@ npm install --save-dev jest jest-environment-jsdom babel-jest @babel/core @babel
 
 Let’s break down what each of these are and why we need them:
 
-* `jest` is the test runner
-* `jest-environment-jsdom` lets us specify that our JS is meant to run in browsers and lets us use DOM-specific methods in our tests
-* `babel-jest` and `@babel/core` are necessary for `jest` to be able to understand ESM-style imports (annoyingly)
-* `babel-preset-env` is needed to specify the target environment for `babel` to transform our code to for testing
+- `jest` is the test runner
+- `jest-environment-jsdom` lets us specify that our JS is meant to run in browsers and lets us use DOM-specific methods in our tests
+- `babel-jest` and `@babel/core` are necessary for `jest` to be able to understand ESM-style imports (annoyingly)
+- `babel-preset-env` is needed to specify the target environment for `babel` to transform our code to for testing
 
 We need to do some configuration here, so let’s create a file called `jest.config.js`.
 

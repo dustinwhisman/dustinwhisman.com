@@ -1,7 +1,7 @@
 ---
-title: "Eleventy Starter: Progressive Web App Support | Writing | Dustin Whisman"
+title: 'Eleventy Starter: Progressive Web App Support | Writing | Dustin Whisman'
 description: This article goes over a minimal approach to turn an Eleventy site into a Progressive Web App.
-articleTitle: "Building an Eleventy Starter Template: Progressive Web App Support"
+articleTitle: 'Building an Eleventy Starter Template: Progressive Web App Support'
 layout: layout.njk
 date: 2022-09-28
 tags:
@@ -46,14 +46,14 @@ Before we get started, let’s put together a list of what we need to do to make
 
 We have quite a few failures in that audit, so let’s organize them in a checklist and then fix them one by one.
 
-* Add a robots.txt file (technically an SEO thing, but we might as well add one)
-* Add missing icons
-  * favicon.svg and/or favicon.png
-  * apple-touch-icon
-  * Maskable icon
-  * Splash screen icon
-* Add a web app manifest (manifest.json)
-* Add a service worker
+- Add a robots.txt file (technically an SEO thing, but we might as well add one)
+- Add missing icons
+  - favicon.svg and/or favicon.png
+  - apple-touch-icon
+  - Maskable icon
+  - Splash screen icon
+- Add a web app manifest (manifest.json)
+- Add a service worker
 
 ### Adding a `robots.txt` File
 
@@ -90,7 +90,7 @@ To generate the icons, I created a tiny SVG icon (`favicon.svg`), then converted
 ```html
 <!-- favicon.svg -->
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="8" cy="8" r="8" fill="rebeccapurple"/>
+  <circle cx="8" cy="8" r="8" fill="rebeccapurple" />
 </svg>
 ```
 
@@ -192,15 +192,10 @@ const CACHE_KEYS = {
 const EXCLUDED_URLS = [];
 
 // add any urls that you want cached when the service worker is installed
-const PRE_CACHE_URLS = [
-  '/',
-  '/styles.css',
-];
+const PRE_CACHE_URLS = ['/', '/styles.css'];
 
 // add any hosts that you want to bypass
-const IGNORED_HOSTS = [
-  'localhost',
-];
+const IGNORED_HOSTS = ['localhost'];
 ```
 
 We’ll have two `CACHE_KEYS` to manage assets that should be treated differently. Anything that we specifically want to cache when the user visits the site for the first time should go into the `PRE_CACHE` cache and anything that gets picked up as the user browses the site will go into the `RUNTIME` cache. We’re using a version number to make the values distinct. That will be important when we update the site and want the old assets and URLs to be deleted from the cache.
@@ -226,8 +221,12 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((cacheNames) => cacheNames.filter((item) => !Object.values(CACHE_KEYS).includes(item)))
-      .then((itemsToDelete) => Promise.all(itemsToDelete.map((item) => caches.delete(item))))
+      .then((cacheNames) =>
+        cacheNames.filter((item) => !Object.values(CACHE_KEYS).includes(item)),
+      )
+      .then((itemsToDelete) =>
+        Promise.all(itemsToDelete.map((item) => caches.delete(item))),
+      )
       .then(() => self.clients.claim()),
   );
 });
@@ -260,12 +259,13 @@ self.addEventListener('fetch', (event) => {
         return cachedResponse;
       }
 
-      return caches.open(CACHE_KEYS.RUNTIME).then((cache) => (
-        fetch(event.request)
-          .then((response) => (
-            cache.put(event.request, response.clone()).then(() => response)
-          ))
-      ));
+      return caches
+        .open(CACHE_KEYS.RUNTIME)
+        .then((cache) =>
+          fetch(event.request).then((response) =>
+            cache.put(event.request, response.clone()).then(() => response),
+          ),
+        );
     }),
   );
 });
@@ -292,7 +292,8 @@ module.exports = {
   // generate a random string for service worker versioning, such as "36f4-1234-8c7a"
   random() {
     // eslint-disable-next-line no-bitwise
-    const segment = () => (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+    const segment = () =>
+      (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
 
     return `${segment()}-${segment()}-${segment()}`;
   },
@@ -338,10 +339,10 @@ We should be PWA-ready now! If we run another Lighthouse audit against our site,
 
 Our starter template is looking really good now. Just running through the checklist, we have:
 
-* Solid project architecture
-* Strong HTML foundations, including linting for accessibility
-* CSS/SCSS support, including linting
-* JavaScript and TypeScript support for both modern and legacy browsers, including linting and testing
-* Basic installation requirements met to make our site a Progressive Web App
+- Solid project architecture
+- Strong HTML foundations, including linting for accessibility
+- CSS/SCSS support, including linting
+- JavaScript and TypeScript support for both modern and legacy browsers, including linting and testing
+- Basic installation requirements met to make our site a Progressive Web App
 
 With all of that in place, we’ll finish the series by shifting focus to our development workflow. Join us next time when we cover build pipelines, dependency management, and collaboration.

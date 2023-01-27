@@ -10,20 +10,13 @@ const CACHE_KEYS = {
 const EXCLUDED_URLS = [];
 
 // add any urls that you want cached when the service worker is installed
-const PRE_CACHE_URLS = [
-  '/',
-  '/styles.css',
-];
+const PRE_CACHE_URLS = ['/', '/styles.css'];
 
 // add any hosts that you want to bypass
-const IGNORED_HOSTS = [
-  'localhost',
-];
+const IGNORED_HOSTS = ['localhost'];
 
 // add any protocols that you want to bypass
-const IGNORED_PROTOCOLS = [
-  'chrome-extension:',
-];
+const IGNORED_PROTOCOLS = ['chrome-extension:'];
 
 const addItemsToCache = (cacheName, items = []) => {
   caches.open(cacheName).then((cache) => cache.addAll(items));
@@ -39,8 +32,12 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((cacheNames) => cacheNames.filter((item) => !Object.values(CACHE_KEYS).includes(item)))
-      .then((itemsToDelete) => Promise.all(itemsToDelete.map((item) => caches.delete(item))))
+      .then((cacheNames) =>
+        cacheNames.filter((item) => !Object.values(CACHE_KEYS).includes(item)),
+      )
+      .then((itemsToDelete) =>
+        Promise.all(itemsToDelete.map((item) => caches.delete(item))),
+      )
       .then(() => self.clients.claim()),
   );
 });
@@ -70,12 +67,13 @@ self.addEventListener('fetch', (event) => {
         return cachedResponse;
       }
 
-      return caches.open(CACHE_KEYS.RUNTIME).then((cache) => (
-        fetch(event.request)
-          .then((response) => (
-            cache.put(event.request, response.clone()).then(() => response)
-          ))
-      ));
+      return caches
+        .open(CACHE_KEYS.RUNTIME)
+        .then((cache) =>
+          fetch(event.request).then((response) =>
+            cache.put(event.request, response.clone()).then(() => response),
+          ),
+        );
     }),
   );
 });

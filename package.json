@@ -9,17 +9,16 @@
   "scripts": {
     "prestart": "check-node-version --package && npm run clean",
     "prebuild": "check-node-version --package && npm run clean",
-    "start": "run-p eleventy:dev sass:dev",
-    "build": "run-s eleventy:build sass:build",
+    "start": "run-p eleventy:dev css:dev",
+    "build": "run-s eleventy:build css:build",
     "eleventy:dev": "eleventy --serve --incremental",
     "eleventy:build": "eleventy",
-    "sass:dev": "sass --watch --embed-source-map src/scss:dist",
-    "sass:build": "sass --no-source-map --style=compressed src/scss:dist",
+    "css:dev": "postcss src/css/*.css --dir dist --watch",
+    "css:build": "postcss src/css/*.css --dir dist --no-map",
     "clean": "rm -rf dist",
     "lint": "run-s lint:css lint:js",
-    "lint:css": "stylelint \"src/scss/**/*.scss\" --color --formatter verbose",
+    "lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
     "lint:js": "eslint . --ext .js",
-    "test": "vitest --passWithNoTests --run",
     "test:e2e": "cypress run --e2e",
     "test:open": "cypress open --e2e",
     "update-deps": "ncu -u",
@@ -28,7 +27,8 @@
     "images:jpg": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -path ../src/public/images/cats *.jpg",
     "images:webp": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -format webP -path ../src/public/images/cats/webp *.jpg",
     "images:avif": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 50 -format avif -path ../src/public/images/cats/avif *.jpg",
-    "images:clean": "rm -rf pictures-of-cats/*.jpg"
+    "images:clean": "rm -rf pictures-of-cats/*.jpg",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Dustin Whisman",
@@ -36,14 +36,21 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0-beta.2",
     "check-node-version": "^4.2.1",
+    "cssnano": "^5.1.14",
     "dotenv": "^16.0.3",
     "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "npm-check-updates": "^16.6.2",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.57.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.3",
     "stylelint": "^14.16.1",
-    "stylelint-config-standard-scss": "^6.1.0",
-    "vitest": "^0.27.3"
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0"
   },
   "browserslist": [
     ">0%",
@@ -58,5 +65,10 @@
     "highlight.js": "^11.7.0",
     "image-size": "^1.0.2",
     "markdown-it": "^13.0.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }

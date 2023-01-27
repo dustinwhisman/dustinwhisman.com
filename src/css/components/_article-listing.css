@@ -1,0 +1,11 @@
+.cmp-article-listing__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-s0);
+  font-size: var(--size-s0);
+}
+
+.cmp-article-listing__link {
+  display: block;
+  width: fit-content;
+}
