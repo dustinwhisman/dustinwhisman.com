@@ -1,0 +1,23 @@
+h1 {
+  font-size: var(--size-s4);
+  font-family: var(--sans);
+  margin-bottom: 0.65em;
+}
+
+h2 {
+  font-size: var(--size-s3);
+  font-family: var(--sans);
+  margin-block-start: 0.65em;
+}
+
+h3 {
+  font-size: var(--size-s2);
+  font-family: var(--sans);
+  margin-block-start: 0.65em;
+}
+
+h4 {
+  font-size: var(--size-s1);
+  font-family: var(--sans);
+  margin-block-start: 0.65em;
+}

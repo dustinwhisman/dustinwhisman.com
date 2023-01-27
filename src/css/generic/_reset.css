@@ -58,3 +58,7 @@ body > footer {
   position: sticky;
   top: 100vh;
 }
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl) {
+  line-height: calc(1em + 0.5rem);
+}
