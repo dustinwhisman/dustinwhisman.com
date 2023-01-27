@@ -24,15 +24,6 @@ npm run lint:css
 npm run lint:js
 npm run lint:html
 
-# run tests once
-npm run test
-
-# run tests in "watch" mode
-npm run test -- --watch
-
-# run tests and generate a coverage report
-npm run test -- --coverage
-
 # update any outdated npm dependencies
 npm run update-deps
 ```
