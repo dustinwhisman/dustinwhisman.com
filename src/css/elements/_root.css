@@ -1,12 +1,53 @@
 :root {
+  /* colors */
   --ink: hwb(0deg 10% 90%);
   --paper: hwb(0deg 95% 5%);
   --terminal: hwb(180deg 85% 5%);
 
-  --serif: "Supreme", "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --sans: "Recia", -apple-system, "BlinkMacSystemFont", "avenir next", "avenir", "segoe ui", "helvetica neue", "helvetica", "Ubuntu", "roboto", "noto", "arial", sans-serif;
-  --mono: ui-monospace, menlo, monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  /* font families */
+  --serif:
+    'Supreme',
+    'Iowan Old Style',
+    'Apple Garamond',
+    'Baskerville',
+    'Times New Roman',
+    'Droid Serif',
+    'Times',
+    'Source Serif Pro',
+    serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --sans:
+    'Recia',
+    -apple-system,
+    'BlinkMacSystemFont',
+    'avenir next',
+    'avenir',
+    'segoe ui',
+    'helvetica neue',
+    'helvetica',
+    'Ubuntu',
+    'roboto',
+    'noto',
+    'arial',
+    sans-serif;
+  --mono:
+    ui-monospace,
+    menlo,
+    monaco,
+    'Cascadia Mono',
+    'Segoe UI Mono',
+    'Roboto Mono',
+    'Oxygen Mono',
+    'Ubuntu Monospace',
+    'Source Code Pro',
+    'Fira Mono',
+    'Droid Sans Mono',
+    'Courier New',
+    monospace;
 
+  /* sizes */
   --size-s5: clamp(2.5rem, 2rem + 1.65vw, 3rem);
   --size-s4: clamp(2rem, 1.65rem + 1.4vw, 2.5rem);
   --size-s3: clamp(1.7rem, 1.4rem + 1.15vw, 2rem);
@@ -30,6 +71,7 @@
     --ink: hwb(0deg 95% 5%);
     --paper: hwb(0deg 10% 90%);
     --terminal: hwb(200deg 0% 75%);
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

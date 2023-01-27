@@ -2,7 +2,8 @@ a {
   color: currentcolor;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -15,7 +16,7 @@ a:focus:not(:focus-visible) {
   outline-color: transparent;
 }
 
-a[aria-current=page] {
+a[aria-current='page'] {
   text-transform: uppercase;
   text-decoration: none;
 }

@@ -1,5 +1,7 @@
+/* reset */
 @import './generic/_reset.css';
 
+/* elements */
 @import './elements/_root.css';
 @import './elements/_headings.css';
 @import './elements/_p.css';
@@ -9,6 +11,7 @@
 @import './elements/_a.css';
 @import './elements/_lists.css';
 
+/* components */
 @import './components/_container.css';
 @import './components/_stack.css';
 @import './components/_skip-to-content.css';
@@ -22,4 +25,5 @@
 @import './components/_article.css';
 @import './components/_hljs.css';
 
+/* utilities */
 @import './utilities/_visually-hidden.css';
