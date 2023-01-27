@@ -1,0 +1,19 @@
+:root {
+  --ink: hwb(0deg 10% 90%);
+  --paper: hwb(0deg 95% 5%);
+  --terminal: hwb(180deg 85% 5%);
+  font-family: "Supreme", "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color-scheme: light dark;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: hwb(0deg 95% 5%);
+    --paper: hwb(0deg 10% 90%);
+    --terminal: hwb(200deg 0% 75%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

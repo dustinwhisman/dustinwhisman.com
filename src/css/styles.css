@@ -1,24 +1,6 @@
 @import './generic/_reset.css';
 
-:root {
-  --ink: #1a1a1a;
-  --paper: #f2f2f2;
-  --terminal: #d9f2f2;
-  font-family: "Supreme", "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color-scheme: light dark;
-  background-color: var(--paper);
-  color: var(--ink);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #f2f2f2;
-    --paper: #1a1a1a;
-    --terminal: #002b40;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-}
+@import './elements/_root.css';
 
 h1 {
   font-size: clamp(2.0736rem, 1.65888rem + 1.3824vw, 2.48832rem);
