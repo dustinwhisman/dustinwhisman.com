@@ -64,3 +64,67 @@ An alternative for time-base media or an audio description is provided for prere
 - Provide versions of a video with audio descriptions or extended audio descriptions
 - Provide a static text alternative when there is no time-based visual information in the video
 - `track[kind=description]` is your friend here
+
+## 1.2.4 Captions (Live) - Level AA
+
+Captions are provided for live audio content in synchronized media.
+
+### How to Succeed
+
+- Create captions using stenographic/rapid typing techniques or speech-to-text with correction
+- Provide open captions (always on)
+- Provide closed captions (user selectable)
+
+## 1.2.5 Audio Description (Prerecorded) - Level AA
+
+Audio description is provided for all prerecorded synchronized video content.
+
+This is very similar to 1.2.3, but without the condition that you can provide a text alternative. This is more strict and applies whether there’s a text version or not.
+
+###  How to Succeed
+
+- Provide selectable audio tracks that include audio descriptions
+- Provide versions of a video with audio descriptions or extended audio descriptions
+- Provide a static text alternative when there is no time-based visual information in the video
+- `track[kind=description]` is your friend here
+
+## 1.2.6 Sign Language (Prerecorded) - Level AAA
+
+Sign language interpretation is provided for all prerecorded audio content in synchronized media.
+
+### How to Succeed
+
+- Include a sign language interpreter in the video
+- Provide a synchronized video of a sign language interpreter that is separate from the original video
+
+## 1.2.7 Extended Audio Description (Prerecorded) - Level AAA
+
+When foreground audio is too dense to allow for audio descriptions, extended descriptions are provided for prerecorded video.
+
+Extended audio descriptions temporarily pause the video to make space for descriptions of the necessary visual information.
+
+### How to Succeed
+
+Provide an extended audio description–simple enough.
+
+## 1.2.8 Media Alternative (Prerecorded) - Level AAA
+
+An alternative for time-base media is provided for all prerecorded synchronized or video-only media.
+
+### How to Succeed
+
+Provide alternatives, such as transcripts, screenplays, written instructions, etc.
+
+### How to Fail
+
+Don’t label the media as an alternative to text (as in a video that repeats the same information as text on the page).
+
+## 1.2.9 Audio-only (Live) - Level AAA
+
+An alternative for live audio-only content is provided.
+
+### How to Succeed
+
+- Provide written materials if the audio is scripted, like a prepared speech or scripted content
+- Use stenographic/rapid typing techniques or speech-to-text with corrections
+- Use a live audio captioning service
