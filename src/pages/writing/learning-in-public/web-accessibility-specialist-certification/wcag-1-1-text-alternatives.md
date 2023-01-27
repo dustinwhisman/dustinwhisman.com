@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: WCAG 1.1.1 Non-text Content | Writing | Dustin Whisman"
-description: How do you meet WCAG 1.1.1 Non-text Content?
-articleTitle: "WAS Notes: WCAG 1.1.1 Non-text Content"
+title: "WAS Notes: WCAG 1.1 Text Alternatives | Writing | Dustin Whisman"
+description: How do you meet the success criteria for WCAG 1.1 Text Alternatives?
+articleTitle: "WAS Notes: WCAG 1.1 Text Alternatives"
 layout: layout.njk
 date: 2023-01-25T00:00:00Z
 tags:
@@ -10,7 +10,7 @@ tags:
   - WAS certification
 ---
 
-# WAS Notes: WCAG 1.1.1 Non-text Content
+# WAS Notes: WCAG 1.1 Text Alternatives
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
@@ -21,7 +21,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   </time>
 </p>
 
-## Level A
+## 1.1.1 Non-text Content - Level A
 
 All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except in some situations where the content is purely decorative and should be ignored by assistive technology.
 
