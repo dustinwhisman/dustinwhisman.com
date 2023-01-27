@@ -1,0 +1,8 @@
+.cmp-skip-to-content:focus {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5em;
+  background-color: var(--paper);
+  outline-offset: 0;
+}

@@ -1,0 +1,24 @@
+.cmp-it-me__image {
+  --shadow-color: 0deg 0% 0%;
+  box-shadow:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 10%),
+    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 10%),
+    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 10%),
+    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 10%),
+    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 10%),
+    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 10%),
+    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 10%),
+    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 10%);
+  float: left;
+  float: inline-start;
+  max-width: min(30vw, 200px);
+  height: auto;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  margin-block-end: var(--size-s-4);
+  margin-inline-end: var(--size-s0);
+}
+
+.cmp-it-me > p + p {
+  margin-block-start: var(--size-s0);
+}
