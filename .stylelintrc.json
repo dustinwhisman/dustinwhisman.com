@@ -1,9 +1,9 @@
 {
   "extends": [
-    "stylelint-config-standard"
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
   ],
   "rules": {
-    "string-quotes": "single",
     "import-notation": "string",
     "selector-class-pattern": null
   }
