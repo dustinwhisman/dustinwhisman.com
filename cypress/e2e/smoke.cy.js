@@ -1,4 +1,5 @@
-/* global cy Cypress describe it */
+/* eslint-env node, jest */
+/* globals cy Cypress */
 require('cypress-each');
 
 const terminalLog = (violations) => {

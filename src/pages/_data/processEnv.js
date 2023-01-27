@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+/* eslint-env node */
 require('dotenv').config();
 
 module.exports = {
