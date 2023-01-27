@@ -14,7 +14,7 @@
   @media (prefers-color-scheme: dark) {
     --ink: #{color.hwb(0deg 95% 5%)};
     --paper: #{color.hwb(0deg 10% 90%)};
-    --terminal: #{hwb(200deg 0% 75%)};
+    --terminal: #{color.hwb(200deg 0% 75%)};
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
