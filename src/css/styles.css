@@ -22,11 +22,4 @@
 @import './components/_article.css';
 @import './components/_hljs.css';
 
-.util-visually-hidden:not(:focus) {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  clip-path: inset(50%);
-  overflow: hidden;
-  white-space: nowrap;
-}
+@import './utilities/_utilities.css';
