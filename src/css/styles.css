@@ -4,28 +4,28 @@
 
 h1 {
   font-size: clamp(2.0736rem, 1.65888rem + 1.3824vw, 2.48832rem);
-  font-family: "Recia", -apple-system, "BlinkMacSystemFont", "avenir next", "avenir", "segoe ui", "helvetica neue", "helvetica", "Ubuntu", "roboto", "noto", "arial", sans-serif;
+  font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-bottom: 0.65em;
 }
 
 h2 {
   font-size: clamp(1.728rem, 1.3824rem + 1.152vw, 2.0736rem);
-  font-family: "Recia", -apple-system, "BlinkMacSystemFont", "avenir next", "avenir", "segoe ui", "helvetica neue", "helvetica", "Ubuntu", "roboto", "noto", "arial", sans-serif;
+  font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-block-start: 0.65em;
 }
 
 h3 {
   font-size: clamp(1.44rem, 1.152rem + 0.96vw, 1.728rem);
-  font-family: "Recia", -apple-system, "BlinkMacSystemFont", "avenir next", "avenir", "segoe ui", "helvetica neue", "helvetica", "Ubuntu", "roboto", "noto", "arial", sans-serif;
+  font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-block-start: 0.65em;
 }
 
 h4 {
   font-size: clamp(1.2rem, 0.96rem + 0.8vw, 1.44rem);
-  font-family: "Recia", -apple-system, "BlinkMacSystemFont", "avenir next", "avenir", "segoe ui", "helvetica neue", "helvetica", "Ubuntu", "roboto", "noto", "arial", sans-serif;
+  font-family: var(--sans);
   line-height: calc(1em + 0.5rem);
   margin-block-start: 0.65em;
 }
@@ -46,7 +46,7 @@ footer {
 }
 
 pre {
-  font-family: ui-monospace, menlo, monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  font-family: var(--mono);
   background-color: var(--terminal);
   border-radius: 0.25rem;
   padding: clamp(1.728rem, 1.3824rem + 1.152vw, 2.0736rem);
@@ -71,7 +71,7 @@ pre code {
 }
 
 code {
-  font-family: ui-monospace, menlo, monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  font-family: var(--mono);
   font-size: 85%;
   background-color: var(--terminal);
   padding-inline: 0.25ch;
