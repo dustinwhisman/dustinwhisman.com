@@ -1,0 +1,32 @@
+pre {
+  font-family: var(--mono);
+  background-color: var(--terminal);
+  border-radius: 0.25rem;
+  padding: var(--size-s3);
+  white-space: pre;
+  overflow-x: auto;
+}
+
+pre[tabindex="0"]:focus {
+  outline: 0.125em solid var(--ink);
+  outline-offset: 0.25em;
+}
+
+pre[tabindex="0"]:focus:not(:focus-visible) {
+  outline-color: transparent;
+}
+
+pre code {
+  background-color: var(--terminal);
+  display: inline-block;
+  font-size: 100%;
+  padding-inline: 0 var(--size-s3);
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 85%;
+  background-color: var(--terminal);
+  padding-inline: 0.25ch;
+  border-radius: 0.25em;
+}

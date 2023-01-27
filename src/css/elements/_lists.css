@@ -1,0 +1,21 @@
+ul {
+  font-size: var(--size-s0);
+}
+
+ol {
+  font-size: var(--size-s0);
+}
+
+dl {
+  font-size: var(--size-s0);
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-block-start: var(--size-s-5);
+  padding-inline-start: var(--size-s-1);
+  border-inline-start: 0.125em solid var(--ink);
+}

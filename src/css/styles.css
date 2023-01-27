@@ -2,97 +2,12 @@
 
 @import './elements/_root.css';
 @import './elements/_headings.css';
-
-p {
-  font-size: var(--size-s0);
-}
-
-header {
-  padding-block: var(--size-s0);
-  margin-block-end: var(--size-s4);
-}
-
-footer {
-  padding-block: var(--size-s0);
-  margin-block-start: var(--size-s4);
-}
-
-pre {
-  font-family: var(--mono);
-  background-color: var(--terminal);
-  border-radius: 0.25rem;
-  padding: var(--size-s3);
-  white-space: pre;
-  overflow-x: auto;
-}
-
-pre[tabindex="0"]:focus {
-  outline: 0.125em solid var(--ink);
-  outline-offset: 0.25em;
-}
-
-pre[tabindex="0"]:focus:not(:focus-visible) {
-  outline-color: transparent;
-}
-
-pre code {
-  background-color: var(--terminal);
-  display: inline-block;
-  font-size: 100%;
-  padding-inline: 0 var(--size-s3);
-}
-
-code {
-  font-family: var(--mono);
-  font-size: 85%;
-  background-color: var(--terminal);
-  padding-inline: 0.25ch;
-  border-radius: 0.25em;
-}
-
-a {
-  color: currentcolor;
-}
-
-a:hover, a:focus {
-  text-decoration: none;
-}
-
-a:focus {
-  outline: 0.125em solid var(--ink);
-  outline-offset: 0.25em;
-}
-
-a:focus:not(:focus-visible) {
-  outline-color: transparent;
-}
-
-a[aria-current=page] {
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-ul {
-  font-size: var(--size-s0);
-}
-
-ol {
-  font-size: var(--size-s0);
-}
-
-dl {
-  font-size: var(--size-s0);
-}
-
-dt {
-  font-weight: 700;
-}
-
-dd {
-  margin-block-start: var(--size-s-5);
-  padding-inline-start: var(--size-s-1);
-  border-inline-start: 0.125em solid var(--ink);
-}
+@import './elements/_p.css';
+@import './elements/_header.css';
+@import './elements/_footer.css';
+@import './elements/_pre-code.css';
+@import './elements/_a.css';
+@import './elements/_lists.css';
 
 .cmp-container {
   width: min(100vw - 2rem, 50rem);
