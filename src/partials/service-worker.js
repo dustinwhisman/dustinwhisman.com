@@ -1,5 +1,4 @@
 /* global VERSION */
-/* eslint-disable no-restricted-globals */
 /* eslint-env serviceworker */
 
 const CACHE_KEYS = {

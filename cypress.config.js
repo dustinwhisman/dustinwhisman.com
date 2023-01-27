@@ -23,13 +23,11 @@ module.exports = defineConfig({
     setupNodeEvents: async (on, config) => {
       on('task', {
         log(message) {
-          // eslint-disable-next-line no-console
           console.log(message);
 
           return null;
         },
         table(message) {
-          // eslint-disable-next-line no-console
           console.table(message);
 
           return null;
@@ -37,7 +35,6 @@ module.exports = defineConfig({
       });
 
       const pages = await sitemapLocations();
-      // eslint-disable-next-line no-param-reassign
       config.env.pages = pages;
       return config;
     },
