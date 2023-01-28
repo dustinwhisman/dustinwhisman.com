@@ -33,5 +33,8 @@ jobs:
             git commit -m "chore: update npm dependencies"
             git push --set-upstream origin feat--update-deps-$(date +'%Y-%m-%d')
 
-            gh pr create --title "chore: update npm dependencies" --body "### Description\n\nThis updates the following npm packages to their latest versions.\n$(sed '1,2d;$d' updates.txt)#### To Validate\n\n1. Make sure all PR Checks have passed\n2. Check the deploy preview to make sure nothihng is obviously broken\n3. Check the changelogs of affected packages to make sure there aren't any breaking changes to account for"
+            updates=$(sed '1,2d;$d' updates.txt)
+            echo -e "### Description\n\nThis updates the following npm packages to their latest versions.\n\n$updates\n\n#### To Validate\n\n1. Make sure all PR Checks have passed\n2. Check the deploy preview to make sure nothing is obviously broken\n3. Check the changelogs of affected packages to make sure there are no breaking changes to account for" > pr-body.txt
+
+            gh pr create --title "chore: update npm dependencies" --body "$(cat pr-body.txt)"
           fi
