@@ -21,8 +21,14 @@ jobs:
         run: npm ci
       - name: Check for updates
         run: npx npm-check-updates -u > updates.txt && git diff package.json | grep '^[+-]'
-      - name: Create an issue if there are updates
+      - name: Create a pull request if there are updates
         run: |
           if [ $? -eq 0 ]; then
-            gh issue create -t "Updates available for npm packages" -b "$(sed '1,2d;$d' updates.txt)"
+            git checkout -b feat--update-deps-$(date +'%Y-%m-%d')
+            npm install
+            git add package.json package-lock.json
+            git commit -m "chore: update npm dependencies"
+            git push --set-upstream origin feat--update-deps-$(date +'%Y-%m-%d')
+
+            gh pr create --title "chore: update npm dependencies" --body "### Description\n\nThis updates the following npm packages to their latest versions.\n$(sed '1,2d;$d' updates.txt)#### To Validate\n\n1. Make sure all PR Checks have passed\n2. Check the deploy preview to make sure nothihng is obviously broken\n3. Check the changelogs of affected packages to make sure there aren't any breaking changes to account for"
           fi
