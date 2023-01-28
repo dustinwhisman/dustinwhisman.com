@@ -18,7 +18,7 @@ jobs:
       - name: install npm dependencies
         run: npm ci
       - name: Check for updates
-        run: npx npm-check-updates -u > updates.txt && git diff package.json | grep -q '^[+-]'
+        run: npx npm-check-updates -u > updates.txt && git diff package.json | grep '^[+-]'
       - name: Create an issue if there are updates
         run: |
           if [ $? -eq 0 ]; then
