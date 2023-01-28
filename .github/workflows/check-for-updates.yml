@@ -22,5 +22,5 @@ jobs:
       - name: Create an issue if there are updates
         run: |
           if [ $? -eq 0 ]; then
-            gh issue create -t "Updates available for npm packages" -b $(cat updates.txt) -a ${{secrets.GH_PAT}}
+            gh issue create -t "Updates available for npm packages" -b "$(sed '1,2d;$d' updates.txt)" -a ${{secrets.GH_PAT}}
           fi
