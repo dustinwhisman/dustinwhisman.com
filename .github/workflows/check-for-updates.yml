@@ -1,9 +1,8 @@
 name: Check for npm updates
 
 on:
-  pull_request:
-  # schedule:
-  #   - cron: '0 13 * * 6'
+  schedule:
+    - cron: '0 13 * * 6'
 
 jobs:
   check-for-updates:
