@@ -34,7 +34,7 @@
   "author": "Dustin Whisman",
   "license": "CC BY 4.0",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-beta.2",
+    "@11ty/eleventy": "^2.0.0-beta.3",
     "check-node-version": "^4.2.1",
     "cssnano": "^5.1.14",
     "dotenv": "^16.0.3",
