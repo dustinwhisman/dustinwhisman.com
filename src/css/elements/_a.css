@@ -17,6 +17,15 @@ a:focus:not(:focus-visible) {
 }
 
 a[aria-current='page'] {
-  text-transform: uppercase;
-  text-decoration: none;
+  --underline-color: hwb(240deg 50% 0%);
+
+  text-decoration-color: var(--underline-color);
+  text-decoration-thickness: 0.125em;
+  text-decoration-style: dotted;
+}
+
+@media (prefers-color-scheme: dark) {
+  a[aria-current='page'] {
+    --underline-color: hwb(300deg 50% 0%);
+  }
 }
