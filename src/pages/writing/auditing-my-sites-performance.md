@@ -43,9 +43,11 @@ Fair enough, but it’s not a massive performance issue, and I could do any of t
 - Self-host the fonts
 - Use system fonts instead
 
-WebPageTest reported other issues with the fonts, like them not being on CDNs and stuff like that. I think I’ll go ahead and replace them with system fonts, partially for performance and partially because I’m not too attached to the fonts I chose. I mean, what’s going on with these numbers? I’m sure there’s a way to normalize the height, but I think I’d rather just ditch the font for now.
+WebPageTest reported other issues with the fonts, like them not being on CDNs and stuff like that. I think I’ll go ahead and replace them with system fonts, partially for performance and partially because I’m not too attached to the fonts I chose. For example:
 
 <img src="/images/auditing-my-sites-performance/uneven-numbers.png" alt="An example of numbers displaying strangely for text including '1.3.6'. The 3 is lower than the 1, and the 6 is higher than the 3 and the 1." class="cmp-article__image">
+
+I mean, what’s going on with these numbers? I’m sure there’s a way to normalize the height, but I think I’d rather just ditch the font for now.
 
 My `/styles.css` file is considered a blocking resource, so occasionally Lighthouse or WebPageTest would recommend inlining my CSS. I’m not going to do that, though. My service worker is set up to pre-cache my styles, and we’re looking at less than 2.5kb compressed anyway, so I’m not concerned about it.
 
