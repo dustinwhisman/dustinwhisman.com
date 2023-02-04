@@ -21,7 +21,7 @@
   ],
   "start_url": "/",
   "background_color": "#1a1a1a",
-  "display": "browser",
+  "display": "minimal-ui",
   "scope": "/",
   "theme_color": "#1a1a1a",
   "description": "Dustin Whisman's very own personal website. How indie, how 2006."
