@@ -32,10 +32,3 @@ layout: layout.njk
     <p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
   {% endif %}
 {% endfor %}
-
-<!-- <div class="cmp-pictures-of-cats__grid">
-  {% from 'macros/cat-picture.njk' import catPicture %}
-  {% for image in global.picturesOfCats %}
-    {{ catPicture(image, loop.index, 6) }}
-  {% endfor %}
-</div> -->
