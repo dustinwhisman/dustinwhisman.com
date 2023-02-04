@@ -31,6 +31,8 @@ jobs:
 
   run-e2e-tests:
     runs-on: ubuntu-latest
+    env:
+      BASE_URL: http://localhost:8080
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
