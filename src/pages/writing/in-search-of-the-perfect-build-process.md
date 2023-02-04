@@ -17,7 +17,7 @@ tags:
   </time>
 </p>
 
-If you've taken the time to read my [series on creating an Eleventy starter template](/writing/eleventy-starter-template), you may have the (correct) impression that I think about build processes quite a bit. One of the goals of that project and the resulting [starter template](https://github.com/dustin-jw/eleventy-starter) was to have something I could use to quickly get a new site up and running with very little effort.
+If you've taken the time to read my [series on creating an Eleventy starter template](/writing/eleventy-starter-template/), you may have the (correct) impression that I think about build processes quite a bit. One of the goals of that project and the resulting [starter template](https://github.com/dustin-jw/eleventy-starter) was to have something I could use to quickly get a new site up and running with very little effort.
 
 I think I achieved that goal reasonably well, considering that I used it to create this very site–a quick look back at the commit history shows that my first commit was on a Saturday morning, and by Sunday afternoon, the first version of the site was live. However, I also built that starter template to cover a wide range of scenarios that might not apply to every project, including this site, so I'm going to walk through some of the changes I've made recently to clean up the build process.
 
