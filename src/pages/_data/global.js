@@ -33,9 +33,23 @@ const getImagePaths = () => {
 };
 
 const picturesOfCats = getImagePaths();
-const catPictureRows = Math.max(
-  ...picturesOfCats.map((picture) => picture.rowStart + picture.rowSpan),
-);
+const catsByMonth = picturesOfCats.reduce((monthsObj, picture) => {
+  const date = picture.name.substring(4, 12);
+  const monthSlug = `${date.slice(0, 4)}-${date.slice(4, 6)}`;
+  const monthDisplayName = new Date(monthSlug).toLocaleDateString(undefined, {
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: 'long',
+  });
+
+  return {
+    ...monthsObj,
+    [monthSlug]: {
+      name: monthDisplayName,
+      pictures: [...(monthsObj[monthSlug]?.pictures ?? []), picture],
+    },
+  };
+}, {});
 
 const projects = [
   {
@@ -148,5 +162,5 @@ module.exports = {
   projects,
   recentProjects: projects.slice(0, 4),
   picturesOfCats: getImagePaths(),
-  catPictureRows,
+  catsByMonth,
 };
