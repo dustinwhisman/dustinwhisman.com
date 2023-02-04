@@ -15,12 +15,14 @@ layout: layout.njk
 </p>
 
 {% from 'macros/cat-picture.njk' import catPicture %}
+{% set imagesRendered = 0 %}
 {% for month, monthData in global.catsByMonth %}
   {% if loop.index <= 3 %}
     <h2>{{ monthData.name }}</h2>
     <div class="cmp-pictures-of-cats__grid">
       {% for image in monthData.pictures %}
-        {{ catPicture(image, loop.index, 6) }}
+        {% set imagesRendered = imagesRendered + 1 %}
+        {{ catPicture(image, imagesRendered, 4) }}
       {% endfor %}
     </div>
   {% elseif loop.index === 4 %}
