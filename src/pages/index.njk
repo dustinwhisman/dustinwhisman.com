@@ -70,7 +70,7 @@ layout: layout.njk
       {% from 'macros/cat-picture.njk' import catPicture %}
       {% for image in global.picturesOfCats %}
         {% if loop.index <= 4 %}
-          {{ catPicture(image, loop.index) }}
+          {{ catPicture(image, loop.index, 0) }}
         {% endif %}
       {% endfor %}
     </div>

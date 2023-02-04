@@ -17,6 +17,6 @@ layout: layout.njk
 <div class="cmp-pictures-of-cats__grid">
   {% from 'macros/cat-picture.njk' import catPicture %}
   {% for image in global.picturesOfCats %}
-    {{ catPicture(image, loop.index) }}
+    {{ catPicture(image, loop.index, 6) }}
   {% endfor %}
 </div>
