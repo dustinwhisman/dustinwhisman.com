@@ -32,7 +32,7 @@ jobs:
   run-e2e-tests:
     runs-on: ubuntu-latest
     env:
-      BASE_URL: http://localhost:8080
+      BASE_URL: http://localhost:3000
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
@@ -45,5 +45,5 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           build: npm run build
-          start: npm start
+          start: npx serve dist
           command: npx cypress run
