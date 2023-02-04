@@ -16,15 +16,31 @@ jobs:
           checkAllCommitMessages: 'true'
           accessToken: ${{ secrets.GITHUB_TOKEN }}
 
-  lint-and-test:
+  install:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - name: install npm dependencies
+      - name: Install npm dependencies
         run: npm ci
-      - name: run linters
+      - name: Persist workspace
+        uses: actions/upload-artifact@v3
+        with:
+          name: workspace
+          path: .
+          retention-days: 1
+
+  lint-and-test:
+    runs-on: ubuntu-latest
+    needs: install
+    steps:
+      - name: Use workspace
+        uses: actions/download-artifact@v3
+        with:
+          name: workspace
+      - name: Run linters
         run: npm run lint
