@@ -14,9 +14,26 @@ layout: layout.njk
   fuzzy belly", or "The brothers cuddling in an adorable way".
 </p>
 
-<div class="cmp-pictures-of-cats__grid">
+{% from 'macros/cat-picture.njk' import catPicture %}
+{% for month, monthData in global.catsByMonth %}
+  {% if loop.index <= 3 %}
+    <h2>{{ monthData.name }}</h2>
+    <div class="cmp-pictures-of-cats__grid">
+      {% for image in monthData.pictures %}
+        {{ catPicture(image, loop.index, 6) }}
+      {% endfor %}
+    </div>
+  {% elseif loop.index === 4 %}
+    <h2>Older Pictures</h2>
+    <p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
+  {% else %}
+    <p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
+  {% endif %}
+{% endfor %}
+
+<!-- <div class="cmp-pictures-of-cats__grid">
   {% from 'macros/cat-picture.njk' import catPicture %}
   {% for image in global.picturesOfCats %}
     {{ catPicture(image, loop.index, 6) }}
   {% endfor %}
-</div>
+</div> -->
