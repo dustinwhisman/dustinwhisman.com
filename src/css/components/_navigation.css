@@ -6,3 +6,7 @@
   padding-inline: 0;
   font-size: var(--size-s0);
 }
+
+.cmp-navigation--basic-pagination {
+  justify-content: space-between;
+}

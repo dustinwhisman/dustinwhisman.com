@@ -31,5 +31,14 @@ permalink: "cats/{{ month | slug }}/"
       {{ catPicture(image, loop.index, 6) }}
     {% endfor %}
   </div>
+
+  <nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Picture of cats by month">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}">Newer pictures</a>
+    {% endif %}
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}">Older pictures</a>
+    {% endif %}
+  </nav>
 </article>
 {% endblock %}
