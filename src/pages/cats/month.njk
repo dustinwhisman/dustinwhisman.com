@@ -4,6 +4,7 @@ pagination:
   size: 1
   alias: month
 permalink: "cats/{{ month | slug }}/"
+eleventyExcludeFromCollections: true
 ---
 
 {% extends 'layout.njk' %}
