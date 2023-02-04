@@ -4,24 +4,32 @@ pagination:
   size: 1
   alias: month
 permalink: "cats/{{ month | slug }}/"
-title: "Pictures of Cats | Dustin Whisman"
-description: Look at Goose and Barry! They're so cute, those little monsters.
-layout: layout.njk
 ---
 
-<h1>Pictures of Cats: {{ global.catsByMonth[month].name }}</h1>
+{% extends 'layout.njk' %}
 
-<p class="util-visually-hidden">
-  I do apologize if you can't see the cat pictures. I didn't add alt text to the
-  images because there are a lot of them, and I doubt that descriptions of cats
-  are interesting to read or hear. Most of them would just say "Goose looking
-  concerned about something", "Barry flopped over on his back, exposing his
-  fuzzy belly", or "The brothers cuddling in an adorable way".
-</p>
+{% block titleAndDescription %}
+<title>{{ global.catsByMonth[month].name }} | Pictures of Cats | Dustin Whisman</title>
+<meta name="description" content="Look at these pictures of Goose and Barry from {{ global.catsByMonth[month].name }}! They're so cute, those little monsters.">
+{% endblock %}
 
-<div class="cmp-pictures-of-cats__grid">
-  {% from 'macros/cat-picture.njk' import catPicture %}
-  {% for image in global.catsByMonth[month].pictures %}
-    {{ catPicture(image, loop.index, 6) }}
-  {% endfor %}
-</div>
+{% block content %}
+<article class="cmp-container cmp-stack">
+  <h1>Pictures of Cats: {{ global.catsByMonth[month].name }}</h1>
+
+  <p class="util-visually-hidden">
+    I do apologize if you can't see the cat pictures. I didn't add alt text to the
+    images because there are a lot of them, and I doubt that descriptions of cats
+    are interesting to read or hear. Most of them would just say "Goose looking
+    concerned about something", "Barry flopped over on his back, exposing his
+    fuzzy belly", or "The brothers cuddling in an adorable way".
+  </p>
+
+  <div class="cmp-pictures-of-cats__grid">
+    {% from 'macros/cat-picture.njk' import catPicture %}
+    {% for image in global.catsByMonth[month].pictures %}
+      {{ catPicture(image, loop.index, 6) }}
+    {% endfor %}
+  </div>
+</article>
+{% endblock %}
