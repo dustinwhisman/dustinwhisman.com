@@ -3,7 +3,7 @@ title: 'WAS Notes: WCAG 1.4 Distinguishable | Writing | Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 1.4 Distinguishable?
 articleTitle: 'WAS Notes: WCAG 1.4 Distinguishable'
 layout: layout.njk
-date: 2023-02-07
+date: 2023-02-07T00:00:00Z
 tags:
   - writing
   - learning in public
