@@ -11,12 +11,7 @@ tags:
 
 # Notes: The Coaching Habit
 
-<p class="cmp-fine-print">
-  Published:
-  <time datetime="{{ page.date.toISOString() }}">
-    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-  </time>
-</p>
+{% include 'published-date.njk' %}
 
 I'm at a point in my career where I'm starting to accumulate more leadership responsibilities besides writing code. As such, I recently read _The Coaching Habit_ by Michael Bungay Stanier to help with mentoring other developers (both formally and informally). Here are the notes I took along the way.
 

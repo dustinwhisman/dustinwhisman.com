@@ -20,12 +20,7 @@ tags:
   <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
 </p>
 
-<p class="cmp-fine-print">
-  Published:
-  <time datetime="{{ page.date.toISOString() }}">
-    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-  </time>
-</p>
+{% include 'published-date.njk' %}
 
 In the [previous part of this series](../eleventy-starter-css), we added CSS support to our template repository. This time, we will be adding support for JavaScript, including a modern bundling process, linting, and testing.
 

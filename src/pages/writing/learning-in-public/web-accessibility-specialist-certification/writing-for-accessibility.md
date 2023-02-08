@@ -14,12 +14,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-<p class="cmp-fine-print">
-  Published:
-  <time datetime="{{ page.date.toISOString() }}">
-    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-  </time>
-</p>
+{% include 'published-date.njk' %}
 
 - Provide informative, unique page titles that go from more specific to less specific
   - “Page Name | Page Section | Site Name”

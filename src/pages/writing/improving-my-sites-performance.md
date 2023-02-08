@@ -10,12 +10,7 @@ tags:
 
 # Improving My Site's Performance
 
-<p class="cmp-fine-print">
-  Published:
-  <time datetime="{{ page.date.toISOString() }}">
-    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-  </time>
-</p>
+{% include 'published-date.njk' %}
 
 I recently [audited my site for performance issues](/writing/auditing-my-sites-performance/), and I made some changes to fix things up a bit. In case you missed it, I had planned on doing the following:
 
