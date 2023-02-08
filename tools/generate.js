@@ -11,7 +11,7 @@ const collections = {
   ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
 };
 
-const resolveFilePath = (tags) => {
+const resolveFilePath = (tags, slug) => {
   // check for most specific, then less specific
   if (tags.includes(collections.WAS_CERTIFICATION)) {
     return path.join(
@@ -21,6 +21,7 @@ const resolveFilePath = (tags) => {
       'writing',
       'learning-in-public',
       'web-accessibility-specialist-certification',
+      `${slug}.md`,
     );
   }
 
@@ -31,6 +32,7 @@ const resolveFilePath = (tags) => {
       'pages',
       'writing',
       'learning-in-public',
+      `${slug}.md`,
     );
   }
 
@@ -41,19 +43,25 @@ const resolveFilePath = (tags) => {
       'pages',
       'writing',
       'eleventy-starter-template',
+      `${slug}.md`,
     );
   }
 
-  return path.join(process.cwd(), 'src', 'pages', 'writing');
+  return path.join(process.cwd(), 'src', 'pages', 'writing', `${slug}.md`);
+};
+
+const formatSlug = (title) => {
+  return title.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-');
 };
 
 const generate = async () => {
-  const articleName = await readline.question(
-    'What is the title of this article?\n',
-  );
+  const title = await readline.question('What is the title of this article?\n');
+  const slug = formatSlug(title);
+
   const description = await readline.question(
     'What is the description for this article?\n',
   );
+
   const tags = [];
   for (const [, collection] of Object.entries(collections)) {
     const includeInTags = await readline.question(
@@ -65,7 +73,7 @@ const generate = async () => {
   }
 
   console.log('Thank you! Creating a new empty post for you now.');
-  console.log(`Writing to ${resolveFilePath(tags)}`);
+  console.log(`Writing to ${resolveFilePath(tags, slug)}`);
 
   readline.close();
 };
