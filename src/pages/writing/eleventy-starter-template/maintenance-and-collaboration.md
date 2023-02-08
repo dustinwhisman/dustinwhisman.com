@@ -20,12 +20,7 @@ tags:
   <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
 </p>
 
-<p class="cmp-fine-print">
-  Published:
-  <time datetime="{{ page.date.toISOString() }}">
-    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-  </time>
-</p>
+{% include 'published-date.njk' %}
 
 In the [previous entry in this series](../eleventy-starter-pwa-support), we added Progressive Web App support to our project template. To finish, we will add some configuration and tooling that makes collaboration and maintenance easier for projects using the template.
 

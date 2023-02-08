@@ -10,12 +10,7 @@ tags:
 
 # In Search of the Perfect Build Process
 
-<p class="cmp-fine-print">
-  Published:
-  <time datetime="{{ page.date.toISOString() }}">
-    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-  </time>
-</p>
+{% include 'published-date.njk' %}
 
 If you've taken the time to read my [series on creating an Eleventy starter template](/writing/eleventy-starter-template/), you may have the (correct) impression that I think about build processes quite a bit. One of the goals of that project and the resulting [starter template](https://github.com/dustin-jw/eleventy-starter) was to have something I could use to quickly get a new site up and running with very little effort.
 

@@ -10,12 +10,7 @@ tags:
 
 # Auditing My Site's Performance
 
-<p class="cmp-fine-print">
-  Published:
-  <time datetime="{{ page.date.toISOString() }}">
-    {{ page.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-  </time>
-</p>
+{% include 'published-date.njk' %}
 
 A coworker recently challenged us fellow developers to run some audits with Lighthouse and [webpagetest.org](https://webpagetest.org) on our personal sites, address any issues they flag, then write about what we did to improve them. Challenge accepted!
 
