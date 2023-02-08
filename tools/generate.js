@@ -5,10 +5,79 @@ const readline = require('readline/promises').createInterface({
   output: process.stdout,
 });
 
+const today = () => {
+  const date = new Date();
+  date.setUTCHours(0, 0, 0, 0);
+  return date.toISOString();
+};
+
 const collections = {
   LEARNING_IN_PUBLIC: 'learning in public',
   WAS_CERTIFICATION: 'WAS certification',
   ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
+};
+
+const templates = {
+  LEARNING_IN_PUBLIC: (title, description) => `---
+title: "${title} | Writing | Dustin Whisman"
+description: "${description}"
+articleTitle: "${title}"
+layout: layout.njk
+date: ${today()}
+tags:
+  - writing
+  - learning in public
+---
+
+# ${title}
+
+{% include 'published-date.njk' %}
+`,
+  WAS_CERTIFICATION: (title, description) => `---
+title: "WAS Notes: ${title} | Writing | Dustin Whisman"
+description: "${description}"
+articleTitle: "WAS Notes: ${title}"
+layout: layout.njk
+date: ${today()}
+tags:
+  - writing
+  - learning in public
+  - WAS certification
+---
+
+# WAS Notes: ${title}
+
+{% include 'published-date.njk' %}
+`,
+  ELEVENTY_STARTER_TEMPLATE: (title, description) => `---
+title: "${title} | Writing | Dustin Whisman"
+description: "${description}"
+articleTitle: "${title}"
+layout: layout.njk
+date: ${today()}
+tags:
+  - writing
+  - eleventy starter template
+---
+
+# ${title}
+
+{% include 'published-date.njk' %}
+`,
+  DEFAULT: (title, description) => `---
+title: "${title} | Writing | Dustin Whisman"
+description: "${description}"
+articleTitle: "${title}"
+layout: layout.njk
+date: ${today()}
+tags:
+  - writing
+---
+
+# ${title}
+
+{% include 'published-date.njk' %}
+`,
 };
 
 const resolveFilePath = (tags, slug) => {
@@ -54,6 +123,22 @@ const formatSlug = (title) => {
   return title.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-');
 };
 
+const resolveTemplate = (tags, title, description) => {
+  if (tags.includes(collections.WAS_CERTIFICATION)) {
+    return templates.WAS_CERTIFICATION(title, description);
+  }
+
+  if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
+    return templates.LEARNING_IN_PUBLIC(title, description);
+  }
+
+  if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
+    return templates.ELEVENTY_STARTER_TEMPLATE(title, description);
+  }
+
+  return templates.DEFAULT(title, description);
+};
+
 const generate = async () => {
   const title = await readline.question('What is the title of this article?\n');
   const slug = formatSlug(title);
@@ -73,7 +158,13 @@ const generate = async () => {
   }
 
   console.log('Thank you! Creating a new empty post for you now.');
-  console.log(`Writing to ${resolveFilePath(tags, slug)}`);
+
+  const template = resolveTemplate(tags, title, description);
+  const file = resolveFilePath(tags, slug);
+
+  fs.writeFileSync(file, template, { encoding: 'utf-8' });
+
+  console.log(`Written to ${resolveFilePath(tags, slug)}`);
 
   readline.close();
 };
