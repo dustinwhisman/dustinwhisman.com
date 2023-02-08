@@ -47,6 +47,8 @@ tags:
 
 # WAS Notes: ${title}
 
+_I'm studying for the WAS certification. These are some of the notes I've taken recently._
+
 {% include 'published-date.njk' %}
 `,
   ELEVENTY_STARTER_TEMPLATE: (title, description) => `---
@@ -81,7 +83,6 @@ tags:
 };
 
 const resolveFilePath = (tags, slug) => {
-  // check for most specific, then less specific
   if (tags.includes(collections.WAS_CERTIFICATION)) {
     return path.join(
       process.cwd(),
