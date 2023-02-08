@@ -7,3 +7,4 @@ pictures-of-cats
 cypress/videos
 cypress/screenshots
 cypress/downloads
+.eslintcache
