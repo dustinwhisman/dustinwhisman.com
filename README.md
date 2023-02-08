@@ -1,6 +1,6 @@
 ## dustinwhisman.com
 
-Welcome to the source code for my personal site! Take a look around, see how things work, maybe even run it yourself if you feel like it. Just don't pretend to be me. That would be weird.
+Welcome to the source code for my personal site! Take a look around, see how things work and maybe even run it yourself if you feel like it. Just don't pretend to be me. That would be weird.
 
 ## Getting Started
 
@@ -49,16 +49,11 @@ npm run images:avif
 npm run images:clean
 ```
 
-## Cypress Testing
+## Playwright Testing
 
-To run Cypress tests locally, you will need to create a `.env` file. Use `.env.example` as a starting point for filling in the variables you need. `BASE_URL` should point to where the site is running, typically `http://localhost:8080`, but you can point it at the production site or a deploy preview for some manual testing.
-
-For local testing, you will need to have the site running already (`npm start`), then in a different terminal, you can run one of these commands to run Cypress.
+To run Playwright tests locally, you will need to create a `.env` file. Use `.env.example` as a starting point for filling in the variables you need. `BASE_URL` should point to where the site is running, typically `http://localhost:8080`, but you can point it at the production site or a deploy preview for some manual testing.
 
 ```sh
-# open Cypress and watch the tests as they happen
-npm run test:open
-
-# run Cypress in CI mode
+# run Playwright tests
 npm run test:e2e
 ```
