@@ -28,7 +28,8 @@
     "images:webp": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -format webP -path ../src/public/images/cats/webp *.jpg",
     "images:avif": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 50 -format avif -path ../src/public/images/cats/avif *.jpg",
     "images:clean": "rm -rf pictures-of-cats/*.jpg",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate": "node ./tools/generate"
   },
   "keywords": [],
   "author": "Dustin Whisman",
