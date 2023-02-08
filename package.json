@@ -19,8 +19,6 @@
     "lint": "run-s lint:css lint:js",
     "lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
     "lint:js": "eslint . --ext .js",
-    "test:e2e": "cypress run --e2e",
-    "test:open": "cypress open --e2e",
     "update-deps": "ncu -u",
     "postupdate-deps": "npm install",
     "optimize-images": "run-s images:jpg images:webp images:avif images:clean",
