@@ -1,4 +1,4 @@
-const { defineConfig, devices } = require('@playwright/test');
+const { defineConfig } = require('@playwright/test');
 require('dotenv').config();
 
 module.exports = defineConfig({
@@ -18,12 +18,19 @@ module.exports = defineConfig({
   },
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'Smoke Test',
+      testMatch: /.*smoke.spec.js/,
+      retries: 0,
     },
     {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
+      name: 'Accessibility',
+      testMatch: /.*accessibility.spec.js/,
+      retries: 2,
+    },
+    {
+      name: 'Default',
+      testIgnore: /.*[accessibility|smoke].spec.js/,
+      retries: 2,
     },
   ],
   webServer: {
