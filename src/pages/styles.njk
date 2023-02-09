@@ -2,7 +2,13 @@
 permalink: /styles.css
 eleventyExcludeFromCollections: true
 ---
+@layer generic, elements, components, utilities;
+
+@layer generic {
 {% include '../css/generic/_reset.css' %}
+}
+
+@layer elements {
 {% include '../css/elements/_root.css' %}
 {% include '../css/elements/_headings.css' %}
 {% include '../css/elements/_p.css' %}
@@ -11,6 +17,9 @@ eleventyExcludeFromCollections: true
 {% include '../css/elements/_pre-code.css' %}
 {% include '../css/elements/_a.css' %}
 {% include '../css/elements/_lists.css' %}
+}
+
+@layer components {
 {% include '../css/components/_container.css' %}
 {% include '../css/components/_stack.css' %}
 {% include '../css/components/_skip-to-content.css' %}
@@ -23,4 +32,8 @@ eleventyExcludeFromCollections: true
 {% include '../css/components/_fine-print.css' %}
 {% include '../css/components/_article.css' %}
 {% include '../css/components/_hljs.css' %}
+}
+
+@layer utilities {
 {% include '../css/utilities/_visually-hidden.css' %}
+}

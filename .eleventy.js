@@ -1,4 +1,3 @@
-const fs = require('fs');
 const hljs = require('highlight.js');
 const md = require('markdown-it');
 
