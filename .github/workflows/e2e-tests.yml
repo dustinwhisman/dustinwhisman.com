@@ -15,8 +15,6 @@ jobs:
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-      - name: Run Accessibility Smoke Test
-        run: npm run test:e2e -- --project="Smoke Test"
       - name: Run Default Playwright tests
         run: npm run test:e2e -- --project=Default
       - uses: actions/upload-artifact@v3

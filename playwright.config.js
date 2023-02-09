@@ -18,18 +18,13 @@ module.exports = defineConfig({
   },
   projects: [
     {
-      name: 'Smoke Test',
-      testMatch: /.*smoke.spec.js/,
+      name: 'Default',
+      testIgnore: /.*accessibility.spec.js/,
       retries: 0,
     },
     {
       name: 'Accessibility',
       testMatch: /.*accessibility.spec.js/,
-      retries: 2,
-    },
-    {
-      name: 'Default',
-      testIgnore: /.*[accessibility|smoke].spec.js/,
       retries: 2,
     },
   ],
