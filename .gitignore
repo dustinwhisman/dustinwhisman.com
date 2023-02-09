@@ -8,3 +8,6 @@ cypress/videos
 cypress/screenshots
 cypress/downloads
 .eslintcache
+/test-results/
+/playwright-report/
+/playwright/.cache/
