@@ -3,10 +3,6 @@ const hljs = require('highlight.js');
 const md = require('markdown-it');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setServerOptions({
-    watch: ['dist/**/*.css', 'dist/**/*.js'],
-  });
-
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
 
   const markdownOptions = {
