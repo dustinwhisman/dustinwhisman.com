@@ -3,6 +3,11 @@
   gap: var(--size-s0);
 }
 
+.cmp-writing-grid__container {
+  container-type: inline-size;
+  container-name: writing-wrapper;
+}
+
 .cmp-writing-grid__sticky-section {
   position: sticky;
   align-self: start;
@@ -13,9 +18,4 @@
   .cmp-writing-grid {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-.cmp-writing-grid__container {
-  container-type: inline-size;
-  container-name: writing-wrapper;
 }
