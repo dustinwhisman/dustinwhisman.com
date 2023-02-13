@@ -1,0 +1,21 @@
+.cmp-writing-grid {
+  display: grid;
+  gap: var(--size-s0);
+}
+
+.cmp-writing-grid__sticky-section {
+  position: sticky;
+  align-self: start;
+  top: var(--size-s0);
+}
+
+@container writing-wrapper (min-width: 40rem) {
+  .cmp-writing-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cmp-writing-grid__container {
+  container-type: inline-size;
+  container-name: writing-wrapper;
+}
