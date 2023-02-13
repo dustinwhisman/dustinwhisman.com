@@ -13,7 +13,7 @@
     "build": "eleventy",
     "clean": "rm -rf dist",
     "lint": "run-s lint:css lint:js",
-    "lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
+    "lint:css": "stylelint \"src/partials/css/**/*.css\" --color --formatter verbose",
     "lint:js": "eslint . --ext .js",
     "test:e2e": "playwright test",
     "pretest:e2e": "npm run build",
