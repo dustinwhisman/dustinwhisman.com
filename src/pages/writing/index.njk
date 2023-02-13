@@ -2,6 +2,11 @@
 title: Writing | Dustin Whisman
 description: I write words sometimes.
 layout: layout.njk
+pagination:
+  data: collections.writing
+  size: 25
+  alias: articles
+  reverse: true
 ---
 
 <h1>Writing</h1>
@@ -12,7 +17,7 @@ layout: layout.njk
       <h2>All Posts</h2>
 
       <ul class="cmp-article-listing__list">
-        {% for article in collections.writing | reverse %}
+        {% for article in articles %}
           <li>
             <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
             <span>
@@ -24,6 +29,15 @@ layout: layout.njk
           </li>
         {% endfor %}
       </ul>
+
+      <nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Article pagination navigation">
+        {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}">Newer posts</a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}">Older posts</a>
+        {% endif %}
+      </nav>
     </div>
     <div class="cmp-stack cmp-writing-grid__sticky-section">
       <h2>Collections</h2>
