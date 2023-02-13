@@ -6,7 +6,7 @@
 .cmp-writing-grid__sticky-section {
   position: sticky;
   align-self: start;
-  top: var(--size-s0);
+  top: 0;
 }
 
 @container writing-wrapper (min-width: 40rem) {
