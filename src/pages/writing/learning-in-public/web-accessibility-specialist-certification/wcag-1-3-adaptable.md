@@ -6,7 +6,6 @@ layout: layout.njk
 date: 2023-02-01
 tags:
   - writing
-  - learning in public
   - WAS certification
 ---
 
