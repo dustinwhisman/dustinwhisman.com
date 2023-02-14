@@ -4,9 +4,12 @@ description: At time of writing, I'm studying for the Web Accessibility Speciali
 layout: layout.njk
 date: 2023-01-06T00:00:00Z
 articleTitle: Web Accessibility Specialist (WAS) Certification
-tags:
-  - writing
-  - learning in public
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections['WAS certification']
+  size: 25
+  alias: articles
+  reverse: true
 ---
 
 <h1>Web Accessibility Specialist (WAS) Certification</h1>
@@ -28,7 +31,7 @@ tags:
 </ol>
 
 <ul class="cmp-article-listing__list">
-  {% for article in collections['WAS certification'] %}
+  {% for article in articles %}
     <li>
       <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
       <span>
@@ -40,3 +43,12 @@ tags:
     </li>
   {% endfor %}
 </ul>
+
+<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="WAS Certification notes pagination navigation">
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">Newer posts</a>
+  {% endif %}
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">Older posts</a>
+  {% endif %}
+</nav>
