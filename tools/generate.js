@@ -41,7 +41,6 @@ layout: layout.njk
 date: ${today()}
 tags:
   - writing
-  - learning in public
   - WAS certification
 ---
 
@@ -89,7 +88,6 @@ const resolveFilePath = (tags, slug) => {
       'src',
       'pages',
       'writing',
-      'learning-in-public',
       'web-accessibility-specialist-certification',
       `${slug}.md`,
     );
