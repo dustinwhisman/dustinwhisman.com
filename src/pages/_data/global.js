@@ -129,10 +129,20 @@ const projects = [
   },
   {
     name: 'dustinwhisman.com',
-    repoLink: 'http://github.com/dustinwhisman/dustinwhisman.com',
+    repoLink: 'https://github.com/dustinwhisman/dustinwhisman.com',
     siteLink: '/',
     description: "Hey, that's what this is! You're looking at it right now!",
     startDate: '2022-11-12',
+    classification: 'Side Project',
+    roles: ['Individual Contributor'],
+  },
+  {
+    name: 'Conundrum',
+    repoLink: 'https://github.com/dustinwhisman/conundrum',
+    siteLink: 'https://conundrum.dustinwhisman.com',
+    description:
+      'A set of letters and numbers games following a well-established quiz show format. Mostly an excuse to learn Angular.',
+    startDate: '2023-02-10',
     classification: 'Side Project',
     roles: ['Individual Contributor'],
   },
