@@ -2,7 +2,7 @@
 title: 'WAS Study Guide | Writing | Dustin Whisman'
 description: For the curious, or those interested in getting a WAS certification, this is the study guide that I'm using to prepare for the exam.
 articleTitle: 'WAS Study Guide'
-layout: layout.njk
+layout: default
 date: 2023-01-14
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 This is the study guide that I've been following to prepare for the WAS Certification exam. I broke it out into 8 loosely organized sprints that cover various accessibility topics. I chose "sprints" over time-specific measures like weeks because who knows how much time I'll continue to have to devote to studying. The International Association of Accessibility Professionals (IAAP) recommends 5-10 hours a week for 6-8 weeks to prepare for the exam, so if you're interested in getting certified, that's about the time commitment you can expect.
 

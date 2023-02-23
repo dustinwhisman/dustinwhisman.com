@@ -2,7 +2,7 @@
 title: 'WAS Notes: Accessibility Laws | Writing | Dustin Whisman'
 description: This is an overview of accessibility laws throughout the world and how they apply to digital accessibility.
 articleTitle: 'WAS Notes: Accessibility Laws'
-layout: layout.njk
+layout: default
 date: 2023-01-13T00:00:01Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 Quick note: I am not a lawyer. I don’t even know any lawyers.
 

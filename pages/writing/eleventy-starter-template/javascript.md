@@ -2,7 +2,7 @@
 title: 'Eleventy Starter: JavaScript | Writing | Dustin Whisman'
 description: This article goes into detail about setting up a modern JS bundling process for an Eleventy project, including some details about linting and testing.
 articleTitle: 'Building an Eleventy Starter Template: JavaScript'
-layout: layout.njk
+layout: default
 date: 2022-07-27
 tags:
   - writing
@@ -20,7 +20,7 @@ tags:
   <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
 </p>
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 In the [previous part of this series](../eleventy-starter-css), we added CSS support to our template repository. This time, we will be adding support for JavaScript, including a modern bundling process, linting, and testing.
 

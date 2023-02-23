@@ -2,7 +2,7 @@
 title: "Writing a Generator to Simplify Writing Posts | Writing | Dustin Whisman"
 description: "Rather than copy-paste an old article and update it, which is what I have been doing, I decided to write a generator to do most of that work for me."
 articleTitle: "Writing a Generator to Simplify Writing Posts"
-layout: layout.njk
+layout: default
 date: 2023-02-08T00:00:00.000Z
 tags:
   - writing
@@ -10,7 +10,7 @@ tags:
 
 # Writing a Generator to Simplify Writing Posts
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 I recently started learning Angular for a new client project I'll be working on soon, and the Angular CLI makes great use of generators to speed up creating new components and such. Inspired, I figured I would try my hand at writing some generators for my own site.
 

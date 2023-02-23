@@ -2,7 +2,7 @@
 title: "Auditing My Site's Performance | Writing | Dustin Whisman"
 description: I built this site to be performant, but are there still areas for improvement? In short, yes.
 articleTitle: Auditing My Site's Performance
-layout: layout.njk
+layout: default
 date: 2023-02-03
 tags:
   - writing
@@ -10,7 +10,7 @@ tags:
 
 # Auditing My Site's Performance
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 A coworker recently challenged us fellow developers to run some audits with Lighthouse and [webpagetest.org](https://webpagetest.org) on our personal sites, address any issues they flag, then write about what we did to improve them. Challenge accepted!
 

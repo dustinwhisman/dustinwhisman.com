@@ -2,7 +2,7 @@
 title: "WAS Notes: WCAG 2.4 Navigable | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WGAC 2.4 Navigable?"
 articleTitle: "WAS Notes: WCAG 2.4 Navigable"
-layout: layout.njk
+layout: default
 date: 2023-02-10T00:00:00.001Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 2.4.1 Bypass Blocks - Level A
 

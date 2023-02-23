@@ -2,7 +2,7 @@
 title: "WAS Notes: WCAG 4.1 Compatible | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 4.1 Compatible?"
 articleTitle: "WAS Notes: WCAG 4.1 Compatible"
-layout: layout.njk
+layout: default
 date: 2023-02-16T00:00:00.000Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 4.1.1 Parsing - Level A
 

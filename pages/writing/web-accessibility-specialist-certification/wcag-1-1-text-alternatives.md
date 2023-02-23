@@ -2,7 +2,7 @@
 title: 'WAS Notes: WCAG 1.1 Text Alternatives | Writing | Dustin Whisman'
 description: How do you meet the success criteria for WCAG 1.1 Text Alternatives?
 articleTitle: 'WAS Notes: WCAG 1.1 Text Alternatives'
-layout: layout.njk
+layout: default
 date: 2023-01-25
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 1.1.1 Non-text Content - Level A
 

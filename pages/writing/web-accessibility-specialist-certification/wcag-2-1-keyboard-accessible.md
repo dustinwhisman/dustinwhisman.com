@@ -2,7 +2,7 @@
 title: 'WAS Notes: WCAG 2.1 Keyboard Accessible | Writing | Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 2.1 Keyboard Accessible?
 articleTitle: 'WAS Notes: WCAG 2.1 Keyboard Accessible'
-layout: layout.njk
+layout: default
 date: 2023-02-07T00:00:01Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 2.1.1 Keyboard - Level A
 

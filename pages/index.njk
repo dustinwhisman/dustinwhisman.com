@@ -1,7 +1,7 @@
 ---
 title: Dustin Whisman - Full Stack Developer
 description: Hi, I'm Dustin. I'm a full stack developer, which means I write HTML, CSS, and JavaScript, among other related tooling and frameworks.
-layout: layout.njk
+layout: default
 ---
 
 <h1 class="util-visually-hidden">
@@ -36,7 +36,7 @@ layout: layout.njk
   <div class="cmp-stack">
     <h2>Recent Projects</h2>
     <ul class="cmp-project__list">
-      {% from 'macros/project-card.njk' import projectCard %}
+      {% from 'partials/macros/project-card.njk' import projectCard %}
       {% for project in global.recentProjects %}
         <li>
           {{ projectCard(project, 'h3') }}
@@ -67,7 +67,7 @@ layout: layout.njk
   <div class="cmp-stack">
     <h2>Recent Pictures of Cats</h2>
     <div class="cmp-pictures-of-cats__grid">
-      {% from 'macros/cat-picture.njk' import catPicture %}
+      {% from 'partials/macros/cat-picture.njk' import catPicture %}
       {% for image in global.picturesOfCats %}
         {% if loop.index <= 4 %}
           {{ catPicture(image, loop.index, 0) }}

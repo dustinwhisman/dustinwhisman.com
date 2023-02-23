@@ -2,7 +2,7 @@
 title: "WAS Notes: WCAG 3.2 Predictable | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 3.2 Predictable?"
 articleTitle: "WAS Notes: WCAG 3.2 Predictable"
-layout: layout.njk
+layout: default
 date: 2023-02-15T00:00:00.000Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 3.2.1 On Focus - Level A
 

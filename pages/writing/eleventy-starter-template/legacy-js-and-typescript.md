@@ -2,7 +2,7 @@
 title: 'Eleventy Starter: Legacy JS Builds and TypeScript Support | Writing | Dustin Whisman'
 description: This article is about supporting older browsers while still writing modern JS, and it extends what's already there to support TypeScript.
 articleTitle: 'Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support'
-layout: layout.njk
+layout: default
 date: 2022-08-24
 tags:
   - writing
@@ -20,7 +20,7 @@ tags:
   <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
 </p>
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 In the [last part of this series](../eleventy-starter-javascript), we added support for JavaScript to our template repository—including a modern build process, linting, and testing. This time, we’ll expand our support for older browsers by setting up a legacy JS build and updating our repo to support TypeScript.
 

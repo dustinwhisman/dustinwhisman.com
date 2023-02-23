@@ -1,7 +1,7 @@
 ---
 title: Pictures of Cats | Dustin Whisman
 description: Look at Goose and Barry! They're so cute, those little monsters.
-layout: layout.njk
+layout: default
 ---
 
 <h1>Pictures of Cats</h1>
@@ -14,7 +14,7 @@ layout: layout.njk
   fuzzy belly", or "The brothers cuddling in an adorable way".
 </p>
 
-{% from 'macros/cat-picture.njk' import catPicture %}
+{% from 'partials/macros/cat-picture.njk' import catPicture %}
 {% set imagesRendered = 0 %}
 {% for month, monthData in global.catsByMonth %}
   {% if loop.index <= 3 %}

@@ -2,7 +2,7 @@
 title: 'WAS Notes: WCAG 1.2 Time-based Media | Writing | Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 1.2 Time-based Media?
 articleTitle: 'WAS Notes: WCAG 1.2 Time-based Media'
-layout: layout.njk
+layout: default
 date: 2023-01-26
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 1.2.1 Audio-only and Video-only (Prerecorded) - Level A
 

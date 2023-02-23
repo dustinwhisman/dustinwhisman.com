@@ -2,7 +2,7 @@
 title: 'Notes: The Coaching Habit | Writing | Dustin Whisman'
 description: This is a collection of notes I took while reading The Coaching Habit by Michael Bungay Stanier.
 articleTitle: 'Notes: The Coaching Habit'
-layout: layout.njk
+layout: default
 date: 2023-01-12T00:00:02Z
 tags:
   - writing
@@ -11,7 +11,7 @@ tags:
 
 # Notes: The Coaching Habit
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 I'm at a point in my career where I'm starting to accumulate more leadership responsibilities besides writing code. As such, I recently read _The Coaching Habit_ by Michael Bungay Stanier to help with mentoring other developers (both formally and informally). Here are the notes I took along the way.
 

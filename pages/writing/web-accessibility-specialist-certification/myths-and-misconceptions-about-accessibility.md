@@ -2,7 +2,7 @@
 title: 'WAS Notes: Myths and Misconceptions About Accessibility | Writing | Dustin Whisman'
 description: This is a summary of some common arguments used to avoid building for accessibility and why those arguments are ultimately wrong.
 articleTitle: 'WAS Notes: Myths and Misconceptions About Accessibility'
-layout: layout.njk
+layout: default
 date: 2023-01-17
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## Myth: Accessibility benefits only a small minority
 

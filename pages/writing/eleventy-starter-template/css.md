@@ -2,7 +2,7 @@
 title: 'Eleventy Starter: CSS | Writing | Dustin Whisman'
 description: This article covers supporting CSS, or SCSS more specifically, in an Eleventy project.
 articleTitle: 'Building an Eleventy Starter Template: CSS'
-layout: layout.njk
+layout: default
 date: 2022-06-15
 tags:
   - writing
@@ -20,7 +20,7 @@ tags:
   <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
 </p>
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 In the [last part of this series](../eleventy-starter-html), we added support for dynamic HTML to our template repository. In this article, we will add support for CSS, authored in SCSS.
 

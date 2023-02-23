@@ -2,7 +2,7 @@
 title: "WAS Notes: WCAG 2.2 Enough Time | Writing | Dustin Whisman"
 description: "How do you meet all of the success criteria for 2.2 Enough Time?"
 articleTitle: "WAS Notes: WCAG 2.2 Enough Time"
-layout: layout.njk
+layout: default
 date: 2023-02-09T00:00:00.000Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 2.2.1 Timing Adjustable - Level A
 

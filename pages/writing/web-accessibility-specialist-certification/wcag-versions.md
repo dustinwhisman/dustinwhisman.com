@@ -2,7 +2,7 @@
 title: 'WAS Notes: WCAG Versions | Writing | Dustin Whisman'
 description: What do the different WCAG version numbers actually mean, and which ones apply right now?
 articleTitle: 'WAS Notes: WCAG Versions'
-layout: layout.njk
+layout: default
 date: 2023-01-18T00:00:00Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 - WCAG 2.0 was published in December 2008
 - WCAG 2.1 was published in July 2018. All requirements from 2.0 are in 2.1 (unchanged)

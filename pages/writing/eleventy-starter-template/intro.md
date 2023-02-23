@@ -2,7 +2,7 @@
 title: 'Eleventy Starter: Introduction | Writing | Dustin Whisman'
 description: This introduces the series of articles I wrote for Sparkbox's Foundry about how to build an Eleventy Starter Template.
 articleTitle: Setting up Future Projects for Success with Template Repositories
-layout: layout.njk
+layout: default
 date: 2022-03-23
 tags:
   - writing
@@ -20,7 +20,7 @@ tags:
   <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
 </p>
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 If you’re anything like me, you have a ton of side project ideas bouncing around your head, but you have a hard time getting past the project setup steps that have to happen before you can build the _thing_.
 

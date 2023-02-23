@@ -2,7 +2,7 @@
 title: 'Eleventy Starter: Maintenance and Collaboration | Writing | Dustin Whisman'
 description: This article is about handling dependency updates, maintaining code quality, and providing templates for pull requests and issues for better collaboration.
 articleTitle: 'Building an Eleventy Starter Template: Maintenance and Collaboration'
-layout: layout.njk
+layout: default
 date: 2022-11-02
 tags:
   - writing
@@ -20,7 +20,7 @@ tags:
   <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
 </p>
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 In the [previous entry in this series](../eleventy-starter-pwa-support), we added Progressive Web App support to our project template. To finish, we will add some configuration and tooling that makes collaboration and maintenance easier for projects using the template.
 

@@ -25,12 +25,13 @@ module.exports = function (eleventyConfig) {
   };
 
   eleventyConfig.setLibrary('md', md(markdownOptions));
+  eleventyConfig.addLayoutAlias('default', 'partials/layout.njk');
 
   return {
     dir: {
       input: 'pages',
       output: 'dist',
-      includes: '../src/partials',
+      includes: '../src',
     },
     markdownTemplateEngine: 'njk',
   };

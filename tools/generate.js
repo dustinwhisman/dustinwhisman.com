@@ -22,7 +22,7 @@ const templates = {
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -31,13 +31,13 @@ tags:
 
 # ${title}
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
   WAS_CERTIFICATION: (title, description) => `---
 title: "WAS Notes: ${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "WAS Notes: ${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -48,13 +48,13 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
   ELEVENTY_STARTER_TEMPLATE: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -63,13 +63,13 @@ tags:
 
 # ${title}
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
   DEFAULT: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -77,7 +77,7 @@ tags:
 
 # ${title}
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
 };
 

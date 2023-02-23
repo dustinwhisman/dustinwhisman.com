@@ -2,7 +2,7 @@
 title: 'WAS Notes: The Basics | Writing | Dustin Whisman'
 description: To get started studying for the WAS certification, let's start with the basics, laying out some facts and terms to understand before going deeper.
 articleTitle: 'WAS Notes: The Basics'
-layout: layout.njk
+layout: default
 date: 2023-01-06T00:00:01Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 - The World Health Organization (WHO) estimates that over 15% of the world’s population has a disability (I’ve heard numbers as high as 25%, depending on population)
 - These are the main types of disabilities to be aware of

@@ -2,7 +2,7 @@
 title: "Relearning Angular | Writing | Dustin Whisman"
 description: "After 14 versions and more than 6 years away from Angular, I'm learning it again (for the first time). I have some first impressions about what's good, bad, or ugly about it."
 articleTitle: "Relearning Angular"
-layout: layout.njk
+layout: default
 date: 2023-02-21T00:00:00.000Z
 tags:
   - writing
@@ -11,7 +11,7 @@ tags:
 
 # Relearning Angular
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 The last time I worked professionally with Angular, it was [version 1](https://angularjs.org/), and it was a big step up from some of the other options from that time (I had been using [Knockout](https://knockoutjs.com/)). I also moved on from Angular pretty quickly, partially because a job change meant a change of stack and also because React and Vue started to gain notoriety/popularity.
 

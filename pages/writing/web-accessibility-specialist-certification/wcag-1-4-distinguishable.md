@@ -2,7 +2,7 @@
 title: 'WAS Notes: WCAG 1.4 Distinguishable | Writing | Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 1.4 Distinguishable?
 articleTitle: 'WAS Notes: WCAG 1.4 Distinguishable'
-layout: layout.njk
+layout: default
 date: 2023-02-07T00:00:00Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 1.4.1 Use of Color - Level A
 

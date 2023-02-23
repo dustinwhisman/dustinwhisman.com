@@ -2,7 +2,7 @@
 title: 'In Search of the Perfect Build Process | Writing | Dustin Whisman'
 description: In which I cover all the changes I've made to the build process for this site, attempting to make it better, faster, stronger.
 articleTitle: In Search of the Perfect Build Process
-layout: layout.njk
+layout: default
 date: 2023-01-29
 tags:
   - writing
@@ -10,7 +10,7 @@ tags:
 
 # In Search of the Perfect Build Process
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 If you've taken the time to read my [series on creating an Eleventy starter template](/writing/eleventy-starter-template/), you may have the (correct) impression that I think about build processes quite a bit. One of the goals of that project and the resulting [starter template](https://github.com/dustin-jw/eleventy-starter) was to have something I could use to quickly get a new site up and running with very little effort.
 

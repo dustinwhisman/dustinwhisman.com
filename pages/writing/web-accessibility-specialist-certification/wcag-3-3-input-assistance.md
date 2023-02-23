@@ -2,7 +2,7 @@
 title: "WAS Notes: WCAG 3.3 Input Assistance | Writing | Dustin Whisman"
 description: "How can you meet all the success criteria for WCAG 3.3 Input Assistance?"
 articleTitle: "WAS Notes: WCAG 3.3 Input Assistance"
-layout: layout.njk
+layout: default
 date: 2023-02-15T00:00:00.001Z
 tags:
   - writing
@@ -13,7 +13,7 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 
 ## 3.3.1 Error Identification - Level A
 
