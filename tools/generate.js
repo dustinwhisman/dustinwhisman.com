@@ -85,7 +85,6 @@ const resolveFilePath = (tags, slug) => {
   if (tags.includes(collections.WAS_CERTIFICATION)) {
     return path.join(
       process.cwd(),
-      'src',
       'pages',
       'writing',
       'web-accessibility-specialist-certification',
@@ -96,7 +95,6 @@ const resolveFilePath = (tags, slug) => {
   if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
     return path.join(
       process.cwd(),
-      'src',
       'pages',
       'writing',
       'learning-in-public',
@@ -107,7 +105,6 @@ const resolveFilePath = (tags, slug) => {
   if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
     return path.join(
       process.cwd(),
-      'src',
       'pages',
       'writing',
       'eleventy-starter-template',
@@ -115,7 +112,7 @@ const resolveFilePath = (tags, slug) => {
     );
   }
 
-  return path.join(process.cwd(), 'src', 'pages', 'writing', `${slug}.md`);
+  return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
 };
 
 const formatSlug = (title) => {
