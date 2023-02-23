@@ -22,7 +22,7 @@ const templates = {
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -31,13 +31,13 @@ tags:
 
 # ${title}
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
   WAS_CERTIFICATION: (title, description) => `---
 title: "WAS Notes: ${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "WAS Notes: ${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -48,13 +48,13 @@ tags:
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
   ELEVENTY_STARTER_TEMPLATE: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -63,13 +63,13 @@ tags:
 
 # ${title}
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
   DEFAULT: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
-layout: layout.njk
+layout: default
 date: ${today()}
 tags:
   - writing
@@ -77,7 +77,7 @@ tags:
 
 # ${title}
 
-{% include 'published-date.njk' %}
+{% include 'partials/published-date.njk' %}
 `,
 };
 
@@ -85,7 +85,6 @@ const resolveFilePath = (tags, slug) => {
   if (tags.includes(collections.WAS_CERTIFICATION)) {
     return path.join(
       process.cwd(),
-      'src',
       'pages',
       'writing',
       'web-accessibility-specialist-certification',
@@ -96,7 +95,6 @@ const resolveFilePath = (tags, slug) => {
   if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
     return path.join(
       process.cwd(),
-      'src',
       'pages',
       'writing',
       'learning-in-public',
@@ -107,7 +105,6 @@ const resolveFilePath = (tags, slug) => {
   if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
     return path.join(
       process.cwd(),
-      'src',
       'pages',
       'writing',
       'eleventy-starter-template',
@@ -115,7 +112,7 @@ const resolveFilePath = (tags, slug) => {
     );
   }
 
-  return path.join(process.cwd(), 'src', 'pages', 'writing', `${slug}.md`);
+  return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
 };
 
 const formatSlug = (title) => {

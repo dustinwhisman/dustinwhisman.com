@@ -1,0 +1,58 @@
+---
+title: Writing | Dustin Whisman
+description: I write words sometimes.
+layout: default
+pagination:
+  data: collections.writing
+  size: 25
+  alias: articles
+  reverse: true
+---
+
+<h1>Writing</h1>
+
+<div class="cmp-writing-grid__container">
+  <div class="cmp-writing-grid">
+    <div class="cmp-stack">
+      <h2>All Posts</h2>
+
+      <ul class="cmp-article-listing__list">
+        {% for article in articles %}
+          <li>
+            <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+            <span>
+              <span class="util-visually-hidden">Published:</span>
+              <time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+                {{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+              </time>
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Article pagination navigation">
+        {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}">Newer posts</a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}">Older posts</a>
+        {% endif %}
+      </nav>
+    </div>
+    <div class="cmp-stack cmp-writing-grid__sticky-section">
+      <h2>Collections</h2>
+
+      <ul class="cmp-article-listing__list">
+        <li>
+          <a href="/writing/eleventy-starter-template/" class="cmp-article-listing__link">Eleventy Starter Template Series</a>
+        </li>
+        <li>
+          <a href="/writing/learning-in-public/" class="cmp-article-listing__link">Learning in Public</a>
+        </li>
+        <li>
+          <a href="/writing/web-accessibility-specialist-certification/" class="cmp-article-listing__link">Web Accessibility Specialist (WAS) Certification Notes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
