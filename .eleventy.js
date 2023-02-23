@@ -28,9 +28,9 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: 'src/pages',
+      input: 'pages',
       output: 'dist',
-      includes: '../partials',
+      includes: '../src/partials',
     },
     markdownTemplateEngine: 'njk',
   };

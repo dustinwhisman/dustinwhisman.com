@@ -4,7 +4,7 @@ const path = require('path');
 const sizeOf = require('image-size');
 
 const getImagePaths = () => {
-  const directoryPath = path.join(__dirname, '../../public/images/cats');
+  const directoryPath = path.join(__dirname, '../../src/public/images/cats');
   const files = fs
     .readdirSync(directoryPath, { withFileTypes: true })
     .filter((file) => !file.isDirectory() && file.name.endsWith('.jpg'))
