@@ -32,15 +32,15 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@axe-core/playwright": "^4.6.0",
-    "@playwright/test": "^1.30.0",
+    "@playwright/test": "^1.31.1",
     "check-node-version": "^4.2.1",
     "dotenv": "^16.0.3",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
-    "npm-check-updates": "^16.7.5",
+    "npm-check-updates": "^16.7.9",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
-    "stylelint": "^15.1.0",
+    "stylelint": "^15.2.0",
     "stylelint-config-standard": "^30.0.1"
   },
   "dependencies": {
