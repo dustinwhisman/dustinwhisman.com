@@ -1,0 +1,6 @@
+[dev]
+  autoLaunch = false
+
+[[edge_functions]]
+  function = "eleventy-edge"
+  path = "/*"
