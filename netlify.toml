@@ -2,5 +2,5 @@
   autoLaunch = false
 
 [[edge_functions]]
-  function = "special-dates"
+  function = "eleventy-edge"
   path = "/*"
