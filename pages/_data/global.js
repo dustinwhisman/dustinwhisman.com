@@ -166,9 +166,6 @@ module.exports = {
 
     return `${segment()}-${segment()}-${segment()}`;
   },
-  year() {
-    return new Date().getFullYear();
-  },
   projects,
   recentProjects: projects.slice(0, 4),
   picturesOfCats: getImagePaths(),

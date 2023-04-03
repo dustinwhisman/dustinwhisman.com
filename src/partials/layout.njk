@@ -22,7 +22,11 @@
   <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
 
-  <link rel="stylesheet" href="/styles.css">
+  {% edge %}
+    {% if not isCssNakedDay %}
+      <link rel="stylesheet" href="/styles.css">
+    {% endif %}
+  {% endedge %}
 </head>
 
 <body>
@@ -52,6 +56,11 @@
   <main id="main-content">
     {% block content %}
     <article class="cmp-container cmp-stack">
+      {% edge %}
+        {% if isCssNakedDay %}
+          <p aria-hidden="true">Today is CSS Naked Day, so if you're confused about why the site looks how it does, that's why!</p>
+        {% endif %}
+      {% endedge %}
       {{ content | safe }}
     </article>
     {% endblock %}
@@ -80,7 +89,7 @@
           <a href="https://creativecommons.org/licenses/by/4.0/">Content License</a>
         </li>
         <li>
-          © Copyright {{ global.year() }}
+          © Copyright {% edge %}{{ currentYear }}{% endedge %}
         </li>
       </ul>
     </div>
