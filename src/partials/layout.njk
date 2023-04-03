@@ -23,7 +23,8 @@
   <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
 
   {% edge %}
-    {% if not isCssNakedDay %}
+    {% if cssPreference == false %}
+    {% elseif not isCssNakedDay or cssPreference == true %}
       <link rel="stylesheet" href="/styles.css">
     {% endif %}
   {% endedge %}
@@ -57,8 +58,8 @@
     {% block content %}
     <article class="cmp-container cmp-stack">
       {% edge %}
-        {% if isCssNakedDay %}
-          <p aria-hidden="true">Today is CSS Naked Day, so if you're confused about why the site looks how it does, that's why!</p>
+        {% if isCssNakedDay and cssPreference != true %}
+          <p aria-hidden="true">Today is <a href="https://css-naked-day.github.io/">CSS Naked Day</a>, so if you're confused about why the site looks how it does, that's why! To view this page with CSS, <a href="?css=on">click this link</a> or append "?css=on" to the page's URL.</p>
         {% endif %}
       {% endedge %}
       {{ content | safe }}

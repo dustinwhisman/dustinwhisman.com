@@ -24,6 +24,25 @@ const currentYear = () => {
   return year;
 };
 
+const getCssPreference = (request) => {
+  const url = new URL(request.url);
+
+  switch (url.searchParams.get('css')) {
+    case 'false':
+    case 'no':
+    case 'off':
+    case '0':
+      return false;
+    case 'true':
+    case 'yes':
+    case 'on':
+    case '1':
+      return true;
+    default:
+      return null;
+  }
+};
+
 export default async (request, context) => {
   try {
     let edge = new EleventyEdge('edge', {
@@ -35,6 +54,7 @@ export default async (request, context) => {
     edge.config((eleventyConfig) => {
       eleventyConfig.addGlobalData('isCssNakedDay', isCssNakedDay());
       eleventyConfig.addGlobalData('currentYear', currentYear());
+      eleventyConfig.addGlobalData('cssPreference', getCssPreference(request));
     });
 
     return await edge.handleResponse();
