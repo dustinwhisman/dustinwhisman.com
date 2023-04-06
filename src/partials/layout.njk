@@ -59,7 +59,7 @@
     <article class="cmp-container cmp-stack">
       {% edge %}
         {% if isCssNakedDay and cssPreference != true %}
-          <p aria-hidden="true">Today is <a href="https://css-naked-day.github.io/">CSS Naked Day</a>, so if you're confused about why the site looks how it does, that's why! To view this page with CSS, <a href="?css=on">click this link</a> or append "?css=on" to the page's URL.</p>
+          <p aria-hidden="true">Today is <a href="https://css-naked-day.github.io/">CSS Naked Day</a>, so if you're confused about why the site looks how it does, that's why! To <a href="?css=on">view this page with CSS</a>, you can append "?css=on" to the page's URL.</p>
         {% endif %}
       {% endedge %}
       {{ content | safe }}
@@ -90,7 +90,7 @@
           <a href="https://creativecommons.org/licenses/by/4.0/">Content License</a>
         </li>
         <li>
-          © Copyright {% edge %}{{ currentYear }}{% endedge %}
+          © Copyright {% edge "njk" %}{{ currentYear }}{% endedge %}
         </li>
       </ul>
     </div>
