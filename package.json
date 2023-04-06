@@ -9,7 +9,7 @@
   "scripts": {
     "prestart": "check-node-version --package && npm run clean",
     "prebuild": "check-node-version --package && npm run clean",
-    "start": "npx netlify dev -c \"eleventy --serve --incremental\"",
+    "start": "netlify dev -c \"eleventy --serve --incremental\"",
     "build": "eleventy",
     "clean": "rm -rf dist",
     "lint": "run-s lint:css lint:js",

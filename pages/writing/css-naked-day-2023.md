@@ -22,13 +22,14 @@ I also put in some logic to handle the awkward period between New Year's Day and
 
 Currently, Eleventy only supports Netlify's implementation of Edge Functions, which is lucky for me since that's my hosting provider anyway. But to test out my Edge Functions locally, I'd need to alter my development setup to use the Netlify CLI.
 
-I initially installed the `netlify-cli` npm package locally so I could keep it up to date and use the up-to-date version in my npm scripts, but I ran into issues with it not playing nice with GitHub Actions. I ended up going the `npx` route so I wouldn't have to deal with keeping a globally installed version updated.
+I initially installed the `netlify-cli` npm package locally so I could keep it up to date and use the up-to-date version in my npm scripts, but I ran into issues with it not playing nice with GitHub Actions. I ended up going with a global installation to get around that, which should be fine because it's not something that needs to run in CI or in production.
 
-My updated `start` script now looks like `npx netlify dev -c \"eleventy --serve --incremental\"`. This runs `netlify dev`, which handles all the Netlify stuff (Edge Functions), and then runs my existing `eleventy` script so the behavior is the same as it was before.
+My updated `start` script now looks like `netlify dev -c \"eleventy --serve --incremental\"`. This runs `netlify dev`, which handles all the Netlify stuff (Edge Functions), and then runs my existing `eleventy` script so the behavior is the same as it was before.
 
 Annoyingly, the Netlify CLI opens Chrome (not my default browser) automatically when it starts running, so I opted to disable that in my brand-new `netlify.toml` file.
 
 ```toml
+# netlify.toml
 [dev]
   autoLaunch = false
 ```
@@ -175,8 +176,15 @@ The last thing to do was to use the data from the Edge Function in my layout tem
 
 For the logic to load CSS or not, the template will now look for the CSS preference first, and if it's explicitly `false`, it will not load CSS. Otherwise, it checks for whether it's CSS Naked Day or if there's an explicitly `true` CSS preference.
 
-```html
-{% raw %}{% edge %}
+Note: to handle fallback values for cases where Edge Functions are not available, such as at build-time, I have very hacky logic in place to comment out the default content only when Edge Functions are working.
+
+```txt
+{% raw %}{# fallback for when edge functions are not available #}
+{% edge "njk" %}{{ "<!--" | safe }}{% endedge %}
+  <link rel="stylesheet" href="/styles.css">
+{% edge "njk" %}{{ "-->" | safe }}{% endedge %}
+{# handle whether to load CSS based on edge function data #}
+{% edge "njk" %}
   {% if cssPreference == false %}
   {% elseif not isCssNakedDay or cssPreference == true %}
     <link rel="stylesheet" href="/styles.css">
@@ -187,17 +195,23 @@ For the logic to load CSS or not, the template will now look for the CSS prefere
 In the main content of the page, I wanted to include a paragraph explaining why the site looks how it does on CSS Naked Day, so I set that up as well.
 
 ```html
-{% raw %}{% edge %}
+{% raw %}{% edge "njk" %}
   {% if isCssNakedDay and cssPreference != true %}
     <p aria-hidden="true">Today is <a href="https://css-naked-day.github.io/">CSS Naked Day</a>, so if you're confused about why the site looks how it does, that's why! To <a href="?css=on">view this page with CSS</a>, you can append "?css=on" to the page's URL.</p>
   {% endif %}
 {% endedge %}{% endraw %}
 ```
 
-Last up is setting the `currentYear` in the footer! I had to specify "njk" as the desired template language, otherwise, on pages that were originally written in Markdown, the year would get wrapped in a `p` tag unnecessarily.
+Last up is setting the `currentYear` in the footer! I had to specify "njk" as the desired template language, otherwise, on pages that were originally written in Markdown, the year would get wrapped in a `p` tag unnecessarily. Again, I had to hackily provide a default value that gets commented out when Edge Functions are available.
 
-```html
-© Copyright {% raw %}{% edge "njk" %}{{ currentYear }}{% endedge %}{% endraw %}
+```txt
+© Copyright
+{% raw %}{# fallback value using build-time date #}
+{% edge "njk" %}{{ "<!--" | safe }}{% endedge %}
+  {{ global.year() }}
+{% edge "njk" %}{{ "-->" | safe }}{% endedge %}
+{# fresh value based on edge function data #}
+{% edge "njk" %}{{ currentYear }}{% endedge %}{% endraw %}
 ```
 
 ## Papercuts
@@ -206,4 +220,8 @@ The result is mostly working how I want it to, but it wasn't a completely smooth
 
 Setting the "njk" on one of the `edge` blocks was a bit of a gotcha, since I did not expect the behavior to vary depending on which templating language was used to build the page. Since my layout file is `layout.njk`, I would have assumed that it would always be treated as "njk", so maybe that's a bug?
 
-Also, It would be great if there was a fallback for cases where the Edge Function fails or is unavailable (this happens a lot during hot reloading). The ideal default behavior for me would be to load CSS, show the build-time year in the footer, and not render the CSS Naked Day paragraph. Right now, there are only hacky ways to handle this, but a standard solution like `{% raw %}{% edgefallback %}{% endraw %}` would be nice.
+Also, It would be great if there was a built-in method for providing default or fallback values for content that's controlled by Edge Functions. This was important for my accessibility testing, which runs against the production build, which is served locally for Playwright to check. Without the CSS loading, those checks wouldn't be able to detect any accessibility issues like color contrast that my CSS could introduce.
+
+## Happy CSS Naked Day!
+
+I got wildly off-topic here, but if you have an Eleventy site and you want to try the same sort of setup for CSS Naked Day, please do! It was a fun excuse to try out some new techniques, and with any luck, I won't have to do anything special for next year!

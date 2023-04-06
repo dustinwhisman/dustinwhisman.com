@@ -22,7 +22,12 @@
   <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
 
-  {% edge %}
+  {# fallback for when edge functions are not available #}
+  {% edge "njk" %}{{ "<!--" | safe }}{% endedge %}
+    <link rel="stylesheet" href="/styles.css">
+  {% edge "njk" %}{{ "-->" | safe }}{% endedge %}
+  {# handle whether to load CSS based on edge function data #}
+  {% edge "njk" %}
     {% if cssPreference == false %}
     {% elseif not isCssNakedDay or cssPreference == true %}
       <link rel="stylesheet" href="/styles.css">
@@ -57,7 +62,7 @@
   <main id="main-content">
     {% block content %}
     <article class="cmp-container cmp-stack">
-      {% edge %}
+      {% edge "njk" %}
         {% if isCssNakedDay and cssPreference != true %}
           <p aria-hidden="true">Today is <a href="https://css-naked-day.github.io/">CSS Naked Day</a>, so if you're confused about why the site looks how it does, that's why! To <a href="?css=on">view this page with CSS</a>, you can append "?css=on" to the page's URL.</p>
         {% endif %}
@@ -90,7 +95,13 @@
           <a href="https://creativecommons.org/licenses/by/4.0/">Content License</a>
         </li>
         <li>
-          © Copyright {% edge "njk" %}{{ currentYear }}{% endedge %}
+          © Copyright
+          {# fallback value using build-time date #}
+          {% edge "njk" %}{{ "<!--" | safe }}{% endedge %}
+            {{ global.year() }}
+          {% edge "njk" %}{{ "-->" | safe }}{% endedge %}
+          {# fresh value based on edge function data #}
+          {% edge "njk" %}{{ currentYear }}{% endedge %}
         </li>
       </ul>
     </div>
