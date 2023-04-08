@@ -4,6 +4,7 @@ dist
 coverage
 pictures-of-cats
 .DS_Store
+.vscode
 cypress/videos
 cypress/screenshots
 cypress/downloads
