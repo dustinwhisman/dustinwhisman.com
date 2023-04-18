@@ -116,7 +116,10 @@ const resolveFilePath = (tags, slug) => {
 };
 
 const formatSlug = (title) => {
-  return title.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-');
+  return title
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]/g, '-')
+    .replaceAll('--', '-');
 };
 
 const resolveTemplate = (tags, title, description) => {
