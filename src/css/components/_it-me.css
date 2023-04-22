@@ -10,6 +10,7 @@
     17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 10%),
     25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 10%);
   float: left;
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
   float: inline-start;
   max-width: min(30vw, 200px);
   height: auto;
