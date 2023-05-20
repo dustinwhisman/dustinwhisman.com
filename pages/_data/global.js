@@ -146,6 +146,15 @@ const projects = [
     classification: 'Side Project',
     roles: ['Individual Contributor'],
   },
+  {
+    name: 'Trivia11y',
+    repoLink: 'https://github.com/sparkbox/trivia11y',
+    siteLink: 'https://trivia11y.com',
+    description: 'A trivia game for testing and improving your web accessibility knowledge.',
+    startDate: '2023-04-10',
+    classification: 'Side Project',
+    roles: ['Product Owner', 'Individual Contributer'],
+  },
 ].sort((a, b) => {
   if (a.startDate < b.startDate) {
     return 1;
