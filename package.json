@@ -31,16 +31,16 @@
   "license": "CC BY 4.0",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@axe-core/playwright": "^4.7.0",
-    "@playwright/test": "^1.33.0",
+    "@axe-core/playwright": "^4.7.1",
+    "@playwright/test": "^1.34.0",
     "check-node-version": "^4.2.1",
     "dotenv": "^16.0.3",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
-    "npm-check-updates": "^16.10.9",
+    "npm-check-updates": "^16.10.12",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
-    "stylelint": "^15.6.1",
+    "stylelint": "^15.6.2",
     "stylelint-config-standard": "^33.0.0"
   },
   "dependencies": {
