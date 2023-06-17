@@ -79,7 +79,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 ## Screen Reader Modes
 
-- VoiceOver doesn’t have a concept of mondes, but JAWS and NVDA (and others) do
+- VoiceOver doesn’t have a concept of modes, but JAWS and NVDA (and others) do
 - Document/Browse/Scan mode is used for reading content and is the default mode for most screen readers
 - Focus mode is for navigating only to focusable elements
 - Application mode disables normal keyboard functionality, leaving it up to developers to implement keyboard shortcuts (not recommended)

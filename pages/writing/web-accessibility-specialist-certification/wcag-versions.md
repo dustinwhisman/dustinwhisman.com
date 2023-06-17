@@ -17,7 +17,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 - WCAG 2.0 was published in December 2008
 - WCAG 2.1 was published in July 2018. All requirements from 2.0 are in 2.1 (unchanged)
-- WCAG 2.2 is in the works (at time of writing). All requirements from 2.0 and 2.1 will be in 2.2 (unchanged)
+- WCAG 2.2 is in the works (at time of writing). All requirements from 2.0 and 2.1 will be in 2.2 (unchanged, except for 4.1.1 Parsing, which will likely be deprecated/removed)
 - These subsequent version numbers only add new success criteria, so if you meet the 2.1 criteria, you also meet the 2.0 criteria
   - [New in 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
   - [New in 2.2 Draft](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/)
