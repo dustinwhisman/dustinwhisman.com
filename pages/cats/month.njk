@@ -18,18 +18,14 @@ eleventyExcludeFromCollections: true
 <article class="cmp-container cmp-stack">
   <h1>Pictures of Cats: {{ global.catsByMonth[month].name }}</h1>
 
-  <p class="util-visually-hidden">
-    I do apologize if you can't see the cat pictures. I didn't add alt text to the
-    images because there are a lot of them, and I doubt that descriptions of cats
-    are interesting to read or hear. Most of them would just say "Goose looking
-    concerned about something", "Barry flopped over on his back, exposing his
-    fuzzy belly", or "The brothers cuddling in an adorable way".
-  </p>
-
   <div class="cmp-pictures-of-cats__grid">
+    {% set altText %}Collection of pictures of my cats, Goose and Barry, taken during {{ global.catsByMonth[month].name }}.{% endset %}
     {% from 'partials/macros/cat-picture.njk' import catPicture %}
     {% for image in global.catsByMonth[month].pictures %}
-      {{ catPicture(image, loop.index, 6) }}
+      {% if loop.index > 1 %}
+        {% set altText = "" %}
+      {% endif %}
+      {{ catPicture(image, loop.index, 6, altText) }}
     {% endfor %}
   </div>
 

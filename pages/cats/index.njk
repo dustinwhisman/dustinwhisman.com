@@ -6,23 +6,19 @@ layout: default
 
 <h1>Pictures of Cats</h1>
 
-<p class="util-visually-hidden">
-  I do apologize if you can't see the cat pictures. I didn't add alt text to the
-  images because there are a lot of them, and I doubt that descriptions of cats
-  are interesting to read or hear. Most of them would just say "Goose looking
-  concerned about something", "Barry flopped over on his back, exposing his
-  fuzzy belly", or "The brothers cuddling in an adorable way".
-</p>
-
 {% from 'partials/macros/cat-picture.njk' import catPicture %}
 {% set imagesRendered = 0 %}
 {% for month, monthData in global.catsByMonth %}
   {% if loop.index <= 3 %}
     <h2>{{ monthData.name }}</h2>
     <div class="cmp-pictures-of-cats__grid">
+      {% set altText %}Collection of pictures of my cats, Goose and Barry, taken during {{ monthData.name }}.{% endset %}
       {% for image in monthData.pictures %}
         {% set imagesRendered = imagesRendered + 1 %}
-        {{ catPicture(image, imagesRendered, 4) }}
+        {% if loop.index > 1 %}
+          {% set altText = "" %}
+        {% endif %}
+        {{ catPicture(image, imagesRendered, 4, altText) }}
       {% endfor %}
     </div>
   {% elseif loop.index === 4 %}

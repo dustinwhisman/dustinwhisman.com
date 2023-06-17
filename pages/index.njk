@@ -67,10 +67,14 @@ layout: default
   <div class="cmp-stack">
     <h2>Recent Pictures of Cats</h2>
     <div class="cmp-pictures-of-cats__grid">
+      {% set altText = "Collection of the most recent pictures of my cats, Goose and Barry." %}
       {% from 'partials/macros/cat-picture.njk' import catPicture %}
       {% for image in global.picturesOfCats %}
         {% if loop.index <= 4 %}
-          {{ catPicture(image, loop.index, 0) }}
+          {% if loop.index > 1 %}
+            {% set altText = "" %}
+          {% endif %}
+          {{ catPicture(image, loop.index, 0, altText) }}
         {% endif %}
       {% endfor %}
     </div>

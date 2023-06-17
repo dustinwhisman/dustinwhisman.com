@@ -1,4 +1,4 @@
-{% macro catPicture(image, index, lazyThreshold) %}
+{% macro catPicture(image, index, lazyThreshold, altText) %}
 <div
   class="cmp-pictures-of-cats__cell"
   style="--aspect-ratio: {{ image.aspectRatio }}"
@@ -14,7 +14,7 @@
     />
     <img
       src="/images/cats/{{ image.name }}"
-      alt=""
+      alt="{{ altText }}"
       width="{{ image.width }}"
       height="{{ image.height }}"
       class="cmp-pictures-of-cats__image"
