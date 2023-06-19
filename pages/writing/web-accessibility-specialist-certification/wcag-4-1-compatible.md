@@ -60,13 +60,12 @@ Status messages can be programmatically determined through role or properties in
 
 ### How to Succeed
 
-- Use `role="status"` for status messages
+- Use `role="status"` to report status messages
 - Provide feedback when data is submitted successfully
 - Use `role="alert"` or live regions to identify errors
 - Do all the things from 3.3 Input Assistance for forms
 - Use `role="log"` to identify sequential information updates
 - Use `role="progressbar"` to report progress
-- Use `role="status"` to report status messages
 
 ### How to Fail
 

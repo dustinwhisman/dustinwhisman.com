@@ -62,7 +62,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   - Situational disabilities: glare on the screen from the sun, being unable to play audio in public
   - Mild disabilities: needing glasses, understanding audio better with captions
   - Non-native speakers
-  - Diminishing senses due to ageing
+  - Diminishing senses due to aging
   - Robots: SEO bots don’t have senses and can’t use mice
 - The business case for building accessibly
   - Disabled people and their friends/family have money
