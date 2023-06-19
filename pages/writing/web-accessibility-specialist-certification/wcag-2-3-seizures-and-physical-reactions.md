@@ -25,11 +25,11 @@ Content does not contain anything that flashes more than three times per second,
 - Keep any flashing areas small (counted as up to 25% of any 10-degree visual field)
 - Use flash analysis tools to determine if flashes meet the necessary thresholds
 
-## 2.3.2 Three Flashes
+## 2.3.2 Three Flashes- Level AAA
 
 Content does not contain anything that flashes more than three times per second. This removes the threshold exception from 2.3.1.
 
-## 2.3.3 Animation from Interactions
+## 2.3.3 Animation from Interactions - Level AAA
 
 Motion animations that are triggered by interaction can be disabled unless they are essential.
 

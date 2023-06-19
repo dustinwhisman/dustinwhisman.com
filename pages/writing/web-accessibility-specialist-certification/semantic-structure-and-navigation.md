@@ -25,7 +25,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 ## Language
 
 - The `lang` attribute on the `html` tag is not optional! Use it!
-- Two-letter codes are the best supported, such as `lang=”en”` or `lang="de"`
+- Two-letter codes are the best supported, such as `lang="en"` or `lang="de"`
 - Use `lang` attributes on inline language changes, like quoting French
 
 ## Landmarks
