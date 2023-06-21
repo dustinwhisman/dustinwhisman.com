@@ -36,7 +36,7 @@ tags:
   WAS_CERTIFICATION: (title, description) => `---
 title: "WAS Notes: ${title} | Writing | Dustin Whisman"
 description: "${description}"
-articleTitle: "WAS Notes: ${title}"
+articleTitle: "${title}"
 layout: default
 date: ${today()}
 tags:

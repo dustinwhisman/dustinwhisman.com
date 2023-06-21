@@ -1,7 +1,7 @@
 ---
 title: 'WAS Notes: WCAG 1.1 Text Alternatives | Writing | Dustin Whisman'
 description: How do you meet the success criteria for WCAG 1.1 Text Alternatives?
-articleTitle: 'WAS Notes: WCAG 1.1 Text Alternatives'
+articleTitle: 'WCAG 1.1 Text Alternatives'
 layout: default
 date: 2023-01-25
 tags:

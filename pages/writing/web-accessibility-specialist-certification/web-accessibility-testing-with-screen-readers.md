@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: Web Accessibility Testing with Screen Readers | Writing | Dustin Whisman"
 description: "What do you need to know to be able to test sites with different screen readers?"
-articleTitle: "WAS Notes: Web Accessibility Testing with Screen Readers"
+articleTitle: "Web Accessibility Testing with Screen Readers"
 layout: default
 date: 2023-05-11T00:00:00.000Z
 tags:

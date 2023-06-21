@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: Semantic Structure and Navigation | Writing | Dustin Whisman"
 description: "What are the best practices for writing semantic markup that is as accessible as possible?"
-articleTitle: "WAS Notes: Semantic Structure and Navigation"
+articleTitle: "Semantic Structure and Navigation"
 layout: default
 date: 2023-04-06T00:00:00.000Z
 tags:

@@ -1,7 +1,7 @@
 ---
 title: 'WAS Notes: WCAG 1.3 Adaptable | Writing | Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 1.3 Adaptable?
-articleTitle: 'WAS Notes: WCAG 1.3 Adaptable'
+articleTitle: 'WCAG 1.3 Adaptable'
 layout: default
 date: 2023-02-01
 tags:

@@ -1,7 +1,7 @@
 ---
 title: 'WAS Notes: The Basics | Writing | Dustin Whisman'
 description: To get started studying for the WAS certification, let's start with the basics, laying out some facts and terms to understand before going deeper.
-articleTitle: 'WAS Notes: The Basics'
+articleTitle: 'The Basics'
 layout: default
 date: 2023-01-06T00:00:01Z
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: Designing an Accessible User Experience | Writing | Dustin Whisman"
 description: "What are the accessibility considerations that you need to account for when designing a user experience?"
-articleTitle: "WAS Notes: Designing an Accessible User Experience"
+articleTitle: "Designing an Accessible User Experience"
 layout: default
 date: 2023-02-24T00:00:00.000Z
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: Images, SVGs, and Canvas | Writing | Dustin Whisman"
 description: "What are the accessibility considerations to account for when working with images, SVGs, and canvas?"
-articleTitle: "WAS Notes: Images, SVGs, and Canvas"
+articleTitle: "Images, SVGs, and Canvas"
 layout: default
 date: 2023-03-28T00:00:00.000Z
 tags:

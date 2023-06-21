@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: WCAG 3.1 Readable | Writing | Dustin Whisman"
 description: "How can you meet all the success criteria for WCAG 3.1 Readable?"
-articleTitle: "WAS Notes: WCAG 3.1 Readable"
+articleTitle: "WCAG 3.1 Readable"
 layout: default
 date: 2023-02-14T00:00:00.000Z
 tags:

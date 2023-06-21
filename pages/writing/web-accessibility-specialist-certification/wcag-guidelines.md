@@ -1,7 +1,7 @@
 ---
 title: 'WAS Notes: WCAG Guidelines | Writing | Dustin Whisman'
 description: This is an overview of what the Web Content Accessibility Guidelines are for and how they're structured.
-articleTitle: 'WAS Notes: WCAG Guidelines'
+articleTitle: 'WCAG Guidelines'
 layout: default
 date: 2023-01-12T00:00:00Z
 tags:

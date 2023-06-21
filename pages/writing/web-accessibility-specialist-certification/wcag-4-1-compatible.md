@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: WCAG 4.1 Compatible | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 4.1 Compatible?"
-articleTitle: "WAS Notes: WCAG 4.1 Compatible"
+articleTitle: "WCAG 4.1 Compatible"
 layout: default
 date: 2023-02-16T00:00:00.000Z
 tags:

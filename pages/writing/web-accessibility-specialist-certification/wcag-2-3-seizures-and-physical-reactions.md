@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: WCAG 2.3 Seizures and Physical Reactions | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 2.3 Seizures and Physical Reactions?"
-articleTitle: "WAS Notes: WCAG 2.3 Seizures and Physical Reactions"
+articleTitle: "WCAG 2.3 Seizures and Physical Reactions"
 layout: default
 date: 2023-02-10T00:00:00.000Z
 tags:

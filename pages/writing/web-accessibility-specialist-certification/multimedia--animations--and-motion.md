@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: Multimedia, Animations, and Motion | Writing | Dustin Whisman"
 description: "What are the accessibility considerations that need to be accounted for related to Multimedia, Animations, and Motion?"
-articleTitle: "WAS Notes: Multimedia, Animations, and Motion"
+articleTitle: "Multimedia, Animations, and Motion"
 layout: default
 date: 2023-03-13T00:00:00.000Z
 tags:

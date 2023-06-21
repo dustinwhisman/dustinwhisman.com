@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: Visual Design and Colors | Writing | Dustin Whisman"
 description: "What are the accessibility considerations related to visual design and colors?"
-articleTitle: "WAS Notes: Visual Design and Colors"
+articleTitle: "Visual Design and Colors"
 layout: default
 date: 2023-02-28T00:00:00.000Z
 tags:

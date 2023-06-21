@@ -1,7 +1,7 @@
 ---
 title: 'WAS Notes: WCAG 1.4 Distinguishable | Writing | Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 1.4 Distinguishable?
-articleTitle: 'WAS Notes: WCAG 1.4 Distinguishable'
+articleTitle: 'WCAG 1.4 Distinguishable'
 layout: default
 date: 2023-02-07T00:00:00Z
 tags:

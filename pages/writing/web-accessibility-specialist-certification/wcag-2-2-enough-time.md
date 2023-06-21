@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: WCAG 2.2 Enough Time | Writing | Dustin Whisman"
 description: "How do you meet all of the success criteria for 2.2 Enough Time?"
-articleTitle: "WAS Notes: WCAG 2.2 Enough Time"
+articleTitle: "WCAG 2.2 Enough Time"
 layout: default
 date: 2023-02-09T00:00:00.000Z
 tags:

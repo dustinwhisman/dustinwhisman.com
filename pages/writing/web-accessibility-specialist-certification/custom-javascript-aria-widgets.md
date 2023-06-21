@@ -1,7 +1,7 @@
 ---
 title: "WAS Notes: Custom JavaScript/ARIA Widgets | Writing | Dustin Whisman"
 description: "What are the accessibility considerations to account for when building custom JavaScript/ARIA widgets?"
-articleTitle: "WAS Notes: Custom JavaScript/ARIA Widgets"
+articleTitle: "Custom JavaScript/ARIA Widgets"
 layout: default
 date: 2023-04-26T00:00:00.000Z
 tags:
