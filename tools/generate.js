@@ -14,6 +14,7 @@ const today = () => {
 const collections = {
   LEARNING_IN_PUBLIC: 'learning in public',
   WAS_CERTIFICATION: 'WAS certification',
+  CPACC_CERTIFICATION: 'CPACC certification',
   ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
 };
 
@@ -34,7 +35,7 @@ tags:
 {% include 'partials/published-date.njk' %}
 `,
   WAS_CERTIFICATION: (title, description) => `---
-title: "${title} | Writing | Dustin Whisman"
+title: "${title} | WAS Notes | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: default
@@ -47,6 +48,23 @@ tags:
 # WAS Notes: ${title}
 
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
+
+{% include 'partials/published-date.njk' %}
+`,
+CPACC_CERTIFICATION: (title, description) => `---
+title: "${title} | CPACC Notes | Writing | Dustin Whisman"
+description: "${description}"
+articleTitle: "${title}"
+layout: default
+date: ${today()}
+tags:
+  - writing
+  - CPACC certification
+---
+
+# CPACC Notes: ${title}
+
+_I'm studying for the CPACC certification. These are some of the notes I've taken recently._
 
 {% include 'partials/published-date.njk' %}
 `,
@@ -88,6 +106,16 @@ const resolveFilePath = (tags, slug) => {
       'pages',
       'writing',
       'web-accessibility-specialist-certification',
+      `${slug}.md`,
+    );
+  }
+
+  if (tags.includes(collections.CPACC_CERTIFICATION)) {
+    return path.join(
+      process.cwd(),
+      'pages',
+      'writing',
+      'certified-professional-in-accessibility-core-competencies-certification',
       `${slug}.md`,
     );
   }
