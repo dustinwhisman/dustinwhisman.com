@@ -1,7 +1,7 @@
 ---
-title: 'WAS Notes: WCAG 2.1 Keyboard Accessible | Writing | Dustin Whisman'
+title: 'WCAG 2.1 Keyboard Accessible | WAS Notes | Writing | Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 2.1 Keyboard Accessible?
-articleTitle: 'WAS Notes: WCAG 2.1 Keyboard Accessible'
+articleTitle: 'WCAG 2.1 Keyboard Accessible'
 layout: default
 date: 2023-02-07T00:00:01Z
 tags:

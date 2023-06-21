@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: Device-Independent Input Methods | Writing | Dustin Whisman"
+title: "Device-Independent Input Methods | WAS Notes | Writing | Dustin Whisman"
 description: "What are the accessibility considerations related to Device-Independent Input Methods?"
-articleTitle: "WAS Notes: Device-Independent Input Methods"
+articleTitle: "Device-Independent Input Methods"
 layout: default
 date: 2023-05-05T00:00:00.000Z
 tags:

@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: Responsive Design and Zoom | Writing | Dustin Whisman"
+title: "Responsive Design and Zoom | WAS Notes | Writing | Dustin Whisman"
 description: "What are the accessibility considerations we need to account for that relate to Responsive Design and Zoom?"
-articleTitle: "WAS Notes: Responsive Design and Zoom"
+articleTitle: "Responsive Design and Zoom"
 layout: default
 date: 2023-03-14T00:00:00.000Z
 tags:

@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: Dynamic Updates, AJAX, and Single Page Apps | Writing | Dustin Whisman"
+title: "Dynamic Updates, AJAX, and Single Page Apps | WAS Notes | Writing | Dustin Whisman"
 description: "What are the accessibility considerations related to dynamic updates, AJAX, and Single Page Apps?"
-articleTitle: "WAS Notes: Dynamic Updates, AJAX, and Single Page Apps"
+articleTitle: "Dynamic Updates, AJAX, and Single Page Apps"
 layout: default
 date: 2023-04-18T00:00:00.000Z
 tags:

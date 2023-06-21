@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: WCAG 3.2 Predictable | Writing | Dustin Whisman"
+title: "WCAG 3.2 Predictable | WAS Notes | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 3.2 Predictable?"
-articleTitle: "WAS Notes: WCAG 3.2 Predictable"
+articleTitle: "WCAG 3.2 Predictable"
 layout: default
 date: 2023-02-15T00:00:00.000Z
 tags:

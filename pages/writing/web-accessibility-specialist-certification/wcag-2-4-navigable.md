@@ -1,7 +1,7 @@
 ---
-title: "WAS Notes: WCAG 2.4 Navigable | Writing | Dustin Whisman"
+title: "WCAG 2.4 Navigable | WAS Notes | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WGAC 2.4 Navigable?"
-articleTitle: "WAS Notes: WCAG 2.4 Navigable"
+articleTitle: "WCAG 2.4 Navigable"
 layout: default
 date: 2023-02-10T00:00:00.001Z
 tags:
