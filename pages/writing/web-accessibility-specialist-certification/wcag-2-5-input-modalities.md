@@ -1,5 +1,5 @@
 ---
-title: "WAS Notes: WCAG 2.5 Input Modalities | Writing | Dustin Whisman"
+title: "WCAG 2.5 Input Modalities | WAS Notes | Writing | Dustin Whisman"
 description: "How do you meet all of the success criteria for WCAG 2.5 Input Modalities?"
 articleTitle: "WCAG 2.5 Input Modalities"
 layout: default

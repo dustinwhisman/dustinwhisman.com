@@ -1,5 +1,5 @@
 ---
-title: "WAS Notes: Visual Design and Colors | Writing | Dustin Whisman"
+title: "Visual Design and Colors | WAS Notes | Writing | Dustin Whisman"
 description: "What are the accessibility considerations related to visual design and colors?"
 articleTitle: "Visual Design and Colors"
 layout: default

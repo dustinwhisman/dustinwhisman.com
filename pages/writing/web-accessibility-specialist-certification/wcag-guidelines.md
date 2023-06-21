@@ -1,5 +1,5 @@
 ---
-title: 'WAS Notes: WCAG Guidelines | Writing | Dustin Whisman'
+title: 'WCAG Guidelines | WAS Notes | Writing | Dustin Whisman'
 description: This is an overview of what the Web Content Accessibility Guidelines are for and how they're structured.
 articleTitle: 'WCAG Guidelines'
 layout: default

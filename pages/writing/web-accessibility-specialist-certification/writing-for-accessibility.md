@@ -1,5 +1,5 @@
 ---
-title: 'WAS Notes: Writing For Accessibility | Writing | Dustin Whisman'
+title: 'Writing For Accessibility | WAS Notes | Writing | Dustin Whisman'
 description: This describes some techniques for writing with accessibility in mind, with the key takeaway being to keep things simple and orderly.
 articleTitle: 'Writing For Accessibility'
 layout: default

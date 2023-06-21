@@ -1,5 +1,5 @@
 ---
-title: "WAS Notes: Conformance Testing for WCAG 2.1 Level A | Writing | Dustin Whisman"
+title: "Conformance Testing for WCAG 2.1 Level A | WAS Notes | Writing | Dustin Whisman"
 description: "This is essentially a checklist to follow when testing a site for WCAG Level A conformance."
 articleTitle: "Conformance Testing for WCAG 2.1 Level A"
 layout: default

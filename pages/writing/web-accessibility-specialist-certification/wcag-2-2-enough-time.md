@@ -1,5 +1,5 @@
 ---
-title: "WAS Notes: WCAG 2.2 Enough Time | Writing | Dustin Whisman"
+title: "WCAG 2.2 Enough Time | WAS Notes | Writing | Dustin Whisman"
 description: "How do you meet all of the success criteria for 2.2 Enough Time?"
 articleTitle: "WCAG 2.2 Enough Time"
 layout: default

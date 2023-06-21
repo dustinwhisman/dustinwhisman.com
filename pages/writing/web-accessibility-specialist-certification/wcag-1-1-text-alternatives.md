@@ -1,5 +1,5 @@
 ---
-title: 'WAS Notes: WCAG 1.1 Text Alternatives | Writing | Dustin Whisman'
+title: 'WCAG 1.1 Text Alternatives | WAS Notes | Writing | Dustin Whisman'
 description: How do you meet the success criteria for WCAG 1.1 Text Alternatives?
 articleTitle: 'WCAG 1.1 Text Alternatives'
 layout: default

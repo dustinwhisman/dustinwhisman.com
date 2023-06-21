@@ -1,5 +1,5 @@
 ---
-title: "WAS Notes: I Took the WAS Exam | Writing | Dustin Whisman"
+title: "I Took the WAS Exam | WAS Notes | Writing | Dustin Whisman"
 description: "In which I describe the process of taking the WAS Exam and reflect on the six months of studying it took to get here."
 articleTitle: "I Took the WAS Exam"
 layout: default

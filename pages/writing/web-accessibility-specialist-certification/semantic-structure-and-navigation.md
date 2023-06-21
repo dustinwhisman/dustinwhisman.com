@@ -1,5 +1,5 @@
 ---
-title: "WAS Notes: Semantic Structure and Navigation | Writing | Dustin Whisman"
+title: "Semantic Structure and Navigation | WAS Notes | Writing | Dustin Whisman"
 description: "What are the best practices for writing semantic markup that is as accessible as possible?"
 articleTitle: "Semantic Structure and Navigation"
 layout: default

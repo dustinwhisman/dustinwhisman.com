@@ -1,5 +1,5 @@
 ---
-title: "WAS Notes: WCAG 4.1 Compatible | Writing | Dustin Whisman"
+title: "WCAG 4.1 Compatible | WAS Notes | Writing | Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 4.1 Compatible?"
 articleTitle: "WCAG 4.1 Compatible"
 layout: default

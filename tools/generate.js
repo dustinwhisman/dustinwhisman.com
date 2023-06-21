@@ -34,7 +34,7 @@ tags:
 {% include 'partials/published-date.njk' %}
 `,
   WAS_CERTIFICATION: (title, description) => `---
-title: "WAS Notes: ${title} | Writing | Dustin Whisman"
+title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: default
