@@ -22,17 +22,7 @@
   <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
 
-  {# fallback for when edge functions are not available #}
-  {% edge "njk" %}{{ "<!--" | safe }}{% endedge %}
-    <link rel="stylesheet" href="/styles.css">
-  {% edge "njk" %}{{ "-->" | safe }}{% endedge %}
-  {# handle whether to load CSS based on edge function data #}
-  {% edge "njk" %}
-    {% if cssPreference == false %}
-    {% elseif not isCssNakedDay or cssPreference == true %}
-      <link rel="stylesheet" href="/styles.css">
-    {% endif %}
-  {% endedge %}
+  <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
@@ -62,11 +52,6 @@
   <main id="main-content">
     {% block content %}
     <article class="cmp-container cmp-stack">
-      {% edge "njk" %}
-        {% if isCssNakedDay and cssPreference != true %}
-          <p aria-hidden="true">Today is <a href="https://css-naked-day.github.io/">CSS Naked Day</a>, so if you're confused about why the site looks how it does, that's why! To <a href="?css=on">view this page with CSS</a>, you can append "?css=on" to the page's URL.</p>
-        {% endif %}
-      {% endedge %}
       {{ content | safe }}
     </article>
     {% endblock %}
@@ -96,12 +81,9 @@
         </li>
         <li>
           © Copyright
-          {# fallback value using build-time date #}
-          {% edge "njk" %}{{ "<!--" | safe }}{% endedge %}
+          <span data-current-year>
             {{ global.year() }}
-          {% edge "njk" %}{{ "-->" | safe }}{% endedge %}
-          {# fresh value based on edge function data #}
-          {% edge "njk" %}{{ currentYear }}{% endedge %}
+          </span>
         </li>
       </ul>
     </div>
@@ -109,6 +91,7 @@
   {% endblock %}
 
   <!-- global scripts, should render on every page -->
+  <script src="/global-scripts.js"></script>
 
   <!-- page-specific scripts, should be set within the page template -->
   {% block scripts %}{% endblock %}
