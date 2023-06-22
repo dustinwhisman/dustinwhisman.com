@@ -65,7 +65,7 @@ const updateCurrentYear = () => {
     removeCSS();
   }
 
-  if (isCSSNakedDay() && cssPreference != true) {
+  if (isCSSNakedDay() && cssPreference !== true) {
     removeCSS();
     insertDisclaimer();
   }
