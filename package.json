@@ -9,7 +9,7 @@
   "scripts": {
     "prestart": "check-node-version --package && npm run clean",
     "prebuild": "check-node-version --package && npm run clean",
-    "start": "netlify dev -c \"eleventy --serve --incremental\"",
+    "start": "eleventy --serve --incremental",
     "build": "eleventy",
     "clean": "rm -rf dist",
     "lint": "run-s lint:css lint:js",
@@ -34,7 +34,7 @@
     "@axe-core/playwright": "^4.7.3",
     "@playwright/test": "^1.35.1",
     "check-node-version": "^4.2.1",
-    "dotenv": "^16.3.0",
+    "dotenv": "^16.3.1",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "npm-check-updates": "^16.10.12",
