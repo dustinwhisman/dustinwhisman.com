@@ -1,10 +1,7 @@
-const { EleventyEdgePlugin } = require('@11ty/eleventy');
 const hljs = require('highlight.js');
 const md = require('markdown-it');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(EleventyEdgePlugin);
-
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
 
   const markdownOptions = {
