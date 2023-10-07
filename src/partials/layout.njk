@@ -3,106 +3,106 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% block titleAndDescription %}
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  {% endblock %}
+	{% block titleAndDescription %}
+	<title>{{ title }}</title>
+	<meta name="description" content="{{ description }}">
+	{% endblock %}
 
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="/favicon.png" type="image/png">
-  <link rel="mask-icon" href="/favicon.svg">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<link rel="alternate icon" href="/favicon.png" type="image/png">
+	<link rel="mask-icon" href="/favicon.svg">
 
-  <link rel="apple-touch-icon" href="/maskable_icon.png">
-  <link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" href="/maskable_icon.png">
+	<link rel="manifest" href="/manifest.json">
 
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
+	<meta name="color-scheme" content="light dark">
+	<meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+	<meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
 
-  <link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
-  {% block header %}
-  <header>
-    <a href="#main-content" class="util-visually-hidden cmp-skip-to-content">Skip to content</a>
-    <div class="cmp-container">
-      <nav aria-label="main navigation">
-        <ul class="cmp-navigation">
-          <li>
-            <a href="/" {% if page.url === '/' %}aria-current="page"{% endif %}>Home</a>
-          </li>
-          <li>
-            <a href="/projects/" {% if page.url === '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-          </li>
-          <li>
-            <a href="/writing/" {% if page.url === '/writing/' %}aria-current="page"{% endif %}>Writing</a>
-          </li>
-          <li>
-            <a href="/cats/" {% if page.url === '/cats/' %}aria-current="page"{% endif %}>Pictures of Cats</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  {% endblock %}
-  <main id="main-content">
-    {% block content %}
-    <article class="cmp-container cmp-stack">
-      {{ content | safe }}
-    </article>
-    {% endblock %}
-  </main>
-  {% block footer %}
-  <footer>
-    <div class="cmp-container cmp-stack">
-      <p class="cmp-fine-print">
-        Do you have a web development project that you need help with? I'm
-        probably too busy to help on my own, but if you <a
-        href="https://sparkbox.com/contact">contact Sparkbox</a> and end up
-        working with them, I get a nice little bonus. Just tell them Dustin sent
-        you–I might even end up working on the project.
-      </p>
-      <ul class="cmp-navigation">
-        <li>
-          <a href="https://github.com/dustinwhisman/dustinwhisman.com">View Source</a>
-        </li>
-        <li>
-          <a href="/feed.xml">RSS Feed</a>
-        </li>
-        <li>
-          <a href="/contact-me/">Contact Me</a>
-        </li>
-        <li>
-          <a href="https://creativecommons.org/licenses/by/4.0/">Content License</a>
-        </li>
-        <li>
-          © Copyright
-          <span data-current-year>
-            {{ global.year() }}
-          </span>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  {% endblock %}
+	{% block header %}
+	<header>
+		<a href="#main-content" class="util-visually-hidden cmp-skip-to-content">Skip to content</a>
+		<div class="cmp-container">
+			<nav aria-label="main navigation">
+				<ul class="cmp-navigation">
+					<li>
+						<a href="/" {% if page.url === '/' %}aria-current="page"{% endif %}>Home</a>
+					</li>
+					<li>
+						<a href="/projects/" {% if page.url === '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+					</li>
+					<li>
+						<a href="/writing/" {% if page.url === '/writing/' %}aria-current="page"{% endif %}>Writing</a>
+					</li>
+					<li>
+						<a href="/cats/" {% if page.url === '/cats/' %}aria-current="page"{% endif %}>Pictures of Cats</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	{% endblock %}
+	<main id="main-content">
+		{% block content %}
+		<article class="cmp-container cmp-stack">
+			{{ content | safe }}
+		</article>
+		{% endblock %}
+	</main>
+	{% block footer %}
+	<footer>
+		<div class="cmp-container cmp-stack">
+			<p class="cmp-fine-print">
+				Do you have a web development project that you need help with? I'm
+				probably too busy to help on my own, but if you <a
+				href="https://sparkbox.com/contact">contact Sparkbox</a> and end up
+				working with them, I get a nice little bonus. Just tell them Dustin sent
+				you–I might even end up working on the project.
+			</p>
+			<ul class="cmp-navigation">
+				<li>
+					<a href="https://github.com/dustinwhisman/dustinwhisman.com">View Source</a>
+				</li>
+				<li>
+					<a href="/feed.xml">RSS Feed</a>
+				</li>
+				<li>
+					<a href="/contact-me/">Contact Me</a>
+				</li>
+				<li>
+					<a href="https://creativecommons.org/licenses/by/4.0/">Content License</a>
+				</li>
+				<li>
+					© Copyright
+					<span data-current-year>
+						{{ global.year() }}
+					</span>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	{% endblock %}
 
-  <!-- global scripts, should render on every page -->
-  <script src="/global-scripts.js"></script>
+	<!-- global scripts, should render on every page -->
+	<script src="/global-scripts.js"></script>
 
-  <!-- page-specific scripts, should be set within the page template -->
-  {% block scripts %}{% endblock %}
+	<!-- page-specific scripts, should be set within the page template -->
+	{% block scripts %}{% endblock %}
 
-  <script type="module">
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
-  </script>
+	<script type="module">
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/service-worker.js');
+			});
+		}
+	</script>
 </body>
 
 </html>

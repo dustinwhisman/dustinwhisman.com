@@ -3,10 +3,10 @@ permalink: /routes.json
 eleventyExcludeFromCollections: true
 ---
 [
-  {% for page in collections.all %}
-    "{{ page.url | url }}",
-  {% endfor %}
-  {% for month, monthData in global.catsByMonth %}
-    "/cats/{{ month }}/"{% if not loop.last %},{% endif %}
-  {% endfor %}
+	{% for page in collections.all %}
+		"{{ page.url | url }}",
+	{% endfor %}
+	{% for month, monthData in global.catsByMonth %}
+		"/cats/{{ month }}/"{% if not loop.last %},{% endif %}
+	{% endfor %}
 ]

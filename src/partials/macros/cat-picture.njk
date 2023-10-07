@@ -1,24 +1,24 @@
 {% macro catPicture(image, index, lazyThreshold, altText) %}
 <div
-  class="cmp-pictures-of-cats__cell"
-  style="--aspect-ratio: {{ image.aspectRatio }}"
+	class="cmp-pictures-of-cats__cell"
+	style="--aspect-ratio: {{ image.aspectRatio }}"
 >
-  <picture>
-    <source
-      srcset="/images/cats/avif/{{ image.name.replace('.jpg', '.avif') }}"
-      type="image/avif"
-    />
-    <source
-      srcset="/images/cats/webp/{{ image.name.replace('.jpg', '.webp') }}"
-      type="image/webp"
-    />
-    <img
-      src="/images/cats/{{ image.name }}"
-      alt="{{ altText }}"
-      width="{{ image.width }}"
-      height="{{ image.height }}"
-      class="cmp-pictures-of-cats__image"
-      {% if index > lazyThreshold %}loading="lazy"{% endif %}>
-  </picture>
+	<picture>
+		<source
+			srcset="/images/cats/avif/{{ image.name.replace('.jpg', '.avif') }}"
+			type="image/avif"
+		/>
+		<source
+			srcset="/images/cats/webp/{{ image.name.replace('.jpg', '.webp') }}"
+			type="image/webp"
+		/>
+		<img
+			src="/images/cats/{{ image.name }}"
+			alt="{{ altText }}"
+			width="{{ image.width }}"
+			height="{{ image.height }}"
+			class="cmp-pictures-of-cats__image"
+			{% if index > lazyThreshold %}loading="lazy"{% endif %}>
+	</picture>
 </div>
 {% endmacro %}

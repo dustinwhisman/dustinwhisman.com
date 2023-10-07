@@ -15,24 +15,24 @@ pagination:
 <p>Anything that I would consider to be learning in public lives here. That could be notes from studying something specific, or random posts about something I learned about recently.</p>
 
 <ul class="cmp-article-listing__list">
-  {% for article in articles %}
-    <li>
-      <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
-      <span>
-        <span class="util-visually-hidden">Published:</span>
-        <time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
-          {{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-        </time>
-      </span>
-    </li>
-  {% endfor %}
+	{% for article in articles %}
+		<li>
+			<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+			<span>
+				<span class="util-visually-hidden">Published:</span>
+				<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+					{{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+				</time>
+			</span>
+		</li>
+	{% endfor %}
 </ul>
 
 <nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Learning in public pagination navigation">
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">Newer posts</a>
-  {% endif %}
-  {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}">Older posts</a>
-  {% endif %}
+	{% if pagination.href.previous %}
+		<a href="{{ pagination.href.previous }}">Newer posts</a>
+	{% endif %}
+	{% if pagination.href.next %}
+		<a href="{{ pagination.href.next }}">Older posts</a>
+	{% endif %}
 </nav>

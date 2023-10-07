@@ -5,80 +5,80 @@ layout: default
 ---
 
 <h1 class="util-visually-hidden">
-  Dustin Whisman: Full Stack Developer
+	Dustin Whisman: Full Stack Developer
 </h1>
 
 <div class="cmp-stack cmp-stack--s5">
-  <div class="cmp-it-me">
-    <picture>
-      <source srcset="/images/beautiful-shining-face.avif" type="image/avif">
-      <source srcset="/images/beautiful-shining-face.webp" type="image/webp">
-      <img
-        src="/images/beautiful-shining-face.jpg"
-        alt="One of few salvageable photos of me from vacation in Switzerland. I'm almost smiling like a normal person."
-        class="cmp-it-me__image"
-        width="200"
-        height="200"
-      >
-    </picture>
-    <p>
-      Hi, I'm Dustin. I'm a Full Stack Developer and
-      <a href="https://www.accessibilityassociation.org/s/wascertification">Web
-      Accessibility Specialist</a> at
-      <a href="https://sparkbox.com">Sparkbox</a>, where I write HTML, CSS,
-      JavaScript, and whatever other <em>webby stuff</em> our clients need.
-    </p>
-    <p>
-      I'm a generalist, so I'd say my strongest skill is problem solving. And
-      I always prioritize accessibility, performance, and the user experience
-      of whatever I'm building with whatever tools I'm building them with.
-    </p>
-  </div>
+	<div class="cmp-it-me">
+		<picture>
+			<source srcset="/images/beautiful-shining-face.avif" type="image/avif">
+			<source srcset="/images/beautiful-shining-face.webp" type="image/webp">
+			<img
+				src="/images/beautiful-shining-face.jpg"
+				alt="One of few salvageable photos of me from vacation in Switzerland. I'm almost smiling like a normal person."
+				class="cmp-it-me__image"
+				width="200"
+				height="200"
+			>
+		</picture>
+		<p>
+			Hi, I'm Dustin. I'm a Full Stack Developer and
+			<a href="https://www.accessibilityassociation.org/s/wascertification">Web
+			Accessibility Specialist</a> at
+			<a href="https://sparkbox.com">Sparkbox</a>, where I write HTML, CSS,
+			JavaScript, and whatever other <em>webby stuff</em> our clients need.
+		</p>
+		<p>
+			I'm a generalist, so I'd say my strongest skill is problem solving. And
+			I always prioritize accessibility, performance, and the user experience
+			of whatever I'm building with whatever tools I'm building them with.
+		</p>
+	</div>
 
-  <div class="cmp-stack">
-    <h2>Recent Projects</h2>
-    <ul class="cmp-project__list">
-      {% from 'partials/macros/project-card.njk' import projectCard %}
-      {% for project in global.recentProjects %}
-        <li>
-          {{ projectCard(project, 'h3') }}
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+	<div class="cmp-stack">
+		<h2>Recent Projects</h2>
+		<ul class="cmp-project__list">
+			{% from 'partials/macros/project-card.njk' import projectCard %}
+			{% for project in global.recentProjects %}
+				<li>
+					{{ projectCard(project, 'h3') }}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 
-  <div class="cmp-stack">
-    <h2>Recent Writing</h2>
-    <ul class="cmp-article-listing__list">
-      {% for article in collections.writing | reverse %}
-        {% if loop.index <= 5 %}
-          <li>
-            <a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
-            <span>
-              <span class="util-visually-hidden">Published:</span>
-              <time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
-                {{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-              </time>
-            </span>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
+	<div class="cmp-stack">
+		<h2>Recent Writing</h2>
+		<ul class="cmp-article-listing__list">
+			{% for article in collections.writing | reverse %}
+				{% if loop.index <= 5 %}
+					<li>
+						<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+						<span>
+							<span class="util-visually-hidden">Published:</span>
+							<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+								{{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+							</time>
+						</span>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
 
-  <div class="cmp-stack">
-    <h2>Recent Pictures of Cats</h2>
-    <div class="cmp-pictures-of-cats__grid">
-      {% set altText = "Collection of the most recent pictures of my cats, Goose and Barry." %}
-      {% from 'partials/macros/cat-picture.njk' import catPicture %}
-      {% for image in global.picturesOfCats %}
-        {% if loop.index <= 4 %}
-          {% if loop.index > 1 %}
-            {% set altText = "" %}
-          {% endif %}
-          {{ catPicture(image, loop.index, 0, altText) }}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+	<div class="cmp-stack">
+		<h2>Recent Pictures of Cats</h2>
+		<div class="cmp-pictures-of-cats__grid">
+			{% set altText = "Collection of the most recent pictures of my cats, Goose and Barry." %}
+			{% from 'partials/macros/cat-picture.njk' import catPicture %}
+			{% for image in global.picturesOfCats %}
+				{% if loop.index <= 4 %}
+					{% if loop.index > 1 %}
+						{% set altText = "" %}
+					{% endif %}
+					{{ catPicture(image, loop.index, 0, altText) }}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
 </div>
