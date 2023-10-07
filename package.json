@@ -1,51 +1,51 @@
 {
-  "name": "dustinwhisman-com",
-  "version": "0.1.0",
-  "description": "My very own personal website. How indie, how 2006.",
-  "main": "index.js",
-  "engines": {
-    "node": ">=18"
-  },
-  "scripts": {
-    "prestart": "check-node-version --package && npm run clean",
-    "prebuild": "check-node-version --package && npm run clean",
-    "start": "eleventy --serve --incremental",
-    "build": "eleventy",
-    "clean": "rm -rf dist",
-    "lint": "run-s lint:css lint:js",
-    "lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
-    "lint:js": "eslint . --ext .js",
-    "test:e2e": "playwright test",
-    "pretest:e2e": "npm run build",
-    "update-deps": "ncu -u",
-    "postupdate-deps": "npm install",
-    "optimize-images": "run-s images:jpg images:webp images:avif images:clean",
-    "images:jpg": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -path ../src/public/images/cats *.jpg",
-    "images:webp": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -format webP -path ../src/public/images/cats/webp *.jpg",
-    "images:avif": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 50 -format avif -path ../src/public/images/cats/avif *.jpg",
-    "images:clean": "rm -rf pictures-of-cats/*.jpg",
-    "generate": "node ./tools/generate"
-  },
-  "keywords": [],
-  "author": "Dustin Whisman",
-  "license": "CC BY 4.0",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@axe-core/playwright": "^4.7.3",
-    "@playwright/test": "^1.38.1",
-    "check-node-version": "^4.2.1",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "npm-check-updates": "^16.14.5",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^3.0.3",
-    "stylelint": "^15.10.3",
-    "stylelint-config-standard": "^34.0.0"
-  },
-  "dependencies": {
-    "highlight.js": "^11.8.0",
-    "image-size": "^1.0.2",
-    "markdown-it": "^13.0.2"
-  }
+	"name": "dustinwhisman-com",
+	"version": "0.1.0",
+	"description": "My very own personal website. How indie, how 2006.",
+	"main": "index.js",
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"prestart": "check-node-version --package && npm run clean",
+		"prebuild": "check-node-version --package && npm run clean",
+		"start": "eleventy --serve --incremental",
+		"build": "eleventy",
+		"clean": "rm -rf dist",
+		"lint": "run-s lint:css lint:js",
+		"lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
+		"lint:js": "eslint . --ext .js",
+		"test:e2e": "playwright test",
+		"pretest:e2e": "npm run build",
+		"update-deps": "ncu -u",
+		"postupdate-deps": "npm install",
+		"optimize-images": "run-s images:jpg images:webp images:avif images:clean",
+		"images:jpg": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -path ../src/public/images/cats *.jpg",
+		"images:webp": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 70 -format webP -path ../src/public/images/cats/webp *.jpg",
+		"images:avif": "cd pictures-of-cats && magick mogrify -auto-orient -strip -resize 640000@ -quality 50 -format avif -path ../src/public/images/cats/avif *.jpg",
+		"images:clean": "rm -rf pictures-of-cats/*.jpg",
+		"generate": "node ./tools/generate"
+	},
+	"keywords": [],
+	"author": "Dustin Whisman",
+	"license": "CC BY 4.0",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"@axe-core/playwright": "^4.7.3",
+		"@playwright/test": "^1.38.1",
+		"check-node-version": "^4.2.1",
+		"dotenv": "^16.3.1",
+		"eslint": "^8.51.0",
+		"eslint-config-prettier": "^9.0.0",
+		"npm-check-updates": "^16.14.5",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^3.0.3",
+		"stylelint": "^15.10.3",
+		"stylelint-config-standard": "^34.0.0"
+	},
+	"dependencies": {
+		"highlight.js": "^11.8.0",
+		"image-size": "^1.0.2",
+		"markdown-it": "^13.0.2"
+	}
 }

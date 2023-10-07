@@ -1,8 +1,8 @@
 figcaption {
-  font-size: var(--size-s-1);
-  font-style: italic;
-  max-width: 60ch;
-  text-align: center;
-  margin-block-start: var(--size-s-3);
-  margin-inline: auto;
+	font-size: var(--size-s-1);
+	font-style: italic;
+	max-width: 60ch;
+	text-align: center;
+	margin-block-start: var(--size-s-3);
+	margin-inline: auto;
 }

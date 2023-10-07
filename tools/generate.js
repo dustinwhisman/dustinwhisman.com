@@ -1,25 +1,25 @@
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline/promises').createInterface({
-  input: process.stdin,
-  output: process.stdout,
+	input: process.stdin,
+	output: process.stdout,
 });
 
 const today = () => {
-  const date = new Date();
-  date.setUTCHours(0, 0, 0, 0);
-  return date.toISOString();
+	const date = new Date();
+	date.setUTCHours(0, 0, 0, 0);
+	return date.toISOString();
 };
 
 const collections = {
-  LEARNING_IN_PUBLIC: 'learning in public',
-  WAS_CERTIFICATION: 'WAS certification',
-  CPACC_CERTIFICATION: 'CPACC certification',
-  ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
+	LEARNING_IN_PUBLIC: 'learning in public',
+	WAS_CERTIFICATION: 'WAS certification',
+	CPACC_CERTIFICATION: 'CPACC certification',
+	ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
 };
 
 const templates = {
-  LEARNING_IN_PUBLIC: (title, description) => `---
+	LEARNING_IN_PUBLIC: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -34,7 +34,7 @@ tags:
 
 {% include 'partials/published-date.njk' %}
 `,
-  WAS_CERTIFICATION: (title, description) => `---
+	WAS_CERTIFICATION: (title, description) => `---
 title: "${title} | WAS Notes | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -51,7 +51,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 {% include 'partials/published-date.njk' %}
 `,
-CPACC_CERTIFICATION: (title, description) => `---
+	CPACC_CERTIFICATION: (title, description) => `---
 title: "${title} | CPACC Notes | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -68,7 +68,7 @@ _I'm studying for the CPACC certification. These are some of the notes I've take
 
 {% include 'partials/published-date.njk' %}
 `,
-  ELEVENTY_STARTER_TEMPLATE: (title, description) => `---
+	ELEVENTY_STARTER_TEMPLATE: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -83,7 +83,7 @@ tags:
 
 {% include 'partials/published-date.njk' %}
 `,
-  DEFAULT: (title, description) => `---
+	DEFAULT: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -100,100 +100,84 @@ tags:
 };
 
 const resolveFilePath = (tags, slug) => {
-  if (tags.includes(collections.WAS_CERTIFICATION)) {
-    return path.join(
-      process.cwd(),
-      'pages',
-      'writing',
-      'web-accessibility-specialist-certification',
-      `${slug}.md`,
-    );
-  }
+	if (tags.includes(collections.WAS_CERTIFICATION)) {
+		return path.join(
+			process.cwd(),
+			'pages',
+			'writing',
+			'web-accessibility-specialist-certification',
+			`${slug}.md`
+		);
+	}
 
-  if (tags.includes(collections.CPACC_CERTIFICATION)) {
-    return path.join(
-      process.cwd(),
-      'pages',
-      'writing',
-      'certified-professional-in-accessibility-core-competencies-certification',
-      `${slug}.md`,
-    );
-  }
+	if (tags.includes(collections.CPACC_CERTIFICATION)) {
+		return path.join(
+			process.cwd(),
+			'pages',
+			'writing',
+			'certified-professional-in-accessibility-core-competencies-certification',
+			`${slug}.md`
+		);
+	}
 
-  if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
-    return path.join(
-      process.cwd(),
-      'pages',
-      'writing',
-      'learning-in-public',
-      `${slug}.md`,
-    );
-  }
+	if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
+		return path.join(process.cwd(), 'pages', 'writing', 'learning-in-public', `${slug}.md`);
+	}
 
-  if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
-    return path.join(
-      process.cwd(),
-      'pages',
-      'writing',
-      'eleventy-starter-template',
-      `${slug}.md`,
-    );
-  }
+	if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
+		return path.join(process.cwd(), 'pages', 'writing', 'eleventy-starter-template', `${slug}.md`);
+	}
 
-  return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
+	return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
 };
 
 const formatSlug = (title) => {
-  return title
-    .toLowerCase()
-    .replace(/[^a-zA-Z0-9]/g, '-')
-    .replaceAll('--', '-');
+	return title
+		.toLowerCase()
+		.replace(/[^a-zA-Z0-9]/g, '-')
+		.replaceAll('--', '-');
 };
 
 const resolveTemplate = (tags, title, description) => {
-  if (tags.includes(collections.WAS_CERTIFICATION)) {
-    return templates.WAS_CERTIFICATION(title, description);
-  }
+	if (tags.includes(collections.WAS_CERTIFICATION)) {
+		return templates.WAS_CERTIFICATION(title, description);
+	}
 
-  if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
-    return templates.LEARNING_IN_PUBLIC(title, description);
-  }
+	if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
+		return templates.LEARNING_IN_PUBLIC(title, description);
+	}
 
-  if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
-    return templates.ELEVENTY_STARTER_TEMPLATE(title, description);
-  }
+	if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
+		return templates.ELEVENTY_STARTER_TEMPLATE(title, description);
+	}
 
-  return templates.DEFAULT(title, description);
+	return templates.DEFAULT(title, description);
 };
 
 const generate = async () => {
-  const title = await readline.question('What is the title of this article?\n');
-  const slug = formatSlug(title);
+	const title = await readline.question('What is the title of this article?\n');
+	const slug = formatSlug(title);
 
-  const description = await readline.question(
-    'What is the description for this article?\n',
-  );
+	const description = await readline.question('What is the description for this article?\n');
 
-  const tags = [];
-  for (const [, collection] of Object.entries(collections)) {
-    const includeInTags = await readline.question(
-      `Should this go in the ${collection} collection? y/N?\n`,
-    );
-    if (includeInTags.toLowerCase() === 'y') {
-      tags.push(collection);
-    }
-  }
+	const tags = [];
+	for (const [, collection] of Object.entries(collections)) {
+		const includeInTags = await readline.question(`Should this go in the ${collection} collection? y/N?\n`);
+		if (includeInTags.toLowerCase() === 'y') {
+			tags.push(collection);
+		}
+	}
 
-  console.log('Thank you! Creating a new empty post for you now.');
+	console.log('Thank you! Creating a new empty post for you now.');
 
-  const template = resolveTemplate(tags, title, description);
-  const file = resolveFilePath(tags, slug);
+	const template = resolveTemplate(tags, title, description);
+	const file = resolveFilePath(tags, slug);
 
-  fs.writeFileSync(file, template, { encoding: 'utf-8' });
+	fs.writeFileSync(file, template, { encoding: 'utf-8' });
 
-  console.log(`Written to ${resolveFilePath(tags, slug)}`);
+	console.log(`Written to ${resolveFilePath(tags, slug)}`);
 
-  readline.close();
+	readline.close();
 };
 
 generate();

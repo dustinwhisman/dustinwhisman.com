@@ -2,8 +2,8 @@
 /* eslint-env serviceworker */
 
 const CACHE_KEYS = {
-  PRE_CACHE: `precache-${VERSION}`,
-  RUNTIME: `runtime-${VERSION}`,
+	PRE_CACHE: `precache-${VERSION}`,
+	RUNTIME: `runtime-${VERSION}`,
 };
 
 // add any urls that you don't want to be cached
@@ -19,61 +19,57 @@ const IGNORED_HOSTS = ['localhost'];
 const IGNORED_PROTOCOLS = ['chrome-extension:'];
 
 const addItemsToCache = (cacheName, items = []) => {
-  caches.open(cacheName).then((cache) => cache.addAll(items));
+	caches.open(cacheName).then((cache) => cache.addAll(items));
 };
 
 self.addEventListener('install', () => {
-  self.skipWaiting();
+	self.skipWaiting();
 
-  addItemsToCache(CACHE_KEYS.PRE_CACHE, PRE_CACHE_URLS);
+	addItemsToCache(CACHE_KEYS.PRE_CACHE, PRE_CACHE_URLS);
 });
 
 self.addEventListener('activate', (event) => {
-  event.waitUntil(
-    caches
-      .keys()
-      .then((cacheNames) =>
-        cacheNames.filter((item) => !Object.values(CACHE_KEYS).includes(item)),
-      )
-      .then((itemsToDelete) =>
-        Promise.all(itemsToDelete.map((item) => caches.delete(item))),
-      )
-      .then(() => self.clients.claim()),
-  );
+	event.waitUntil(
+		caches
+			.keys()
+			.then((cacheNames) => cacheNames.filter((item) => !Object.values(CACHE_KEYS).includes(item)))
+			.then((itemsToDelete) => Promise.all(itemsToDelete.map((item) => caches.delete(item))))
+			.then(() => self.clients.claim())
+	);
 });
 
 self.addEventListener('fetch', (event) => {
-  const { hostname, protocol } = new URL(event.request.url);
+	const { hostname, protocol } = new URL(event.request.url);
 
-  // if it's an ignored host, do nothing
-  if (IGNORED_HOSTS.indexOf(hostname) >= 0) {
-    return;
-  }
+	// if it's an ignored host, do nothing
+	if (IGNORED_HOSTS.indexOf(hostname) >= 0) {
+		return;
+	}
 
-  // if it's an ignored host, do nothing
-  if (IGNORED_PROTOCOLS.indexOf(protocol) >= 0) {
-    return;
-  }
+	// if it's an ignored host, do nothing
+	if (IGNORED_PROTOCOLS.indexOf(protocol) >= 0) {
+		return;
+	}
 
-  // if it's an exluded url, do nothing
-  if (EXCLUDED_URLS.some((page) => event.request.url.indexOf(page) > -1)) {
-    return;
-  }
+	// if it's an exluded url, do nothing
+	if (EXCLUDED_URLS.some((page) => event.request.url.indexOf(page) > -1)) {
+		return;
+	}
 
-  // return from cache, falling back to network
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
+	// return from cache, falling back to network
+	event.respondWith(
+		caches.match(event.request).then((cachedResponse) => {
+			if (cachedResponse) {
+				return cachedResponse;
+			}
 
-      return caches
-        .open(CACHE_KEYS.RUNTIME)
-        .then((cache) =>
-          fetch(event.request).then((response) =>
-            cache.put(event.request, response.clone()).then(() => response),
-          ),
-        );
-    }),
-  );
+			return caches
+				.open(CACHE_KEYS.RUNTIME)
+				.then((cache) =>
+					fetch(event.request).then((response) =>
+						cache.put(event.request, response.clone()).then(() => response)
+					)
+				);
+		})
+	);
 });

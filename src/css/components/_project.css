@@ -1,65 +1,65 @@
 .cmp-project__list {
-  list-style: none;
-  padding-inline: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: var(--size-s5);
+	list-style: none;
+	padding-inline: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	gap: var(--size-s5);
 }
 
 .cmp-project__card {
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-s0);
-  align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-s0);
+	align-items: flex-start;
 }
 
 .cmp-project__heading {
-  font-size: var(--size-s0);
-  margin: 0;
+	font-size: var(--size-s0);
+	margin: 0;
 }
 
 .cmp-project__group-heading {
-  margin-block-start: var(--size-s5);
-  margin-block-end: var(--size-s3);
+	margin-block-start: var(--size-s5);
+	margin-block-end: var(--size-s3);
 }
 
 .cmp-project__type {
-  color: var(--ink);
-  font-size: var(--size-s-1);
-  padding-inline-start: var(--size-s-4);
-  border-inline-start: 0.125em solid var(--ink);
+	color: var(--ink);
+	font-size: var(--size-s-1);
+	padding-inline-start: var(--size-s-4);
+	border-inline-start: 0.125em solid var(--ink);
 }
 
 .cmp-project__type--apprenticeship-capstone-project {
-  --ink: hwb(200deg 10% 50%);
+	--ink: hwb(200deg 10% 50%);
 }
 
 @media (prefers-color-scheme: dark) {
-  .cmp-project__type--apprenticeship-capstone-project {
-    --ink: hwb(200deg 50% 10%);
-  }
+	.cmp-project__type--apprenticeship-capstone-project {
+		--ink: hwb(200deg 50% 10%);
+	}
 }
 
 .cmp-project__type--side-project {
-  --ink: hwb(220deg 0% 50%);
+	--ink: hwb(220deg 0% 50%);
 }
 
 @media (prefers-color-scheme: dark) {
-  .cmp-project__type--side-project {
-    --ink: hwb(220deg 50% 0%);
-  }
+	.cmp-project__type--side-project {
+		--ink: hwb(220deg 50% 0%);
+	}
 }
 
 .cmp-project__type--client-project {
-  --ink: hwb(170deg 0% 60%);
+	--ink: hwb(170deg 0% 60%);
 }
 
 @media (prefers-color-scheme: dark) {
-  .cmp-project__type--client-project {
-    --ink: hwb(170deg 50% 10%);
-  }
+	.cmp-project__type--client-project {
+		--ink: hwb(170deg 50% 10%);
+	}
 }
 
 .cmp-project__skip-link {
-  margin-block-end: var(--size-s0);
+	margin-block-end: var(--size-s0);
 }
