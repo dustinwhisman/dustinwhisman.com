@@ -19,8 +19,7 @@
 }
 
 .cmp-project__group-heading {
-	margin-block-start: var(--size-s5);
-	margin-block-end: var(--size-s3);
+	margin-block: var(--size-s5) var(--size-s3);
 }
 
 .cmp-project__type {
