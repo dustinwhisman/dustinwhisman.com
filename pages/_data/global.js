@@ -117,7 +117,7 @@ const projects = [
 		roles: ['Individual Contributor', 'Tech Lead'],
 	},
 	{
-		name: 'CMS Migration',
+		name: 'CMS Migration (Drupal to Contentful)',
 		description:
 			'Helped with the migration of thousands of pages from their old CMS, Drupal 7, to their new one, Contentful. This involved content modeling, building new components, and lots of scripting.',
 		startDate: '2022-08-01',
@@ -151,6 +151,31 @@ const projects = [
 		startDate: '2023-04-10',
 		classification: 'Side Project',
 		roles: ['Product Owner', 'Individual Contributer'],
+	},
+	{
+		name: 'CMS Migration (Expression Engine to Contentful)',
+		description:
+			'Wrote migration scripts, React components, and GraphQL queries to assist in the migration of an Expression Engine site to a Contentful/Next.js site.',
+		startDate: '2023-04-11',
+		classification: 'Internal Project',
+		roles: ['Individual Contributor'],
+	},
+	{
+		name: 'CMS Migration (Drupal to WordPress)',
+		description:
+			'Led the replatforming of a university website from Drupal 7 to WordPress. This included building out the theme as well as automated content migrations from their old system.',
+		startDate: '2023-06-28',
+		classification: 'Client Project',
+		roles: ['Tech Lead', 'Individual Contributor'],
+	},
+	{
+		name: 'Sparkpress',
+		repoLink: 'https://github.com/sparkbox/sparkpress-wordpress-starter',
+		description:
+			'Updating this WordPress starter template to be as easy as possible for developers to use when setting up new WordPress projects.',
+		startDate: '2023-09-12',
+		classification: 'Open Source Project',
+		roles: ['Individual Contributor'],
 	},
 ].sort((a, b) => {
 	if (a.startDate < b.startDate) {

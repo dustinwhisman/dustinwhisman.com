@@ -39,22 +39,26 @@
 	}
 }
 
-.cmp-project__type--side-project {
+.cmp-project__type--side-project,
+.cmp-project__type--open-source-project {
 	--ink: hwb(220deg 0% 50%);
 }
 
 @media (prefers-color-scheme: dark) {
-	.cmp-project__type--side-project {
+	.cmp-project__type--side-project,
+	.cmp-project__type--open-source-project {
 		--ink: hwb(220deg 50% 0%);
 	}
 }
 
-.cmp-project__type--client-project {
+.cmp-project__type--client-project,
+.cmp-project__type--internal-project {
 	--ink: hwb(170deg 0% 60%);
 }
 
 @media (prefers-color-scheme: dark) {
-	.cmp-project__type--client-project {
+	.cmp-project__type--client-project,
+	.cmp-project__type--internal-project {
 		--ink: hwb(170deg 50% 10%);
 	}
 }
