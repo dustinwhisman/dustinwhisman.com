@@ -29,4 +29,5 @@ pre code {
 	display: inline-block;
 	font-size: 100%;
 	padding-inline: 0 var(--size-s3);
+	tab-size: 2;
 }
