@@ -36,8 +36,5 @@
 		--ink: hwb(0deg 95% 5%);
 		--paper: hwb(0deg 10% 90%);
 		--terminal: hwb(200deg 0% 75%);
-
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
 	}
 }
