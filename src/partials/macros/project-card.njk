@@ -14,10 +14,7 @@
 	{% if project.repoLink %}
 		<p>
 			<a href="{{ project.repoLink }}">
-				View Source
-				<span class="util-visually-hidden">
-					for {{ project.name }}
-				</span>
+				View Source: {{ project.name }}
 			</a>
 		</p>
 	{% endif %}
