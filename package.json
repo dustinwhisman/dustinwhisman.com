@@ -44,6 +44,6 @@
 	"dependencies": {
 		"highlight.js": "^11.9.0",
 		"image-size": "^1.0.2",
-		"markdown-it": "^13.0.2"
+		"markdown-it": "^14.0.0"
 	}
 }
