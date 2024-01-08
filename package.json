@@ -43,7 +43,7 @@
 	},
 	"dependencies": {
 		"highlight.js": "^11.9.0",
-		"image-size": "^1.1.0",
+		"image-size": "^1.1.1",
 		"markdown-it": "^14.0.0"
 	}
 }
