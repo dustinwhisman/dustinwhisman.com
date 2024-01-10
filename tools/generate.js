@@ -1,9 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const readline = require('readline/promises').createInterface({
-	input: process.stdin,
-	output: process.stdout,
-});
+const prompts = require('prompts');
 
 const today = () => {
 	const date = new Date();
@@ -19,7 +16,7 @@ const collections = {
 };
 
 const templates = {
-	LEARNING_IN_PUBLIC: (title, description) => `---
+	[collections.LEARNING_IN_PUBLIC]: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -34,7 +31,7 @@ tags:
 
 {% include 'partials/published-date.njk' %}
 `,
-	WAS_CERTIFICATION: (title, description) => `---
+	[collections.WAS_CERTIFICATION]: (title, description) => `---
 title: "${title} | WAS Notes | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -51,7 +48,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 {% include 'partials/published-date.njk' %}
 `,
-	CPACC_CERTIFICATION: (title, description) => `---
+	[collections.CPACC_CERTIFICATION]: (title, description) => `---
 title: "${title} | CPACC Notes | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -68,7 +65,7 @@ _I'm studying for the CPACC certification. These are some of the notes I've take
 
 {% include 'partials/published-date.njk' %}
 `,
-	ELEVENTY_STARTER_TEMPLATE: (title, description) => `---
+	[collections.ELEVENTY_STARTER_TEMPLATE]: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
@@ -140,44 +137,70 @@ const formatSlug = (title) => {
 
 const resolveTemplate = (tags, title, description) => {
 	if (tags.includes(collections.WAS_CERTIFICATION)) {
-		return templates.WAS_CERTIFICATION(title, description);
+		return templates[collections.WAS_CERTIFICATION](title, description);
+	}
+
+	if (tags.includes(collections.CPACC_CERTIFICATION)) {
+		return templates[collections.CPACC_CERTIFICATION](title, description);
 	}
 
 	if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
-		return templates.LEARNING_IN_PUBLIC(title, description);
+		return templates[collections.LEARNING_IN_PUBLIC](title, description);
 	}
 
 	if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
-		return templates.ELEVENTY_STARTER_TEMPLATE(title, description);
+		return templates[collections.ELEVENTY_STARTER_TEMPLATE](title, description);
 	}
 
 	return templates.DEFAULT(title, description);
 };
 
+const getDetails = async () => {
+	const questions = [
+		{
+			type: 'text',
+			name: 'title',
+			message: 'What should be the title of this article?',
+		},
+		{
+			type: 'text',
+			name: 'description',
+			message: 'What should be the description for this article?',
+		},
+		{
+			type: 'multiselect',
+			name: 'collections',
+			message: 'Which collections should this article belong to?',
+			instructions: false,
+			choices: Object.entries(collections).map(([, value]) => ({
+				title: value,
+				value,
+			})),
+		},
+	];
+
+	const response = await prompts(questions);
+
+	return response;
+};
+
 const generate = async () => {
-	const title = await readline.question('What is the title of this article?\n');
+	const { title, description, collections } = await getDetails();
 	const slug = formatSlug(title);
-
-	const description = await readline.question('What is the description for this article?\n');
-
-	const tags = [];
-	for (const [, collection] of Object.entries(collections)) {
-		const includeInTags = await readline.question(`Should this go in the ${collection} collection? y/N?\n`);
-		if (includeInTags.toLowerCase() === 'y') {
-			tags.push(collection);
-		}
-	}
 
 	console.log('Thank you! Creating a new empty post for you now.');
 
-	const template = resolveTemplate(tags, title, description);
-	const file = resolveFilePath(tags, slug);
+	const template = resolveTemplate(collections, title, description);
+	const file = resolveFilePath(collections, slug);
 
+	try {
+		fs.mkdirSync(file.replace(`/${slug}.md`, ''));
+	} catch {
+		console.log('Folder already exists, nice!');
+	}
 	fs.writeFileSync(file, template, { encoding: 'utf-8' });
 
-	console.log(`Written to ${resolveFilePath(tags, slug)}`);
-
-	readline.close();
+	console.log(`Written to ${file}`);
 };
 
 generate();
