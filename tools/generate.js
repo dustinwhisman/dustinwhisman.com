@@ -193,11 +193,6 @@ const generate = async () => {
 	const template = resolveTemplate(collections, title, description);
 	const file = resolveFilePath(collections, slug);
 
-	try {
-		fs.mkdirSync(file.replace(`/${slug}.md`, ''));
-	} catch {
-		console.log('Folder already exists, nice!');
-	}
 	fs.writeFileSync(file, template, { encoding: 'utf-8' });
 
 	console.log(`Written to ${file}`);
