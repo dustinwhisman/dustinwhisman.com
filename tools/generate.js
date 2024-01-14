@@ -83,7 +83,7 @@ tags:
 `,
 	[collections.ACCESSIBILITY_TOP_100]: (title, description) => `---
 title: "${title} | Accessibility of the Top 100 Sites | Writing | Dustin Whisman"
-description: "${description}"
+description: "How accessible is ${title}? This is part ${description} of a series evaluating the accessibility of the top 100 websites in the US."
 articleTitle: "Accessibility of the Top 100: ${title}"
 layout: default
 date: ${today()}
@@ -92,7 +92,9 @@ tags:
   - accessibility top 100
 ---
 
-# Part N: ${title}
+# Part ${description}: ${title}
+
+_I'm evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at ${title}. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
 
 {% include 'partials/published-date.njk' %}
 `,
@@ -162,7 +164,8 @@ const getDetails = async () => {
 		{
 			type: 'text',
 			name: 'description',
-			message: 'What should be the description for this article?',
+			message:
+				'What should be the description for this article? Or part number if part of the top 100 series?',
 		},
 		{
 			type: 'select',
