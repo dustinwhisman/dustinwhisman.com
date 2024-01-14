@@ -3,7 +3,7 @@ title: "Methodology | Accessibility of the Top 100 Sites | Writing | Dustin Whis
 description: "I will be evaluating the top 100 US websites for accessibility issues, and this is my plan for how to approach each one the same way, minimizing inconsistency as much as possible."
 articleTitle: "Accessibility of the Top 100: Methodology"
 layout: default
-date: 2024-01-14T00:00:00.000Z
+date: 2024-01-15T00:00:00.000Z
 tags:
   - writing
   - accessibility top 100
