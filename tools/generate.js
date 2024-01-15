@@ -13,6 +13,7 @@ const collections = {
 	WAS_CERTIFICATION: 'WAS certification',
 	CPACC_CERTIFICATION: 'CPACC certification',
 	ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
+	ACCESSIBILITY_TOP_100: 'accessibility top 100',
 };
 
 const templates = {
@@ -80,6 +81,23 @@ tags:
 
 {% include 'partials/published-date.njk' %}
 `,
+	[collections.ACCESSIBILITY_TOP_100]: (title, description) => `---
+title: "${title} | Accessibility of the Top 100 Sites | Writing | Dustin Whisman"
+description: "How accessible is ${title}? This is part ${description} of a series evaluating the accessibility of the top 100 websites in the US."
+articleTitle: "Accessibility of the Top 100: ${title}"
+layout: default
+date: ${today()}
+tags:
+  - writing
+  - accessibility top 100
+---
+
+# Part ${description}: ${title}
+
+_I'm evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at ${title}. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
+
+{% include 'partials/published-date.njk' %}
+`,
 	DEFAULT: (title, description) => `---
 title: "${title} | Writing | Dustin Whisman"
 description: "${description}"
@@ -96,36 +114,33 @@ tags:
 `,
 };
 
-const resolveFilePath = (tags, slug) => {
-	if (tags.includes(collections.WAS_CERTIFICATION)) {
-		return path.join(
-			process.cwd(),
-			'pages',
-			'writing',
-			'web-accessibility-specialist-certification',
-			`${slug}.md`
-		);
+const resolveFilePath = (collection, slug) => {
+	switch (collection) {
+		case collections.WAS_CERTIFICATION:
+			return path.join(
+				process.cwd(),
+				'pages',
+				'writing',
+				'web-accessibility-specialist-certification',
+				`${slug}.md`
+			);
+		case collections.CPACC_CERTIFICATION:
+			return path.join(
+				process.cwd(),
+				'pages',
+				'writing',
+				'certified-professional-in-accessibility-core-competencies-certification',
+				`${slug}.md`
+			);
+		case collections.LEARNING_IN_PUBLIC:
+			return path.join(process.cwd(), 'pages', 'writing', 'learning-in-public', `${slug}.md`);
+		case collections.ELEVENTY_STARTER_TEMPLATE:
+			return path.join(process.cwd(), 'pages', 'writing', 'eleventy-starter-template', `${slug}.md`);
+		case collections.ACCESSIBILITY_TOP_100:
+			return path.join(process.cwd(), 'pages', 'writing', 'accessibility-top-100', `${slug}.md`);
+		default:
+			return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
 	}
-
-	if (tags.includes(collections.CPACC_CERTIFICATION)) {
-		return path.join(
-			process.cwd(),
-			'pages',
-			'writing',
-			'certified-professional-in-accessibility-core-competencies-certification',
-			`${slug}.md`
-		);
-	}
-
-	if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
-		return path.join(process.cwd(), 'pages', 'writing', 'learning-in-public', `${slug}.md`);
-	}
-
-	if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
-		return path.join(process.cwd(), 'pages', 'writing', 'eleventy-starter-template', `${slug}.md`);
-	}
-
-	return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
 };
 
 const formatSlug = (title) => {
@@ -135,24 +150,8 @@ const formatSlug = (title) => {
 		.replaceAll('--', '-');
 };
 
-const resolveTemplate = (tags, title, description) => {
-	if (tags.includes(collections.WAS_CERTIFICATION)) {
-		return templates[collections.WAS_CERTIFICATION](title, description);
-	}
-
-	if (tags.includes(collections.CPACC_CERTIFICATION)) {
-		return templates[collections.CPACC_CERTIFICATION](title, description);
-	}
-
-	if (tags.includes(collections.LEARNING_IN_PUBLIC)) {
-		return templates[collections.LEARNING_IN_PUBLIC](title, description);
-	}
-
-	if (tags.includes(collections.ELEVENTY_STARTER_TEMPLATE)) {
-		return templates[collections.ELEVENTY_STARTER_TEMPLATE](title, description);
-	}
-
-	return templates.DEFAULT(title, description);
+const resolveTemplate = (collection, title, description) => {
+	return templates[collection]?.(title, description) ?? templates.DEFAULT(title, description);
 };
 
 const getDetails = async () => {
@@ -165,12 +164,13 @@ const getDetails = async () => {
 		{
 			type: 'text',
 			name: 'description',
-			message: 'What should be the description for this article?',
+			message:
+				'What should be the description for this article? Or part number if part of the top 100 series?',
 		},
 		{
-			type: 'multiselect',
-			name: 'collections',
-			message: 'Which collections should this article belong to?',
+			type: 'select',
+			name: 'collection',
+			message: 'Which collection should this article belong to?',
 			instructions: false,
 			choices: Object.entries(collections).map(([, value]) => ({
 				title: value,
@@ -185,13 +185,13 @@ const getDetails = async () => {
 };
 
 const generate = async () => {
-	const { title, description, collections } = await getDetails();
+	const { title, description, collection } = await getDetails();
 	const slug = formatSlug(title);
 
 	console.log('Thank you! Creating a new empty post for you now.');
 
-	const template = resolveTemplate(collections, title, description);
-	const file = resolveFilePath(collections, slug);
+	const template = resolveTemplate(collection, title, description);
+	const file = resolveFilePath(collection, slug);
 
 	fs.writeFileSync(file, template, { encoding: 'utf-8' });
 
