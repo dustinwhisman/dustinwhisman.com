@@ -3,6 +3,7 @@ figcaption {
 	font-style: italic;
 	max-width: 60ch;
 	text-align: center;
+	text-wrap: balance;
 	margin-block-start: var(--size-s-3);
 	margin-inline: auto;
 }
