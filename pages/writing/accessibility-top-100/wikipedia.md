@@ -81,7 +81,7 @@ At zoom levels 200% and 400%, everything was still accessible and no content ove
 
 ### Automated scans
 
-There’s a fair amount of ARIA misuse on [en.wikipedia.org](http://en.wikipedia.org). The worst offender is setting `role="button"` on checkbox inputs, which is not valid. It looks like Wikipedia is using the [checkbox hack](https://css-tricks.com/the-checkbox-hack/) to support show/hide functionality in case JavaScript isn’t loaded, then progressively  enhancing them, although it seems like the only change when JavaScript is loaded is toggling `aria-expanded="true"` on the checkbox when it is clicked. Interestingly, the button role breaks the explicit labeling by `for`/`id` attributes, meaning that if there wasn’t an `aria-labelledby` attribute, the control would not have an accessible name.
+There’s a fair amount of ARIA misuse on [en.wikipedia.org](http://en.wikipedia.org). The worst offender is setting `role="button"` on checkbox inputs, which is not valid. It looks like Wikipedia is using the [checkbox hack](https://css-tricks.com/the-checkbox-hack/) to support show/hide functionality in case JavaScript isn’t loaded, then progressively  enhancing them, although it seems like the only change when JavaScript is loaded is toggling `aria-expanded="true"` on the checkbox when it is clicked. Interestingly, the button role breaks the explicit labeling by `for`/`id` attributes, meaning that if there wasn’t an `aria-label` attribute, the control would not have an accessible name.
 
 <figure>
   <img src="/images/accessibility-top-100/wikipedia/checkbox_hack.png" alt="A screenshot showing the checkbox hack HTML and CSS code used for the show/hide functionality." class="cmp-article__image">
@@ -108,7 +108,7 @@ Again, the tab order and focus indicators are good, and there isn’t anything t
   <figcaption>So many links to tab through.</figcaption>
 </figure>
 
-Small previews of pages would appear whenever I focused on a link, too, which could get annoying for a user who just trying to navigate to the link they want. These popup previews are also not dismissible without moving keyboard focus or pointer hover, which violates WCAG 2.2 success criterion 1.4.13 Content on Hover or Focus. I also do not see anything in the markup that would cause the popups to be announced by screen readers. Again, this may be an intentional move to avoid annoying screen reader users with unnecessary information, but then maybe it shouldn’t be there to annoy sighted users either. 🤷
+Small previews of pages would appear whenever I focused on a link, too, which could get annoying for a user who is just trying to navigate to the link they want. These popup previews are also not dismissible without moving keyboard focus or pointer hover, which violates WCAG 2.2 success criterion 1.4.13 Content on Hover or Focus. I also do not see anything in the markup that would cause the popups to be announced by screen readers. Again, this may be an intentional move to avoid annoying screen reader users with unnecessary information, but then maybe it shouldn’t be there to annoy sighted users either. 🤷
 
 <figure>
   <img src="/images/accessibility-top-100/wikipedia/link_preview.png" alt="A screenshot of the link preview that appears on focus or hover." class="cmp-article__image">
@@ -135,7 +135,7 @@ Zooming to 200% presented no issues, but horizontal scrolling became necessary a
 
 The [article page for computer accessibility](https://en.wikipedia.org/wiki/Computer_accessibility) has more issues than either home page did. Here are the biggies:
 
-- A few links with insufficient color contrast
+- Links with insufficient color contrast
 - Images without alt text, which causes the links that contain them to not have accessible names
 - More checkbox hack show/hide controls
 - On mobile, there are multiple `<nav>` elements without unique accessible names

@@ -33,7 +33,7 @@ If a site requires a login to do the main thing, I'll evaluate the account creat
 
 ## Automated scans
 
-Once I've chosen what to evaluate, I'll run automated scans with the browser extensions I mentioned earlier. I'll categorize and rank them according to severity, prevalence, and the estimated level of effort to fix. I'll review anything that is flagged as a possible issue, and add it to the list if it is an issue.
+Once I've chosen what to evaluate, I'll run automated scans with the browser extensions I mentioned earlier. I'll make note of the most critical or widespread issues, including ones that require manual review.
 
 I'll scan each page twice, once at typical desktop sizes, and once while simulating a mobile browser. This is to account for things like hamburger menus and other variations that only happen on small screens.
 
