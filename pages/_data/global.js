@@ -177,6 +177,24 @@ const projects = [
 		classification: 'Open Source Project',
 		roles: ['Individual Contributor'],
 	},
+	{
+		name: 'tvOS and Roku App Updates',
+		description:
+			"Updating an educational organization's tvOS and Roku apps for streaming captioned and described videos. This started with API updates, but shifted to fixing usability and accessibility issues.",
+		startDate: '2023-12-10',
+		classification: 'Client Project',
+		roles: ['Individual Contributor'],
+	},
+	{
+		name: 'bvdget',
+		repoLink: 'https://github.com/dustinwhisman/bvdget',
+		siteLink: 'https://bvdget.com',
+		description:
+			"A money tracking app that I'm gradually building up to supplant my insane financial spreadsheets. Other people could use it too, I guess.",
+		startDate: '2023-12-21',
+		classification: 'Side Project',
+		roles: ['Product Owner', 'Individual Contributor'],
+	},
 ].sort((a, b) => {
 	if (a.startDate < b.startDate) {
 		return 1;
