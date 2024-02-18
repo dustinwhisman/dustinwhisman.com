@@ -1,0 +1,5 @@
+blockquote {
+	padding-block: 0.25rem;
+	padding-inline-start: 1rem;
+	border-inline-start: 2px solid currentcolor;
+}
