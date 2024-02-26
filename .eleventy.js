@@ -9,18 +9,18 @@ module.exports = function (eleventyConfig) {
     highlight: function (str, lang) {
       if (lang && hljs.getLanguage(lang)) {
         try {
-          return `<pre tabindex="0"><code class="language-${lang}">${
-            hljs.highlight(str, {
-              language: lang,
-              ignoreIllegals: true,
-            }).value
-          }</code></pre>`;
+          return `<pre tabindex="0" role="region" aria-label="Code sample"><code class="language-${lang}">${
+						hljs.highlight(str, {
+							language: lang,
+							ignoreIllegals: true,
+						}).value
+					}</code></pre>`;
         } catch {
           // swallow error, fall through to default case
         }
       }
 
-      return `<pre tabindex="0"><code>${md.utils.escapeHtml(str)}</code></pre>`;
+      return `<pre tabindex="0" role="region" aria-label="Code sample"><code>${md.utils.escapeHtml(str)}</code></pre>`;
     },
   };
 
