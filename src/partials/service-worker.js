@@ -15,8 +15,8 @@ const PRE_CACHE_URLS = ['/', '/styles.css'];
 // add any hosts that you want to bypass
 const IGNORED_HOSTS = ['localhost'];
 
-// add any protocols that you want to bypass
-const IGNORED_PROTOCOLS = ['chrome-extension:'];
+// set the protocols that you want to allow
+const ALLOWED_PROTOCOLS = ['https:'];
 
 const addItemsToCache = (cacheName, items = []) => {
 	caches.open(cacheName).then((cache) => cache.addAll(items));
@@ -41,13 +41,13 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
 	const { hostname, protocol } = new URL(event.request.url);
 
-	// if it's an ignored host, do nothing
-	if (IGNORED_HOSTS.indexOf(hostname) >= 0) {
+	// if it's not an allowed protocol, do nothing
+	if (ALLOWED_PROTOCOLS.indexOf(protocol) < 0) {
 		return;
 	}
 
 	// if it's an ignored host, do nothing
-	if (IGNORED_PROTOCOLS.indexOf(protocol) >= 0) {
+	if (IGNORED_HOSTS.indexOf(hostname) >= 0) {
 		return;
 	}
 
