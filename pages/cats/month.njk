@@ -9,8 +9,10 @@ eleventyExcludeFromCollections: true
 
 {% extends 'partials/layout.njk' %}
 
-{% block titleAndDescription %}
+{% block title %}
 <title>{{ global.catsByMonth[month].name }} | Pictures of Cats | Dustin Whisman</title>
+{% endblock %}
+{% block description %}
 <meta name="description" content="Look at these pictures of Goose and Barry from {{ global.catsByMonth[month].name }}! They're so cute, those little monsters.">
 {% endblock %}
 

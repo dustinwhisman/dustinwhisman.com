@@ -5,25 +5,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	{% block titleAndDescription %}
+	{% block title %}
 	<title>{{ title }}</title>
+	{% endblock %}
+	<link rel="stylesheet" href="/styles.css">
+	{% block description %}
 	<meta name="description" content="{{ description }}">
 	{% endblock %}
-
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 	<link rel="alternate icon" href="/favicon.png" type="image/png">
 	<link rel="mask-icon" href="/favicon.svg">
-
 	<link rel="apple-touch-icon" href="/maskable_icon.png">
 	<link rel="manifest" href="/manifest.json">
-
 	<meta name="color-scheme" content="light dark">
 	<meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
-
-	<link rel="stylesheet" href="/styles.css">
-
 	<link rel="alternate" type="application/rss+xml" title="Dustin Whisman" href="https://dustinwhisman.com/feed.xml">
 </head>
 
