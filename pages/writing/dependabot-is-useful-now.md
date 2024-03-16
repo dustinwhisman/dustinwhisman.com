@@ -1,5 +1,5 @@
 ---
-title: "Dependabot is useful now | Writing | Dustin Whisman"
+title: "Dependabot is useful now - Writing - Dustin Whisman"
 description: "Now that grouped updates are supported, it makes sense to use Dependabot for keeping project dependencies up to date."
 articleTitle: "Dependabot is useful now"
 layout: default

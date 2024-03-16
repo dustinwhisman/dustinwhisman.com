@@ -1,5 +1,5 @@
 ---
-title: "Writing a Generator to Simplify Writing Posts | Writing | Dustin Whisman"
+title: "Writing a Generator to Simplify Writing Posts - Writing - Dustin Whisman"
 description: "Rather than copy-paste an old article and update it, which is what I have been doing, I decided to write a generator to do most of that work for me."
 articleTitle: "Writing a Generator to Simplify Writing Posts"
 layout: default
@@ -104,7 +104,7 @@ const templates = {
   WAS_CERTIFICATION: (title, description) => `...stuff`,
   ELEVENTY_STARTER_TEMPLATE: (title, description) => `...stuff`,
   DEFAULT: (title, description) => `---
-title: "${title} | Writing | Dustin Whisman"
+title: "${title} - Writing - Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: layout.njk

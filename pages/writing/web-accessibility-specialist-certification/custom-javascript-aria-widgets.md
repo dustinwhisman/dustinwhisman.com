@@ -1,5 +1,5 @@
 ---
-title: "Custom JavaScript/ARIA Widgets | WAS Notes | Writing | Dustin Whisman"
+title: "Custom JavaScript/ARIA Widgets - WAS Notes - Writing - Dustin Whisman"
 description: "What are the accessibility considerations to account for when building custom JavaScript/ARIA widgets?"
 articleTitle: "Custom JavaScript/ARIA Widgets"
 layout: default

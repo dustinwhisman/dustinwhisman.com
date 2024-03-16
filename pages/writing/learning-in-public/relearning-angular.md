@@ -1,5 +1,5 @@
 ---
-title: "Relearning Angular | Writing | Dustin Whisman"
+title: "Relearning Angular - Writing - Dustin Whisman"
 description: "After 14 versions and more than 6 years away from Angular, I'm learning it again (for the first time). I have some first impressions about what's good, bad, or ugly about it."
 articleTitle: "Relearning Angular"
 layout: default

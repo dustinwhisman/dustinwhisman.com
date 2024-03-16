@@ -1,5 +1,5 @@
 ---
-title: "Wikipedia | Accessibility of the Top 100 Sites | Writing | Dustin Whisman"
+title: "Wikipedia - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
 description: "How accessible is Wikipedia? This is part 1 of a series evaluating the accessibility of the top 100 websites in the US."
 articleTitle: "Accessibility of the Top 100: Wikipedia"
 layout: default

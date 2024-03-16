@@ -1,5 +1,5 @@
 ---
-title: "Theoretical Models of Disability | CPACC Notes | Writing | Dustin Whisman"
+title: "Theoretical Models of Disability - CPACC Notes - Writing - Dustin Whisman"
 description: "These notes describe the different models of disability at a high level, including their strengths and weaknesses."
 articleTitle: "Theoretical Models of Disability"
 layout: default

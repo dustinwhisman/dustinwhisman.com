@@ -1,5 +1,5 @@
 ---
-title: "WordPress: the trouble with shortcodes | Writing | Dustin Whisman"
+title: "WordPress: the trouble with shortcodes - Writing - Dustin Whisman"
 description: "Taking a look at shortcodes in WordPress and some usability problems for content editors."
 articleTitle: "WordPress: the trouble with shortcodes"
 layout: default

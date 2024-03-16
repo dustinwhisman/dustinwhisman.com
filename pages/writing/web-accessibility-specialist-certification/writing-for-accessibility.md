@@ -1,5 +1,5 @@
 ---
-title: 'Writing For Accessibility | WAS Notes | Writing | Dustin Whisman'
+title: 'Writing For Accessibility - WAS Notes - Writing - Dustin Whisman'
 description: This describes some techniques for writing with accessibility in mind, with the key takeaway being to keep things simple and orderly.
 articleTitle: 'Writing For Accessibility'
 layout: default
@@ -16,8 +16,8 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 {% include 'partials/published-date.njk' %}
 
 - Provide informative, unique page titles that go from more specific to less specific
-  - “Page Name | Page Section | Site Name”
-  - “Buy Your Thing (Step 1 of 3) | E-commerce Site”
+  - “Page Name - Page Section - Site Name”
+  - “Buy Your Thing (Step 1 of 3) - E-commerce Site”
 - Use headings to convey meaning and structure, breaking up walls of text and providing easy-to-follow outlines
 - Make link text meaningful by:
   - Avoiding “click here” or “read more” links

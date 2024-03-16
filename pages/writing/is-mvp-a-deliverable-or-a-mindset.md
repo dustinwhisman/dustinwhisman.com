@@ -1,5 +1,5 @@
 ---
-title: "Is MVP a Deliverable or a Mindset? | Writing | Dustin Whisman"
+title: "Is MVP a Deliverable or a Mindset? - Writing - Dustin Whisman"
 description: "Rather than thinking of a product MVP as a deliverable for the early stages of a product, let's adopt MVP as a mindset that helps us build better, more resilient products."
 articleTitle: "Is MVP a Deliverable or a Mindset?"
 layout: default

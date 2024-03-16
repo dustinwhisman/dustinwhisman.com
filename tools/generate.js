@@ -14,11 +14,12 @@ const collections = {
 	CPACC_CERTIFICATION: 'CPACC certification',
 	ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
 	ACCESSIBILITY_TOP_100: 'accessibility top 100',
+	NONE: 'none',
 };
 
 const templates = {
 	[collections.LEARNING_IN_PUBLIC]: (title, description) => `---
-title: "${title} | Writing | Dustin Whisman"
+title: "${title} - Writing - Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: default
@@ -33,7 +34,7 @@ tags:
 {% include 'partials/published-date.njk' %}
 `,
 	[collections.WAS_CERTIFICATION]: (title, description) => `---
-title: "${title} | WAS Notes | Writing | Dustin Whisman"
+title: "${title} - WAS Notes - Writing - Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: default
@@ -50,7 +51,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 {% include 'partials/published-date.njk' %}
 `,
 	[collections.CPACC_CERTIFICATION]: (title, description) => `---
-title: "${title} | CPACC Notes | Writing | Dustin Whisman"
+title: "${title} - CPACC Notes - Writing - Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: default
@@ -67,7 +68,7 @@ _I'm studying for the CPACC certification. These are some of the notes I've take
 {% include 'partials/published-date.njk' %}
 `,
 	[collections.ELEVENTY_STARTER_TEMPLATE]: (title, description) => `---
-title: "${title} | Writing | Dustin Whisman"
+title: "${title} - Writing - Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: default
@@ -82,7 +83,7 @@ tags:
 {% include 'partials/published-date.njk' %}
 `,
 	[collections.ACCESSIBILITY_TOP_100]: (title, description) => `---
-title: "${title} | Accessibility of the Top 100 Sites | Writing | Dustin Whisman"
+title: "${title} - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
 description: "How accessible is ${title}? This is part ${description} of a series evaluating the accessibility of the top 100 websites in the US."
 articleTitle: "Accessibility of the Top 100: ${title}"
 layout: default
@@ -99,7 +100,7 @@ _I'm evaluating the accessibility of the top 100 websites in the US. This time I
 {% include 'partials/published-date.njk' %}
 `,
 	DEFAULT: (title, description) => `---
-title: "${title} | Writing | Dustin Whisman"
+title: "${title} - Writing - Dustin Whisman"
 description: "${description}"
 articleTitle: "${title}"
 layout: default

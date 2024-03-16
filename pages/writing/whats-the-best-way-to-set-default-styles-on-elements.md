@@ -1,5 +1,5 @@
 ---
-title: "What's the best way to set default styles on elements? | Writing | Dustin Whisman"
+title: "What's the best way to set default styles on elements? - Writing - Dustin Whisman"
 description: "A look at an issue with default styles and some ways to fix it."
 articleTitle: "What's the best way to set default styles on elements?"
 layout: default

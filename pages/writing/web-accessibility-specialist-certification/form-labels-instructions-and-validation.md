@@ -1,5 +1,5 @@
 ---
-title: "Form Labels, Instructions, and Validation | WAS Notes | Writing | Dustin Whisman"
+title: "Form Labels, Instructions, and Validation - WAS Notes - Writing - Dustin Whisman"
 description: "What are the accessibility concerns we need to have in mind when we work with Form Labels, Instructions, and Validation?"
 articleTitle: "Form Labels, Instructions, and Validation"
 layout: default

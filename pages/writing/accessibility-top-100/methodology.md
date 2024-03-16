@@ -1,5 +1,5 @@
 ---
-title: "Methodology | Accessibility of the Top 100 Sites | Writing | Dustin Whisman"
+title: "Methodology - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
 description: "I will be evaluating the top 100 US websites for accessibility issues, and this is my plan for how to approach each one the same way, minimizing inconsistency as much as possible."
 articleTitle: "Accessibility of the Top 100: Methodology"
 layout: default

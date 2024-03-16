@@ -1,5 +1,5 @@
 ---
-title: "Learning WordPress | Writing | Dustin Whisman"
+title: "Learning WordPress - Writing - Dustin Whisman"
 description: "A reflection on a few months of needing to learn WordPress very quickly."
 articleTitle: "Learning WordPress"
 layout: default

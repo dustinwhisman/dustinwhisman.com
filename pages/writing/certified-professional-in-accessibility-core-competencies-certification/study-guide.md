@@ -1,5 +1,5 @@
 ---
-title: "CPACC Study Guide | CPACC Notes | Writing | Dustin Whisman"
+title: "CPACC Study Guide - CPACC Notes - Writing - Dustin Whisman"
 description: "These are the resources I plan on using to study for the Certified Professional in Accessibility Core Competencies (CPACC) certification."
 articleTitle: "CPACC Study Guide"
 layout: default

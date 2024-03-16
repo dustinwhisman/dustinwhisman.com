@@ -1,5 +1,5 @@
 ---
-title: "I Got My Eyes Fixed Up | Writing | Dustin Whisman"
+title: "I Got My Eyes Fixed Up - Writing - Dustin Whisman"
 description: "I've needed glasses for about as long as I can remember, so I finally went through with a semi-permanent fix for my terrible, terrible vision."
 articleTitle: "I Got My Eyes Fixed Up"
 layout: default

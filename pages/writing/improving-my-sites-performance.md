@@ -1,5 +1,5 @@
 ---
-title: "Improving My Site's Performance | Writing | Dustin Whisman"
+title: "Improving My Site's Performance - Writing - Dustin Whisman"
 description: After auditing my site for performance and making some changes, has anything improved?
 articleTitle: Improving My Site's Performance
 layout: default

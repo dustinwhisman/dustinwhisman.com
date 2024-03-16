@@ -1,5 +1,5 @@
 ---
-title: "So You Want to Migrate Hundreds of Pages | Writing | Dustin Whisman"
+title: "So You Want to Migrate Hundreds of Pages - Writing - Dustin Whisman"
 description: "A deep dive into how you can, in a pinch, migrate a ton of content off of a dying CMS before it reaches end-of-life."
 articleTitle: "So You Want to Migrate Hundreds of Pages"
 layout: default

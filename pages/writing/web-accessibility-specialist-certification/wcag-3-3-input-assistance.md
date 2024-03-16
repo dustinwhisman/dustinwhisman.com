@@ -1,5 +1,5 @@
 ---
-title: "WCAG 3.3 Input Assistance | WAS Notes | Writing | Dustin Whisman"
+title: "WCAG 3.3 Input Assistance - WAS Notes - Writing - Dustin Whisman"
 description: "How can you meet all the success criteria for WCAG 3.3 Input Assistance?"
 articleTitle: "WCAG 3.3 Input Assistance"
 layout: default

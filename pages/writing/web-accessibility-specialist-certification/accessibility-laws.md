@@ -1,5 +1,5 @@
 ---
-title: 'Accessibility Laws | WAS Notes | Writing | Dustin Whisman'
+title: 'Accessibility Laws - WAS Notes - Writing - Dustin Whisman'
 description: This is an overview of accessibility laws throughout the world and how they apply to digital accessibility.
 articleTitle: 'Accessibility Laws'
 layout: default

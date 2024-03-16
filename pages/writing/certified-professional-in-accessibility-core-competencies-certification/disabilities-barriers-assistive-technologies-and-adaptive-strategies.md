@@ -1,5 +1,5 @@
 ---
-title: "Disabilities, Barriers, Assistive Technologies, and Adaptive Strategies | CPACC Notes | Writing | Dustin Whisman"
+title: "Disabilities, Barriers, Assistive Technologies, and Adaptive Strategies - CPACC Notes - Writing - Dustin Whisman"
 description: "A high-level taxonomy of different types of disabilities, the barriers that people who have them face, and the tools and strategies that help people overcome those barriers."
 articleTitle: "Disabilities, Barriers, Assistive Technologies, and Adaptive Strategies"
 layout: default

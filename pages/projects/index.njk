@@ -1,5 +1,5 @@
 ---
-title: Projects | Dustin Whisman
+title: Projects - Dustin Whisman
 description: Check out some of the projects I've worked on, including ones that are still in progress.
 layout: default
 ---
@@ -8,9 +8,7 @@ layout: default
 
 <p>
 	These are the projects I've worked on recently, both for clients and as
-	personal side projects. I've done way more stuff, but almost everything before
-	2021 is behind authentication or lives on intranets. Bad news for fans of B2B
-	logistics applications…
+	personal side projects. I can't link to everything (nondisclosure), but for the ones that I can, I will.
 </p>
 
 <p class="cmp-project__skip-link">
@@ -21,10 +19,10 @@ layout: default
 
 <ul class="cmp-project__list">
 	{% from 'partials/macros/project-card.njk' import projectCard %}
-	{% for project in global.projects %}
-		<li>
-			{{ projectCard(project, 'h3') }}
-		</li>
+	{% for project in projects.projects %}
+	<li>
+		{{ projectCard(project, 'h3') }}
+	</li>
 	{% endfor %}
 </ul>
 

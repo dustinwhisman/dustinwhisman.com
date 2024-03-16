@@ -1,5 +1,5 @@
 ---
-title: "Unsustainable Sustainability Pages | Writing | Dustin Whisman"
+title: "Unsustainable Sustainability Pages - Writing - Dustin Whisman"
 description: "Let's take a look at the top 10 companies in the Fortune 500 and see how sustainable their sustainability pages are."
 articleTitle: "Unsustainable Sustainability Pages"
 layout: default

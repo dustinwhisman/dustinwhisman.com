@@ -1,5 +1,5 @@
 ---
-title: "WCAG 2.4 Navigable | WAS Notes | Writing | Dustin Whisman"
+title: "WCAG 2.4 Navigable - WAS Notes - Writing - Dustin Whisman"
 description: "How do you meet all the success criteria for WGAC 2.4 Navigable?"
 articleTitle: "WCAG 2.4 Navigable"
 layout: default

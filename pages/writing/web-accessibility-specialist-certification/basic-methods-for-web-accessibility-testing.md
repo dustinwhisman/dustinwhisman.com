@@ -1,5 +1,5 @@
 ---
-title: "Basic Methods for Web Accessibility Testing | WAS Notes | Writing | Dustin Whisman"
+title: "Basic Methods for Web Accessibility Testing - WAS Notes - Writing - Dustin Whisman"
 description: "How does one actually go about testing a website for accessibility issues?"
 articleTitle: "Basic Methods for Web Accessibility Testing"
 layout: default

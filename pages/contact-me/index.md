@@ -1,5 +1,5 @@
 ---
-title: Contact Me | Dustin Whisman
+title: Contact Me - Dustin Whisman
 description: If you want to get in touch with me, you can try one of a few methods, but don't expect instant (or eventual) responses.
 layout: default
 ---

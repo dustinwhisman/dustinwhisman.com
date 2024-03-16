@@ -1,5 +1,5 @@
 ---
-title: "Optimizing running with playlists | Writing | Dustin Whisman"
+title: "Optimizing running with playlists - Writing - Dustin Whisman"
 description: "Combining mood, tempo, duration, and general vibes to build running playlists suitable for different types of runs."
 articleTitle: "Optimizing running with playlists"
 layout: default
