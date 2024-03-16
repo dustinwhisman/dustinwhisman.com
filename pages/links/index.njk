@@ -1,0 +1,35 @@
+---
+title: Links - Dustin Whisman
+description: A collection of links to places elsewhere on the web that are worth bookmarking and sharing.
+layout: default
+pagination:
+  data: bookmarks
+  size: 25
+  alias: links
+  reverse: true
+---
+
+<h1>Links</h1>
+
+<p>
+	This is a collection of links to places elsewhere on the web that are worth bookmarking and sharing.
+</p>
+
+<ul class="cmp-stack">
+	{% for link in links %}
+		<li>
+			<a href="{{ link.link }}">{{ link.title }}</a>
+			-
+			<a href="{{ link.authorLink }}">{{ link.author }}</a>
+		</li>
+	{% endfor %}
+</ul>
+
+<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Links pagination navigation">
+	{% if pagination.href.previous %}
+		<a href="{{ pagination.href.previous }}">Newer links</a>
+	{% endif %}
+	{% if pagination.href.next %}
+		<a href="{{ pagination.href.next }}">Older links</a>
+	{% endif %}
+</nav>

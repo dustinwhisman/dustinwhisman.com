@@ -1,0 +1,26 @@
+[
+	{
+		"link": "https://joshcollinsworth.com/blog/devaluing-frontend",
+		"title": "The quiet, pervasive devaluation of frontend",
+		"author": "Josh Collinsworth",
+		"authorLink": "https://joshcollinsworth.com/"
+	},
+	{
+		"link": "https://rootwebdesign.studio/articles/the-environmental-benefits-of-privacy-focussed-web-design/",
+		"title": "The environmental benefits of privacy-focussed web design",
+		"author": "Root Web Design Studio",
+		"authorLink": "https://rootwebdesign.studio/"
+	},
+	{
+		"link": "https://adactio.com/journal/20965",
+		"title": "Bookmarklets for testing your website",
+		"author": "Jeremy Keith",
+		"authorLink": "https://adactio.com/"
+	},
+	{
+		"link": "https://ericwbailey.website/published/thoughts-on-embedding-alternative-text-metadata-into-images/",
+		"title": "Thoughts on embedding alternative text metadata into images",
+		"author": "Eric Bailey",
+		"authorLink": "https://ericwbailey.website/"
+	}
+]
