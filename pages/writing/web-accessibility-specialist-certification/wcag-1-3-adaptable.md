@@ -1,5 +1,5 @@
 ---
-title: 'WCAG 1.3 Adaptable | WAS Notes | Writing | Dustin Whisman'
+title: 'WCAG 1.3 Adaptable - WAS Notes - Writing - Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 1.3 Adaptable?
 articleTitle: 'WCAG 1.3 Adaptable'
 layout: default

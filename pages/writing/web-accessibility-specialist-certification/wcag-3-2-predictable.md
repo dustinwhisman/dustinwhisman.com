@@ -1,5 +1,5 @@
 ---
-title: "WCAG 3.2 Predictable | WAS Notes | Writing | Dustin Whisman"
+title: "WCAG 3.2 Predictable - WAS Notes - Writing - Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 3.2 Predictable?"
 articleTitle: "WCAG 3.2 Predictable"
 layout: default

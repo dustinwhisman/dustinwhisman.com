@@ -1,5 +1,5 @@
 ---
-title: "Breaking the Seal | Writing | Dustin Whisman"
+title: "Breaking the Seal - Writing - Dustin Whisman"
 description: "In which I describe why I've decided to break my no-client-side JavaScript rule for this site."
 articleTitle: "Breaking the Seal"
 layout: default

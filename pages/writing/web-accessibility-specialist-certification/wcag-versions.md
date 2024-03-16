@@ -1,5 +1,5 @@
 ---
-title: 'WCAG Versions | WAS Notes | Writing | Dustin Whisman'
+title: 'WCAG Versions - WAS Notes - Writing - Dustin Whisman'
 description: What do the different WCAG version numbers actually mean, and which ones apply right now?
 articleTitle: 'WCAG Versions'
 layout: default

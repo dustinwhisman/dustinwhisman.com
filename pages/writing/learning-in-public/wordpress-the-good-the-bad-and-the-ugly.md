@@ -1,5 +1,5 @@
 ---
-title: "WordPress: The Good, the Bad, and the Ugly | Writing | Dustin Whisman"
+title: "WordPress: The Good, the Bad, and the Ugly - Writing - Dustin Whisman"
 description: "What's good about WordPress? What isn't? And what are the most baffling things for a developer to figure out?"
 articleTitle: "WordPress: The Good, the Bad, and the Ugly"
 layout: default

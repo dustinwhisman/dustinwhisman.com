@@ -1,5 +1,5 @@
 ---
-title: 'WAS Study Guide | WAS Notes | Writing | Dustin Whisman'
+title: 'WAS Study Guide - WAS Notes - Writing - Dustin Whisman'
 description: For the curious, or those interested in getting a WAS certification, this is the study guide that I'm using to prepare for the exam.
 articleTitle: 'WAS Study Guide'
 layout: default

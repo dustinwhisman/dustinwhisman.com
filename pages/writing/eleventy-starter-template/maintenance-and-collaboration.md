@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: Maintenance and Collaboration | Writing | Dustin Whisman'
+title: 'Eleventy Starter: Maintenance and Collaboration - Writing - Dustin Whisman'
 description: This article is about handling dependency updates, maintaining code quality, and providing templates for pull requests and issues for better collaboration.
 articleTitle: 'Building an Eleventy Starter Template: Maintenance and Collaboration'
 layout: default

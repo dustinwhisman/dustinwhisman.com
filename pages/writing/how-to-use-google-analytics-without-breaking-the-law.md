@@ -1,5 +1,5 @@
 ---
-title: "How to use Google Analytics without BREAKING THE LAW | Writing | Dustin Whisman"
+title: "How to use Google Analytics without BREAKING THE LAW - Writing - Dustin Whisman"
 description: "How can you add Google Analytics to a website without breaking GDPR or CCPA rules? Turns out it's more complicated than you might expect."
 articleTitle: "How to use Google Analytics without BREAKING THE LAW"
 layout: default

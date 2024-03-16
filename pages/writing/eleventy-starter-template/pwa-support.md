@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: Progressive Web App Support | Writing | Dustin Whisman'
+title: 'Eleventy Starter: Progressive Web App Support - Writing - Dustin Whisman'
 description: This article goes over a minimal approach to turn an Eleventy site into a Progressive Web App.
 articleTitle: 'Building an Eleventy Starter Template: Progressive Web App Support'
 layout: default

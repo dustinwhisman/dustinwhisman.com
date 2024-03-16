@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: Legacy JS Builds and TypeScript Support | Writing | Dustin Whisman'
+title: 'Eleventy Starter: Legacy JS Builds and TypeScript Support - Writing - Dustin Whisman'
 description: This article is about supporting older browsers while still writing modern JS, and it extends what's already there to support TypeScript.
 articleTitle: 'Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support'
 layout: default

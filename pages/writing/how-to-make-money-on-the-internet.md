@@ -1,5 +1,5 @@
 ---
-title: "How to make money on the internet | Writing | Dustin Whisman"
+title: "How to make money on the internet - Writing - Dustin Whisman"
 description: "How do you even make money online these days? In this economy?!"
 articleTitle: "How to make money on the internet"
 layout: default

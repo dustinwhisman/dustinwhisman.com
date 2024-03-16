@@ -1,5 +1,5 @@
 ---
-title: "I Passed the WAS Exam! | WAS Notes | Writing | Dustin Whisman"
+title: "I Passed the WAS Exam! - WAS Notes - Writing - Dustin Whisman"
 description: "The results are in, and I am now a certified Web Accessibility Specialist."
 articleTitle: "I Passed the WAS Exam!"
 layout: default

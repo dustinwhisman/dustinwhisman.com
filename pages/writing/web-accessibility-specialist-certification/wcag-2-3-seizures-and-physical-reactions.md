@@ -1,5 +1,5 @@
 ---
-title: "WCAG 2.3 Seizures and Physical Reactions | WAS Notes | Writing | Dustin Whisman"
+title: "WCAG 2.3 Seizures and Physical Reactions - WAS Notes - Writing - Dustin Whisman"
 description: "How do you meet all the success criteria for WCAG 2.3 Seizures and Physical Reactions?"
 articleTitle: "WCAG 2.3 Seizures and Physical Reactions"
 layout: default

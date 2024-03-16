@@ -1,5 +1,5 @@
 ---
-title: "Principles of Universal Design | CPACC Notes | Writing | Dustin Whisman"
+title: "Principles of Universal Design - CPACC Notes - Writing - Dustin Whisman"
 description: "These principles are helpful for understanding how to design both digital and physical environments to be as inclusive as possible."
 articleTitle: "Principles of Universal Design"
 layout: default

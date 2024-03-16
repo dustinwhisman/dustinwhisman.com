@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: Project Setup | Writing | Dustin Whisman'
+title: 'Eleventy Starter: Project Setup - Writing - Dustin Whisman'
 description: This article covers the basics of setting up an Eleventy project's file structure and basic configuration.
 articleTitle: 'Building an Eleventy Starter Template: Project Setup and Configuration'
 layout: default

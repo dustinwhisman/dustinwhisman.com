@@ -1,5 +1,5 @@
 ---
-title: 'Notes: The Coaching Habit | Writing | Dustin Whisman'
+title: 'Notes: The Coaching Habit - Writing - Dustin Whisman'
 description: This is a collection of notes I took while reading The Coaching Habit by Michael Bungay Stanier.
 articleTitle: 'Notes: The Coaching Habit'
 layout: default

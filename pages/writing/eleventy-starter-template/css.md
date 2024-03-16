@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: CSS | Writing | Dustin Whisman'
+title: 'Eleventy Starter: CSS - Writing - Dustin Whisman'
 description: This article covers supporting CSS, or SCSS more specifically, in an Eleventy project.
 articleTitle: 'Building an Eleventy Starter Template: CSS'
 layout: default

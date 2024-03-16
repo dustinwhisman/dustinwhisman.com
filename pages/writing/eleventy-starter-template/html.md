@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: HTML | Writing | Dustin Whisman'
+title: 'Eleventy Starter: HTML - Writing - Dustin Whisman'
 description: This article goes into detail about setting up HTML layouts and page structures using Eleventy, as well as setting up an HTML linter to check for accessibility issues.
 articleTitle: 'Building an Eleventy Starter Template: HTML'
 layout: default

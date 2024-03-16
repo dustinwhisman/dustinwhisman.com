@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: Introduction | Writing | Dustin Whisman'
+title: 'Eleventy Starter: Introduction - Writing - Dustin Whisman'
 description: This introduces the series of articles I wrote for Sparkbox's Foundry about how to build an Eleventy Starter Template.
 articleTitle: Setting up Future Projects for Success with Template Repositories
 layout: default

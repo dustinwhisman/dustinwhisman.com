@@ -1,5 +1,5 @@
 ---
-title: "YouTube | Accessibility of the Top 100 Sites | Writing | Dustin Whisman"
+title: "YouTube - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
 description: "How accessible is YouTube? This is part 2 of a series evaluating the accessibility of the top 100 websites in the US."
 articleTitle: "Accessibility of the Top 100: YouTube"
 layout: default

@@ -1,5 +1,5 @@
 ---
-title: 'WCAG 1.2 Time-based Media | WAS Notes | Writing | Dustin Whisman'
+title: 'WCAG 1.2 Time-based Media - WAS Notes - Writing - Dustin Whisman'
 description: How do you meet all of the success criteria for WCAG 1.2 Time-based Media?
 articleTitle: 'WCAG 1.2 Time-based Media'
 layout: default

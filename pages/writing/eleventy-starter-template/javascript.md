@@ -1,5 +1,5 @@
 ---
-title: 'Eleventy Starter: JavaScript | Writing | Dustin Whisman'
+title: 'Eleventy Starter: JavaScript - Writing - Dustin Whisman'
 description: This article goes into detail about setting up a modern JS bundling process for an Eleventy project, including some details about linting and testing.
 articleTitle: 'Building an Eleventy Starter Template: JavaScript'
 layout: default

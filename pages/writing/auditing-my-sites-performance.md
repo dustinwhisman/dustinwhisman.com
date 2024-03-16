@@ -1,5 +1,5 @@
 ---
-title: "Auditing My Site's Performance | Writing | Dustin Whisman"
+title: "Auditing My Site's Performance - Writing - Dustin Whisman"
 description: I built this site to be performant, but are there still areas for improvement? In short, yes.
 articleTitle: Auditing My Site's Performance
 layout: default

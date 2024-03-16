@@ -1,5 +1,5 @@
 ---
-title: 'In Search of the Perfect Build Process | Writing | Dustin Whisman'
+title: 'In Search of the Perfect Build Process - Writing - Dustin Whisman'
 description: In which I cover all the changes I've made to the build process for this site, attempting to make it better, faster, stronger.
 articleTitle: In Search of the Perfect Build Process
 layout: default
