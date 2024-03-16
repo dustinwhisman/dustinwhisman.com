@@ -59,7 +59,7 @@ layout: default
 		<h2>Recent Projects</h2>
 		<ul class="cmp-project__list">
 			{% from 'partials/macros/project-card.njk' import projectCard %}
-			{% for project in global.recentProjects %}
+			{% for project in projects.recentProjects %}
 				<li>
 					{{ projectCard(project, 'h3') }}
 				</li>
