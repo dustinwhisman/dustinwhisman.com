@@ -14,6 +14,7 @@ const collections = {
 	CPACC_CERTIFICATION: 'CPACC certification',
 	ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
 	ACCESSIBILITY_TOP_100: 'accessibility top 100',
+	NONE: 'none',
 };
 
 const templates = {
