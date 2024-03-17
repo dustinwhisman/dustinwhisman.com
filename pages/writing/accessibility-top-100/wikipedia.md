@@ -28,6 +28,8 @@ I also evaluated the page for [computer accessibility](https://en.wikipedia.org/
 
 I evaluated Wikipedia on January 14th and 15th, 2024.
 
+_Update: I went back to these pages on March 17th, 2024 to collect page weight info, which has been added for each page I tested._
+
 ## Testing wikipedia.org
 
 ### Automated scans
@@ -76,6 +78,14 @@ This may honestly be preferable to using incorrect ARIA, since the suggestions d
 </figure>
 
 At zoom levels 200% and 400%, everything was still accessible and no content overflowed or got lost.
+
+### Page weight and resource breakdown
+
+The home page initially weighs 172 kB, which breaks down as follows for the major resource categories:
+
+- 78 kB HTML
+- 22.7 kB JS
+- 68.5 kB images
 
 ## Testing en.wikipedia.org
 
@@ -129,6 +139,26 @@ Zooming to 200% presented no issues, but horizontal scrolling became necessary a
   <figcaption>This only becomes a problem at 400% on a relatively large screen.</figcaption>
 </figure>
 
+### Page weight and resource breakdown
+
+#### Desktop
+
+The localized home page initially weighs 519 kB, which breaks down as follows for the major resource categories:
+
+- 100 kB HTML
+- 111 kB CSS
+- 203 kB JS
+- 102 kB images
+
+#### Mobile
+
+The localized home page initially weighs 920 kB, which breaks down as follows for the major resource categories:
+
+- 91.9 kB HTML
+- 122 kB CSS
+- 315 kB JS
+- 387 kB images
+
 ## Testing an article
 
 ### Automated scans
@@ -171,6 +201,26 @@ On mobile, I noticed that focus indicators weren’t shown for links. Granted, I
 </figure>
 
 Zoom levels behaved the same as the localized home page. Since the size was about the same, I suspect there’s a global element in the header or footer overflowing and causing the horizontal scrolling. Again, not an essential fix, but one that would benefit low vision users.
+
+### Page weight and resource breakdown
+
+#### Desktop
+
+The article page initially weighs 593 kB, which breaks down as follows for the major resource categories:
+
+- 184 kB HTML
+- 118 kB CSS
+- 203 kB JS
+- 85.7 kB images
+
+#### Mobile
+
+The article page initially weighs 759 kB, which breaks down as follows for the major resource categories:
+
+- 148 kB HTML
+- 125 kB CSS
+- 315 kB JS
+- 166 kB images
 
 ## Results
 
