@@ -33,6 +33,8 @@ Similar to Wikipedia, YouTube uses adaptive design rather than responsive design
 
 I evaluated YouTube on February 17th, 2024.
 
+_Update: I went back to these pages on March 17th, 2024 to collect page weight info, which has been added for each page I tested. Interestingly, in the month since I evaluated the site, YouTube has changed their home page when you're not signed in to not show any video thumbnails. Instead, they show a message telling you to search before you get recommended anything. Keep that in mind when you see how many resources are used to show users more or less an empty screen._
+
 ## Testing the home page
 
 ### Automated scans
@@ -220,6 +222,29 @@ Second, why are these tabs at all? As far as I can tell, there are no `tabpanel`
   <figcaption>Is anyone else tired? I’m tired.</figcaption>
 </figure>
 
+### Page weight and resource breakdown
+
+#### Desktop
+
+The home page initially weighs 16 MB, which breaks down as follows for the major resource categories:
+
+- 487 kB HTML
+- 2.8 MB CSS
+- 12.1 MB JS
+- 79.5 kB fonts
+- 193 B images
+
+#### Mobile
+
+The home page initially weighs 4.6 MB, which breaks down as follows for the major resource categories:
+
+- 224 kB HTML
+- 1.2 MB CSS
+- 3 MB JS
+- 41.7 kB fonts
+- 4.6 kB images
+- 26.3 kB media
+
 ## Testing a video page
 
 ### Automated scans
@@ -281,6 +306,29 @@ Okay, so the transcript seems to just be the captions. This sort of thing might 
 Oops, there aren’t any audio descriptions. There isn’t even a mechanism for them. I’m a little surprised at this, given that [1.2.5 Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html) is a Level AA success criterion and YouTube has had well over a decade to implement support for them. With some light research, it seems YouTube may have had a beta version of audio descriptions that was only available for some creators, but I couldn't find anything indicating that it went anywhere.
 
 So what are the options if you’re a creator? Well, you could bake audio descriptions into your videos from the start, or you could create a separate video that has audio descriptions baked in, and then link to that from the main video. Neither of these seem workable to me, either because people who don’t need audio descriptions probably wouldn’t want to watch videos with them, or because having two nearly identical videos would wreak havoc with YouTube’s algorithm and monetization while being a lot more work.
+
+### Page weight and resource breakdown
+
+#### Desktop
+
+The video page initially weighs 18.8 MB, which breaks down as follows for the major resource categories:
+
+- 886 kB HTML
+- 3.2 MB CSS
+- 12.1 MB JS
+- 79.5 kB fonts
+- 157 kB images
+
+#### Mobile
+
+The video page initially weighs 7.9 MB, which breaks down as follows for the major resource categories:
+
+- 521 kB HTML
+- 1.2 MB CSS
+- 3.3 MB JS
+- 41.7 kB fonts
+- 90.9 kB images
+- 26.3 kB media
 
 ## Results
 
