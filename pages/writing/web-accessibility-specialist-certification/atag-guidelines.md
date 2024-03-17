@@ -17,7 +17,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 ## Authoring Tool Accessibility Guidelines (ATAG) 2.0
 
-[ATAG](https://www.w3.org/WAI/standards-guidelines/atag/) specifies principles that authoring tools should follow to make creating accessible web content easier–for example, prompting users to add alt text to images. The focus of ATAG is to ensure that the authoring tools themselves are accessible, and that they support creating accessible content.
+[ATAG](https://www.w3.org/WAI/standards-guidelines/atag/) specifies principles that authoring tools should follow to make creating accessible web content easier—for example, prompting users to add alt text to images. The focus of ATAG is to ensure that the authoring tools themselves are accessible, and that they support creating accessible content.
 
 Can a website be an authoring tool? Yes! For example, a social media website and a no-code CMS would both be considered authoring tools. If users can create web content through it, it’s an authoring tool.
 

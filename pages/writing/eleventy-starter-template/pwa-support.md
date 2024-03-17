@@ -165,7 +165,7 @@ The last thing we need to do with our web manifest is reference it in our layout
 <meta name="theme-color" content="#f8f8f8" />
 ```
 
-We’ve checked nearly all the boxes that we need to be PWA-ready, but we’re missing one critical piece–a service worker.
+We’ve checked nearly all the boxes that we need to be PWA-ready, but we’re missing one critical piece—a service worker.
 
 ### Adding a Service Worker
 

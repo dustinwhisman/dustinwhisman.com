@@ -28,6 +28,8 @@ I also evaluated the page for [computer accessibility](https://en.wikipedia.org/
 
 I evaluated Wikipedia on January 14th and 15th, 2024.
 
+_Update: I went back to these pages on March 17th, 2024 to collect page weight info, which has been added for each page I tested._
+
 ## Testing wikipedia.org
 
 ### Automated scans
@@ -68,7 +70,7 @@ Aside from that, the focus order makes sense and there aren’t any controls tha
 
 The search control behaves like a combobox (a text input with suggestions that appear as you type), and the `Esc`, `Enter`, `Down Arrow`, and `Up Arrow` keys all behave as expected, but there are no ARIA attributes to communicate the control’s behavior to screen reader users. Since this is a case where there’s no attempt to create an ARIA combobox, I have to assume that Wikipedia is expecting screen reader users to simply type their search term and submit the form without interacting with the autocomplete suggestions.
 
-This may honestly be preferable to using incorrect ARIA, since the suggestions don’t appear in the tab order and would not be announced–effectively the equivalent of just using a text input. It’s arguable that this *could* make searching harder, but this behavior doesn’t seem likely to block users from finding what they’re searching for. In this case, I would let user testing determine what the best approach here is rather than assume that an ARIA combobox would be better.
+This may honestly be preferable to using incorrect ARIA, since the suggestions don’t appear in the tab order and would not be announced—effectively the equivalent of just using a text input. It’s arguable that this *could* make searching harder, but this behavior doesn’t seem likely to block users from finding what they’re searching for. In this case, I would let user testing determine what the best approach here is rather than assume that an ARIA combobox would be better.
 
 <figure>
   <img src="/images/accessibility-top-100/wikipedia/combobox-ish.png" alt="A screenshot showing the search suggestion list and the markup that does not include ARIA roles or attributes to announce the combobox elements or behavior." class="cmp-article__image">
@@ -76,6 +78,14 @@ This may honestly be preferable to using incorrect ARIA, since the suggestions d
 </figure>
 
 At zoom levels 200% and 400%, everything was still accessible and no content overflowed or got lost.
+
+### Page weight and resource breakdown
+
+The home page initially weighs 172 kB, which breaks down as follows for the major resource categories:
+
+- 78 kB HTML
+- 22.7 kB JS
+- 68.5 kB images
 
 ## Testing en.wikipedia.org
 
@@ -129,6 +139,26 @@ Zooming to 200% presented no issues, but horizontal scrolling became necessary a
   <figcaption>This only becomes a problem at 400% on a relatively large screen.</figcaption>
 </figure>
 
+### Page weight and resource breakdown
+
+#### Desktop
+
+The localized home page initially weighs 519 kB, which breaks down as follows for the major resource categories:
+
+- 100 kB HTML
+- 111 kB CSS
+- 203 kB JS
+- 102 kB images
+
+#### Mobile
+
+The localized home page initially weighs 920 kB, which breaks down as follows for the major resource categories:
+
+- 91.9 kB HTML
+- 122 kB CSS
+- 315 kB JS
+- 387 kB images
+
 ## Testing an article
 
 ### Automated scans
@@ -157,7 +187,7 @@ The images that are missing alt text are all wrapped by `<figure>` elements, whi
 
 It’s useful to set an `aria-label` on each `<nav>` element to make it easier for screen reader users to distinguish between different navigation menus. Not doing that won't block users from doing what they need to do, but it’s a fairly trivial thing to implement.
 
-Again, the checkbox hack controls could use some improvement. I’m not sure why they set `role="button"` on a `<label>` when they already did so (incorrectly) on the `<input>`, or why it only applies in the mobile version of the page. It’s worth noting that Wikipedia uses adaptive design rather than responsive design, meaning they serve up completely different markup on [en.m.wikipedia.org](http://en.m.wikipedia.org) than [en.wikipedia.org](http://en.wikipedia.org). It’s an old-school choice, and one that introduces a fair amount of maintenance problems. Given Wikipedia’s age and size, changing that approach would likely be a *massive* undertaking–it would be far easier to fix the bug.
+Again, the checkbox hack controls could use some improvement. I’m not sure why they set `role="button"` on a `<label>` when they already did so (incorrectly) on the `<input>`, or why it only applies in the mobile version of the page. It’s worth noting that Wikipedia uses adaptive design rather than responsive design, meaning they serve up completely different markup on [en.m.wikipedia.org](http://en.m.wikipedia.org) than [en.wikipedia.org](http://en.wikipedia.org). It’s an old-school choice, and one that introduces a fair amount of maintenance problems. Given Wikipedia’s age and size, changing that approach would likely be a *massive* undertaking—it would be far easier to fix the bug.
 
 ### Manual testing
 
@@ -171,6 +201,26 @@ On mobile, I noticed that focus indicators weren’t shown for links. Granted, I
 </figure>
 
 Zoom levels behaved the same as the localized home page. Since the size was about the same, I suspect there’s a global element in the header or footer overflowing and causing the horizontal scrolling. Again, not an essential fix, but one that would benefit low vision users.
+
+### Page weight and resource breakdown
+
+#### Desktop
+
+The article page initially weighs 593 kB, which breaks down as follows for the major resource categories:
+
+- 184 kB HTML
+- 118 kB CSS
+- 203 kB JS
+- 85.7 kB images
+
+#### Mobile
+
+The article page initially weighs 759 kB, which breaks down as follows for the major resource categories:
+
+- 148 kB HTML
+- 125 kB CSS
+- 315 kB JS
+- 166 kB images
 
 ## Results
 

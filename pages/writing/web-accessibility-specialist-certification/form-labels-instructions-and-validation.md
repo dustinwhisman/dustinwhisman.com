@@ -24,7 +24,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Labels must have programmatically determinable text that is meaningful, so avoid images as labels (even if you have alt text, it’s not a best practice)
 - Labels must not rely solely on sensory characteristics, like “The green button”
 - Labels must be visible (sorry `aria-label`, your use is limited)
-- Labels should be visually adjacent to what they’re labeling–the main layout to avoid is left-aligned label, right-aligned input on a wide screen
+- Labels should be visually adjacent to what they’re labeling—the main layout to avoid is left-aligned label, right-aligned input on a wide screen
 - Labels should be adjacent in DOM order to what they’re labeling
 - The `for` and `id` relationship is one-to-one, so use `aria-labelledby` when multiple labels describe the same form element
 - When one visual label applies to multiple form elements, like a split up phone number, use one of the following techniques:
@@ -57,7 +57,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   - Let users change previous options, and make it easy to do so
   - Limit access to steps when it makes sense to do so (this is very situational)
   - Number the steps, like 3 of 5, so users know where they are in the process
-  - Manage keyboard focus, especially when the currently focused item disappears–you need to set where the focus goes next
+  - Manage keyboard focus, especially when the currently focused item disappears—you need to set where the focus goes next
   - Summarize the user’s choices/inputs before the final “Submit” button
 - A change of context is a change to:
   - The user agent (opening a different app from the browser, for example)

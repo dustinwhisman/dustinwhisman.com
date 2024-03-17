@@ -92,7 +92,7 @@ To fix this, I adjusted the component to accept another parameter to specify the
 {% endmacro %}{% endraw %}
 ```
 
-I updated each instance of the component to use a threshold that made sense in context–0 for the home page and 6 for the `/cats` page.
+I updated each instance of the component to use a threshold that made sense in context—0 for the home page and 6 for the `/cats` page.
 
 ## Adding Pagination for the Pictures of Cats
 

@@ -19,7 +19,7 @@ This is a high-level taxonomy of different types of disabilities, the barriers t
 
 ## Visual Disabilities
 
-Visual disabilities include blindness, color blindness, and low vision. Blindness is a spectrum, with some people unable to see at all and others able to see general shapes or perceive light vs. dark. Color blindness impairs the ability to distinguish between certain colors, usually red and green, but other colors can be affected as well, and it affects men at higher rates than women–1 in 12 compared to 1 in 200, respectively. Low vision refers to uncorrectable vision loss that impacts daily life and may require magnification or high contrast to be able to read text.
+Visual disabilities include blindness, color blindness, and low vision. Blindness is a spectrum, with some people unable to see at all and others able to see general shapes or perceive light vs. dark. Color blindness impairs the ability to distinguish between certain colors, usually red and green, but other colors can be affected as well, and it affects men at higher rates than women—1 in 12 compared to 1 in 200, respectively. Low vision refers to uncorrectable vision loss that impacts daily life and may require magnification or high contrast to be able to read text.
 
 Barriers result from situations where information is only available visually, when content can’t be magnified or customized, or when tasks require sight to be completed, like a touch-only interface.
 
@@ -37,7 +37,7 @@ Some assistive technologies include hearing aids, captions, transcripts, and hap
 
 ## Deaf-blindness
 
-Deaf-blindness includes deafness and blindness, but the people who are affected often have some hearing and sight–it’s rare to be fully deaf _and_ fully blind. Because both vision and hearing are affected, deafblind people rely on touch as the primary method of communication. Braille is the most viable method for reading, and sign language is used for conversation by feeling the other person’s hands as they sign.
+Deaf-blindness includes deafness and blindness, but the people who are affected often have some hearing and sight—it’s rare to be fully deaf _and_ fully blind. Because both vision and hearing are affected, deafblind people rely on touch as the primary method of communication. Braille is the most viable method for reading, and sign language is used for conversation by feeling the other person’s hands as they sign.
 
 The barriers for deafblind people include the barriers for people with visual and auditory disabilities, and the main adaptive strategy is to provide braille for physical objects or digitally via text that screen readers can output to refreshable braille devices.
 

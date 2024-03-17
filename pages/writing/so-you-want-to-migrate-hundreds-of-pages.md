@@ -259,7 +259,7 @@ I've oversimplified to keep this brief, but we had to deal with a _lot_ of edge 
 
 ## The Final Result
 
-After accounting for edge cases and fixing some bugs, this process went surprisingly smoothly after all the files were copied over. The biggest headache wasn't even related to the content–it was mostly routing logic that was caused by a complicated server setup.
+After accounting for edge cases and fixing some bugs, this process went surprisingly smoothly after all the files were copied over. The biggest headache wasn't even related to the content—it was mostly routing logic that was caused by a complicated server setup.
 
 The pages weren't broken, partly because we specifically ran this against pages without back-end dependencies, but also because we managed to get a one-to-one copy of each page pretty reliably. Would I recommend this approach for every CMS migration? No. But it did a pretty good job given the constraints of the project.
 

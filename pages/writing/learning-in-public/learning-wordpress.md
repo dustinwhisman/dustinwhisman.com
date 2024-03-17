@@ -39,11 +39,11 @@ Because of this, I shifted my searches from “how to do X in WordPress” to �
 
 ## Learning enough to make decisions
 
-Once the project started in earnest, I had to run ahead of the team to do enough research so that I could write cards that described the problems well enough that one of the developers I was working with could pick it up and understand what to do. This is where the flexibility of WordPress became a fun challenge–there’s usually at least three or four different ways to do a thing. Which one is the best option?
+Once the project started in earnest, I had to run ahead of the team to do enough research so that I could write cards that described the problems well enough that one of the developers I was working with could pick it up and understand what to do. This is where the flexibility of WordPress became a fun challenge—there’s usually at least three or four different ways to do a thing. Which one is the best option?
 
 At the start of the project, I didn’t have any good rules of thumb for how to solve different problems, so I would check out a new branch and just try some stuff out. Sometimes this led to dead ends, and other times it got me within striking distance of a solution, but I learned something every time. I also learned a ton from other developers on the team as they implemented things way better than my half-baked experiments. Over time, I got much more confident about picking the right tool for any given job.
 
-Instead of only having hammers (plugins are hammers), we ended up with a mix of different techniques to solve different types of problems. The decisions usually came down to finding the right balance of complexity for content editors vs. developers. It also hinged a bit on what we could practically get done in a short amount of time–better to get something workable after four hours than something perfect after one week.
+Instead of only having hammers (plugins are hammers), we ended up with a mix of different techniques to solve different types of problems. The decisions usually came down to finding the right balance of complexity for content editors vs. developers. It also hinged a bit on what we could practically get done in a short amount of time—better to get something workable after four hours than something perfect after one week.
 
 ## So what did we learn here?
 

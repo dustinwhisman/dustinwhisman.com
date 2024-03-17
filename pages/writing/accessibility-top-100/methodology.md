@@ -27,7 +27,7 @@ I don't plan on doing extensive screen reader testing, but if I find something n
 
 ## Choosing what to evaluate
 
-In addition to each site's home page, I plan on evaluating one or two primary features–the things that people come to the site to do. That's going to vary depending on the site, but I'm going to try approach the site as an average, passive user. That means reading articles on Wikipedia rather than editing them, and viewing videos on YouTube rather then publishing them. For those sites with user-generated content, I may come back to them later and evaluate them as a creator, but I want to try to limit the scope of this to something reasonable.
+In addition to each site's home page, I plan on evaluating one or two primary features—the things that people come to the site to do. That's going to vary depending on the site, but I'm going to try approach the site as an average, passive user. That means reading articles on Wikipedia rather than editing them, and viewing videos on YouTube rather then publishing them. For those sites with user-generated content, I may come back to them later and evaluate them as a creator, but I want to try to limit the scope of this to something reasonable.
 
 If a site requires a login to do the main thing, I'll evaluate the account creation process and attempt to create a burner account using only the keyboard. If that's not possible or it costs money to sign up, I'll call it there. Otherwise, I'll pick another primary feature to evaluate. I'll deactivate or delete the burner accounts when I'm done.
 
@@ -44,6 +44,12 @@ Some components are going to stand out as areas that require investigation, so I
 Then I'll do keyboard testing, checking that the tab order makes sense, that repeated blocks can be skipped, and that all complex components work as expected with the keyboard. I'll also be on the lookout for anything that seems like it can only be done via mouse or by touch.
 
 Then I'll do a couple quick checks at 200% and 400% zoom level to make sure content doesn't overflow or get lost. Any noteworthy issues will get added to the list.
+
+## Page weight and resource breakdowns
+
+While not strictly related to accessibility, I'm going to track the initial page weight of the pages that I test, ignoring anything that gets loaded after interactions or scrolling down the page. I'll break it down by these resource categories: HTML, CSS, JS, fonts, images, and media. I'll ignore any category where the page loads 0 bytes of data.
+
+Why track these numbers? I have a hunch that there will be a correlation between page weight and accessibility issues. I would expect more lightweight pages that lean on HTML and CSS to be more accessible than ones that rely heavily on JS. We'll see if that theory checks out as I check out more of these sites.
 
 ## Caveats
 

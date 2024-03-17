@@ -68,7 +68,7 @@ AmerisourceBergen's [sustainability page](https://esg.amerisourcebergen.com/) wa
 
 Overall, the results are pretty bad. Only Amazon and Alphabet/Google had what I would describe as "good" results and meaningful content at the same time. Interestingly, putting more effort into their sustainability pages seems to have worked against some of these companies' favors. For example, Walmart's page is very flashy, has scroll-based animations, and visually appealing story-telling, and it got the second worst score. Whereas slapping together a list of links and barely styling it at all gets the best score.
 
-There's a tradeoff there–the most performant page you'll ever see is [about:blank](about:blank), but it's completely useless. However, by designing a page that ends up being very resource-heavy with the goal of convincing people that you care about sustainability, it kind of undermines the point.
+There's a tradeoff there—the most performant page you'll ever see is [about:blank](about:blank), but it's completely useless. However, by designing a page that ends up being very resource-heavy with the goal of convincing people that you care about sustainability, it kind of undermines the point.
 
 ## So What?
 

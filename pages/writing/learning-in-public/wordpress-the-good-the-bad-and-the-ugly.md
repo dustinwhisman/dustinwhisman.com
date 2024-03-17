@@ -71,7 +71,7 @@ I’ve been digging through the [Theme Handbook](https://developer.wordpress.org
 
 For one, there are only two required files to make a theme: `style.css` and `templates/index.html`. However, the `style.css` file in all the examples I’ve seen _does not contain CSS_. Instead, it has metadata in a comment for defining things like the theme name, author, description, etc. So where are you supposed to define style information? Why, `theme.json` of course. What?!?
 
-I’m sure there’s a historical reason for this setup, but it just makes no sense to me. Surely JSON is a better format for metadata than a comment in a CSS file. I sort of understand why the styling info is in JSON–it allows for sharing “tokens”, more or less, between CSS and JS, which is useful for blocks, but boy do I not like looking at it.
+I’m sure there’s a historical reason for this setup, but it just makes no sense to me. Surely JSON is a better format for metadata than a comment in a CSS file. I sort of understand why the styling info is in JSON—it allows for sharing “tokens”, more or less, between CSS and JS, which is useful for blocks, but boy do I not like looking at it.
 
 Maybe `templates/index.html` is better. Let’s take a look at the HTML for the Twentytwentythree theme.
 
