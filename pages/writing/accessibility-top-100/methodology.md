@@ -45,6 +45,12 @@ Then I'll do keyboard testing, checking that the tab order makes sense, that rep
 
 Then I'll do a couple quick checks at 200% and 400% zoom level to make sure content doesn't overflow or get lost. Any noteworthy issues will get added to the list.
 
+## Page weight and resource breakdowns
+
+While not strictly related to accessibility, I'm going to track the initial page weight of the pages that I test, ignoring anything that gets loaded after interactions or scrolling down the page. I'll break it down by these resource categories: HTML, CSS, JS, fonts, images, and media. I'll ignore any category where the page loads 0 bytes of data.
+
+Why track these numbers? I have a hunch that there will be a correlation between page weight and accessibility issues. I would expect more lightweight pages that lean on HTML and CSS to be more accessible than ones that rely heavily on JS. We'll see if that theory checks out as I check out more of these sites.
+
 ## Caveats
 
 These are not going to be full site audits, and I'm not going to write up detailed reports. The goal here is education, so I'm going to find the most noteworthy or most common issues and explain how to avoid them or fix them. I'll also include the date that I evaluated the site, so if you check for the same issues later, and they're fixed, great! That means progress has been made.
