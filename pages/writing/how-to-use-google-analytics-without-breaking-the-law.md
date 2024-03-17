@@ -12,7 +12,7 @@ tags:
 
 {% include 'partials/published-date.njk' %}
 
-_Disclaimer: none of this is legal advice. These are my findings based on a limited amount of time and research. Also, check the published date–this could be outdated info if you're reading this in the not-so-distant future._
+_Disclaimer: none of this is legal advice. These are my findings based on a limited amount of time and research. Also, check the published date—this could be outdated info if you're reading this in the not-so-distant future._
 
 I recently had the, um, opportunity to dig into Google Analytics (or I guess Google Tag Manager, but no one I know calls it that consistently) to figure out how to use it while not running afoul of [GDPR](https://gdpr.eu/) or [CCPA](https://www.oag.ca.gov/privacy/ccpa) requirements. Given that these laws were drafted as a response to the privacy issues caused by tools such as analytics and tracking software, you would think that Google would make it easy for their customers to understand how to use their product in a way that’s compliant with international law. You’d be wrong!
 
@@ -28,7 +28,7 @@ When you set up Google Analytics with their GA4 version, you’ll most likely fi
 </script>
 ```
 
-Easy enough, just copy and paste that sucker into your `<head>` and voila! You’re collecting whatever data Google collects by default. I suspect that’s where it ends most of the time. In my experience, developers usually aren’t the ones given access to Google Analytics–they’re usually handed that code snippet by someone else.
+Easy enough, just copy and paste that sucker into your `<head>` and voila! You’re collecting whatever data Google collects by default. I suspect that’s where it ends most of the time. In my experience, developers usually aren’t the ones given access to Google Analytics—they’re usually handed that code snippet by someone else.
 
 If you’re lucky, that person might ask “What’s the deal with this banner? It says we need to check our consent settings for the European Economic Area.” You might make the reasonable assumption that that means no data is going to be collected in Europe until you do a little more configuration. Again, you’d be wrong!
 
@@ -165,9 +165,9 @@ Google doesn’t have the best track record when it comes to privacy, so if you 
 
 ## Do you actually need analytics?
 
-If all of this sounds like a hassle, it’s because it is. Invading users’ privacy used to be so much easier, but with browsers starting to block third-party cookies more aggressively along with ad-blocker extensions and privacy laws, any data that you manage to collect (legally or otherwise) is likely to have huge gaps. By the way, Google Analytics sets first-party cookies somehow–no idea how that’s allowed, but apparently it is.
+If all of this sounds like a hassle, it’s because it is. Invading users’ privacy used to be so much easier, but with browsers starting to block third-party cookies more aggressively along with ad-blocker extensions and privacy laws, any data that you manage to collect (legally or otherwise) is likely to have huge gaps. By the way, Google Analytics sets first-party cookies somehow—no idea how that’s allowed, but apparently it is.
 
-The flakiness of data is maybe most evident by GA4 using machine learning to fill in gaps in data, otherwise known as making stuff up, also known as just guessin’. That’s not to say that analytics data is worthless–you can still probably glean some insights from which pages on your site get the most traffic, but is it worth it?
+The flakiness of data is maybe most evident by GA4 using machine learning to fill in gaps in data, otherwise known as making stuff up, also known as just guessin’. That’s not to say that analytics data is worthless—you can still probably glean some insights from which pages on your site get the most traffic, but is it worth it?
 
 Answer these questions to decide whether analytics (of any kind) are going to be useful for you:
 

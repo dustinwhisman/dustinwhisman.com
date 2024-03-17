@@ -27,7 +27,7 @@ I don't plan on doing extensive screen reader testing, but if I find something n
 
 ## Choosing what to evaluate
 
-In addition to each site's home page, I plan on evaluating one or two primary features–the things that people come to the site to do. That's going to vary depending on the site, but I'm going to try approach the site as an average, passive user. That means reading articles on Wikipedia rather than editing them, and viewing videos on YouTube rather then publishing them. For those sites with user-generated content, I may come back to them later and evaluate them as a creator, but I want to try to limit the scope of this to something reasonable.
+In addition to each site's home page, I plan on evaluating one or two primary features—the things that people come to the site to do. That's going to vary depending on the site, but I'm going to try approach the site as an average, passive user. That means reading articles on Wikipedia rather than editing them, and viewing videos on YouTube rather then publishing them. For those sites with user-generated content, I may come back to them later and evaluate them as a creator, but I want to try to limit the scope of this to something reasonable.
 
 If a site requires a login to do the main thing, I'll evaluate the account creation process and attempt to create a burner account using only the keyboard. If that's not possible or it costs money to sign up, I'll call it there. Otherwise, I'll pick another primary feature to evaluate. I'll deactivate or delete the burner accounts when I'm done.
 

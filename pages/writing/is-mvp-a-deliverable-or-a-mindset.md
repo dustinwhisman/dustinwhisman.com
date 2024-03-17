@@ -105,13 +105,13 @@ For most of the project, the process for migrating pages looked a little somethi
 - Run the migration scripts against the main environment
 - Go through QA testing before making the pages go live
 
-So that’s a lot. Unfortunately, there’s not really an MVP version of this workflow–omitting steps would have led to bugs and missed requirements. This process was understandably very time-consuming, even for the categories of pages with reliable data and predictable formats.
+So that’s a lot. Unfortunately, there’s not really an MVP version of this workflow—omitting steps would have led to bugs and missed requirements. This process was understandably very time-consuming, even for the categories of pages with reliable data and predictable formats.
 
 Then there were the other pages. The grab-bag. The one-off weird pages that didn’t match anything else on the site. We had about 800 pages like this that would have been impossible to migrate with the existing process within our timeline. We needed to improvise.
 
 ### The MVP Process
 
-Let’s put our MVP hats on, take a step back, and look at the requirements. The old CMS had to go. The new CMS was set up, and its data was being consumed by a Next.js application. The remaining pages were the lowest priority pages because of low traffic or low risk to the business. There were little to no back-end requirements for these pages–they were mostly static content. What if we just copy-pasted them, so to speak?
+Let’s put our MVP hats on, take a step back, and look at the requirements. The old CMS had to go. The new CMS was set up, and its data was being consumed by a Next.js application. The remaining pages were the lowest priority pages because of low traffic or low risk to the business. There were little to no back-end requirements for these pages—they were mostly static content. What if we just copy-pasted them, so to speak?
 
 There’s a little more nuance to this of course, but in principle, if we could grab the output from the old CMS (the HTML served up to browsers), then we could use that to construct static files that we could serve from a public folder in our Next.js application.
 

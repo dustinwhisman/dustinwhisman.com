@@ -49,7 +49,7 @@ It’s results oriented, so there’s that, but this often leads to products tha
 
 This model acknowledges how people are drawn together by their shared characteristics, such as the deaf community and the use of sign language. Having similar life experiences and interests creates a sense of belonging.
 
-This model accepts a person’s disability as a point of pride rather than a problem to be solved. However, the sense of belonging isn’t universal–you can still be excluded from a group even if you have some things in common.
+This model accepts a person’s disability as a point of pride rather than a problem to be solved. However, the sense of belonging isn’t universal—you can still be excluded from a group even if you have some things in common.
 
 ## Charity Model
 

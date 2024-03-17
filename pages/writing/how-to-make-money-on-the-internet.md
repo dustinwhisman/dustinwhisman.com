@@ -51,7 +51,7 @@ I just don't have the hustle grindset needed for freelance. What else is there? 
 
 I've got a fair amount of writing on this site now, and while I assume that I'm the only person who's read any of it, there's a chance that running ads could generate some income. Don't worry, I'm not going to do that, but it is one of the primary funding models for creative works. Traditional broadcast media, YouTube, podcasts, etc. often rely on advertising to fund their work.
 
-Here's the thing, though–advertising sucks, especially online. It used to make sense before the internet. You'd run an ad in the newspaper for your business, advertise soap during daytime television, or put up a billboard for your personal injury lawer firm because the people who were likely to see the ad were people likely to need your products or services. For some reason, though, advertisers decided that the best way to advertise online was to be as creepy and invasive as possible.
+Here's the thing, though—advertising sucks, especially online. It used to make sense before the internet. You'd run an ad in the newspaper for your business, advertise soap during daytime television, or put up a billboard for your personal injury lawer firm because the people who were likely to see the ad were people likely to need your products or services. For some reason, though, advertisers decided that the best way to advertise online was to be as creepy and invasive as possible.
 
 Seriously, I don't understand the logic of how targeted advertising is supposed to work. Why would anyone want to buy something from a digital stalker? If I talk about running shoes with someone and then suddenly get a bunch of ads for running shoes, that's going to make me trust your business _more_?
 
@@ -89,4 +89,4 @@ Going forward, I think this is how I'd like to monetize all my side projects. I 
 
 ## I probably missed some options
 
-There are definitely other ways to make money online, but I don't think I'm well-suited for a lot of them. I'd make a terrible influencer, and I have enough moral fiber to avoid the really lucrative grifts that seem to make a lot of people rich. I'll stick with the day job and maybe enough side income to buy some cat toys–that's good enough for me.
+There are definitely other ways to make money online, but I don't think I'm well-suited for a lot of them. I'd make a terrible influencer, and I have enough moral fiber to avoid the really lucrative grifts that seem to make a lot of people rich. I'll stick with the day job and maybe enough side income to buy some cat toys—that's good enough for me.

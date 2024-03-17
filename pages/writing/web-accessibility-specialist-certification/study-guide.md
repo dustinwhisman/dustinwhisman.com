@@ -17,7 +17,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 This is the study guide that I've been following to prepare for the WAS Certification exam. I broke it out into 8 loosely organized sprints that cover various accessibility topics. I chose "sprints" over time-specific measures like weeks because who knows how much time I'll continue to have to devote to studying. The International Association of Accessibility Professionals (IAAP) recommends 5-10 hours a week for 6-8 weeks to prepare for the exam, so if you're interested in getting certified, that's about the time commitment you can expect.
 
-Most of the linked resources are free, except for the Deque course, which at time of writing costs $150 and expires one year after purchase, so only buy it if you know you'll have the time to go through it–I may have made that mistake last year, but Sparkbox was generous enough to reimburse me twice 🙏
+Most of the linked resources are free, except for the Deque course, which at time of writing costs $150 and expires one year after purchase, so only buy it if you know you'll have the time to go through it—I may have made that mistake last year, but Sparkbox was generous enough to reimburse me twice 🙏
 
 ## Sprint One
 

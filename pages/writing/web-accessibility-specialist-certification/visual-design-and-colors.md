@@ -30,13 +30,13 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - The ratios to remember are 4.5:1 and 3:1 for small and large text respectively, with the cutoff being 18-point or 14-point bold text
 - Interactive elements (buttons and form controls), active states (focus indicators), and graphics also need a contrast ratio of at least 3:1
 - It’s best practice to test against Windows High Contrast themes (one light, one dark)
-- The `-ms-high-contrast` media feature and `-ms-high-contrast-adjust` property are available, but they shouldn’t be used–doing so would prevent users from customizing their experiences
+- The `-ms-high-contrast` media feature and `-ms-high-contrast-adjust` property are available, but they shouldn’t be used—doing so would prevent users from customizing their experiences
 
 ## Visual Layout
 
-- White space (a.k.a. negative space) is your friend–things get hard to understand when crammed together
+- White space (a.k.a. negative space) is your friend—things get hard to understand when crammed together
 - Labels should be visually adjacent to their controls
-- It’s best to have _one_ main visual focus–too many things competing for your attention is a nightmare
+- It’s best to have _one_ main visual focus—too many things competing for your attention is a nightmare
 
 ## Target Size
 
@@ -61,11 +61,11 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Serif fonts have a slight readability advantage over sans-serif fonts since uppercase ‘I’ will be less likely to be confused with lowercase ‘l’
 - Line spacing in paragraphs should be between 1.5 and 2, and spacing between paragraphs should be between 1.5 and 2 times larger than the line spacing
 - Limit lines of text to 80 characters (or 40 for CJK languages)
-- Do not fully justify text–the rivers of white space are distracting
+- Do not fully justify text—the rivers of white space are distracting
 
 ## CSS-Generated Content and Hidden Content
 
-- CSS-generated content is not consistently read by screen readers–best to avoid it if possible
+- CSS-generated content is not consistently read by screen readers—best to avoid it if possible
 - If using CSS-generated content, make sure there is a text alternative and that the content is `aria-hidden="true"`
 - Visually hidden content should be used cautiously
 - Content that is meant to be visually hidden from users, like dialogs, must also be hidden from screen readers (`display: none` or `visibility: hidden` work for this)

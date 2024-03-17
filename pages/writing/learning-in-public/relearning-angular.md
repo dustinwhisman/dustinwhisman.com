@@ -43,7 +43,7 @@ There are a handful of local variables made available, including `index`, `count
 
 ### Conditional Rendering
 
-If you're familiar with Vue, then you know how nice the `v-if`, `v-else-if`, and `v-else` directives are to work with–it's nice and declarative and easy to reason about. Angular's approach, using `*ngIf`, is pretty similar but it handles `else` logic a little differently.
+If you're familiar with Vue, then you know how nice the `v-if`, `v-else-if`, and `v-else` directives are to work with—it's nice and declarative and easy to reason about. Angular's approach, using `*ngIf`, is pretty similar but it handles `else` logic a little differently.
 
 A standard case where you want to render an element if the condition is true looks something like this:
 
@@ -158,6 +158,6 @@ Overall, I think Angular does a good job of using conventions and keeping things
 
 Some of the things that struck me as strange might just take some time to get used to. Some architectural concepts are intriguing, and I look forward to going deeper as I keep working with Angular.
 
-Do I have qualms? Of course, but that would be true for any framework. My biggest complaint is the bundle size–for the project I was using to learn, it came out to 76.41 kB uncompressed, which is simply too much for what I built. I also don't love the SPA-centric focus, but maybe Angular Universal helps with these things? I just don't know at this point.
+Do I have qualms? Of course, but that would be true for any framework. My biggest complaint is the bundle size—for the project I was using to learn, it came out to 76.41 kB uncompressed, which is simply too much for what I built. I also don't love the SPA-centric focus, but maybe Angular Universal helps with these things? I just don't know at this point.
 
 Anyway, I look forward to learning more as I keep working with it. At the very least, it's interesting to see how the approaches for common problems differ between the major frameworks.

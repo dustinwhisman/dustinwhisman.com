@@ -24,7 +24,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Retina displays will interpolate CSS pixels, so even if the device is 800 “real” pixels wide, it will be treated as having a width of 400 CSS pixels
 - A good responsive design avoids horizontal overflow, especially for form fields and labels (put the labels above the inputs)
 - `max-width`, `srcset`, and the `picture` tag with `source` tags are great for managing responsive images
-- Tables are very tricky for responsive design, especially if there are many columns–you may need to get creative and re-flow the table into one column
+- Tables are very tricky for responsive design, especially if there are many columns—you may need to get creative and re-flow the table into one column
 - By default, text will re-flow based on screen size, so try not to break that. You may need to add hyphen rules if your font size and words are both large
 - Sometimes you need to re-size, hide, or simplify UI elements on small screens or when zoomed in (like hamburger menus)
 

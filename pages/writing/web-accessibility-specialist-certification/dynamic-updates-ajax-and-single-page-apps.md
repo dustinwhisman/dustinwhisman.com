@@ -38,8 +38,8 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 ## AJAX
 
-- Lazy loading works well unless the user ends up at the blank area where content hasn’t loaded yet–use placeholders to let screen readers know stuff is being loaded
-- Too many ARIA live messages can make things worse if every new “content loaded” message is announced–if it’s meant to load quickly, don’t announce it
+- Lazy loading works well unless the user ends up at the blank area where content hasn’t loaded yet—use placeholders to let screen readers know stuff is being loaded
+- Too many ARIA live messages can make things worse if every new “content loaded” message is announced—if it’s meant to load quickly, don’t announce it
 - Don’t use infinite scrolling if it means you can’t get to the footer or similar content, especially with the keyboard
 - An alternative to automatic infinite scrolling would be a “load more” button at the end of the infinite scrolling section
 - For actions that take a while, move focus to an interstitial message or announce it via ARIA live region

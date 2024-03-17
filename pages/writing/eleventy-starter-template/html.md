@@ -160,7 +160,7 @@ layout: layout.njk
 </p>
 ```
 
-Now if we switch between the `/about` page and the `/contact` page, we should see that the header and footer are different for both of them. Note that the order in which we place our blocks doesn’t matter–they will always be rendered in the places defined in the layout.
+Now if we switch between the `/about` page and the `/contact` page, we should see that the header and footer are different for both of them. Note that the order in which we place our blocks doesn’t matter—they will always be rendered in the places defined in the layout.
 
 Blocks unlock a lot of potential possibilities, and later on in this series, we’ll be using them for page-specific styles, scripts, and SEO information.
 

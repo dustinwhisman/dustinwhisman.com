@@ -23,7 +23,7 @@ The four methods of providing alternatives to time-based media are captions, tra
 
 - Captions are distinct from subtitles, as they also include descriptions of sounds, whereas subtitles are mainly for translating languages
 - Captions are useful not only for people who are deaf or hard of hearing, but also for SEO, second language learners, and situations where the sound is turned off
-- Auto-captioning is promising, but not enough on its own to provide good captions–human review is required
+- Auto-captioning is promising, but not enough on its own to provide good captions—human review is required
 - Closed captions are toggle-able and added as separate text files, whereas open captions are always on and “burned in” to videos
 - Prerecorded video needs to have synchronized captions
 - [WebVTT](https://w3c.github.io/webvtt/) is the most flexible captioning format, and should always be included among other file format options for captions
@@ -103,7 +103,7 @@ The accessibility problems with animation and motion can range from being distra
 - There must be a way to pause, stop, or hide background videos longer than 5 seconds (and please don’t play it automatically)
 - Even for short background videos, a pause button is nice, or a way to opt out
 - Keep motion minimal in background videos to avoid being distracting
-- Please no sound, I’m begging you–it’s bad for all users, but especially so for ones using screen readers
+- Please no sound, I’m begging you—it’s bad for all users, but especially so for ones using screen readers
 
 ### Animations from Interactions
 

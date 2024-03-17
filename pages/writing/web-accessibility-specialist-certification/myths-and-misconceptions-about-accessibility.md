@@ -36,7 +36,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 
 - There will never not be a need to provide accessible experiences
 - Accessibility needs to a part of every step of the development process, including business requirements
-- Company culture is essential–the leaders have to make accessibility a priority, or else it will be haphazard
+- Company culture is essential—the leaders have to make accessibility a priority, or else it will be haphazard
 - It’s best to have full-time jobs just for accessibility, since experts will be able to coordinate efforts more effectively than folks who are only focused on it part-time
 - Hiring people with disabilities goes a long way
 

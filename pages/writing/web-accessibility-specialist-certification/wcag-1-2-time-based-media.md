@@ -98,7 +98,7 @@ Extended audio descriptions temporarily pause the video to make space for descri
 
 ### How to Succeed
 
-Provide an extended audio description–simple enough.
+Provide an extended audio description—simple enough.
 
 ## 1.2.8 Media Alternative (Prerecorded) - Level AAA
 

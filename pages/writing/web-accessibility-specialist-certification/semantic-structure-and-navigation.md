@@ -101,7 +101,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - `q` is ignored by screen readers, so use normal quotation characters instead
 - Inline code should use the `code` element (even though screen readers ignore it) and be stylized to be visually distinct from its surrounding text
 - Blocks of code should be formatted with the `pre` element
-- Use `del` for strike-through with caution, since screen readers won’t announce that the text has been deleted–use a text-based alternative with hidden text or something to convey the correct meaning
+- Use `del` for strike-through with caution, since screen readers won’t announce that the text has been deleted—use a text-based alternative with hidden text or something to convey the correct meaning
 - `ins` is the same for inserted text, screen readers will ignore it, so provide a text-based alternative
 - Use `mark` for highlighting text, but again, screen readers ignore it
 

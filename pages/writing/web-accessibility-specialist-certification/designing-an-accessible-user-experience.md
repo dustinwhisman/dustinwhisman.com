@@ -93,4 +93,4 @@ Affordances are the range of possible actions that can be performed on an object
 ## Designing for User-generated Content
 
 - For user-generated content, you need to be aware of ATAG guidelines, but in general, make it as easy as possible to make content accessible by providing guard rails or the ability to make content more accessible (a field for image alt text, for example)
-- Automated fixes for accessibility issues _might_ eventually get to a place where they’re universally useful, but they have limitations–transcripts, alt text, and audio descriptions written by humans will most likely be better
+- Automated fixes for accessibility issues _might_ eventually get to a place where they’re universally useful, but they have limitations—transcripts, alt text, and audio descriptions written by humans will most likely be better

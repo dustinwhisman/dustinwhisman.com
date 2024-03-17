@@ -26,7 +26,7 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - The `alt` attribute is the preferred method, but you can technically use `aria-label`, `aria-labelledby`, or `title` (but don’t use `title`)
 - You can use `role="presentation"` instead of `alt=""` (but just use `alt=""`)
 - Good alt text conveys the purpose of the image, not just the content
-- Don’t use phrases like “an image of” or “a picture showing”–it’s redundant
+- Don’t use phrases like “an image of” or “a picture showing”—it’s redundant
 - Screen readers can’t pause while reading alt text, so keep it short (150 characters)
 - Actionable images, like in links or buttons, must have alt text
 - Animated images that play automatically and for 5 or more seconds need to be able to be paused, stopped, or hidden (and must not flash more than 3 times per second)
