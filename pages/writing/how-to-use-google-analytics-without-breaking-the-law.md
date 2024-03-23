@@ -162,6 +162,7 @@ Google doesn’t have the best track record when it comes to privacy, so if you 
 - [Netlify Analytics](https://www.netlify.com/platform/core/analytics/): if you’re already hosting your site on Netlify, you can pay for analytics based on server-side activity, maintaining user privacy. The main drawback is cost ($9 per month per site at time of writing)
 - [Fathom Analytics](https://usefathom.com/): another server-side option with maybe more features than Netlify, but it is $15 per month
 - [Plausible Analytics](https://plausible.io/): another server-side option based in the EU that is $9 or more per month, but it’s open source and you can self-host it if you’re okay dealing with maintenance and more limited features
+- [Cabin](https://withcabin.com/): lightweight analytics that also measures how much energy your page's consume, but the free version seems pretty limited compared to the $19 per month premium version
 
 ## Do you actually need analytics?
 
