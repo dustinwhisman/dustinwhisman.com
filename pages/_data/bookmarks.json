@@ -22,5 +22,53 @@
 		"title": "Thoughts on embedding alternative text metadata into images",
 		"author": "Eric Bailey",
 		"authorLink": "https://ericwbailey.website/"
+	},
+	{
+		"link": "https://blakewatson.com/journal/use-your-mac-the-way-i-do-a-thought-experiment/",
+		"title": "Use your Mac the way I do: a thought experiment",
+		"author": "Blake Watson",
+		"authorLink": "https://blakewatson.com/"
+	},
+	{
+		"link": "https://css-irl.info/time-to-ditch-analytics/",
+		"title": "Time to Ditch Analytics? Tracking Scripts and Web Sustainability",
+		"author": "Michelle Barker",
+		"authorLink": "https://css-irl.info/"
+	},
+	{
+		"link": "https://blog.edwardloveall.com/cost-of-a-tool",
+		"title": "The Cost of a Tool",
+		"author": "Edward Loveall",
+		"authorLink": "https://blog.edwardloveall.com/"
+	},
+	{
+		"link": "https://tante.cc/2024/03/18/5115/",
+		"title": "The growing backlash against AI",
+		"author": "tante/Jürgen Geuter",
+		"authorLink": "https://tante.cc/"
+	},
+	{
+		"link": "https://cloudfour.com/thinks/modernizing-your-application-where-to-begin/",
+		"title": "Modernizing Your Application: Where to Begin",
+		"author": "Jason Grigsby",
+		"authorLink": "https://cloudfour.com/is/jason-grigsby/"
+	},
+	{
+		"link": "https://www.leereamsnyder.com/write-css-not-too-much-mostly-scoped",
+		"title": "Write CSS. Not too much. Mostly scoped.",
+		"author": "Lee Reamsnyder",
+		"authorLink": "https://www.leereamsnyder.com/"
+	},
+	{
+		"link": "https://hidde.blog/popover-accessibility/",
+		"title": "On popover accessibility: what the browser does and doesn't do",
+		"author": "Hidde de Vries",
+		"authorLink": "https://hidde.blog/"
+	},
+	{
+		"link": "https://www.baldurbjarnason.com/2024/the-one-about-the-web-developer-job-market/",
+		"title": "The one about the web developer job market",
+		"author": "Baldur Bjarnason",
+		"authorLink": "https://www.baldurbjarnason.com/"
 	}
 ]
