@@ -70,5 +70,21 @@
 		"title": "The one about the web developer job market",
 		"author": "Baldur Bjarnason",
 		"authorLink": "https://www.baldurbjarnason.com/"
+	},
+	{
+		"link": "https://localfirstweb.dev/",
+		"title": "Local-First Web Development"
+	},
+	{
+		"link": "https://dustri.org/b/youtube-video-embedding-harm-reduction.html",
+		"title": "Youtube video embedding harm reduction",
+		"author": "Julien Voisin",
+		"authorLink": "https://dustri.org/"
+	},
+	{
+		"link": "https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/",
+		"title": "Front-end development's identity crisis",
+		"author": "Elly Loel",
+		"authorLink": "https://www.ellyloel.com/"
 	}
 ]

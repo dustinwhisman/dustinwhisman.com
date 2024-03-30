@@ -19,8 +19,10 @@ pagination:
 	{% for link in links %}
 		<li>
 			<a href="{{ link.link }}">{{ link.title }}</a>
-			-
-			<a href="{{ link.authorLink }}">{{ link.author }}</a>
+			{% if link.author %}
+				-
+				<a href="{{ link.authorLink }}">{{ link.author }}</a>
+			{% endif %}
 		</li>
 	{% endfor %}
 </ul>
