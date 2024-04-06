@@ -86,5 +86,37 @@
 		"title": "Front-end development's identity crisis",
 		"author": "Elly Loel",
 		"authorLink": "https://www.ellyloel.com/"
+	},
+	{
+		"link": "https://www.theregister.com/2024/03/28/ai_bots_hallucinate_software_packages/",
+		"title": "AI hallucinates software packages and devs download them - even if potentially poisoned with malware",
+		"author": "Thomas Claburn at The Register",
+		"authorLink": "https://www.theregister.com/Author/Thomas-Claburn"
+	},
+	{
+		"link": "https://a11yphant.com/",
+		"title": "a11yphant"
+	},
+	{
+		"link": "https://all-about-computer-love.glitch.me/",
+		"title": "all-about-computer-love.glitch.me"
+	},
+	{
+		"link": "https://piccalil.li/blog/how-were-approaching-theming-with-modern-css/",
+		"title": "How we're approaching theming with modern CSS",
+		"author": "Andy Bell",
+		"authorLink": "https://piccalil.li/"
+	},
+	{
+		"link": "https://ishadeed.com/article/css-container-query-guide/",
+		"title": "An Interactive Guide to CSS Container Queries",
+		"author": "Ahmad Shadeed",
+		"authorLink": "https://ishadeed.com/"
+	},
+	{
+		"link": "https://evaparish.com/blog/how-i-edit",
+		"title": "What I think about when I edit",
+		"author": "Eva Parish",
+		"authorLink": "https://evaparish.com/"
 	}
 ]
