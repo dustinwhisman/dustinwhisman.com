@@ -3,88 +3,141 @@
 		"link": "https://joshcollinsworth.com/blog/devaluing-frontend",
 		"title": "The quiet, pervasive devaluation of frontend",
 		"author": "Josh Collinsworth",
-		"authorLink": "https://joshcollinsworth.com/"
+		"authorLink": "https://joshcollinsworth.com/",
+		"description": "Nodding in agreement with every paragraph here."
 	},
 	{
 		"link": "https://rootwebdesign.studio/articles/the-environmental-benefits-of-privacy-focussed-web-design/",
 		"title": "The environmental benefits of privacy-focussed web design",
 		"author": "Root Web Design Studio",
-		"authorLink": "https://rootwebdesign.studio/"
+		"authorLink": "https://rootwebdesign.studio/",
+		"description": "It's like they wrote this specifically for me. The cross section of privacy and sustainability is right up my alley."
 	},
 	{
 		"link": "https://adactio.com/journal/20965",
 		"title": "Bookmarklets for testing your website",
 		"author": "Jeremy Keith",
-		"authorLink": "https://adactio.com/"
+		"authorLink": "https://adactio.com/",
+		"description": "I always forget that bookmarklets are a thing, and these are some great ones to save."
 	},
 	{
 		"link": "https://ericwbailey.website/published/thoughts-on-embedding-alternative-text-metadata-into-images/",
 		"title": "Thoughts on embedding alternative text metadata into images",
 		"author": "Eric Bailey",
-		"authorLink": "https://ericwbailey.website/"
+		"authorLink": "https://ericwbailey.website/",
+		"description": "Context matters, and standardizing a new image format that includes alternative text is unrealistic. Writing alt text with the tools that already exist is much more sensible."
 	},
 	{
 		"link": "https://blakewatson.com/journal/use-your-mac-the-way-i-do-a-thought-experiment/",
 		"title": "Use your Mac the way I do: a thought experiment",
 		"author": "Blake Watson",
-		"authorLink": "https://blakewatson.com/"
+		"authorLink": "https://blakewatson.com/",
+		"description": "First person account of how Blake, who has spinal muscular atrophy, uses his Mac with only a mouse."
 	},
 	{
 		"link": "https://css-irl.info/time-to-ditch-analytics/",
 		"title": "Time to Ditch Analytics? Tracking Scripts and Web Sustainability",
 		"author": "Michelle Barker",
-		"authorLink": "https://css-irl.info/"
+		"authorLink": "https://css-irl.info/",
+		"description": "Another reason to drop analytics and third-party scripts: they waste energy."
 	},
 	{
 		"link": "https://blog.edwardloveall.com/cost-of-a-tool",
 		"title": "The Cost of a Tool",
 		"author": "Edward Loveall",
-		"authorLink": "https://blog.edwardloveall.com/"
+		"authorLink": "https://blog.edwardloveall.com/",
+		"description": "The harm from AI has nothing to do with creating infinite paperclips and everything to do with undermining labor, stealing from artists, and wasting tremendous amounts of resources."
 	},
 	{
 		"link": "https://tante.cc/2024/03/18/5115/",
 		"title": "The growing backlash against AI",
 		"author": "tante/Jürgen Geuter",
-		"authorLink": "https://tante.cc/"
+		"authorLink": "https://tante.cc/",
+		"description": "Call me a luddite, I'm ready to smash the machines."
 	},
 	{
 		"link": "https://cloudfour.com/thinks/modernizing-your-application-where-to-begin/",
 		"title": "Modernizing Your Application: Where to Begin",
 		"author": "Jason Grigsby",
-		"authorLink": "https://cloudfour.com/is/jason-grigsby/"
+		"authorLink": "https://cloudfour.com/is/jason-grigsby/",
+		"description": "It's tempting to burn it all down and start fresh, but that's rarely the best option. This guide is a good starting point for people trying to figure out a strategy for upgrading a legacy system."
 	},
 	{
 		"link": "https://www.leereamsnyder.com/write-css-not-too-much-mostly-scoped",
 		"title": "Write CSS. Not too much. Mostly scoped.",
 		"author": "Lee Reamsnyder",
-		"authorLink": "https://www.leereamsnyder.com/"
+		"authorLink": "https://www.leereamsnyder.com/",
+		"description": "CSS is way easier now than it used to be, and most of the issued I've run into with CSS came from there being way too much of it. This generalized advice is pretty solid for folks who want to escape the Tailwind/CSS-in-JS ecosystem created by people afraid of CSS."
 	},
 	{
 		"link": "https://hidde.blog/popover-accessibility/",
 		"title": "On popover accessibility: what the browser does and doesn't do",
 		"author": "Hidde de Vries",
-		"authorLink": "https://hidde.blog/"
+		"authorLink": "https://hidde.blog/",
+		"description": "It's always good to know the details about new browser features and what you can expect when you start using them in the wild."
 	},
 	{
 		"link": "https://www.baldurbjarnason.com/2024/the-one-about-the-web-developer-job-market/",
 		"title": "The one about the web developer job market",
 		"author": "Baldur Bjarnason",
-		"authorLink": "https://www.baldurbjarnason.com/"
+		"authorLink": "https://www.baldurbjarnason.com/",
+		"description": "It's rough out there, and the combination of an inflating AI bubble and an already bad job market has me worried about the inevitable fallout in the next few years or months, even."
 	},
 	{
 		"link": "https://localfirstweb.dev/",
-		"title": "Local-First Web Development"
+		"title": "Local-First Web Development",
+		"description": "A collection of tools and techniques to build products that work on end user devices regardless of connectivity. This approach could also improve privacy and data-ownership, so I definitely want to tinker with some ideas around that."
 	},
 	{
 		"link": "https://dustri.org/b/youtube-video-embedding-harm-reduction.html",
 		"title": "Youtube video embedding harm reduction",
 		"author": "Julien Voisin",
-		"authorLink": "https://dustri.org/"
+		"authorLink": "https://dustri.org/",
+		"description": "Maybe don't embed or include anything from a Google-owned domain if you can avoid it."
 	},
 	{
 		"link": "https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/",
 		"title": "Front-end development's identity crisis",
 		"author": "Elly Loel",
-		"authorLink": "https://www.ellyloel.com/"
+		"authorLink": "https://www.ellyloel.com/",
+		"description": "It should be enough to specialize in HTML, CSS, and JS, especially when you consider the design, experience, and accessibility work that goes into front-end development. Making \"full-stack\" the default does a disservice to both front-end and back-end developers."
+	},
+	{
+		"link": "https://www.theregister.com/2024/03/28/ai_bots_hallucinate_software_packages/",
+		"title": "AI hallucinates software packages and devs download them - even if potentially poisoned with malware",
+		"author": "Thomas Claburn at The Register",
+		"authorLink": "https://www.theregister.com/Author/Thomas-Claburn",
+		"description": "An evolution from typo-squatting attacks, made possible by the AI-generated hell that's being built around us. Stay safe out there and don't let spicy autocomplete write your code for you."
+	},
+	{
+		"link": "https://a11yphant.com/",
+		"title": "a11yphant",
+		"description": "Interactive, focused tutorials that teach you how to build accessible websites. I've been wanting to build something along these lines, and I wish more things like this existed to teach developers the craft instead of funneling them into React-land."
+	},
+	{
+		"link": "https://all-about-computer-love.glitch.me/",
+		"title": "all-about-computer-love.glitch.me",
+		"description": "I love art pieces like this that use the medium of the web in unexpected (or unintended) ways."
+	},
+	{
+		"link": "https://piccalil.li/blog/how-were-approaching-theming-with-modern-css/",
+		"title": "How we're approaching theming with modern CSS",
+		"author": "Andy Bell",
+		"authorLink": "https://piccalil.li/",
+		"description": "CSS custom properties are so perfect for this sort of thing. They unlock so much flexibility while letting you have sensible defaults using fallbacks."
+	},
+	{
+		"link": "https://ishadeed.com/article/css-container-query-guide/",
+		"title": "An Interactive Guide to CSS Container Queries",
+		"author": "Ahmad Shadeed",
+		"authorLink": "https://ishadeed.com/",
+		"description": "Container queries are so good, and Ahmad is one of the best in the biz for breaking down how to use them."
+	},
+	{
+		"link": "https://evaparish.com/blog/how-i-edit",
+		"title": "What I think about when I edit",
+		"author": "Eva Parish",
+		"authorLink": "https://evaparish.com/",
+		"description": "Say exactly what you mean and take out all unnecessary words."
 	}
 ]
