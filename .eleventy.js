@@ -1,6 +1,7 @@
 const hljs = require('highlight.js');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItAnchor = require('markdown-it-anchor');
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
@@ -25,9 +26,21 @@ module.exports = function (eleventyConfig) {
 		},
 	};
 
-	const md = markdownIt(markdownOptions).use(markdownItAttrs, {
-		allowedAttributes: ['id'],
-	});
+	const md = markdownIt(markdownOptions)
+		.use(markdownItAttrs, {
+			allowedAttributes: ['id'],
+		})
+		.use(markdownItAnchor, {
+			level: 2,
+			permalink: markdownItAnchor.permalink.linkAfterHeader({
+				class: 'cmp-permalink__link',
+				style: 'visually-hidden',
+				assistiveText: (title) => `Permalink: ${title}`,
+				visuallyHiddenClass: 'util-visually-hidden',
+				placement: 'before',
+				wrapper: ['<div class="cmp-permalink__wrapper">', '</div>'],
+			}),
+		});
 
 	eleventyConfig.setLibrary('md', md);
 	eleventyConfig.addLayoutAlias('default', 'partials/layout.njk');
