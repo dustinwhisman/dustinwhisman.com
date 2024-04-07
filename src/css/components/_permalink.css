@@ -1,18 +1,14 @@
 .cmp-permalink__wrapper {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1ch;
 }
 
 .cmp-permalink__link {
+	font-weight: 700;
 	text-decoration: none;
 }
 
 .cmp-permalink__wrapper:not(:hover) .cmp-permalink__link:not(:focus) {
-	position: absolute;
-	height: 1px;
-	width: 1px;
-	clip-path: inset(50%);
-	overflow: hidden;
-	white-space: nowrap;
+	opacity: 0;
 }
