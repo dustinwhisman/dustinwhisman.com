@@ -1,6 +1,5 @@
 const hljs = require('highlight.js');
 const markdownIt = require('markdown-it');
-const markdownItAttrs = require('markdown-it-attrs');
 const markdownItAnchor = require('markdown-it-anchor');
 
 module.exports = function (eleventyConfig) {
@@ -22,14 +21,11 @@ module.exports = function (eleventyConfig) {
 				}
 			}
 
-			return `<pre tabindex="0" role="region" aria-label="Code sample"><code>${md.utils.escapeHtml(str)}</code></pre>`;
+			return `<pre tabindex="0" role="region" aria-label="Code sample"><code>${markdownIt.utils.escapeHtml(str)}</code></pre>`;
 		},
 	};
 
 	const md = markdownIt(markdownOptions)
-		.use(markdownItAttrs, {
-			allowedAttributes: ['id'],
-		})
 		.use(markdownItAnchor, {
 			level: 2,
 			permalink: markdownItAnchor.permalink.linkAfterHeader({
