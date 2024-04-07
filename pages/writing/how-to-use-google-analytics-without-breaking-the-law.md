@@ -67,7 +67,7 @@ What is a more sensible default? If the usual snippet collects data on anyone in
 
 Google has these [consent types](https://developers.google.com/tag-platform/tag-manager/templates/consent-apis) that you can use to grant or deny consent by category. There isn’t a type for strictly necessary cookies since those are allowed regardless of consent under GDPR. Note that if you use this snippet, the analytics scripts won’t do anything useful unless you provide a mechanism for users to grant their consent. You can do that with a function like the following, along with the UI to wire it up (that UI needs to meet [regulations](https://www.google.com/about/company/user-consent-policy-help/), though).
 
-```jsx
+```js
 // category can be one of the types, like 'analytics_storage'
 function grantConsent(category) {
   gtag('consent', 'update', {
