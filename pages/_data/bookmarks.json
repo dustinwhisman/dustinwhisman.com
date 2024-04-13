@@ -139,5 +139,19 @@
 		"author": "Eva Parish",
 		"authorLink": "https://evaparish.com/",
 		"description": "Say exactly what you mean and take out all unnecessary words."
+	},
+	{
+		"link": "https://heydonworks.com/article/testing-html-with-modern-css/",
+		"title": "Testing HTML With Modern CSS",
+		"author": "Heydon Pickering",
+		"authorLink": "https://heydonworks.com/",
+		"description": "Using CSS as a strategy for sniffing out bad HTML is brilliant. A bookmarklet is probably the sensible approach, but I'm tempted to bake these sorts of things into styling resets."
+	},
+	{
+		"link": "https://www.mayerowitz.io/blog/mario-meets-pareto",
+		"title": "Mario meets Pareto",
+		"author": "Antoine Mayerowitz",
+		"authorLink": "https://www.mayerowitz.io/",
+		"description": "Maybe don't read this if you just want to have fun playing Mario Kart rather than optimizing it to hell. I am unfortunately a min-maxer, though."
 	}
 ]
