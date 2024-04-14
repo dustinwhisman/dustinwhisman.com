@@ -11,3 +11,7 @@
 .cmp-stack--s-3 {
 	gap: var(--size-s-3);
 }
+
+details.cmp-stack > * + * {
+	margin-block-start: var(--size-s0);
+}
