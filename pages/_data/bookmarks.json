@@ -153,5 +153,26 @@
 		"author": "Antoine Mayerowitz",
 		"authorLink": "https://www.mayerowitz.io/",
 		"description": "Maybe don't read this if you just want to have fun playing Mario Kart rather than optimizing it to hell. I am unfortunately a min-maxer, though."
+	},
+	{
+		"link": "https://www.nicchan.me/blog/when-security-and-accessibility-clash/",
+		"title": "When security and accessibility clash: why are banking applications so inaccessible?",
+		"author": "Nic Chan",
+		"authorLink": "https://www.nicchan.me/",
+		"description": "No, arbitrarily making your application harder to use does not make it more secure."
+	},
+	{
+		"link": "https://www.citationneeded.news/ai-isnt-useless/",
+		"title": "AI isn't useless. But is it worth it?",
+		"author": "Molly White",
+		"authorLink": "https://www.citationneeded.news/",
+		"description": "Unlike cryptocurrency, AI is actually useful for some things, but between the ethical issues, the effects on human labor, and the extraordinary environmental costs, I can't justify using it."
+	},
+	{
+		"link": "https://www.simplethread.com/the-10x-programmer-myth/",
+		"title": "The 10x Programmer Myth",
+		"author": "Justin Etheridge",
+		"authorLink": "https://www.simplethread.com/author/jetheredge/",
+		"description": "I'd like to think I'm a Rocket Turtle, but I think I'm more of a mix of an Obsessor and a Simplifier."
 	}
 ]
