@@ -174,5 +174,26 @@
 		"author": "Justin Etheridge",
 		"authorLink": "https://www.simplethread.com/author/jetheredge/",
 		"description": "I'd like to think I'm a Rocket Turtle, but I think I'm more of a mix of an Obsessor and a Simplifier."
+	},
+	{
+		"link": "https://janmaarten.com/polywork/",
+		"title": "How social networks prey on our longing to be known",
+		"author": "Jan Maarten",
+		"authorLink": "https://janmaarten.com/",
+		"description": "Turns out trading privacy for free or cheap software may have been a bad idea."
+	},
+	{
+		"link": "https://axbom.com/the-creepy-sound-of-online-trackers/",
+		"title": "The creepy sound of online trackers",
+		"author": "Per Axbom",
+		"authorLink": "https://axbom.com/",
+		"description": "Knowing how invasive some sites are is quite different from hearing it firsthand."
+	},
+	{
+		"link": "https://fasterandworse.com/the-aura-of-care/",
+		"title": "The Aura of Care.",
+		"author": "Stephen Farrugia",
+		"authorLink": "https://fasterandworse.com/",
+		"description": "Weird how UX and accessibility recommendations seem to only be considered when it will make the business money."
 	}
 ]
