@@ -23,7 +23,11 @@ pagination:
 			</h2>
 			{% if link.author %}
 				<p>
-					<a href="{{ link.authorLink }}">{{ link.author }}</a>
+					{% if link.authorLink %}
+						<a href="{{ link.authorLink }}">{{ link.author }}</a>
+					{% else %}
+						{{ link.author }}
+					{% endif %}
 				</p>
 			{% endif %}
 			{% if link.description %}
