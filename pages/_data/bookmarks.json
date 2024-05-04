@@ -195,5 +195,46 @@
 		"author": "Stephen Farrugia",
 		"authorLink": "https://fasterandworse.com/",
 		"description": "Weird how UX and accessibility recommendations seem to only be considered when it will make the business money."
+	},
+	{
+		"link": "https://sparkbox.com/foundry/testing_improving_roku_app_accessibility",
+		"title": "Testing and Improving a Roku App's Accessibility",
+		"author": "Dustin Whisman",
+		"authorLink": "https://sparkbox.com/foundry/author/dustin_whisman",
+		"description": "Oh look, I wrote this one. Long story short, we have it easy as web developers."
+	},
+	{
+		"link": "https://www.takahe.org.nz/heat-death-of-the-internet/",
+		"title": "Heat Death of the Internet",
+		"author": "Gregory Bennett",
+		"description": "An all too relatable slice of life story going through our current internet dystopia."
+	},
+	{
+		"link": "https://www.baldurbjarnason.com/2024/react-electron-llms-labour-arbitrage/",
+		"title": "React, Electron, and LLMs have a common purpose: the labour arbitrage theory of dev tool popularity",
+		"author": "Baldur Bjarnason",
+		"authorLink": "https://www.baldurbjarnason.com/",
+		"description": "It's never sat right with me that React/Next.js just sort of became the default because that's what developers know, and this piece finally articulates why it's bothered me (apart from poor craftsmanship)."
+	},
+	{
+		"link": "https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/",
+		"title": "Help us invent CSS Grid Level 3, aka \"Masonry\" layout",
+		"author": "Jen Simmons",
+		"authorLink": "https://jensimmons.com/",
+		"description": "I have a tiny bit of masonry layout on my site (when it's supported), but the examples here really express just how wild you can go with the experimental version currently behind flags and tech preview builds."
+	},
+	{
+		"link": "https://developer.chrome.com/blog/masonry",
+		"title": "An alternative proposal for CSS masonry",
+		"author": "Rachel Andrew",
+		"authorLink": "https://rachelandrew.co.uk/",
+		"description": "Does masonry work better as part of grid or does it deserve it's own separate implementation? I don't have strong preferences, so long as it works reliably across browsers soon."
+	},
+	{
+		"link": "https://branch.climateaction.tech/issues/issue-8/the-perfect-site-doesnt-exist/",
+		"title": "The perfect site doesn't exist",
+		"author": "Michelle Barker",
+		"authorLink": "https://css-irl.info/",
+		"description": "\"Move slow and mend things\" and treat websites as gardens to be tended to. An excellent way to think about building sustainably."
 	}
 ]
