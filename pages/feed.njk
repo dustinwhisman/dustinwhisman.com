@@ -4,7 +4,7 @@
 	"eleventyExcludeFromCollections": true,
 	"metadata": {
 		"title": "Dustin Whisman",
-		"subtitle": "The collected writings of Dustin Whisman, full stack developer.",
+		"subtitle": "The collected writings of Dustin Whisman, web developer.",
 		"language": "en",
 		"url": "https://dustinwhisman.com",
 		"author": {
@@ -21,7 +21,8 @@
 		<atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
 		<description>{{ metadata.subtitle }}</description>
 		<language>{{ metadata.language }}</language>
-		{%- for post in collections.writing | reverse %}
+		{%- set sortedPosts = collections.writing | reverse %}
+		{%- for post in sortedPosts | batch(10) | first %}
 		{%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
 		<item>
 			<title>{{ post.data.articleTitle }}</title>
