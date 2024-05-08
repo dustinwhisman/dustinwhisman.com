@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{% block title %}
 	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
 	{% endblock %}
 	<link rel="stylesheet" href="/styles.css">
 	{% if processEnv.NODE_ENV === 'development' %}
@@ -14,6 +15,7 @@
 	{% endif %}
 	{% block description %}
 	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}">
 	{% endblock %}
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 	<link rel="alternate icon" href="/favicon.png" type="image/png">
@@ -24,6 +26,9 @@
 	<meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
 	<link rel="alternate" type="application/rss+xml" title="Dustin Whisman" href="https://dustinwhisman.com/feed.xml">
+	<meta property="og:image" content="{{ processEnv.BASE_URL }}/splash_icon.png">
+	<meta property="og:url" content="{{ processEnv.BASE_URL }}{{ page.url }}">
+	<meta property="og:type" content="website">
 </head>
 
 <body>
