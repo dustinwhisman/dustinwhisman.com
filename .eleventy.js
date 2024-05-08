@@ -1,6 +1,7 @@
 const hljs = require('highlight.js');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
+const pluginRSS = require('@11ty/eleventy-plugin-rss');
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
@@ -25,21 +26,23 @@ module.exports = function (eleventyConfig) {
 		},
 	};
 
-	const md = markdownIt(markdownOptions)
-		.use(markdownItAnchor, {
-			level: 2,
-			permalink: markdownItAnchor.permalink.linkAfterHeader({
-				class: 'cmp-permalink__link',
-				style: 'visually-hidden',
-				assistiveText: (title) => `Permalink: ${title}`,
-				visuallyHiddenClass: 'util-visually-hidden',
-				placement: 'before',
-				wrapper: ['<div class="cmp-permalink__wrapper">', '</div>'],
-			}),
-		});
+	const md = markdownIt(markdownOptions).use(markdownItAnchor, {
+		level: 2,
+		permalink: markdownItAnchor.permalink.linkInsideHeader({
+			class: 'cmp-permalink__link',
+			renderAttrs: (slug) => ({ 'aria-labelledby': slug }),
+			symbol: '<span aria-hidden="true">#</span>',
+			placement: 'after',
+		}),
+	});
 
 	eleventyConfig.setLibrary('md', md);
 	eleventyConfig.addLayoutAlias('default', 'partials/layout.njk');
+	eleventyConfig.addPlugin(pluginRSS, {
+		posthtmlRenderOptions: {
+			closingSingleTag: 'default',
+		},
+	});
 
 	return {
 		dir: {
