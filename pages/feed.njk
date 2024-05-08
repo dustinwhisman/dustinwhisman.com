@@ -18,18 +18,18 @@
 	<channel>
 		<title>{{ metadata.title }}</title>
 		<link>{{ metadata.url }}</link>
-		<atom:link href="{{ metadata.url }}/{{ permalink }}" rel="self" type="application/rss+xml" />
+		<atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
 		<description>{{ metadata.subtitle }}</description>
 		<language>{{ metadata.language }}</language>
 		{%- for post in collections.writing | reverse %}
-		{%- set absolutePostUrl = metadata.url + post.url %}
+		{%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
 		<item>
 			<title>{{ post.data.articleTitle }}</title>
 			<link>{{ absolutePostUrl }}</link>
-			<description>{{ post.data.description }}</description>
-			<pubDate>{{ post.date.toUTCString() }}</pubDate>
 			<dc:creator>{{ metadata.author.name }}</dc:creator>
+			<pubDate>{{ post.date.toUTCString() }}</pubDate>
 			<guid>{{ absolutePostUrl }}</guid>
+			<description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
 		</item>
 		{%- endfor %}
 	</channel>
