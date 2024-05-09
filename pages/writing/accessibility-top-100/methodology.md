@@ -1,7 +1,7 @@
 ---
-title: "Methodology - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
+title: "Methodology for evaluating the top 100 US sites' accessibility issues - Writing - Dustin Whisman"
 description: "I will be evaluating the top 100 US websites for accessibility issues, and this is my plan for how to approach each one the same way, minimizing inconsistency as much as possible."
-articleTitle: "Accessibility of the Top 100: Methodology"
+articleTitle: "Methodology for evaluating the top 100 US sites' accessibility issues"
 layout: default
 date: 2024-01-15T00:00:00.000Z
 tags:
@@ -9,7 +9,7 @@ tags:
   - accessibility top 100
 ---
 
-# Part 0: Methodology
+# Methodology for evaluating the top 100 US sites' accessibility issues
 
 {% include 'partials/published-date.njk' %}
 

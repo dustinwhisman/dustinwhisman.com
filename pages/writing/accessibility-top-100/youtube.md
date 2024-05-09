@@ -1,7 +1,7 @@
 ---
-title: "YouTube - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
+title: "How accessible is YouTube? - Writing - Dustin Whisman"
 description: "How accessible is YouTube? This is part 2 of a series evaluating the accessibility of the top 100 websites in the US."
-articleTitle: "Accessibility of the Top 100: YouTube"
+articleTitle: "How accessible is YouTube?"
 layout: default
 date: 2024-02-17T00:00:00.000Z
 tags:
@@ -9,9 +9,9 @@ tags:
   - accessibility top 100
 ---
 
-# Part 2: YouTube
+# How accessible is YouTube?
 
-_I'm evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at YouTube. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
+_This is part 2 of a [series](/writing/accessibility-top-100/) evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at YouTube. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
 
 {% include 'partials/published-date.njk' %}
 
@@ -294,9 +294,9 @@ On the other side, there are options for caption font sizes, colors, and a varie
 
 I picked a video that would have a lot of visual elements along with dialog so I could see whether the transcripts or audio descriptions did an adequate job of describing the visuals. For example, there’s a part in the trailer where a futuristic aircraft chases Kong into a whirlpool that turns into a wormhole with some trippy lighting effects. What does the transcript say for that part?
 
-> 1:09 Oh my God!  
-> 1:13 [soundwaves warbling]  
-> 1:15 **♪♪♪**  
+> 1:09 Oh my God!
+> 1:13 [soundwaves warbling]
+> 1:15 **♪♪♪**
 
 
 Okay, so the transcript seems to just be the captions. This sort of thing might be fine for your typical video essay or podcast of two dudes talking, but this transcript is definitely not an equivalent experience to watching the video. I suppose it’s up to creators to put the time in to get transcripts right, but I doubt many do.

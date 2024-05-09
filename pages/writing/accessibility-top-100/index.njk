@@ -1,9 +1,9 @@
 ---
-title: Accessibility of the Top 100 - Dustin Whisman
+title: How accessible are the top 100 US sites? - Dustin Whisman
 description: In this series, I'll be taking a look at the top 100 websites in the US to see what accessibility issues they have. Then I'll explain how to avoid or fix those issues and hopefully apply some gentle pressure to get them fixed.
 layout: default
 date: 2024-01-14T00:00:01Z
-articleTitle: Accessibility of the Top 100
+articleTitle: How accessible are the top 100 US sites?
 eleventyExcludeFromCollections: true
 pagination:
   data: collections['accessibility top 100']
@@ -12,7 +12,7 @@ pagination:
   reverse: true
 ---
 
-<h1>Accessibility of the Top 100</h1>
+<h1>How accessible are the top 100 US sites?</h1>
 
 <p>
 	It's well established that most websites have automatically detectable accessibility issues on their home pages. But what if we dig a little deeper? In this series, I'll be taking a look at the top 100 websites in the US, going beyond the home pages and evaluating some of their primary features. I'll explain how to avoid or fix the most common accessibility issues that I find along the way.
@@ -21,7 +21,7 @@ pagination:
 <ul class="cmp-article-listing__list">
 	{% for article in articles %}
 		<li>
-			<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle.replace('Accessibility of the Top 100: ', '') }}</a>
+			<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
 			<span>
 				<span class="util-visually-hidden">Published:</span>
 				<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
@@ -32,7 +32,7 @@ pagination:
 	{% endfor %}
 </ul>
 
-<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Accessibility of the top 100 pagination navigation">
+<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Accessibility series pagination navigation">
 	{% if pagination.href.previous %}
 		<a href="{{ pagination.href.previous }}">Newer posts</a>
 	{% endif %}

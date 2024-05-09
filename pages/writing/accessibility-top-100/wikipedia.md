@@ -1,7 +1,7 @@
 ---
-title: "Wikipedia - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
+title: "How accessible is Wikipedia? - Writing - Dustin Whisman"
 description: "How accessible is Wikipedia? This is part 1 of a series evaluating the accessibility of the top 100 websites in the US."
-articleTitle: "Accessibility of the Top 100: Wikipedia"
+articleTitle: "How accessible is Wikipedia?"
 layout: default
 date: 2024-01-15T00:00:00.001Z
 tags:
@@ -9,9 +9,9 @@ tags:
   - accessibility top 100
 ---
 
-# Part 1: Wikipedia
+# How accessible is Wikipedia?
 
-_I'm evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at Wikipedia. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
+_This is part 1 of a [series](/writing/accessibility-top-100/) evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at Wikipedia. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
 
 {% include 'partials/published-date.njk' %}
 
