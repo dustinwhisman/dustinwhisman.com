@@ -4,22 +4,19 @@ h1 {
 	margin-bottom: 0.65em;
 }
 
-h2,
-h2 + a.cmp-permalink__link {
+h2 {
 	font-size: var(--size-s3);
 	font-family: var(--serif);
 	margin-block-start: 0.65em;
 }
 
-h3,
-h3 + a.cmp-permalink__link {
+h3 {
 	font-size: var(--size-s2);
 	font-family: var(--serif);
 	margin-block-start: 0.65em;
 }
 
-h4,
-h4 + a.cmp-permalink__link {
+h4 {
 	font-size: var(--size-s1);
 	font-family: var(--serif);
 	margin-block-start: 0.65em;

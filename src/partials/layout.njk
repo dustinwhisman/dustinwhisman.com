@@ -33,68 +33,64 @@
 
 <body>
 	{% block header %}
-	<header>
+	<header class="cmp-container">
 		<a href="#main-content" class="util-visually-hidden cmp-skip-to-content">Skip to content</a>
-		<div class="cmp-container">
-			<nav aria-label="main navigation">
-				<ul class="cmp-navigation">
-					<li>
-						<a href="/" {% if page.url === '/' %}aria-current="page"{% endif %}>Home</a>
-					</li>
-					<li>
-						<a href="/writing/" {% if page.url === '/writing/' %}aria-current="page"{% endif %}>Writing</a>
-					</li>
-					<li>
-						<a href="/projects/" {% if page.url === '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-					</li>
-					<li>
-						<a href="/links/" {% if page.url === '/links/' %}aria-current="page"{% endif %}>Links</a>
-					</li>
-					<li>
-						<a href="/cats/" {% if page.url === '/cats/' %}aria-current="page"{% endif %}>Pictures of Cats</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<nav aria-label="main navigation">
+			<ul class="cmp-navigation">
+				<li>
+					<a href="/" {% if page.url === '/' %}aria-current="page"{% endif %}>Home</a>
+				</li>
+				<li>
+					<a href="/writing/" {% if page.url === '/writing/' %}aria-current="page"{% endif %}>Writing</a>
+				</li>
+				<li>
+					<a href="/projects/" {% if page.url === '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+				</li>
+				<li>
+					<a href="/links/" {% if page.url === '/links/' %}aria-current="page"{% endif %}>Links</a>
+				</li>
+				<li>
+					<a href="/cats/" {% if page.url === '/cats/' %}aria-current="page"{% endif %}>Pictures of Cats</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 	{% endblock %}
-	<main id="main-content" tabindex="-1">
+	<main id="main-content" tabindex="-1" class="cmp-container">
 		{% block content %}
-		<article class="cmp-container cmp-stack">
+		<article class="cmp-stack">
 			{{ content | safe }}
 		</article>
 		{% endblock %}
 	</main>
 	{% block footer %}
-	<footer>
+	<footer class="cmp-container cmp-stack">
 		<a href="#end-of-footer" class="util-visually-hidden cmp-skip-to-content">Skip to the end of the footer</a>
-		<div class="cmp-container cmp-stack">
-			<p class="cmp-fine-print">
-				Am I wrong on the internet? You can email me about it at <a
-				href="mailto:dustin@dustinwhisman.com">dustin@dustinwhisman.com</a> or
-				find me on <a rel="me"
-				href="https://mastodon.social/@dustinwhisman">Mastodon</a>. Do you have
-				a web project you need help with? You can either ask me about it or
-				contact <a href="https://sparkbox.com/contact">Sparkbox</a>.
-			</p>
-			<ul class="cmp-navigation">
-				<li>
-					<a href="https://github.com/dustinwhisman/dustinwhisman.com">View source</a>
-				</li>
-				<li>
-					<a href="/feed.xml">RSS feed</a>
-				</li>
-				<li>
-					<a id="end-of-footer" href="https://creativecommons.org/licenses/by/4.0/">Content license</a>
-				</li>
-				<li>
-					© Copyright
-					<span data-current-year>
-						{{ global.year() }}
-					</span>
-				</li>
-			</ul>
-		</div>
+		<p class="cmp-fine-print">
+			Am I wrong on the internet? You can email me about it at <a
+			href="mailto:dustin@dustinwhisman.com">dustin@dustinwhisman.com</a> or
+			find me on <a rel="me"
+			href="https://mastodon.social/@dustinwhisman">Mastodon</a>. Do you have
+			a web project you need help with? You can either ask me about it or
+			contact <a href="https://sparkbox.com/contact">Sparkbox</a>.
+		</p>
+		<ul class="cmp-navigation">
+			<li>
+				<a href="https://github.com/dustinwhisman/dustinwhisman.com">View source</a>
+			</li>
+			<li>
+				<a href="/feed.xml">RSS feed</a>
+			</li>
+			<li>
+				<a id="end-of-footer" href="https://creativecommons.org/licenses/by/4.0/">Content license</a>
+			</li>
+			<li>
+				© Copyright
+				<span data-current-year>
+					{{ global.year() }}
+				</span>
+			</li>
+		</ul>
 	</footer>
 	{% endblock %}
 
