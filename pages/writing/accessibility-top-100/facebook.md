@@ -1,7 +1,7 @@
 ---
-title: "Facebook - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
+title: "How accessible is Facebook? - Writing - Dustin Whisman"
 description: "How accessible is Facebook? This is part 4 of a series evaluating the accessibility of the top 100 websites in the US."
-articleTitle: "Accessibility of the Top 100: Facebook"
+articleTitle: "How accessible is Facebook?"
 layout: default
 date: 2024-04-14T00:00:00.000Z
 tags:
@@ -9,9 +9,9 @@ tags:
   - accessibility top 100
 ---
 
-# Part 4: Facebook
+# How accessible is Facebook?
 
-_I'm evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at Facebook. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
+_This is part 4 of a [series](/writing/accessibility-top-100/) evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at Facebook. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
 
 {% include 'partials/published-date.njk' %}
 
@@ -74,7 +74,7 @@ Let’s play a quick game. How many nested `<div>` elements deep is the `<img>` 
         </div>
       </div>
     </div>
-  </div>    
+  </div>
 </div>
 ```
 

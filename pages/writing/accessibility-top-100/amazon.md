@@ -1,7 +1,7 @@
 ---
-title: "Amazon - Accessibility of the Top 100 Sites - Writing - Dustin Whisman"
+title: "How accessible is Amazon? - Dustin Whisman"
 description: "How accessible is Amazon? This is part 3 of a series evaluating the accessibility of the top 100 websites in the US."
-articleTitle: "Accessibility of the Top 100: Amazon"
+articleTitle: "How accessible is Amazon?"
 layout: default
 date: 2024-03-17T00:00:00.000Z
 tags:
@@ -9,9 +9,9 @@ tags:
   - accessibility top 100
 ---
 
-# Part 3: Amazon
+# How accessible is Amazon?
 
-_I'm evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at Amazon. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
+_This is part 3 of a [series](/writing/accessibility-top-100/) evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at Amazon. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
 
 {% include 'partials/published-date.njk' %}
 
