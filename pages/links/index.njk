@@ -15,27 +15,25 @@ pagination:
 	This is a collection of links to places elsewhere on the web that are worth bookmarking and sharing.
 </p>
 
-<div class="cmp-stack">
-	{% for link in links %}
-		<article class="cmp-stack cmp-stack--s-3">
-			<h2>
-				<a href="{{ link.link }}">{{ link.title }}</a>
-			</h2>
-			{% if link.author %}
-				<p>
-					{% if link.authorLink %}
-						<a href="{{ link.authorLink }}">{{ link.author }}</a>
-					{% else %}
-						{{ link.author }}
-					{% endif %}
-				</p>
-			{% endif %}
-			{% if link.description %}
-				<p>{{ link.description }}</p>
-			{% endif %}
-		</article>
-	{% endfor %}
-	</div>
+{% for link in links %}
+	<article class="cmp-stack cmp-stack--s-3">
+		<h2>
+			<a href="{{ link.link }}">{{ link.title }}</a>
+		</h2>
+		{% if link.author %}
+			<p>
+				{% if link.authorLink %}
+					<a href="{{ link.authorLink }}">{{ link.author }}</a>
+				{% else %}
+					{{ link.author }}
+				{% endif %}
+			</p>
+		{% endif %}
+		{% if link.description %}
+			<p>{{ link.description }}</p>
+		{% endif %}
+	</article>
+{% endfor %}
 
 <nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Links pagination navigation">
 	{% if pagination.href.previous %}
