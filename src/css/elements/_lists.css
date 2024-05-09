@@ -18,8 +18,11 @@ dt {
 	font-weight: 700;
 }
 
+dt ~ dt {
+	margin-block-start: var(--size-s1);
+}
+
 dd {
-	margin-block-start: var(--size-s-5);
 	padding-inline-start: var(--size-s-1);
 	border-inline-start: 0.125em solid var(--ink);
 }

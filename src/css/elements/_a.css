@@ -7,15 +7,6 @@ a:focus {
 	text-decoration: none;
 }
 
-a:focus {
-	outline: 0.125em solid var(--ink);
-	outline-offset: 0.25em;
-}
-
-a:focus:not(:focus-visible) {
-	outline-color: transparent;
-}
-
 a[aria-current='page'] {
 	--underline-color: hwb(240deg 50% 0%);
 

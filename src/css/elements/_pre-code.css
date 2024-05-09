@@ -7,15 +7,6 @@ pre {
 	overflow-x: auto;
 }
 
-pre[tabindex='0']:focus {
-	outline: 0.125em solid var(--ink);
-	outline-offset: 0.25em;
-}
-
-pre[tabindex='0']:focus:not(:focus-visible) {
-	outline-color: transparent;
-}
-
 code {
 	font-family: var(--mono);
 	font-size: 85%;

@@ -57,3 +57,12 @@ body > footer {
 :where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl) {
 	line-height: calc(1em + 0.5rem);
 }
+
+:focus {
+	outline: 0.125em solid currentcolor;
+	outline-offset: 0.25em;
+}
+
+:focus:not(:focus-visible) {
+	outline-color: transparent;
+}
