@@ -3,6 +3,7 @@
 	--ink: hwb(0deg 10% 90%);
 	--paper: hwb(0deg 95% 5%);
 	--terminal: hwb(180deg 85% 5%);
+	--shadow: hwb(0deg 95% 25%);
 
 	/* font families */
 	--serif: 'Iowan Old Style', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', 'Times',
@@ -36,5 +37,6 @@
 		--ink: hwb(0deg 95% 5%);
 		--paper: hwb(0deg 10% 90%);
 		--terminal: hwb(200deg 0% 75%);
+		--shadow: hwb(0deg 50% 90%);
 	}
 }

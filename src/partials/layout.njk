@@ -51,6 +51,9 @@
 					<a href="/links/" {% if page.url === '/links/' %}aria-current="page"{% endif %}>Links</a>
 				</li>
 				<li>
+					<a href="/search/" {% if page.url === '/search/' %}aria-current="page"{% endif %}>Search</a>
+				</li>
+				<li>
 					<a href="/cats/" {% if page.url === '/cats/' %}aria-current="page"{% endif %}>Pictures of Cats</a>
 				</li>
 			</ul>
@@ -96,7 +99,7 @@
 	{% endblock %}
 
 	<!-- global scripts, should render on every page -->
-	<script src="/global-scripts.js"></script>
+	<script src="/js/globals.js" type="module"></script>
 
 	<!-- page-specific scripts, should be set within the page template -->
 	{% block scripts %}{% endblock %}
