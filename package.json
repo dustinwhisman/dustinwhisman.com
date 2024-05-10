@@ -36,6 +36,7 @@
 		"@playwright/test": "^1.43.1",
 		"check-node-version": "^4.2.1",
 		"dotenv": "^16.4.5",
+		"esbuild": "^0.21.1",
 		"eslint": "^9.2.0",
 		"eslint-config-prettier": "^9.1.0",
 		"globals": "^15.1.0",
