@@ -10,8 +10,12 @@
 	"scripts": {
 		"prestart": "check-node-version --package && npm run clean",
 		"prebuild": "check-node-version --package && npm run clean",
-		"start": "eleventy --serve --incremental",
-		"build": "eleventy",
+		"start": "npm run eleventy:dev & npm run js:dev",
+		"build": "npm run eleventy:build && npm run js:build",
+		"eleventy:build": "eleventy",
+		"eleventy:dev": "eleventy --serve --incremental",
+		"js:build": "NODE_ENV=production node esbuild.mjs",
+		"js:dev": "NODE_ENV=development node esbuild.mjs",
 		"clean": "rm -rf dist",
 		"lint": "run-s lint:css lint:js",
 		"lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
@@ -51,5 +55,10 @@
 		"markdown-it": "^14.1.0",
 		"markdown-it-anchor": "^8.6.7",
 		"prompts": "^2.4.2"
-	}
+	},
+	"browserslist": [
+		">0.5%",
+		"last 10 versions",
+		"Firefox ESR"
+	]
 }

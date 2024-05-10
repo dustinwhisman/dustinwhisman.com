@@ -59,7 +59,7 @@ const updateCurrentYear = () => {
 	}
 };
 
-(() => {
+export const handleSpecialDates = () => {
 	const cssPreference = getCSSPreference();
 	if (cssPreference === false) {
 		removeCSS();
@@ -71,4 +71,4 @@ const updateCurrentYear = () => {
 	}
 
 	updateCurrentYear();
-})();
+};
