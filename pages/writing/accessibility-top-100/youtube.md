@@ -338,6 +338,8 @@ Ultimately, I think the most critical tasks can be achieved, but there are unnec
 
 YouTube prints money for its parent company, whose value is measured in *trillions*. There simply is no excuse for not having accessibility experts on staff all the way from design to code who could catch these obvious issues. I know those people are available within the Google-verse. They’re out there writing tutorials so people can [learn about accessibility](https://web.dev/learn/accessibility/). Get them working with product teams!
 
+YouTube gets an F. There’s no reason for it to be this bad, and yet here we are.
+
 *Sigh*. At least that’s done with. What’s next, Amazon?
 
 😶

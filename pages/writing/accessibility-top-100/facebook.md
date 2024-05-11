@@ -297,4 +297,4 @@ These pages are so simple that it should be trivial to fix all the accessibility
 - Use relative units for font sizes
 - Don’t disable zooming
 
-I never got into the core functionality of Facebook, but I have to assume it’s much much worse. Interestingly, I have another Meta product (Instagram) coming up pretty soon on the list, so I’m curious how much that will differ or if it will have the same types of issues. But next time, I’ll be evaluating X, née Twitter, a.k.a. The Everything App.
+Facebook gets a D. I never got into the core functionality of Facebook, but I have to assume it’s much much worse. Interestingly, I have another Meta product (Instagram) coming up pretty soon on the list, so I’m curious how much that will differ or if it will have the same types of issues. But next time, I’ll be evaluating X, née Twitter, a.k.a. The Everything App.
