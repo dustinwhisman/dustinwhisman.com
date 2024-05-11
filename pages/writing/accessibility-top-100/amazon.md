@@ -349,4 +349,4 @@ Amazon’s accessibility is pretty bad on these pages, but a lot of the issues h
 
 As with YouTube, there’s just no excuse to be this bad when your company’s worth over a trillion dollars. Amazon could easily afford more accessibility experts and prioritize the front-end, but they don’t because they don’t have to in order to remain competitive. Must be nice having a captive market.
 
-For some reason, I’m less bothered by the poor craftsmanship here than I was for YouTube. I can just tell from the `<div>` soup that they threw a bunch of “full stack” developers at it, so what else would you expect.
+For some reason, I’m less bothered by the poor craftsmanship here than I was for YouTube. I can just tell from the `<div>` soup that they threw a bunch of “full stack” developers at it, so what else would you expect. Amazon gets an F.
