@@ -229,3 +229,5 @@ Overall, the pages that I checked for Wikipedia are pretty solid in terms of acc
 A lot of the success here stems from Wikipedia’s super simple design. It’s mostly text with links and some images thrown in, which makes it quite a bit easier to not get things wrong. The most complex controls are the show/hide “buttons” and the autocomplete search control. Those are tricky to get right, and while I don’t think they nailed it, it’s very possible that user testing would justify the implementations that they have.
 
 Wikipedia gets a B+. Pretty good, but with room for improvement. This is a good start as far as the top 100 websites in the US goes. I’m expecting it to get much worse from here.
+
+{% include 'partials/article-pagination.njk' %}

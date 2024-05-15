@@ -203,3 +203,5 @@ Overall, things weren’t quite as bad as I expected, which isn’t to say that 
 The home page after signing up had a lot of the common issues I’ve come to expect from these top 100 sites. I’m consistently surprised at how semantic elements are avoided in favor of ARIA monstrosities. Maybe I’m just lazy, but I’d much rather use the thing that does what I want by default rather than (unsuccessfully) recreating it from scratch. I guess I’m just not extremely hardcore enough.
 
 X/Twitter gets a D for `div`.
+
+{% include 'partials/article-pagination.njk' %}

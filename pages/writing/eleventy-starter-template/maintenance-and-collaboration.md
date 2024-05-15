@@ -261,3 +261,5 @@ Look how far we’ve come! We started with nothing, and now we have a starter te
 - Tooling to make maintenance and collaboration easier
 
 That’s a wrap on this series, but the project will live on! If you have ideas for how to make this starter template even more robust, please [create issues on the repo](https://github.com/dustin-jw/eleventy-starter/issues), or [fork it](https://github.com/dustin-jw/eleventy-starter/fork) and make tweaks to suit your own project needs.
+
+{% include 'partials/article-pagination.njk' %}

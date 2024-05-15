@@ -215,3 +215,5 @@ Then, in our `package.json`, we’ll create a `clean` script that will delete `d
 Even if we stopped here, this would still be a useful starter template, since we wouldn’t need to run through these installation and configuration steps for a new project. Even if it only saves half an hour of work, that’s 30 minutes that can be spent building the thing rather than writing boilerplate.
 
 Now that our project structure and basic configuration are set up, we can move on to the good stuff! Join us in Part Two, where we will make our layout HTML more dynamic, add some more pages, and get some HTML linting up and running.
+
+{% include 'partials/article-pagination.njk' %}

@@ -105,3 +105,5 @@ The purpose of user interface components, icons, and regions can be programmatic
 - Use semantic elements, possibly augmented by ARIA landmarks to identify page regions
 - Use microdata to augment markup (is this supported? more info needed)
 - Use `aria-invalid` and `aria-required`
+
+{% include 'partials/article-pagination.njk' %}

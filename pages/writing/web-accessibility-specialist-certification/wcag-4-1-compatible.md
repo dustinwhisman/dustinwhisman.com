@@ -71,3 +71,5 @@ Status messages can be programmatically determined through role or properties in
 
 - Use `role="alert"` or `aria-live="assertive"` on content that is not important and time-sensitive
 - Hide or display a document without switching the live regions between active and inactive
+
+{% include 'partials/article-pagination.njk' %}

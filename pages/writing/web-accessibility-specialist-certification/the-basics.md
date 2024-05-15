@@ -84,3 +84,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   - Operable: the interface cannot include interactions the user cannot perform
   - Understandable: content is clearly written and the interactions aren’t overly complex or confusing
   - Robust: the application works with different types of assistive technology, operating systems, browsers, and device sizes/orientations
+
+{% include 'partials/article-pagination.njk' %}

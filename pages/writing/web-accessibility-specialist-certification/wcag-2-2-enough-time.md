@@ -96,3 +96,5 @@ Users are warned about timeouts that could cause data loss unless that data is p
 - Set session timeouts to twenty hours or more
 - Store user data for more than twenty hours
 - Warn users about inactivity duration limits at the beginning of a process
+
+{% include 'partials/article-pagination.njk' %}

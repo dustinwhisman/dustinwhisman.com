@@ -6,6 +6,7 @@ layout: default
 date: 2024-05-07T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # UnConference: Embracing the Power of the MVP
@@ -22,3 +23,5 @@ I regularly work with the folks who are presenting, so I can vouch for them—th
 - Catherine (Technical Director): Creating a Technical Foundation
 
 I've also [written about MVPs for the Foundry](https://sparkbox.com/foundry/MVP_mindset_progressive_enhancement_minimum_viable_experience_MVP_process_and_tooling_decisions), and so have [lots of other Sparkboxers](https://sparkbox.com/foundry/category/mvp), so go check those articles out if you like making sure you build the right thing while building the thing right.
+
+{% include 'partials/article-pagination.njk' %}

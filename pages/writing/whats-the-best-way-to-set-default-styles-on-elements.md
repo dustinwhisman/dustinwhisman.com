@@ -6,6 +6,7 @@ layout: default
 date: 2023-11-02T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # What's the best way to set default styles on elements?
@@ -59,3 +60,5 @@ To avoid issues like this going forward, I would take a look at those default st
 Alternatively, maybe the way to opt out of the default styles should be more explicit. `:not([class])` is incredibly broad, but something like `:not(.util-reset-defaults)` would solve the same problems without being as prone to the issue I described earlier. In this case, our content editor in WordPress would only need to set “util-reset-defaults” for non-default instances.
 
 I’d probably stick with the former approach for sites where I have control over content and styling, but I’d probably do the latter on design systems or CMS projects. As always, it depends.
+
+{% include 'partials/article-pagination.njk' %}

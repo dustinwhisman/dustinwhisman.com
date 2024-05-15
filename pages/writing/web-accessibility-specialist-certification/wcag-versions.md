@@ -23,3 +23,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   - [New in 2.2 Draft](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/)
 - WCAG 3 is an early draft (at time of writing) and will take a **while** before it is published
 - The Web Content Accessibility Guidelines are developed by the Accessibility Guidelines Working Group, which is part of the World Wide Web Consortium Web Accessibility Initiative. Or put another way: WCAG is developed by the AG WG, which is part of the W3C WAI.
+
+{% include 'partials/article-pagination.njk' %}

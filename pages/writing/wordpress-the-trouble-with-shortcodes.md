@@ -6,6 +6,7 @@ layout: default
 date: 2023-11-03T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # WordPress: the trouble with shortcodes
@@ -57,3 +58,5 @@ At this point, it seems like the best course of action is to give the content ed
 I think the simplicity of shortcodes is appealing to developers, since it takes relatively little code to get something useful working. However, they are so developer-centric that I wouldn’t recommend them unless the people editing content are also developers or at least have some experience writing HTML.
 
 Shortcodes have been around since WordPress 2.5, so they may just be hanging around for legacy reasons, but I think shifting them to custom blocks is probably the way to go moving forward. The biggest issue with that is that custom blocks are more complicated to implement and have a steeper learning curve for developers, but shifting complexity away from content editors to developers seems better to me than the other way around.
+
+{% include 'partials/article-pagination.njk' %}

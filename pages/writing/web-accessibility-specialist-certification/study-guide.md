@@ -105,3 +105,5 @@ Most of the linked resources are free, except for the Deque course, which at tim
 
 - [WAS 2.1 Body of Knowledge](https://www.accessibilityassociation.org/resource/WAS_Certification_FInal_2020_FINAL): Section 3.1, 3.2
 - [13 Days of Accessibility](http://a11ycalendar.kaseybon.com/)
+
+{% include 'partials/article-pagination.njk' %}

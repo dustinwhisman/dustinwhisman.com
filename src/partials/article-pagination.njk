@@ -1,0 +1,13 @@
+{% set previousPost = collections[collectionName] | getPreviousCollectionItem %}
+{% set nextPost = collections[collectionName] | getNextCollectionItem %}
+
+{% if previousPost or nextPost %}
+<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Pagination">
+{%- if previousPost -%}
+	<a href="{{ previousPost.url }}" class="cmp-navigation__previous">Previous: {{ previousPost.data.articleTitle }}</a>
+{%- endif -%}
+{%- if nextPost -%}
+	<a href="{{ nextPost.url }}" class="cmp-navigation__next">Next: {{ nextPost.data.articleTitle }}</a>
+{%- endif -%}
+</nav>
+{% endif %}

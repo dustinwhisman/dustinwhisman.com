@@ -89,3 +89,5 @@ Context-sensitive help is available.
 ## 3.3.6 Error Prevention (All) - Level AAA
 
 This is the same as 3.3.4 but applies to any page where the user is required to submit information.
+
+{% include 'partials/article-pagination.njk' %}

@@ -121,3 +121,5 @@ An alternative for live audio-only content is provided.
 - Provide written materials if the audio is scripted, like a prepared speech or scripted content
 - Use stenographic/rapid typing techniques or speech-to-text with corrections
 - Use a live audio captioning service
+
+{% include 'partials/article-pagination.njk' %}

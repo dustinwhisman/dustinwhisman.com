@@ -6,6 +6,7 @@ layout: default
 date: 2024-05-03T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # When to use links vs. buttons
@@ -108,3 +109,5 @@ If you want a quick rule of thumb, remember that links go places and buttons do 
 ```
 
 It haunts my dreams.
+
+{% include 'partials/article-pagination.njk' %}

@@ -107,3 +107,5 @@ Use high-level, input-agnostic event handlers like `click`, `focus`, and `blur` 
 ### How to Fail
 
 Limit interactions to touch-only on touchscreen devices.
+
+{% include 'partials/article-pagination.njk' %}

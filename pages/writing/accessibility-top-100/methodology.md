@@ -58,3 +58,5 @@ These are not going to be full site audits, and I'm not going to write up detail
 This is not an endorsement of any of these sites. The top 100 is pretty likely to feature companies with questionable business practices. However, this is also not a condemnation. Accessibility is a nuanced topic that isn't prioritized when educating developers, and there's no such thing as an "accessible website." There are only more or less accessible websites.
 
 Don't bully any websites on this list, but if you can encourage them to fix the issues they do have, that's going to be hugely impactful for the people who currently encounter barriers on those sites.
+
+{% include 'partials/article-pagination.njk' %}

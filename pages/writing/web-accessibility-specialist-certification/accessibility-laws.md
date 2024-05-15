@@ -110,3 +110,5 @@ All Flemish websites and mobile apps must be accessible according to directive [
 - India: WCAG, Level AA
 - Japan: [Japanese Industrial Standard (JIS) X 8341](https://archive.org/stream/jis.x.8341.7.e.2011/jis.x.8341.7.e.2011_djvu.txt), [The Act on the Elimination of Discrimination against Persons with Disabilities](http://www.waseda.jp/hiken/en/jalaw_inf/topics2014/legislation/001asakura.html)
 - New Zealand: [Human Rights Amendment Act 2001](http://www.legislation.govt.nz/act/public/2001/0096/latest/DLM121285.html), [Web Accessibility Standard 1.1](https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-accessibility-standard-1-1/), [Web Usability Standard 1.3](https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-usability-standard-1-3/)
+
+{% include 'partials/article-pagination.njk' %}

@@ -109,3 +109,5 @@ This is the priority order for things that need to be evaluated:
 - Volume (number of occurrences)
 - Impact on Interface and Operation (does it require a significant redesign or effort to fix?)
 - Secondary Benefit (do fixes help more than just people with disabilities?)
+
+{% include 'partials/article-pagination.njk' %}

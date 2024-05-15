@@ -38,3 +38,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   - Writing short sentences/paragraphs
   - Expanding acronyms when first used
   - Providing glossaries and other media (images, videos, etc.) to clarify meaning
+
+{% include 'partials/article-pagination.njk' %}

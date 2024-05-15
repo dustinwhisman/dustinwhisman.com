@@ -6,6 +6,7 @@ layout: default
 date: 2023-04-19T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # Unsustainable Sustainability Pages
@@ -75,3 +76,5 @@ There's a tradeoff there—the most performant page you'll ever see is [about:bl
 My point isn't to drag these companies for doing a bad job (well, maybe it is a little bit), but to point out that websites, despite being abstract and digital, consume a lot of energy and generate a lot of carbon. Servers use a lot of power, and client-side JavaScript can eat up your phone's battery if overused, so we should pay attention to that and do what we can to improve the sites we build.
 
 And in the interest of fairness, I ran the same checks on some pages on my own site, and they were cleaner than between 92% and 97% of pages tested, and my performance and accessibility scores were 100s across the board 😉
+
+{% include 'partials/article-pagination.njk' %}

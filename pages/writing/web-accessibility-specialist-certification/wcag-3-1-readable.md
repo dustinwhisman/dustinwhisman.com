@@ -75,3 +75,5 @@ A mechanism is available to identify the pronunciation of words where the meanin
 - Link to pronunciations or glossaries
 - Use standard diacritical marks that can be turned off
 - Use the `ruby` annotation element
+
+{% include 'partials/article-pagination.njk' %}

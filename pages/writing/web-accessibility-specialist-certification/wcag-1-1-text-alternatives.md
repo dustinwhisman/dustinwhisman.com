@@ -50,3 +50,5 @@ Do any of these things to instantly fail this criterion.
 - Include useless alt text, such as `alt="image"`
 - Provide text alternatives that convey completely different information or serve different purposes
 - Use ASCII art or text look-alikes without providing text alternatives, such as `aria-label`
+
+{% include 'partials/article-pagination.njk' %}

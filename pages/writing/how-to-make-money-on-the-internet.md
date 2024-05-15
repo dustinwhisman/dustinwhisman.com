@@ -6,6 +6,7 @@ layout: default
 date: 2024-01-13T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # How to make money on the internet
@@ -90,3 +91,5 @@ Going forward, I think this is how I'd like to monetize all my side projects. I 
 ## I probably missed some options
 
 There are definitely other ways to make money online, but I don't think I'm well-suited for a lot of them. I'd make a terrible influencer, and I have enough moral fiber to avoid the really lucrative grifts that seem to make a lot of people rich. I'll stick with the day job and maybe enough side income to buy some cat toys—that's good enough for me.
+
+{% include 'partials/article-pagination.njk' %}

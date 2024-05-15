@@ -26,3 +26,5 @@ studying, which I'm very happy paid off. Next up,
 going for that [CPWA
 certification](https://www.accessibilityassociation.org/s/certified-professional-web-accessibility),
 even if it's not strictly necessary.
+
+{% include 'partials/article-pagination.njk' %}

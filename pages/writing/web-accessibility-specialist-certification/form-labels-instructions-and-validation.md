@@ -105,3 +105,5 @@ Information that has previously been entered by the user must be either auto-pop
 - Page navigation shortcuts are disabled when typing in a form control
 - Only focusable elements will be read when tabbing in forms, so text in between will get skipped over if it’s not associated via `label`, `legend`, `aria-labelledby`, `aria-describedby`, or other focusable elements
 - Document/Browse/Scan mode is the default mode, and users can usually navigate by semantic elements
+
+{% include 'partials/article-pagination.njk' %}

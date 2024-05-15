@@ -114,3 +114,5 @@ There should be a way to opt out of unnecessary animations (prefers-reduced-moti
 - There must be a way to pause, stop, or hide any media that automatically plays and is longer than 5 seconds
 - This also applies to some non-media, like animations, games, stock tickers, and auto-updating content
 - Allowing users to control the frequency of updates is a workaround if auto-updates are necessary
+
+{% include 'partials/article-pagination.njk' %}

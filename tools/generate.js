@@ -32,6 +32,10 @@ tags:
 # ${title}
 
 {% include 'partials/published-date.njk' %}
+
+
+
+{% include 'partials/article-pagination.njk' %}
 `,
 	[collections.WAS_CERTIFICATION]: (title, description) => `---
 title: "${title} - WAS Notes - Writing - Dustin Whisman"
@@ -49,6 +53,10 @@ tags:
 _I'm studying for the WAS certification. These are some of the notes I've taken recently._
 
 {% include 'partials/published-date.njk' %}
+
+
+
+{% include 'partials/article-pagination.njk' %}
 `,
 	[collections.CPACC_CERTIFICATION]: (title, description) => `---
 title: "${title} - CPACC Notes - Writing - Dustin Whisman"
@@ -66,6 +74,10 @@ tags:
 _I'm studying for the CPACC certification. These are some of the notes I've taken recently._
 
 {% include 'partials/published-date.njk' %}
+
+
+
+{% include 'partials/article-pagination.njk' %}
 `,
 	[collections.ELEVENTY_STARTER_TEMPLATE]: (title, description) => `---
 title: "${title} - Writing - Dustin Whisman"
@@ -81,6 +93,10 @@ tags:
 # ${title}
 
 {% include 'partials/published-date.njk' %}
+
+
+
+{% include 'partials/article-pagination.njk' %}
 `,
 	[collections.ACCESSIBILITY_TOP_100]: (title, description) => `---
 title: "How accessible is ${title}? - Writing - Dustin Whisman"
@@ -98,6 +114,10 @@ tags:
 _This is part ${description} of a [series](/writing/accessibility-top-100/) evaluating the accessibility of the top 100 websites in the US. This time I'll be taking a look at ${title}. Read the [methodology description](/writing/accessibility-top-100/methodology) to learn about my process._
 
 {% include 'partials/published-date.njk' %}
+
+
+
+{% include 'partials/article-pagination.njk' %}
 `,
 	DEFAULT: (title, description) => `---
 title: "${title} - Writing - Dustin Whisman"
@@ -107,11 +127,16 @@ layout: default
 date: ${today()}
 tags:
   - writing
+  - uncategorized
 ---
 
 # ${title}
 
 {% include 'partials/published-date.njk' %}
+
+
+
+{% include 'partials/article-pagination.njk' %}
 `,
 };
 

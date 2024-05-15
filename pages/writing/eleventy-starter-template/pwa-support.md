@@ -341,3 +341,5 @@ Our starter template is looking really good now. Just running through the checkl
 - Basic installation requirements met to make our site a Progressive Web App
 
 With all of that in place, we’ll finish the series by shifting focus to our development workflow. Join us next time when we cover build pipelines, dependency management, and collaboration.
+
+{% include 'partials/article-pagination.njk' %}

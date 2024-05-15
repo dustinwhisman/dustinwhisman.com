@@ -50,3 +50,5 @@ Instead of only having hammers (plugins are hammers), we ended up with a mix of 
 After two months of just-in-time learning and flying by the seats of our pants, we delivered a website to the client that gives them much more flexibility and control over their content than they had on their old site. We also managed to migrate over 900 pages from their old CMS while also integrating the new site with their design system. What we lacked in WordPress experience, we made up for with a willingness to learn, experiment, and apply what we knew from other contexts.
 
 In the end, I’d probably do some things differently, but that’s the case for every project. I take it as a sign that I learned something along the way. If I looked back and thought it was perfect, that would be more concerning, I think.
+
+{% include 'partials/article-pagination.njk' %}

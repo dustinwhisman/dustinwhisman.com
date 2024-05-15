@@ -114,3 +114,5 @@ Even though the 4.1.1 Parsing success criterion is being deprecated in WCAG 2.2,
 - Adhere to allowed parent-child relationships of elements (no floating `li` elements outside of `ul` elements, for example)
 - Don’t use deprecated markup like `blink` or `marquee` tags
 - Use a [validator](http://validator.w3.org/) to check built pages
+
+{% include 'partials/article-pagination.njk' %}

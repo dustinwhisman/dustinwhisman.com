@@ -76,3 +76,5 @@ Assistive technologies and adaptive strategies seem limited here. Stress managem
 ## Multiple/Compound Disabilities
 
 Multiple or compound disabilities describe when a person has more than one of the aforementioned types of disabilities at once. People with multiple disabilities face additional barriers and may require more assistive technnology or adaptive strategies to help them perform tasks.
+
+{% include 'partials/article-pagination.njk' %}

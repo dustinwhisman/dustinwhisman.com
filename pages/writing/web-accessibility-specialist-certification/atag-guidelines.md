@@ -38,3 +38,5 @@ Authoring tools should make creating accessible content easy and by default. The
 - B.2: Authors are supported in producing accessible content
 - B.3: Authors are supported in improving the accessibility of existing content
 - B.4: Authoring tools promote and integrate their accessibility features
+
+{% include 'partials/article-pagination.njk' %}

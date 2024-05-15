@@ -29,3 +29,5 @@ ARIA is mainly used for screen readers, since it lets users know what’s happen
 - What type of control it is (tabs, sliders, dialogs, etc.)
 
 ARIA is complex and relies on a lot of JavaScript skills, so it is mostly used by web developers. [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/) is the place to go for implementation details.
+
+{% include 'partials/article-pagination.njk' %}
