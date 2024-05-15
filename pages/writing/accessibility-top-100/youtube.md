@@ -343,3 +343,5 @@ YouTube gets an F. There’s no reason for it to be this bad, and yet here we ar
 *Sigh*. At least that’s done with. What’s next, Amazon?
 
 😶
+
+{% include 'partials/article-pagination.njk' %}
