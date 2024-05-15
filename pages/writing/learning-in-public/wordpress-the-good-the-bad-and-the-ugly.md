@@ -112,3 +112,5 @@ What I gather from this is that if you want to develop a block theme, you can’
 ## The end (for now)
 
 There’s a lot of ground I didn’t cover here, and I’m still in the middle of learning all of the intricacies of old and new WordPress, so I’m sure I’ll have more thoughts as I go. I’ll certainly be taking notes and trying to distill my learning into something more actionable than this, which is all just, like, my opinion, man.
+
+{% include 'partials/article-pagination.njk' %}

@@ -161,3 +161,5 @@ Some of the things that struck me as strange might just take some time to get us
 Do I have qualms? Of course, but that would be true for any framework. My biggest complaint is the bundle size—for the project I was using to learn, it came out to 76.41 kB uncompressed, which is simply too much for what I built. I also don't love the SPA-centric focus, but maybe Angular Universal helps with these things? I just don't know at this point.
 
 Anyway, I look forward to learning more as I keep working with it. At the very least, it's interesting to see how the approaches for common problems differ between the major frameworks.
+
+{% include 'partials/article-pagination.njk' %}
