@@ -6,6 +6,7 @@ layout: default
 date: 2023-05-20T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # I Got My Eyes Fixed Up

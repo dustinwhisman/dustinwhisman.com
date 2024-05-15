@@ -6,6 +6,7 @@ layout: default
 date: 2024-01-13T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # How to make money on the internet

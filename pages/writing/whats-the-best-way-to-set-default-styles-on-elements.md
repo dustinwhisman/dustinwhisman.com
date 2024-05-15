@@ -6,6 +6,7 @@ layout: default
 date: 2023-11-02T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # What's the best way to set default styles on elements?

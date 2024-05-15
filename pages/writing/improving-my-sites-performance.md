@@ -6,6 +6,7 @@ layout: default
 date: 2023-02-04
 tags:
   - writing
+  - uncategorized
 ---
 
 # Improving My Site's Performance

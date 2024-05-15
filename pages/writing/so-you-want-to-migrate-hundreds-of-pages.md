@@ -6,6 +6,7 @@ layout: default
 date: 2023-03-30T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # So You Want to Migrate Hundreds of Pages

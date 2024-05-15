@@ -6,6 +6,7 @@ layout: default
 date: 2023-02-03
 tags:
   - writing
+  - uncategorized
 ---
 
 # Auditing My Site's Performance

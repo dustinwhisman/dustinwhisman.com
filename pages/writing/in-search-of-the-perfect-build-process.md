@@ -6,6 +6,7 @@ layout: default
 date: 2023-01-29
 tags:
   - writing
+  - uncategorized
 ---
 
 # In Search of the Perfect Build Process

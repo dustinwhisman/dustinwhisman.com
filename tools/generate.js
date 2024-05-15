@@ -127,6 +127,7 @@ layout: default
 date: ${today()}
 tags:
   - writing
+  - uncategorized
 ---
 
 # ${title}

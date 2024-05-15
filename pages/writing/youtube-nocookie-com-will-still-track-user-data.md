@@ -6,6 +6,7 @@ layout: default
 date: 2024-03-19T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # youtube-nocookie.com will still track user data

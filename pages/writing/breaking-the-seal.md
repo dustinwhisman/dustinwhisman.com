@@ -6,6 +6,7 @@ layout: default
 date: 2023-06-22T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # Breaking the Seal

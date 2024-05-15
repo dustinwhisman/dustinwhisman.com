@@ -6,6 +6,7 @@ layout: default
 date: 2023-04-19T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # Unsustainable Sustainability Pages

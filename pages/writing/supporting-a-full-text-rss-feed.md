@@ -6,6 +6,7 @@ layout: default
 date: 2024-05-08T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # Supporting a full-text RSS feed

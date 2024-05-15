@@ -6,6 +6,7 @@ layout: default
 date: 2024-05-03T00:00:00.000Z
 tags:
   - writing
+  - uncategorized
 ---
 
 # When to use links vs. buttons
