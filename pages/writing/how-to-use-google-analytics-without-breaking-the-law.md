@@ -185,3 +185,5 @@ Answer these questions to decide whether analytics (of any kind) are going to be
 For me, my answers point to “no, I don’t need or want analytics on my site.” I don’t have analytics and likely never will because I care enough about the people visiting to respect their privacy, and I don’t care enough about the data to justify the hassle of adding analytics ethically/legally.
 
 Your answers and conclusion may be different, and that’s fine, but I think it’s worth reconsidering what’s become the standard business practice. Just because lots of people do it, that doesn’t make it good.
+
+{% include 'partials/article-pagination.njk' %}

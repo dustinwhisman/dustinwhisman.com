@@ -37,3 +37,5 @@ It's remarkable how fast eyes heal. Right after surgery, I had some pinprick sen
 It took a surprisingly long time for the dilation to wear off, presumably because they used so many drops before surgery, and that was the last big thing keeping my vision from being 20/20. It's still a little bit wonky as I write this since it takes some time for your eyes to adjust to having this new thing in the mix, but my surgeon said that it'll keep getting better every day. Everything's mostly normal now, but I'll get the occasional lens flare like I'm in a J.J. Abrams movie. I'm out of the danger zone now, though, so anything that could have gone wrong probably would have by now.
 
 The verdict for ICL: 5 stars, would recommend. Now if you'll excuse me, I need to go clean my shower.
+
+{% include 'partials/article-pagination.njk' %}

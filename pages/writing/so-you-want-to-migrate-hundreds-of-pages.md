@@ -266,3 +266,5 @@ The pages weren't broken, partly because we specifically ran this against pages 
 It also gave me a greater appreciation of all the work that browsers do when they render a page. Do you know how many different ways you can show an image on the page? It's bonkers how much browsers need to account for, and I only got a taste of it from what I needed to handle in the script.
 
 With all that said, maybe don't try this at home. If you have better options for migrating content, go with those before resorting to this sort of web scraping trickery.
+
+{% include 'partials/article-pagination.njk' %}

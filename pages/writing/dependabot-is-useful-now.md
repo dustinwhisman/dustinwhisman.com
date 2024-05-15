@@ -81,3 +81,5 @@ updates:
 This will open a maximum of 4 PRs at a time, but if you update regularly enough, it’s unlikely that you’ll hit that limit.
 
 If this doesn’t work for you, take a look at the [configuration options for grouped updates](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#groups). They’re pretty flexible, so it should be possible to get as granular as you need.
+
+{% include 'partials/article-pagination.njk' %}

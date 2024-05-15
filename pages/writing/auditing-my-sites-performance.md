@@ -92,3 +92,5 @@ Based on those audits, here’s what I plan to do:
 - Try other `display` values in my site manifest
 
 I’ll follow this up with the results of these changes. Already there’s plenty to do, and that’s starting from a pretty good baseline. Try auditing your site in the same way. You might be surprised at what you find!
+
+{% include 'partials/article-pagination.njk' %}

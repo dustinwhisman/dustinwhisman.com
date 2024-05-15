@@ -36,3 +36,5 @@ I'm also going to mix it up by more or less randomizing the order of runs, and s
 1. [48 min](https://open.spotify.com/playlist/0lI38EyonyiwLvKeT9dEwG?si=7d5bc0ab96e74f4e)
 1. [54 min](https://open.spotify.com/playlist/1RqzIwWSI7bJVTrkyQurCk?si=2aa144d93b8941eb)
 1. [60 min](https://open.spotify.com/playlist/6h8bugCyJANKfXq8fDCOkS?si=21979374859e413a)
+
+{% include 'partials/article-pagination.njk' %}

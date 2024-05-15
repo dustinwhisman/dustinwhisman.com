@@ -108,3 +108,5 @@ If you want a quick rule of thumb, remember that links go places and buttons do 
 ```
 
 It haunts my dreams.
+
+{% include 'partials/article-pagination.njk' %}

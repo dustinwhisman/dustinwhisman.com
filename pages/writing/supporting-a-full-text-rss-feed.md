@@ -61,3 +61,5 @@ Here's the same section updated for full-text support.
 ## When in doubt, let people choose
 
 My previous setup was overly restrictive and imposed my preferences on readers. I like to read posts in the browser where I can see the result of all the work that people put into their sites' styles, animations, etc. but that's just, like, my opinion, man. A lot of people like to read posts right in their feed readers, and they should be able to do so.
+
+{% include 'partials/article-pagination.njk' %}

@@ -122,3 +122,5 @@ As for Lighthouse, it's 100s all around, no matter which page I've tested on. I 
 <img src="/images/improving-my-sites-performance/lighthouse-after.png" alt="A screenshot of Lighthouse scores, showing 100 for each category and an icon representing full PWA support." class="cmp-article__image">
 
 This was a fun exercise, and I think the biggest takeaway for me is that no matter how good you think your site's performance is, it doesn't hurt to check every once in a while. You might find some low-hanging fruit or a lingering bug that would be way easier to fix now than when it's causing real problems down the road.
+
+{% include 'partials/article-pagination.njk' %}

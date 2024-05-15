@@ -25,3 +25,5 @@ The news that [Netlify is no longer sponsoring Eleventy](https://www.zachleat.co
 Initial testing shows that the Time to First Byte (TTFB) is about 200ms faster without the Edge Function, so I think the trade-off is worth it. The vast majority of the time, the script will effectively be a no-op, and the most work it will ever do is remove, add, or update a couple of elements on the page.
 
 Even though the client-side JS seal is broken, I don't anticipate doing anything too fancy with this site. Accessibility and performance are still my top priority, but if something comes up that makes sense and can only be done on the client, why not go for it?
+
+{% include 'partials/article-pagination.njk' %}

@@ -48,3 +48,5 @@ When consent hasn’t been granted, the choice is yours for how to handle that. 
 Don’t trust Google. Make sure you audit your sites for cookies, local storage, session storage, and apparently IndexedDB as well. This is some sneaky bullshit and I’m surprised that there haven’t been fines or legal actions based on this (that I know of).
 
 I feel like it’s worth reiterating that website owners probably have *no idea* that YouTube is tracking this data, and the websites that are using the `youtube-nocookie` embeds probably think they’re in the clear, privacy-wise. The data that’s being tracked is of no benefit to anyone but YouTube, but guess who’s more likely to pay the fine when there’s a complaint.
+
+{% include 'partials/article-pagination.njk' %}

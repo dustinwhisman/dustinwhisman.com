@@ -213,3 +213,5 @@ const generate = async () => {
 I also added an npm script called "generate" that runs `node ./tools/generate`, since I prefer npm scripts over remembering the file path of scripts I've written. Now all I need to do to start writing a new article/post is type `npm run generate` and answer a few questions.
 
 In fact, this very article was created using the script!
+
+{% include 'partials/article-pagination.njk' %}

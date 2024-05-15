@@ -209,3 +209,5 @@ npm-check-updates ^16.6.2 → ^16.6.3
 So have I achieved the perfect build? Probably not, but it is a lot more tailored to this site than it was at the beginning. I'm down to 17 development dependencies from a starting point of 29, so I'd call that a win for maintainability. I cleared out a lot of potential obstacles and clutter that I wasn't using, and I got to play around with some new tools.
 
 I'll always be tweaking and experimenting, and as new tools come out or improve over time, I'm sure I'll be swapping pieces in and out. I'll probably carry a lot of these changes over to the starter template, which has been admittedly a little bit abandoned as I've been busy with other things, and as Eleventy 2.0 comes out (it's in beta at the time of writing this), I'm sure I'll be able to make a lot of improvements to that template. [Vite](https://vitejs.dev/) instead of Webpack, perhaps?
+
+{% include 'partials/article-pagination.njk' %}

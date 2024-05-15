@@ -225,3 +225,5 @@ Also, It would be great if there was a built-in method for providing default or 
 ## Happy CSS Naked Day!
 
 I got wildly off-topic here, but if you have an Eleventy site and you want to try the same sort of setup for CSS Naked Day, please do! It was a fun excuse to try out some new techniques, and with any luck, I won't have to do anything special for next year!
+
+{% include 'partials/article-pagination.njk' %}
