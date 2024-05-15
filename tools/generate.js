@@ -14,6 +14,7 @@ const collections = {
 	CPACC_CERTIFICATION: 'CPACC certification',
 	ELEVENTY_STARTER_TEMPLATE: 'eleventy starter template',
 	ACCESSIBILITY_TOP_100: 'accessibility top 100',
+	ACCESSIBILITY_HOW_TOS: 'accessibility how-tos',
 	NONE: 'none',
 };
 
@@ -119,6 +120,25 @@ _This is part ${description} of a [series](/writing/accessibility-top-100/) eval
 
 {% include 'partials/article-pagination.njk' %}
 `,
+	[collections.ACCESSIBILITY_HOW_TOS]: (title, description) => `---
+title: "${title} - Accessibility how-tos - Writing - Dustin Whisman"
+description: "${description}"
+articleTitle: "${title}"
+layout: default
+date: ${today()}
+tags:
+  - writing
+  - accessibility how-tos
+---
+
+# ${title}
+
+{% include 'partials/published-date.njk' %}
+
+
+
+{% include 'partials/article-pagination.njk' %}
+`,
 	DEFAULT: (title, description) => `---
 title: "${title} - Writing - Dustin Whisman"
 description: "${description}"
@@ -164,7 +184,9 @@ const resolveFilePath = (collection, slug) => {
 			return path.join(process.cwd(), 'pages', 'writing', 'eleventy-starter-template', `${slug}.md`);
 		case collections.ACCESSIBILITY_TOP_100:
 			return path.join(process.cwd(), 'pages', 'writing', 'accessibility-top-100', `${slug}.md`);
-		default:
+			case collections.ACCESSIBILITY_HOW_TOS:
+				return path.join(process.cwd(), 'pages', 'writing', 'accessibility-how-tos', `${slug}.md`);
+			default:
 			return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
 	}
 };
