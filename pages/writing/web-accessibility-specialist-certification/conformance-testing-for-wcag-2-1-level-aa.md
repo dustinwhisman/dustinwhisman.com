@@ -114,3 +114,5 @@ For destructive actions related to legal, financial, or important data, are the 
 ### SC 4.1.3 Status Messages
 
 Are status messages programmatically determined through role or properties in a way that they can be presented to users without receiving focus?
+
+{% include 'partials/article-pagination.njk' %}

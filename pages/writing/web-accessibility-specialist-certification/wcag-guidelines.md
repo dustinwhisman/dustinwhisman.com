@@ -57,3 +57,5 @@ The main accessibility principles identified in WCAG are Perceivable, Operable, 
 Each guideline has at least one success criterion, and most have several. If you meet all the criteria up to a certain level, such as Level AA, then you have met the guideline at that conformance level.
 
 Most success criteria are self-explanatory, but some require more detail or documentation for techniques for achieving the success criteria. “Sufficient techniques” are enough to pass the success criterion, whereas “advisory techniques” are more like recommendations for best practices that aren’t necessarily required.
+
+{% include 'partials/article-pagination.njk' %}

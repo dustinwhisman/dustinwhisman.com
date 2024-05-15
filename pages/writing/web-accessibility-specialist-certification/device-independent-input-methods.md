@@ -59,3 +59,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Don’t move content in a way that makes interactive elements hard to activate, like a link in a `marquee` element, or a confirmation message that automatically disappears
 - Transitions and layout shifts should not interfere with reading or interaction unless the interference is brief (they say less than 5 seconds, but that’s still such a long time)
 - Keep transition and parallax effects to a minimum to avoid distractions, nausea, and other motion-related issues
+
+{% include 'partials/article-pagination.njk' %}

@@ -85,3 +85,5 @@ Only change the context when the user requests it, or provide a mechanism to tur
 - Change the context on `blur` from form elements
 - Open windows that aren’t wanted by the user
 - Use meta refresh to reload the page on a delay or interval
+
+{% include 'partials/article-pagination.njk' %}

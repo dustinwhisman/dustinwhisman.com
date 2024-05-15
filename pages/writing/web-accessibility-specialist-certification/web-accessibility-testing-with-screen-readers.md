@@ -131,3 +131,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - How to open rotor/menu/scan mode
 - How to cycle through reading controls
 - How to navigate tables
+
+{% include 'partials/article-pagination.njk' %}

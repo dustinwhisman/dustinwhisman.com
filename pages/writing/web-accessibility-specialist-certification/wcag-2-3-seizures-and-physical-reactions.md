@@ -37,3 +37,5 @@ Motion animations that are triggered by interaction can be disabled unless they 
 
 - Use the `prefers-reduced-motion` media query appropriately
 - Give users an option to prevent animation
+
+{% include 'partials/article-pagination.njk' %}

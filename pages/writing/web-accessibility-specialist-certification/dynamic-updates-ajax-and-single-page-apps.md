@@ -47,3 +47,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
   - Move the focus to the heading at the start of the new content, making sure the container has `tabindex="-1"` (preferred option)
   - Use ARIA live regions to announce the new content, possibly including “page loading” if there could be a long delay
 - You must update the browser history when an AJAX operation does something that makes it seem like the back button should work, and the back/forward button should work as expected
+
+{% include 'partials/article-pagination.njk' %}

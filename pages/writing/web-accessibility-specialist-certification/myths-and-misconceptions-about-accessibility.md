@@ -66,3 +66,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Color contrast is a limitation of how wild you can go with design, but it’s perfectly achievable without being ugly
 - Skip links can be invisible until focused
 - You may need to simplify things for folks with cognitive disabilities, but that won’t automatically ruin the design
+
+{% include 'partials/article-pagination.njk' %}

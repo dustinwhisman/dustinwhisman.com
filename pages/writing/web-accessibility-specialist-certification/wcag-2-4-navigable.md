@@ -142,3 +142,5 @@ Section headings are used to organize content. “Heading” is a general term n
 
 - Organize pages with headings (`title`, `h1`, `h2`, etc. and not skipping levels)
 - Provide heading elements at the beginning of each section of content
+
+{% include 'partials/article-pagination.njk' %}

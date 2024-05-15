@@ -67,3 +67,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Avoid non-HTML documents as much as possible, and make sure those documents adhere to accessibility principles
 - PDFs have an accessibility API similar to HTML, so make your PDFs accessible (this may require some touching up in something like Acrobat Pro)
 - Use EPUB 3 format for EPUB files and ensure you are following accessibility principles
+
+{% include 'partials/article-pagination.njk' %}

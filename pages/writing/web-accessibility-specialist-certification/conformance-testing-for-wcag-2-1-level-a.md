@@ -180,3 +180,5 @@ Are text-based alerts provided to users for form validation cues and errors?
 - Are the name, role, and value of interactive elements that have semantic equivalents, like links or buttons, programmatically determinable by assistive technologies?
 - Do custom controls communicate name, role, and value correctly according to W3C specifications?
 - Are all features and components compatible with assistive technologies?
+
+{% include 'partials/article-pagination.njk' %}

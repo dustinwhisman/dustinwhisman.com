@@ -40,3 +40,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Use high-res images or vector graphics so that zooming in doesn’t result in poor image quality
 - Don’t force landscape or portrait orientation unless it’s essential
 - Large touch targets are best (44px by 44px minimum, except for inline links)
+
+{% include 'partials/article-pagination.njk' %}

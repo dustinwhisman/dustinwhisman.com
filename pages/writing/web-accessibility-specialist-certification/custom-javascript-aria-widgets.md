@@ -75,3 +75,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Don’t use positive `tabindex` values (use 0 to put an element in the tab order, or -1 to make it focusable but outside of the tab order)
 - Manage focus correctly, ideally with source order and carefully controlled JS interactions
 - Use standard interactions by following authoring practices guidelines
+
+{% include 'partials/article-pagination.njk' %}

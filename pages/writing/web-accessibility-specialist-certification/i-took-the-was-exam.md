@@ -28,3 +28,5 @@ Now I get to wait for the results, which should come in 4-6 weeks since I took t
 Now that I've taken the test, I would say that my [study guide](/writing/web-accessibility-specialist-certification/study-guide/) served me well, so I would recommend following a similar path if you're studying. The only things that I wish I spent more time on were studying the [WAI-ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/patterns/) and screen reader shortcuts, but that only accounted for a small number of questions, and I think I ended up guessing one of them correctly anyway.
 
 I suppose the next thing to do is get ready for the Certified Professional in Accessibility Core Competencies (CPACC) exam, so I can get that sweet, sweet Certified Professional in Web Accessibility (CPWA) certification. I think I'll wait for the results from this first, though. For now, it's time to take a little summer break 😎
+
+{% include 'partials/article-pagination.njk' %}

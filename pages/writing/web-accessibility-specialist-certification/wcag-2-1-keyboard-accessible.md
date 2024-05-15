@@ -60,3 +60,5 @@ Keyboard shortcuts are not implemented using single characters (letters, punctua
 ### How to Fail
 
 Implement single character shortcuts that can’t be turned off or changed by the user.
+
+{% include 'partials/article-pagination.njk' %}

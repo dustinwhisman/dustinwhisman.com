@@ -71,3 +71,5 @@ _I'm studying for the WAS certification. These are some of the notes I've taken 
 - Content that is meant to be visually hidden from users, like dialogs, must also be hidden from screen readers (`display: none` or `visibility: hidden` work for this)
 - Additional content triggered by hover or focus events must be dismissible, hoverable, and persistent
 - Focused elements must not be obscured by other content, like sticky headers or footers
+
+{% include 'partials/article-pagination.njk' %}

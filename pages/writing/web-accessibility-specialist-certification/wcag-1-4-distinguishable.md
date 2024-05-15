@@ -204,3 +204,5 @@ Content that becomes visible or hidden on hover/focus interactions meets these c
 - Make the content shown on hover not be hoverable
 - Don’t make the content dismissable without moving the pointer or keyboard focus
 - Hide content without a change in hover/focus state if the user didn’t dismiss it
+
+{% include 'partials/article-pagination.njk' %}
