@@ -46,9 +46,9 @@ pagination:
 
 <nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="WAS Certification notes pagination navigation">
 	{% if pagination.href.previous %}
-		<a href="{{ pagination.href.previous }}">Newer posts</a>
+		<a href="{{ pagination.href.previous }}" class="cmp-navigation__previous">Newer posts</a>
 	{% endif %}
 	{% if pagination.href.next %}
-		<a href="{{ pagination.href.next }}">Older posts</a>
+		<a href="{{ pagination.href.next }}" class="cmp-navigation__next">Older posts</a>
 	{% endif %}
 </nav>

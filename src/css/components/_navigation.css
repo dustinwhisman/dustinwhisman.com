@@ -8,5 +8,18 @@
 }
 
 .cmp-navigation--basic-pagination {
+	margin-block-start: var(--size-s4);
 	justify-content: space-between;
+}
+
+@media (min-width: 45rem) {
+	.cmp-navigation__previous {
+		max-width: 30ch;
+	}
+
+	.cmp-navigation__next {
+		max-width: 30ch;
+		margin-inline-start: auto;
+		text-align: right;
+	}
 }
