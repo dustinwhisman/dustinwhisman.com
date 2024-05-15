@@ -47,3 +47,5 @@ These laws/regulations cover specific industries/domains.
 - Air Carrier Access Amendments Act of 2017: sets accessibility requirements for air travel
 - EN 301 549: EU procurement law that sets accessibility requirements for public sector digital interfaces
 - Section 508: US procurement law setting accessibility requirements (WCAG 2.1 AA, maybe 2.2 implicitly) for services provided to government agencies
+
+{% include 'partials/article-pagination.njk' %}

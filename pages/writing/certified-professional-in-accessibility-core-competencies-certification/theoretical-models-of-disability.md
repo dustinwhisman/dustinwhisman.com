@@ -56,3 +56,5 @@ This model accepts a person’s disability as a point of pride rather than a pro
 The charity model sees people with disabilities as unfortunate and in need of outside assistance, and aren’t we just so benevolent to give it to them.
 
 It’s a good thing to spend your time and resources to provide assistance when it is actually needed, but this is a pretty condescending way to treat people who probably don’t want your pity. This also has the pitfall of favoring short-term, specific causes over long-term comprehensive solutions.
+
+{% include 'partials/article-pagination.njk' %}

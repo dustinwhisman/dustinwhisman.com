@@ -52,3 +52,5 @@ Don’t require awkward/straining body positions. Limit the amount of force it r
 Ensure important elements are visible from a seated or standing position, and ensure components are within reach from those positions and accommodate different hand/grip sizes. Provide space for assistive devices or personal assistance.
 
 On vacation a few years ago, I stayed at an apartment whose owner used a wheelchair, so the oven and all the cabinets were much closer to the ground. The default kitchen setup of three foot high stove tops and cabinets whose lowest shelves are five feet off the ground is a real issue for many people. I know a lot of short people with step stools in their kitchens, is what I’m saying.
+
+{% include 'partials/article-pagination.njk' %}

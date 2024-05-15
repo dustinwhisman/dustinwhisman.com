@@ -37,3 +37,5 @@ It's recommended to spend 5-10 hours per week for 6-8 weeks to prepare for the C
 1. [Sample Questions](https://www.accessibilityassociation.org/s/cpacc-sample-exam-questions) (Make sure you’re ready for the test)
 1. [CPACC Quizlet Flash Cards](https://quizlet.com/492496278/cpacc-exam-flash-cards/)
 1. [CPACC Jeopardy Game](https://jeopardylabs.com/play/cpacc-final-review-3)
+
+{% include 'partials/article-pagination.njk' %}
