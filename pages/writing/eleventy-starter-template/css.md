@@ -229,3 +229,5 @@ You can see the full implementation in the [bootstrap branch of the repo](https:
 This template repo is really coming together now. To recap, we have a solid project structure that’s easy to navigate, extendable HTML that simplifies creating and customizing new pages, and a flexible SCSS build system that can handle both custom and third-party styles with ease.
 
 Join us next time, when we’ll be adding support for JavaScript!
+
+{% include 'partials/article-pagination.njk' %}

@@ -121,3 +121,5 @@ To recap, GitHub lets us set up reusable project templates which will let us hit
 We’ve chosen to use Eleventy for our starter template, but the same principles could apply to any other project. If you have a go-to language or framework that you use for lots of projects, it might be worth setting up your own starter to make your work easier.
 
 We’ve only just begun here, but we have a solid foundation for our starter template that we will keep building on in the rest of this series. Join us for Part One, where we’ll get our project structure set up and build our first page with Eleventy.
+
+{% include 'partials/article-pagination.njk' %}

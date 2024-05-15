@@ -377,3 +377,5 @@ Using blocks this way, we can serve as little JavaScript as necessary based on w
 Now we’re in a really good position to use our starter template. Our configuration and project structure are already super solid, we have a decent HTML structure we can extend, we have good CSS/SCSS support, and our JS support is robust, yet flexible. We can choose between JavaScript and TypeScript (or mix and match) with minimal effort, and we can adjust our browser support by changing a couple lines of configuration.
 
 But we’re not done yet! Join us next time as we make our starter template PWA-ready out of the box.
+
+{% include 'partials/article-pagination.njk' %}

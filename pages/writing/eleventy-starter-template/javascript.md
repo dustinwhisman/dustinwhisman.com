@@ -194,3 +194,5 @@ Running `npm run test` (or just `npm test`) will run our tests, which should suc
 ## To Be Continued…
 
 We’re nearly done with JS support, but we can go further. We will probably want a legacy build process to support older browsers, and we might want to use TypeScript instead of, or in addition to, regular old JavaScript. We’ll cover that next time, so see you then!
+
+{% include 'partials/article-pagination.njk' %}

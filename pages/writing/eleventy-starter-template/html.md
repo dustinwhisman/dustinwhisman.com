@@ -211,3 +211,5 @@ We can test that this is working as expected by deliberately making our markup i
 Our starter template is starting to come together now. We have a decent HTML structure that we can reuse and extend between pages, and we have linting set up to make sure our HTML stays in good shape.
 
 We’ll be building on top of this foundation throughout the series, starting with CSS in Part Three. See you next time!
+
+{% include 'partials/article-pagination.njk' %}
