@@ -236,5 +236,40 @@
 		"author": "Michelle Barker",
 		"authorLink": "https://css-irl.info/",
 		"description": "\"Move slow and mend things\" and treat websites as gardens to be tended to. An excellent way to think about building sustainably."
+	},
+	{
+		"link": "https://dbushell.com/2024/05/07/modern-wordpress-themes-yikes/",
+		"title": "Modern WordPress - Yikes!",
+		"author": "David Bushell",
+		"authorLink": "https://dbushell.com/",
+		"description": "This is a good summary of all the weirdness involved with building WordPress themes using their peanut-butter-in-chocolate strategy for mixing languages and databases."
+	},
+	{
+		"link": "https://dbushell.com/copyright/",
+		"title": "Copyright",
+		"author": "David Bushell",
+		"authorLink": "https://dbushell.com/",
+		"description": "David's AI license is a great weaponization of the opt-out strategy that companies training LLMs are using."
+	},
+	{
+		"link": "https://kettanaito.com/blog/why-patching-globals-is-harmful",
+		"title": "Why Patching Globals Is Harmful",
+		"author": "Artem Zakharchenko",
+		"authorLink": "https://kettanaito.com/",
+		"description": "We have Array.flat() instead of Array.flatten() because MooTools changed globals they didn't own. Next.js is doing the same sort of thing with fetch."
+	},
+	{
+		"link": "https://lea.verou.me/blog/2024/contrast-color/",
+		"title": "On compliance vs readability: Generating text colors with CSS",
+		"author": "Lea Verou",
+		"authorLink": "https://lea.verou.me/",
+		"description": "Being able to automatically pick the best contrast color in CSS would be great, and these techniques get us pretty close until contrast-color() is widely supported."
+	},
+	{
+		"link": "https://fasterandworse.com/known-purpose-and-trusted-potential/",
+		"title": "Known Purpose and Trusted Potential.",
+		"author": "Stephen Farrugia",
+		"authorLink": "https://fasterandworse.com/",
+		"description": "OpenAI can't make ChatGPT more accurate or reliable, so the only way they can improve \"performance\" is to make it faster and more confident. Keep an eye out for faked/trivial demos. Are there actual use cases where inaccuracy or lack of supervision is acceptable?"
 	}
 ]
