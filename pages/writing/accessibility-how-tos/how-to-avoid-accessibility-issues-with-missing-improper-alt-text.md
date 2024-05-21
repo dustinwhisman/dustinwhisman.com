@@ -17,13 +17,13 @@ Images are everywhere on the web, and without good alt text, users can be left o
 
 Images that are purely decorative can use `alt=""` to let screen readers know that there’s nothing to see here and just ignore the image. However, not all screen reader users are completely blind, so users with low vision may see that there is an image but be unable to make out the details. If the image is treated as decorative, they can’t satisfy their curiosity. Even if it is generic stock photography that doesn’t contribute much to the content, you can say as much in the alt text.
 
-```css
+```html
 <img src="/path/to/image.jpg" alt="Five hands placed on top of each other in a 'Go Team' gesture.">
 ```
 
 For highly detailed images like charts, maps, or text-heavy info-graphics, you may need to summarize the gist of the image in the alt text, then supplement the image with a longer text description or text-equivalent that conveys all the necessary information. For example, a chart of the stock market could be summarized at a high level for the main takeaway from the image. Then it could be followed by a table that lists stock prices for every year or a link to a page that includes the raw data.
 
-```css
+```html
 <figure>
 	<img src="/path/to/image.png" alt="Chart showing increasing stock prices over time, with notable dips during The Great Depression and The Great Recession.">
 	<figcaption>
