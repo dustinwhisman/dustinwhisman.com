@@ -11,7 +11,7 @@
 	{% endblock %}
 	<link rel="stylesheet" href="/styles.css">
 	{% if processEnv.NODE_ENV === 'development' %}
-	<link rel="stylesheet" href="/revenge.css">
+	<link rel="stylesheet" href="/visua11yze.css">
 	{% endif %}
 	{% block description %}
 	<meta name="description" content="{{ description }}">
@@ -99,6 +99,10 @@
 
 	<!-- global scripts, should render on every page -->
 	<script src="/js/globals.js" type="module"></script>
+
+	{% if processEnv.NODE_ENV === 'development' %}
+	<script src="/visua11yze.js"></script>
+	{% endif %}
 
 	<!-- page-specific scripts, should be set within the page template -->
 	{% block scripts %}{% endblock %}

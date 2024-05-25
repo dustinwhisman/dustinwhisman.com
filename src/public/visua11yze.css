@@ -1,0 +1,324 @@
+:root {
+	--error-outline: 0.25rem solid hotpink;
+	--warning-outline: 0.25rem solid goldenrod;
+  --info-outline: 0.25rem solid aqua;
+}
+
+@layer reset, info, warning, error;
+
+@layer reset {
+  *,
+  *:focus,
+  *:focus-visible,
+  *:hover,
+  *:active {
+    outline: initial;
+  }
+}
+
+@layer info {
+  a[target="_blank"] {
+    --info-target-blank: 'This link will open in a new tab, which users might not expect. Confirm that this is the intended behavior and that users have a way of knowing what will happen.';
+
+    outline: var(--info-outline);
+  }
+
+  :is(div > div > div > div > *) {
+    --info-divitis: "There's a whole lot of nesting going on here. Is it needed to achieve the layout? (it is not)";
+
+    outline: var(--info-outline);
+  }
+
+  img[alt=""] {
+    --info-decorative-image: 'This image will be treated as purely decorative. Are you sure it does not convey any useful information or context?';
+
+    outline: var(--info-outline);
+  }
+}
+
+@layer warning {
+  input:not(form input) {
+    --warning-rogue-input: 'This input does not belong to a <form>. Users may benefit from <form> semantics and behaviors';
+
+    outline: var(--warning-outline);
+  }
+
+  select:not(form select) {
+    --warning-rogue-select: 'This select does not belong to a <form>. Users may benefit from <form> semantics and behaviors';
+
+    outline: var(--warning-outline);
+  }
+
+  textarea:not(form textarea) {
+    --warning-rogue-textarea: 'This textarea does not belong to a <form>. Users may benefit from <form> semantics and behaviors';
+
+    outline: var(--warning-outline);
+  }
+
+  input[type="checkbox"]:not(fieldset input) {
+    --warning-ungrouped-checkbox: 'This checkbox is not grouped in a fieldset. If there are other related checkboxes, they may benefit from being logically grouped together.';
+
+    outline: var(--warning-outline);
+  }
+
+  figure[aria-label]:not(:has(figcaption)) {
+    --warning-figure-label-not-visible: 'The labeling method used is not visible and only available to assistive software';
+
+    outline: var(--warning-outline);
+  }
+
+  figure[aria-label] figcaption {
+    --warning-overridden-figcaption: 'The figure has a figcaption that is overridden by an ARIA label';
+
+    outline: var(--warning-outline);
+  }
+
+  header nav:has(ul > ul) {
+    --warning-nested-navigation: 'You appear to be using tiered/nested navigation in your header. This can be difficult to traverse. Index pages with tables of content are preferable.';
+
+    outline: var(--warning-outline);
+  }
+
+  video:not(:has(track)) {
+    --video-missing-track: 'It appears this video does not have captions. If the video includes speech, dialog, or audio-only information, then captions are necessary.';
+
+    outline: var(--warning-outline);
+  }
+}
+
+@layer error {
+  a:not([href]) {
+    --error-no-href: 'The link does not have an href. Did you mean to use a <button>?';
+
+    outline: var(--error-outline);
+  }
+
+  a[href=''] {
+    --error-empty-href: "The link's href is empty. Did you mean to use a <button>?";
+
+    outline: var(--error-outline);
+  }
+
+  a[href$='#'] {
+    --error-empty-hash: "The link's href ends with a fragment to nowhere. Did you mean to use a <button>?";
+
+    outline: var(--error-outline);
+  }
+
+  a[href^='javascript'] {
+    --error-javascript-href: "The link's href appears to call JavaScript rather than navigate to a location. Did you mean to use a <button>?";
+
+    outline: var(--error-outline);
+  }
+
+  a[disabled] {
+    --error-disabled-link: 'The disabled property is not valid on links. Did you mean to use a <button>?';
+
+    outline: var(--error-outline);
+  }
+
+  a[aria-disabled] {
+    --error-disabled-link: 'The aria-disabled property is not valid on links. Did you mean to use a <button>?';
+
+    outline: var(--error-outline);
+  }
+
+  :is(div, span)[role='button'] {
+    --error-generic-button-role: 'A non-interactive element has been given a button role. Did you mean to use a <button>?';
+
+    outline: var(--error-outline);
+  }
+
+  input[role="button"] {
+    --error-input-button-role: 'An input was given a button role. Did you mean to use a <button>?';
+
+    outline: var(--error-outline);
+  }
+
+  :is(div, span)[tabindex='0']:not([role]) {
+    --error-generic-focusable: 'A non-interactive element has been placed in the tab order. Did you mean to use a <button>?';
+
+    outline: var(--error-outline);
+  }
+
+  :is(div, span)[onclick] {
+    --error-generic-clickable: 'A click handler has been added to a non-interactive element. Did you mean to use a <button>?';
+
+    outline: var(--error-outline);
+  }
+
+  label:not(:has(:is(input, output, textarea, select)), [for]) {
+    --error-labeling-nothing: 'This label is not actually labeling anything. Did you mean to wrap it around an input or set a for attribute on it?';
+
+    outline: var(--error-outline);
+  }
+
+  fieldset:not(:has(legend)) {
+    --error-missing-legend: 'This fieldset does not have a legend. Is this a grouping of fields that can each be described by a common label? If not, no fieldset is necessary, otherwise a legend is needed.';
+
+    outline: var(--error-outline);
+  }
+
+  img:not([alt]) {
+    --error-missing-alt-text: 'This image does not have alt text. Even if it is purely decorative, the alt attribute must exist.';
+
+    outline: var(--error-outline);
+  }
+
+  figcaption:not(figure > figcaption) {
+    --error-figcaption-not-child: 'The figcaption is not a direct child of a figure';
+
+    outline: var(--error-outline);
+  }
+
+  figure > figcaption ~ figcaption {
+    --error-multiple-figcaptions: 'There are two figcaptions for one figure';
+
+    outline: var(--error-outline);
+  }
+
+  figcaption:empty {
+    --error-figcaption-empty: 'The figcaption is empty';
+
+    outline: var(--error-outline);
+  }
+
+  figure:not(:is([aria-label], [aria-labelledby]), :has(figcaption)) {
+    --error-no-figure-label: 'The figure is not labeled by any applicable method';
+
+    outline: var(--error-outline);
+  }
+
+  body :not(:is(header, nav, main, aside, footer), :is(header, nav, main, aside, footer) *) {
+    --error-content-outside-landmark: 'You have some content that is not inside a landmark (header, nav, main, aside, or footer)';
+
+    outline: var(--error-outline);
+  }
+
+  :is(div, span)[aria-label]:not([role]),
+  :is(div, span)[aria-labelledby]:not([role]) {
+    --error-generic-element-label: 'Generic elements cannot be given accessible names without changing their roles. Did you mean to use an element with a landmark role?';
+
+    outline: var(--error-outline);
+  }
+
+  dl:not(:has(dt ~ dd)) {
+    --error-malformed-description-list: 'Description lists require both <dt> and <dd> elements. Did you mean to use a <ul> or <ol>?';
+
+    outline: var(--error-outline);
+  }
+
+  :is(a:empty, a:has(img:not([alt]))):not([aria-label], [aria-labelledby], [title]) {
+    --error-empty-link: 'This link does not have an accessible name. It should have text content or a label from aria-label, aria-labelledby, or the title attribute.';
+
+    outline: var(--error-outline);
+  }
+
+  :is(button:empty, button:has(img:not([alt]))):not([aria-label], [aria-labelledby], [title]) {
+    --error-empty-button: 'This button does not have an accessible name. It should have text content or a label from aria-label, aria-labelledby, or the title attribute.';
+
+    outline: var(--error-outline);
+  }
+
+  :is([role="tooltip"]:empty, [role="tooltip"]:has(img:not([alt]))):not([aria-label], [aria-labelledby], [title]) {
+    --error-empty-tooltip: 'This tooltip does not have an accessible name. It should have text content or a label from aria-label, aria-labelledby, or the title attribute.';
+
+    outline: var(--error-outline);
+  }
+
+  [role="dialog"]:not([aria-label], [aria-labelledby], [title]) {
+    --error-unnamed-dialog: 'ARIA dialogs require accessible names.';
+
+    outline: var(--error-outline);
+  }
+
+  [role="textbox"]:not([aria-label], [aria-labelledby], [title]) {
+    --error-unnamed-dialog: 'ARIA textboxes require accessible names.';
+
+    outline: var(--error-outline);
+  }
+
+  [role="progressbar"]:not([aria-label], [aria-labelledby], [title]) {
+    --error-unnamed-dialog: 'ARIA progress bars require accessible names.';
+
+    outline: var(--error-outline);
+  }
+
+  [role="radiogroup"]:not([aria-label], [aria-labelledby], [title]) {
+    --error-unnamed-dialog: 'ARIA radio groups require accessible names.';
+
+    outline: var(--error-outline);
+  }
+
+  [role="tabpanel"]:not([aria-label], [aria-labelledby], [title]) {
+    --error-unnamed-dialog: 'ARIA tab panels require accessible names.';
+
+    outline: var(--error-outline);
+  }
+
+  :is(aside, [role="complementary"]):not([aria-label], [aria-labelledby], [title]) {
+    --error-unnamed-dialog: 'Aside landmark regions require accessible names.';
+
+    outline: var(--error-outline);
+  }
+
+  input[type="radio"][name]:not(fieldset input) {
+    --error-ungrouped-radio-button: 'This radio button is not grouped in a fieldset. If the options are related, they will benefit from a shared label (<legend>) that describes the group.';
+
+    outline: var(--error-outline);
+  }
+
+  input[role="combobox"]:not([aria-expanded]) {
+    --error-combobox-missing-aria-expanded: 'ARIA comboboxes require the aria-expanded attribute.';
+
+    outline: var(--error-outline);
+  }
+
+  :is(a, button, [role="link"], [role="button"]) :is(a, button, [role="link"], [role="button"], input, select, textarea) {
+    --error-nested-interactive-elements: 'Interactive elements must not be nested within other interactive elements';
+
+    outline: var(--error-outline);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6, [role="heading"]):empty:not([aria-label], [aria-labelledby], [title]) {
+    --error-unnamed-heading: 'Headings require accessible names.';
+
+    outline: var(--error-outline);
+  }
+
+  body:not(:has(h1)) {
+    --error-no-heading-level-1: 'Pages should contain a level-one heading';
+
+    outline: var(--error-outline);
+  }
+
+  body:not(:has(main)) {
+    --error-no-main-landmark: 'Pages should have a main landmark region.';
+
+    outline: var(--error-outline);
+  }
+
+  :is(ul, ol) > :not(li, script, template) {
+    --error-list-child-not-allowed: '<ul> and <ol> elements can only contain <li>, <script>, or <template> elements as direct descendants.';
+
+    outline: var(--error-outline);
+  }
+
+  li:not(ul > li, ol > li) {
+    --error-rogue-list-item: '<li> elements must be direct descendants of <ul> or <ol> elements.';
+
+    outline: var(--error-outline);
+  }
+
+  table:not(:has(tr > th)) {
+    --error-table-no-headers: "This table does not have headers defined. You aren't using a table for layout, are you?";
+
+    outline: var(--error-outline);
+  }
+
+  [aria-hidden]:has(:is(a, button, [role="link"], [role="button"], input, select, textarea):not([tabindex="-1"])) {
+    --error-interactive-within-aria-hidden: 'This interactive element is wrapped by an element that is aria-hidden, so it will not be announced by screen readers despite being focusable.';
+
+    outline: var(--error-outline);
+  }
+}
