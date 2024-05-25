@@ -271,5 +271,26 @@
 		"author": "Stephen Farrugia",
 		"authorLink": "https://fasterandworse.com/",
 		"description": "OpenAI can't make ChatGPT more accurate or reliable, so the only way they can improve \"performance\" is to make it faster and more confident. Keep an eye out for faked/trivial demos. Are there actual use cases where inaccuracy or lack of supervision is acceptable?"
+	},
+	{
+		"link": "https://defector.com/if-kevin-roose-was-chatgpt-with-a-spray-on-beard-could-anyone-tell",
+		"title": "If Kevin Roose Was ChatGPT With A Spray-On Beard, Could Anyone Tell?",
+		"author": "Albert Burneko",
+		"authorLink": "https://defector.com/author/albert-burneko",
+		"description": "Maybe don't listen to people who are consistently wrong about things all the time."
+	},
+	{
+		"link": "https://www.baldurbjarnason.com/2024/the-deskilling-of-web-dev-is-harming-us-all/",
+		"title": "The deskilling of web dev is harming the product but, more importantly, it's damaging our health - this is why burnout happens",
+		"author": "Baldur Bjarnason",
+		"authorLink": "https://www.baldurbjarnason.com/",
+		"description": "Full-stack developers have ruined the quality of the web (and the job market), just look at my evaluations of the top 100 US websites."
+	},
+	{
+		"link": "https://insights.priva.cat/p/privacy-disasters-microsoft-just",
+		"title": "Privacy Disasters: Microsoft, Just Because You Can",
+		"author": "Carey Lening",
+		"authorLink": "https://substack.com/@careylening",
+		"description": "Microsoft's new Recall product is just such an obvious privacy/security nightmare, how did it ever get past the brainstorming phase?"
 	}
 ]
