@@ -299,5 +299,26 @@
 		"author": "Neven Mrgan",
 		"authorLink": "https://mrgan.com/",
 		"description": "Don't be like this friend. If you want to automate boring corporate emails, I can understand that, but friendly communication? C'mon."
+	},
+	{
+		"link": "https://anthonyhobday.com/sideprojects/saferules/",
+		"title": "Visual design rules you can safely follow every time",
+		"author": "Anthony Hobday",
+		"authorLink": "https://anthonyhobday.com/",
+		"description": "An excellent set of rules of thumb that you can use to make sure your designs don't look terrible."
+	},
+	{
+		"link": "https://lmnt.me/blog/what-do-we-want-computers-to-do.html",
+		"title": "What Do We Want Computers to Do?",
+		"author": "Louie Mantia",
+		"authorLink": "https://lmnt.me/",
+		"description": "I'd rather computers help humans do things and automate mundane tasks. To be clear, creating art is not a mundane task."
+	},
+	{
+		"link": "https://andrewwalpole.com/blog/opinions-for-writing-good-css/",
+		"title": "Opinions for Writing Good CSS",
+		"author": "Andrew Walpole",
+		"authorLink": "https://andrewwalpole.com/",
+		"description": "These are some good basic rules, but I especially agree with \"don't paste CSS.\" You gotta understand how the properties build on each other to understand the full picture."
 	}
 ]

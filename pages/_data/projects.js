@@ -142,6 +142,22 @@ const projects = [
 		classification: 'Side Project',
 		roles: ['Product Owner', 'Individual Contributor'],
 	},
+	{
+		name: 'WordPress Navigation and Patterns Updates',
+		description:
+			'A client needed to build a sustainability page, but wanted it to stand out from the rest of their site, so we developed flexible patterns for it and redesigned/reorganized their navigation to make room for a new top-level link.',
+		startDate: '2024-04-01',
+		classification: 'Client Project',
+		roles: ['Tech Lead', 'Individual Contributor'],
+	},
+	{
+		name: 'Product Search Page',
+		description:
+			'A client selling specialized parts needed a custom search/filtering page so their highly technical customers could find parts that matched a variety of characteristics.',
+		startDate: '2024-06-01',
+		classification: 'Client Project',
+		roles: ['Tech Lead', 'Individual Contributor'],
+	},
 ].sort((a, b) => {
 	if (a.startDate < b.startDate) {
 		return 1;
@@ -156,5 +172,5 @@ const projects = [
 
 module.exports = {
 	projects,
-	recentProjects: projects.slice(0, 4)
+	recentProjects: projects.slice(0, 4),
 };
