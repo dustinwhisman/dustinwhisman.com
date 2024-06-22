@@ -320,5 +320,23 @@
 		"author": "Andrew Walpole",
 		"authorLink": "https://andrewwalpole.com/",
 		"description": "These are some good basic rules, but I especially agree with \"don't paste CSS.\" You gotta understand how the properties build on each other to understand the full picture."
+	},
+	{
+		"link": "https://switching.software/",
+		"title": "switching.software",
+		"description": "A handy resource for finding alternatives to problematic software. Especially useful after recent high profile terms of use update fuckery."
+	},
+	{
+		"link": "https://www.ftc.gov/business-guidance/blog/2024/06/succor-borne-every-minute",
+		"title": "Succor borne every minute",
+		"author": "Michael Atleson",
+		"description": "The FTC has been doing great antitrust work recently, and they're absolutely willing to take on issues with AI. Hell yeah."
+	},
+	{
+		"link": "https://www.youtube.com/watch?app=desktop&v=hXulDH2jwvU",
+		"title": "Hello My Beautiful Creatures (2.5 hour video)",
+		"author": "Joel Haver",
+		"authorLink": "https://www.youtube.com/@Joel-Haver",
+		"description": "Joel is an incredibly ambitious film maker who decided to make 12 movies in 2024, and on top of that, he decided to make one of them a 2.5 hour STOP MOTION movie. It also wasn't planned way in advance. He and his collaborators just kind of figured it out as they went, which is incredible, given how well the final result works."
 	}
 ]
