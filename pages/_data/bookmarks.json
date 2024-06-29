@@ -338,5 +338,26 @@
 		"author": "Joel Haver",
 		"authorLink": "https://www.youtube.com/@Joel-Haver",
 		"description": "Joel is an incredibly ambitious film maker who decided to make 12 movies in 2024, and on top of that, he decided to make one of them a 2.5 hour STOP MOTION movie. It also wasn't planned way in advance. He and his collaborators just kind of figured it out as they went, which is incredible, given how well the final result works."
+	},
+	{
+		"link": "https://ooh.directory/",
+		"title": "ooh.directory",
+		"author": "Phil Gyford",
+		"authorLink": "https://www.gyford.com/",
+		"description": "This is a collection of thousands of blogs about all kinds of topics, all human-made and free of SEO chicanery and AI slop."
+	},
+	{
+		"link": "https://tools.keithjgrant.com/theme-machine/",
+		"title": "Theme Machine",
+		"author": "Keith J. Grant",
+		"authorLink": "https://keithjgrant.com/",
+		"description": "Always on the lookout for a good color picker and palette generator, and this does both with support for p3 colors like OKLCH."
+	},
+	{
+		"link": "https://keithjgrant.com/posts/2024/06/a-structured-approach-to-custom-properties/",
+		"title": "A Structured Approach to Custom Properties",
+		"author": "Keith J. Grant",
+		"authorLink": "https://keithjgrant.com/",
+		"description": "This approach to setting up design tokens makes a lot of sense and balances ease of use with consistency. Definitely going to refer back to this when setting up new projects."
 	}
 ]
