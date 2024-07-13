@@ -359,5 +359,19 @@
 		"author": "Keith J. Grant",
 		"authorLink": "https://keithjgrant.com/",
 		"description": "This approach to setting up design tokens makes a lot of sense and balances ease of use with consistency. Definitely going to refer back to this when setting up new projects."
+	},
+	{
+		"link": "https://piccalil.li/blog/its-about-time-i-tried-to-explain-what-progressive-enhancement-actually-is/",
+		"title": "It's about time I tried to explain what progressive enhancement actually is",
+		"author": "Andy Bell",
+		"authorLink": "https://piccalil.li/author/andy-bell",
+		"description": "In case you've heard people talk about progressive enhancement but don't have a good handle on what that actually means or how to build things that way."
+	},
+	{
+		"link": "https://www.baldurbjarnason.com/2024/new-web-dev/",
+		"title": "New Web Development. Or, why Copilots and chatbots are particularly bad for modern web dev",
+		"author": "Baldur Bjarnason",
+		"authorLink": "https://www.baldurbjarnason.com/",
+		"description": "When the only jobs are for senior React devs, how are junior devs supposed to learn the fundamentals? Leaving that to chatbots that are trained on outdated StackOverflow answers and make shit up all the time seems like a bad idea."
 	}
 ]
