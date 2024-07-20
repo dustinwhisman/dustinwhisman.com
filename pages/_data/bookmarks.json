@@ -373,5 +373,12 @@
 		"author": "Baldur Bjarnason",
 		"authorLink": "https://www.baldurbjarnason.com/",
 		"description": "When the only jobs are for senior React devs, how are junior devs supposed to learn the fundamentals? Leaving that to chatbots that are trained on outdated StackOverflow answers and make shit up all the time seems like a bad idea."
+	},
+	{
+		"link": "https://chriscoyier.net/2024/07/13/its-really-this-thing-that-gets-me/",
+		"title": "It's really this thing that gets me.",
+		"author": "Chris Coyier",
+		"authorLink": "https://chriscoyier.net/",
+		"description": "If accessibility overlays actually worked, they'd be sold to users who would benefit from using them on all websites, not to companies as compliance shields."
 	}
 ]
