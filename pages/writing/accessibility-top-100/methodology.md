@@ -51,6 +51,8 @@ While not strictly related to accessibility, I'm going to track the initial page
 
 Why track these numbers? I have a hunch that there will be a correlation between page weight and accessibility issues. I would expect more lightweight pages that lean on HTML and CSS to be more accessible than ones that rely heavily on JS. We'll see if that theory checks out as I check out more of these sites.
 
+Update (July 2024): gathering these numbers was a pain in the ass and I stopped caring to collect them. I left the stats on the first handful of sites I evaluated, but I'm not planning on continuing that going forward. If I see anything particularly egregious related to page weight, I'll call it out. 
+
 ## Caveats
 
 These are not going to be full site audits, and I'm not going to write up detailed reports. The goal here is education, so I'm going to find the most noteworthy or most common issues and explain how to avoid them or fix them. I'll also include the date that I evaluated the site, so if you check for the same issues later, and they're fixed, great! That means progress has been made.
