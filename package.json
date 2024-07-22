@@ -54,7 +54,7 @@
 		"image-size": "^1.1.1",
 		"markdown-it": "^14.1.0",
 		"markdown-it-anchor": "^9.0.1",
-		"minisearch": "^7.0.0",
+		"minisearch": "^7.1.0",
 		"prompts": "^2.4.2"
 	},
 	"browserslist": [
