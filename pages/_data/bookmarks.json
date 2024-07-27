@@ -380,5 +380,12 @@
 		"author": "Chris Coyier",
 		"authorLink": "https://chriscoyier.net/",
 		"description": "If accessibility overlays actually worked, they'd be sold to users who would benefit from using them on all websites, not to companies as compliance shields."
+	},
+	{
+		"link": "https://www.brightball.com/articles/story-points-are-pointless-measure-queues",
+		"title": "Story Points are Pointless, Measure Queues",
+		"author": "Barry Jones",
+		"authorLink": "https://www.brightball.com/",
+		"description": "Story points are confusing, inconsistent, and frequently misused, so maybe instead of talking about whether a story is 3 points or 5 points, we should talk about the details of the work that needs to be done."
 	}
 ]
