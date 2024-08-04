@@ -387,5 +387,19 @@
 		"author": "Barry Jones",
 		"authorLink": "https://www.brightball.com/",
 		"description": "Story points are confusing, inconsistent, and frequently misused, so maybe instead of talking about whether a story is 3 points or 5 points, we should talk about the details of the work that needs to be done."
+	},
+	{
+		"link": "https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/",
+		"title": "A handful of reasons JavaScript won't be available",
+		"author": "Andy Bell",
+		"authorLink": "https://piccalil.li/author/andy-bell",
+		"description": "Of course it's never been a safe assumption that the most brittle language out of HTML, CSS, and JS will be available, and yet it's used to do everything for far too many sites."
+	},
+	{
+		"link": "https://heydonworks.com/article/the-anchor-element/",
+		"title": "The Anchor Element",
+		"author": "Heydon Pickering",
+		"authorLink": "https://heydonworks.com/",
+		"description": "Some really lovely metaphors in here. I really hope this turns into a series about all the major HTML elements."
 	}
 ]
