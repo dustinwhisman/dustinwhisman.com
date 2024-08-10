@@ -401,5 +401,17 @@
 		"author": "Heydon Pickering",
 		"authorLink": "https://heydonworks.com/",
 		"description": "Some really lovely metaphors in here. I really hope this turns into a series about all the major HTML elements."
+	},
+	{
+		"link": "https://www.matuzo.at/blog/2023/cascade-layers-are-useless",
+		"title": "Cascade Layers are useless*",
+		"author": "Manuel Matuzović",
+		"authorLink": "https://www.matuzo.at/",
+		"description": "*if you don't understand the problems they solve. This is a nice, brief explanation of what Cascade Layers are for and how to combine them with other approaches to make authoring CSS easier."
+	},
+	{
+		"link": "https://plainvanillaweb.com/index.html",
+		"title": "Plain Vanilla",
+		"description": "I'd like to see more resources like this to help move web development away from complex frameworks. Browsers are good now! Use the platform!"
 	}
 ]
