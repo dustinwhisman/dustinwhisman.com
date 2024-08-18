@@ -413,5 +413,26 @@
 		"link": "https://plainvanillaweb.com/index.html",
 		"title": "Plain Vanilla",
 		"description": "I'd like to see more resources like this to help move web development away from complex frameworks. Browsers are good now! Use the platform!"
+	},
+	{
+		"link": "https://theonion.com/nation-wary-of-suddenly-usable-website/",
+		"title": "Nation Wary Of Suddenly Usable Website",
+		"author": "The Onion",
+		"authorLink": "https://theonion.com/",
+		"description": "Good to see The Onion returning to form after being hollowed out by corporate owners over the past decade."
+	},
+	{
+		"link": "https://janmaarten.com/robots/",
+		"title": "Good sabotage for bad robots",
+		"author": "Jan Maarten",
+		"authorLink": "https://janmaarten.com/",
+		"description": "A handy collection of tools and techniques for blocking robots from drinking your milkshake."
+	},
+	{
+		"link": "https://infrequently.org/series/reckoning",
+		"title": "Reckoning (4 part series)",
+		"author": "Alex Russell",
+		"authorLink": "https://infrequently.org/",
+		"description": "Required reading for people who are also tired of the JavaScript industrial complex and need some hard data to change minds."
 	}
 ]
