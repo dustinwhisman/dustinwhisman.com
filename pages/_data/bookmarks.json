@@ -434,5 +434,12 @@
 		"author": "Alex Russell",
 		"authorLink": "https://infrequently.org/",
 		"description": "Required reading for people who are also tired of the JavaScript industrial complex and need some hard data to change minds."
+	},
+	{
+		"link": "https://doriantaylor.com/p-dumb",
+		"title": "P(Dumb)",
+		"author": "Dorian Taylor",
+		"authorLink": "https://doriantaylor.com/",
+		"description": "A really good breakdown of what machine learning and LLMs are capable of now and what would actually need to happen before AI doomsday scenarios to be realistic. If someone is talking about AI risks and they mean paperclips, you can ignore them. Let's focus on misinformation, creative theft, and non-consensual AI-generated porn first."
 	}
 ]
