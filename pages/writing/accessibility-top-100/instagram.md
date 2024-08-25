@@ -104,7 +104,7 @@ When zooming in, the “decorative” images are hidden and the Instagram logo g
 
 The mobile experience is essentially the same as desktop, but the focus indicators are orange now (except for the ones that are randomly blue). At least this time when I tried a bogus login, the incorrect password message appeared right away instead of after going through a CAPTCHA. Unfortunately, the color contrast on the red text against the background is too low and there are no programmatic associations between the form or any inputs and the error message, so it’s unlikely a screen reader user would know about the error message.
 
-### Testing the signup process
+## Testing the signup process
 
 ### Automated scans
 
@@ -126,7 +126,7 @@ I have a hunch that I won’t be allowed to sign up, since Facebook decided I ha
 
 I signed up by exclusively using the keyboard and didn’t run into any issues. Disabled submit buttons aside, the forms at least have the basics in place to not be totally broken. It’s a low bar, but they cleared it.
 
-### Testing the home page
+## Testing the home page
 
 Immediately after signing up, I was presented with a very iOS-looking prompt (I used a Windows PC) for allowing notifications, which feels deceptive, and I instinctively dismissed it before I thought to evaluate it for accessibility. I was still going keyboard-only, though, and the prompt received focus first and responded as expected, so that’s something.
 
@@ -165,10 +165,10 @@ Alt text seems to be automatically generated if account owners don’t write it 
 
 At least when I zoom the page on desktop (where it’s allowed), nothing overflows and the text scales up or gets swapped with icon only links that have accessible names.
 
-### Results
+## Results
 
 If I had stopped at the login or signup page, I might have given Instagram a C, but there are so many more problems with the logged in experience, that I have to knock it down to a D-. Setting up a login form should be a slam-dunk, but they managed to screw it up pretty badly with the CAPTCHA and error messaging, and there are so many things that are fundamentally broken when logged in that it’s hard to ignore.
 
-It’s not the worst I’ve seen, but it’s far from the best. Next time, we’ll see if IMDB can do any better.
+It’s not the worst I’ve seen, but it’s far from the best. Next time, we’ll see if IMDb can do any better.
 
 {% include 'partials/article-pagination.njk' %}
