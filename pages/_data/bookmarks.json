@@ -448,5 +448,55 @@
 		"author": "Léonie Watson",
 		"authorLink": "https://tink.uk/",
 		"description": "This is cool. Not the play specifically (I'm sure it's cool, too), but giving people a tactile tour of the stage in addition to audio descriptions is super rad."
+	},
+	{
+		"link": "https://briefs.video/videos/what-is-react/",
+		"title": "What Is React.js? (5 minute video)",
+		"author": "Heydon Pickering",
+		"authorLink": "https://briefs.video/",
+		"description": "Here's hoping this becomes the top search result at some point. It's worth reading the transcript for the director's notes, *chef-kiss*."
+	},
+	{
+		"link": "https://www.sigops.org/2024/the-moral-implications-of-being-a-moderately-successful-computer-scientist-and-a-woman/",
+		"title": "The Moral Implications of Being a Moderately Successful Computer Scientist and a Woman",
+		"author": "Irene Y. Zhang",
+		"authorLink": "https://irenezhang.net/",
+		"description": "I want other men to read this and at least attempt to make things better by not being assholes, but I have a feeling the men who are willing to do that are already on board. Worth reading nevertheless."
+	},
+	{
+		"link": "https://modem.io/blog/blog-monetization/",
+		"title": "How to Monetize a Blog",
+		"description": "I won't spoil it, but this is amazing."
+	},
+	{
+		"link": "https://molily.de/something-went-wrong/",
+		"title": "Something went wrong",
+		"author": "Mathias Schäfer",
+		"authorLink": "https://molily.de/",
+		"description": "Add it to the pile of other articles about the failings of framework (React) driven development. This has some nice steps forward, though: \"Ways out of the JavaScript crisis\""
+	},
+	{
+		"link": "https://defector.com/neither-elon-musk-nor-anybody-else-will-ever-colonize-mars",
+		"title": "Neither Elon Musk Nor Anybody Else Will Ever Colonize Mars",
+		"author": "Albert Burneko",
+		"authorLink": "https://defector.com/author/albert-burneko",
+		"description": "There's something so fun about thoroughly dunking on a such a bad idea."
+	},
+	{
+		"link": "https://devpedia.pages.dev/",
+		"title": "Dev Encyclopedia;",
+		"description": "In case you forget what technical jargon means or are afraid to ask when you don't know."
+	},
+	{
+		"link": "https://www.youtube.com/playlist?app=desktop&list=PLn7dsvRdQEfFompoGO_CE5z-_HjEdgVit",
+		"title": "Inclusive Design 24 (YouTube playlist)",
+		"author": "Inclusive Design 24",
+		"authorLink": "https://inclusivedesign24.org/2024/",
+		"description": "24 hours of talks about accessibility and inclusive design. I have not watched all of them, but there are so many talks that you're bound to find something of interest."
+	},
+	{
+		"link": "https://shifty.site/",
+		"title": "The Layout Shift Challenge",
+		"description": "We've entered a phase where developers are so tired of building broken interfaces by accident that they're building broken interfaces on purpose."
 	}
 ]
