@@ -7,6 +7,7 @@
 		"node": ">=20",
 		"npm": ">=10"
 	},
+	"type": "module",
 	"scripts": {
 		"prestart": "check-node-version --package && npm run clean",
 		"prebuild": "check-node-version --package && npm run clean",
@@ -14,8 +15,8 @@
 		"build": "npm run eleventy:build && npm run js:build",
 		"eleventy:build": "eleventy",
 		"eleventy:dev": "eleventy --serve --incremental",
-		"js:build": "NODE_ENV=production node esbuild.mjs",
-		"js:dev": "NODE_ENV=development node esbuild.mjs",
+		"js:build": "NODE_ENV=production node esbuild.js",
+		"js:dev": "NODE_ENV=development node esbuild.js",
 		"clean": "rm -rf dist",
 		"lint": "run-s lint:css lint:js",
 		"lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
