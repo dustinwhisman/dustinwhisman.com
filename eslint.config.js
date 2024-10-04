@@ -17,6 +17,7 @@ export default [
 		},
 	},
 	{
-		ignores: ['node_modules', 'dist'],
+		// eslint currently cannot parse JSON import syntax `with { type: 'json }`
+		ignores: ['node_modules', 'dist', 'e2e-tests/accessibility.spec.js'],
 	},
 ];
