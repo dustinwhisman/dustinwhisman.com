@@ -1,10 +1,10 @@
 /* eslint-env node */
-const fs = require('fs');
-const path = require('path');
-const sizeOf = require('image-size');
+import fs from 'fs';
+import path from 'path';
+import sizeOf from 'image-size';
 
 const getImagePaths = () => {
-	const directoryPath = path.join(__dirname, '../../src/public/images/cats');
+	const directoryPath = path.join(import.meta.dirname, '../../src/public/images/cats');
 	const files = fs
 		.readdirSync(directoryPath, { withFileTypes: true })
 		.filter((file) => !file.isDirectory() && file.name.endsWith('.jpg'))
@@ -51,7 +51,7 @@ const catsByMonth = picturesOfCats.reduce((monthsObj, picture) => {
 	};
 }, {});
 
-module.exports = {
+export default {
 	// generate a random string for service worker versioning, such as "36f4-1234-8c7a"
 	random() {
 		const segment = () => (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
