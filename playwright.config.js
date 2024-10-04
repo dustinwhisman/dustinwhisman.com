@@ -1,7 +1,8 @@
-const { defineConfig } = require('@playwright/test');
-require('dotenv').config();
+import { defineConfig } from '@playwright/test';
+import { config } from 'dotenv';
+config();
 
-module.exports = defineConfig({
+export default defineConfig({
 	testDir: './e2e-tests',
 	timeout: 30 * 1000,
 	expect: {

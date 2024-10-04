@@ -178,7 +178,7 @@ const projects = [
 	return 0;
 });
 
-module.exports = {
+export default {
 	projects,
 	recentProjects: projects.slice(0, 4),
 };

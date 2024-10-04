@@ -1,9 +1,9 @@
-const hljs = require('highlight.js');
-const markdownIt = require('markdown-it');
-const markdownItAnchor = require('markdown-it-anchor');
-const pluginRSS = require('@11ty/eleventy-plugin-rss');
+import hljs from 'highlight.js';
+import markdownIt from 'markdown-it';
+import markdownItAnchor from 'markdown-it-anchor';
+import pluginRSS from '@11ty/eleventy-plugin-rss';
 
-module.exports = function (eleventyConfig) {
+export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
 
 	const markdownOptions = {
@@ -43,13 +43,13 @@ module.exports = function (eleventyConfig) {
 			closingSingleTag: 'default',
 		},
 	});
+};
 
-	return {
-		dir: {
-			input: 'pages',
-			output: 'dist',
-			includes: '../src',
-		},
-		markdownTemplateEngine: 'njk',
-	};
+export const config = {
+	dir: {
+		input: 'pages',
+		output: 'dist',
+		includes: '../src',
+	},
+	markdownTemplateEngine: 'njk',
 };

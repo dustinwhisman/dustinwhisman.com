@@ -7,6 +7,7 @@
 		"node": ">=20",
 		"npm": ">=10"
 	},
+	"type": "module",
 	"scripts": {
 		"prestart": "check-node-version --package && npm run clean",
 		"prebuild": "check-node-version --package && npm run clean",
@@ -14,8 +15,8 @@
 		"build": "npm run eleventy:build && npm run js:build",
 		"eleventy:build": "eleventy",
 		"eleventy:dev": "eleventy --serve --incremental",
-		"js:build": "NODE_ENV=production node esbuild.mjs",
-		"js:dev": "NODE_ENV=development node esbuild.mjs",
+		"js:build": "NODE_ENV=production node esbuild.js",
+		"js:dev": "NODE_ENV=development node esbuild.js",
 		"clean": "rm -rf dist",
 		"lint": "run-s lint:css lint:js",
 		"lint:css": "stylelint \"src/css/**/*.css\" --color --formatter verbose",
@@ -33,8 +34,8 @@
 	"author": "Dustin Whisman",
 	"license": "CC BY 4.0",
 	"devDependencies": {
-		"@11ty/eleventy": "^2.0.1",
-		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-plugin-rss": "^2.0.2",
 		"@axe-core/playwright": "^4.10.0",
 		"@eslint/js": "^9.11.1",
 		"@playwright/test": "^1.47.2",
@@ -43,7 +44,7 @@
 		"esbuild": "^0.24.0",
 		"eslint": "^9.11.1",
 		"eslint-config-prettier": "^9.1.0",
-		"globals": "^15.9.0",
+		"globals": "^15.10.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^3.3.3",
 		"stylelint": "^16.9.0",

@@ -1,8 +1,8 @@
-const globals = require('globals');
-const js = require('@eslint/js');
-const prettier = require('eslint-config-prettier');
+import globals from 'globals';
+import js from '@eslint/js';
+import prettier from 'eslint-config-prettier';
 
-module.exports = [
+export default [
 	js.configs.recommended,
 	prettier,
 	{
@@ -17,6 +17,7 @@ module.exports = [
 		},
 	},
 	{
-		ignores: ['node_modules', 'dist'],
+		// eslint currently cannot parse JSON import syntax `with { type: 'json }`
+		ignores: ['node_modules', 'dist', 'e2e-tests/accessibility.spec.js'],
 	},
 ];

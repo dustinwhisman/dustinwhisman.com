@@ -6,7 +6,7 @@
 		"title": "Dustin Whisman",
 		"subtitle": "The collected writings of Dustin Whisman, web developer.",
 		"language": "en",
-		"url": "https://dustinwhisman.com",
+		"base": "https://dustinwhisman.com/",
 		"author": {
 			"name": "Dustin Whisman"
 		}
@@ -14,22 +14,22 @@
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.base }}" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>{{ metadata.title }}</title>
-		<link>{{ metadata.url }}</link>
-		<atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
+		<link>{{ metadata.base }}</link>
+		<atom:link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" type="application/rss+xml" />
 		<description>{{ metadata.subtitle }}</description>
 		<language>{{ metadata.language }}</language>
 		{%- for post in collections.writing | reverse | batch(10) | first %}
-		{%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+		{%- set absolutePostUrl = post.url | htmlBaseUrl(metadata.base) %}
 		<item>
 			<title>{{ post.data.articleTitle }}</title>
 			<link>{{ absolutePostUrl }}</link>
 			<dc:creator>{{ metadata.author.name }}</dc:creator>
 			<pubDate>{{ post.date.toUTCString() }}</pubDate>
 			<guid>{{ absolutePostUrl }}</guid>
-			<description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+			<description>{{ post.templateContent | renderTransforms(post.data.page, metadata.base) }}</description>
 		</item>
 		{%- endfor %}
 	</channel>
