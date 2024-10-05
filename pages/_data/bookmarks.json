@@ -498,5 +498,36 @@
 		"link": "https://shifty.site/",
 		"title": "The Layout Shift Challenge",
 		"description": "We've entered a phase where developers are so tired of building broken interfaces by accident that they're building broken interfaces on purpose."
+	},
+	{
+		"link": "https://hono.dev/",
+		"title": "Hono",
+		"description": "A modern JavaScript backend based on web standards that runs on any JS runtime (Node, Deno, Bun)."
+	},
+	{
+		"link": "https://github.com/dimdenGD/ultimate-express",
+		"title": "µExpress / Ultimate Express",
+		"description": "A drop-in replacement for Express that is apparently way faster. I may or may not be gathering a list of backend tools to evaluate for ease of use, performance, and portability."
+	},
+	{
+		"link": "https://aworkinglibrary.com/writing/coming-home",
+		"title": "Coming home",
+		"author": "Mandy Brown",
+		"authorLink": "https://aworkinglibrary.com/",
+		"description": "This piece will likely resonate with you if you have a personal site and publish things by and for yourself."
+	},
+	{
+		"link": "https://www.bram.us/2024/09/29/solved-by-css-scroll-driven-animations-hide-a-header-when-scrolling-up-show-it-again-when-scrolling-down/",
+		"title": "Solved by CSS Scroll-Driven Animations: hide a header when scrolling down, show it again when scrolling up.",
+		"author": "Bramus",
+		"authorLink": "https://www.bram.us/",
+		"description": "I'm not a huge fan of the pattern, but I am a fan of being able to use CSS to do things that used to only be possible with JavaScript."
+	},
+	{
+		"link": "https://frontendmasters.com/blog/whats-the-difference-between-htmls-dialog-element-and-popovers/",
+		"title": "What's the Difference Between HTML's Dialog Element and Popovers?",
+		"author": "Chris Coyier",
+		"authorLink": "https://frontendmasters.com/blog/author/chriscoyier/",
+		"description": "We're getting some awesome declarative HTML implementations of dialogs and popovers, so it's worth knowing how they work and what the differences are between them."
 	}
 ]
