@@ -529,5 +529,24 @@
 		"author": "Chris Coyier",
 		"authorLink": "https://frontendmasters.com/blog/author/chriscoyier/",
 		"description": "We're getting some awesome declarative HTML implementations of dialogs and popovers, so it's worth knowing how they work and what the differences are between them."
+	},
+	{
+		"link": "https://www.gov.uk/service-manual/technology/using-progressive-enhancement",
+		"title": "Building a robust frontend using progressive enhancement",
+		"author": "GOV.UK",
+		"authorLink": "https://www.gov.uk/",
+		"description": "A simple and clear description of what progressive enhancement is and how to use it to build better websites."
+	},
+	{
+		"link": "https://tinylytics.app/",
+		"title": "tinylytics",
+		"description": "Super simple, privacy-focused analytics (basically a hit counter). So far the only analytics service to tempt me into using it. I took a peek at the JS you would need to use, and it's incredibly straightforward."
+	},
+	{
+		"link": "https://htmlforpeople.com/",
+		"title": "HTML for People",
+		"author": "Blake Watson",
+		"authorLink": "https://blakewatson.com/",
+		"description": "A great introduction to HTML for beginners or perhaps non-beginners who might have skipped the fundamentals."
 	}
 ]
