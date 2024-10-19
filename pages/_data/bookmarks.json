@@ -548,5 +548,12 @@
 		"author": "Blake Watson",
 		"authorLink": "https://blakewatson.com/",
 		"description": "A great introduction to HTML for beginners or perhaps non-beginners who might have skipped the fundamentals."
+	},
+	{
+		"link": "https://sarahmhigley.com/writing/activedescendant/",
+		"title": "Aria-activedescendant is not focus",
+		"author": "Sarah Higley",
+		"authorLink": "https://sarahmhigley.com/",
+		"description": "This may seem like a very niche, dry topic, but this is a great explainer that's as funny as it is helpful. Highly recommend."
 	}
 ]
