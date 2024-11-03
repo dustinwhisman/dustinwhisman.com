@@ -555,5 +555,10 @@
 		"author": "Sarah Higley",
 		"authorLink": "https://sarahmhigley.com/",
 		"description": "This may seem like a very niche, dry topic, but this is a great explainer that's as funny as it is helpful. Highly recommend."
+	},
+	{
+		"link": "https://js13kgames.com/2024/",
+		"title": "Js13kGames",
+		"description": "This coding challenge should dispel the notion that you need frameworks and third party libraries to build highly interactive websites. Just look at what you can do with 13KB!"
 	}
 ]
