@@ -560,5 +560,31 @@
 		"link": "https://js13kgames.com/2024/",
 		"title": "Js13kGames",
 		"description": "This coding challenge should dispel the notion that you need frameworks and third party libraries to build highly interactive websites. Just look at what you can do with 13KB!"
+	},
+	{
+		"link": "https://muan.co/posts/javascript",
+		"title": "JavaScript dos and donts",
+		"author": "Mu-An Chiou",
+		"authorLink": "https://muan.co/",
+		"description": "A handy guide to when you actually need to use JavaScript."
+	},
+	{
+		"link": "https://ecograder.com/",
+		"title": "Ecograder",
+		"description": "A nice way to quickly check whether your site has any glaring sustainability issues. A tiny, simple site like mine gets an A+, whereas something like YouTube gets an E (the scale is A to E)."
+	},
+	{
+		"link": "https://jakelazaroff.com/words/whats-a-single-page-app/",
+		"title": "What's a Single-Page App?",
+		"author": "Jake Lazaroff",
+		"authorLink": "https://jakelazaroff.com/",
+		"description": "Taxonomy is a tricky thing, but Jake does a good job breaking down all the ways we can architect sites from SSR to CSR and MPA to SPA."
+	},
+	{
+		"link": "https://alistairshepherd.uk/writing/accessibility-overlays-email/",
+		"title": "My anti-overlay client letter",
+		"author": "Alistair Shepherd",
+		"authorLink": "https://alistairshepherd.uk/",
+		"description": "For when a client or your boss asks you to install that accessibility overlay and you need to convince them otherwise."
 	}
 ]
