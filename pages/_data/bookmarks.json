@@ -586,5 +586,18 @@
 		"author": "Alistair Shepherd",
 		"authorLink": "https://alistairshepherd.uk/",
 		"description": "For when a client or your boss asks you to install that accessibility overlay and you need to convince them otherwise."
+	},
+	{
+		"link": "https://anchoreum.com/",
+		"author": "Codepip",
+		"title": "Anchoreum",
+		"description": "From the creators of Flexbox Froggy and Grid Garden, Achoreum is an interactive way to learn CSS anchor positioning, one of the cooler CSS features now making its way into browsers."
+	},
+	{
+		"link": "https://ishadeed.com/article/overflow-clip/",
+		"title": "Overflow Clip",
+		"author": "Ahmad Shadeed",
+		"authorLink": "https://ishadeed.com/",
+		"description": "Another great interactive explainer of a lesser-known CSS feature, overflow: clip"
 	}
 ]
