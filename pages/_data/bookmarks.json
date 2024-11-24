@@ -599,5 +599,19 @@
 		"author": "Ahmad Shadeed",
 		"authorLink": "https://ishadeed.com/",
 		"description": "Another great interactive explainer of a lesser-known CSS feature, overflow: clip"
+	},
+	{
+		"link": "https://cloudfour.com/thinks/how-to-prerelease-an-npm-package/",
+		"title": "How to Prerelease an npm Package",
+		"author": "Scott Vandehey",
+		"authorLink": "https://cloudfour.com/is/scott/",
+		"description": "I mostly build websites where version numbers don't really apply, but this is a good reference for those rare cases where I need to remember versioning specifics."
+	},
+	{
+		"link": "https://ashleemboyer.com/blog/pull-request-template",
+		"title": "An Undefeated Pull Request Template",
+		"author": "Ashlee M Boyer",
+		"authorLink": "https://ashleemboyer.com/",
+		"description": "Having worked in repos with no PR templates or overly pre-filled PR templates that end up being ignored, this template strikes a good balance and gets to the important info that reviewers and future developers need to know."
 	}
 ]
