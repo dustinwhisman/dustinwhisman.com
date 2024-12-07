@@ -4,7 +4,7 @@
 	"description": "My very own personal website. How indie, how 2006.",
 	"main": "index.js",
 	"engines": {
-		"node": ">=20",
+		"node": ">=22",
 		"npm": ">=10"
 	},
 	"type": "module",
