@@ -613,5 +613,24 @@
 		"author": "Ashlee M Boyer",
 		"authorLink": "https://ashleemboyer.com/",
 		"description": "Having worked in repos with no PR templates or overly pre-filled PR templates that end up being ignored, this template strikes a good balance and gets to the important info that reviewers and future developers need to know."
+	},
+	{
+		"link": "https://www.keithcirkel.co.uk/i-dont-have-time-to-learn-react/",
+		"title": "I don't have time to learn React",
+		"author": "Keith Cirkel",
+		"authorLink": "https://www.keithcirkel.co.uk/",
+		"description": "If you learned React 10 years ago, or 5 years ago, you'd have to keep learning it again. The churn is far worse than building against platform features."
+	},
+	{
+		"link": "https://infrequently.org/2024/11/if-not-react-then-what/",
+		"title": "If Not React, Then What?",
+		"author": "Alex Russell",
+		"authorLink": "https://infrequently.org/",
+		"description": "Basically anything else, or at least following progressive enhancement principles."
+	},
+	{
+		"link": "https://adventofcode.com/",
+		"title": "Advent of Code",
+		"description": "I never seem to find the time to do these thing-a-day challenges, but you can go back and try them if you want, which is nice."
 	}
 ]
