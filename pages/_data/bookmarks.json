@@ -632,5 +632,17 @@
 		"link": "https://adventofcode.com/",
 		"title": "Advent of Code",
 		"description": "I never seem to find the time to do these thing-a-day challenges, but you can go back and try them if you want, which is nice."
+	},
+	{
+		"link": "https://ashleemboyer.com/blog/college-web-a11y-finally",
+		"title": "Colleges Must Fix Millions of Web Pages. It's About Damn Time.",
+		"author": "Ashlee M Boyer",
+		"authorLink": "https://ashleemboyer.com/",
+		"description": "Guess what, it's always been a requirement to make websites accessible. Sometimes institutions need a little (a lot of) nudging, though."
+	},
+	{
+		"link": "https://a11yconsultant.com/",
+		"title": "CPACC Quiz App",
+		"description": "I've put off preparing for the CPACC certification, but if you have not, here's a quiz that might be helpful."
 	}
 ]
