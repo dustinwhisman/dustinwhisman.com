@@ -11,6 +11,8 @@
 
 	@supports (grid-template-rows: masonry) {
 		.cmp-pictures-of-cats__grid {
+			/* I know masonry isn't widely supported, that's why I have the @supports */
+			/* stylelint-disable-next-line declaration-property-value-no-unknown */
 			grid-template-rows: masonry;
 		}
 	}
