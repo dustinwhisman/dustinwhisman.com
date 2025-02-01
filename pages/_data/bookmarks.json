@@ -644,5 +644,38 @@
 		"link": "https://a11yconsultant.com/",
 		"title": "CPACC Quiz App",
 		"description": "I've put off preparing for the CPACC certification, but if you have not, here's a quiz that might be helpful."
+	},
+	{
+		"link": "https://neal.fun/stimulation-clicker/",
+		"title": "Stimulation Clicker",
+		"author": "neal.fun",
+		"authorLink": "https://neal.fun/",
+		"description": "I only got as far as thunder sounds before getting overwhelmed, but there's so much going on here, check it out if you need a break."
+	},
+	{
+		"link": "https://github.com/Heydon/principles-of-web-accessibility",
+		"title": "Principles Of Web Accessibility",
+		"author": "Heydon Pickering",
+		"authorLink": "https://github.com/Heydon/",
+		"description": "High-level guiding principles, more approachable than WCAG and more pragmatic about what the work actually entails."
+	},
+	{
+		"link": "https://tutorialkit.dev/",
+		"title": "TutorialKit",
+		"description": "I haven't vetted this, so don't yell at me if it has glaring issues, but my brain lit up with ideas for tutorials I could build this way when I saw a demo of it."
+	},
+	{
+		"link": "https://www.spicyweb.dev/surviving-the-ai-pocalypse/",
+		"title": "Creative Strategies for Surviving the AI-pocalypse",
+		"author": "Jared White",
+		"authorLink": "https://www.spicyweb.dev/",
+		"description": "The whole point of AI is for it steal your job, whether or not it can actually do your job is immaterial. If your boss thinks it can, you need to be prepared with some backup plans."
+	},
+	{
+		"link": "https://unplannedobsolescence.com/blog/hard-page-load/",
+		"title": "Who's Afraid of a Hard Page Load?",
+		"author": "Alex Petros",
+		"authorLink": "https://unplannedobsolescence.com/",
+		"description": "Single-page applications introduce so many new problems while solving so few, maybe it's better to just have multiple pages? (It is.)"
 	}
 ]
