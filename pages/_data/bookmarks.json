@@ -669,7 +669,7 @@
 		"title": "Creative Strategies for Surviving the AI-pocalypse",
 		"author": "Jared White",
 		"authorLink": "https://www.spicyweb.dev/",
-		"description": "The whole point of AI is for it steal your job, whether or not it can actually do your job is immaterial. If your boss thinks it can, you need to be prepared with some backup plans."
+		"description": "The whole point of AI is for it steal your job, and whether or not it can actually do your job is immaterial. If your boss thinks it can, you need to be prepared with some backup plans."
 	},
 	{
 		"link": "https://unplannedobsolescence.com/blog/hard-page-load/",
@@ -677,5 +677,12 @@
 		"author": "Alex Petros",
 		"authorLink": "https://unplannedobsolescence.com/",
 		"description": "Single-page applications introduce so many new problems while solving so few, maybe it's better to just have multiple pages? (It is.)"
+	},
+	{
+		"link": "https://www.smashingmagazine.com/2025/02/taking-rwd-to-the-extreme/",
+		"title": "Taking RWD To The Extreme",
+		"author": "Tomasz Jakut",
+		"authorLink": "https://www.smashingmagazine.com/author/tomasz-jakut/",
+		"description": "If you find yourself writing lots of media queries and dividing/multiplying by 16 all the time when writing CSS, great news! There's a better way."
 	}
 ]
