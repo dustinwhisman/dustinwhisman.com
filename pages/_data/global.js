@@ -1,7 +1,7 @@
 /* eslint-env node */
 import fs from 'fs';
 import path from 'path';
-import sizeOf from 'image-size';
+import { imageSize } from 'image-size';
 
 const getImagePaths = () => {
 	const directoryPath = path.join(import.meta.dirname, '../../src/public/images/cats');
@@ -20,7 +20,8 @@ const getImagePaths = () => {
 			return 0;
 		})
 		.map((file) => {
-			const { width, height } = sizeOf(`${directoryPath}/${file.name}`);
+			const buffer = fs.readFileSync(`${directoryPath}/${file.name}`)
+			const { width, height } = imageSize(buffer);
 			return {
 				name: file.name,
 				width,

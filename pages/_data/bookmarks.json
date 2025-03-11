@@ -684,5 +684,12 @@
 		"author": "Tomasz Jakut",
 		"authorLink": "https://www.smashingmagazine.com/author/tomasz-jakut/",
 		"description": "If you find yourself writing lots of media queries and dividing/multiplying by 16 all the time when writing CSS, great news! There's a better way."
+	},
+	{
+		"link": "https://www.miriamsuzanne.com/2025/02/12/tech-ai-wtf/",
+		"title": "Tech continues to be political",
+		"author": "Miriam Eric Suzanne",
+		"authorLink": "https://www.miriamsuzanne.com/",
+		"description": "You can't separate tools from the people that build them, promote them, or abuse them. The people boosting AI do not value the same things that I do."
 	}
 ]
