@@ -691,5 +691,31 @@
 		"author": "Miriam Eric Suzanne",
 		"authorLink": "https://www.miriamsuzanne.com/",
 		"description": "You can't separate tools from the people that build them, promote them, or abuse them. The people boosting AI do not value the same things that I do."
+	},
+	{
+		"link": "https://www.scottsmitelli.com/articles/take-oncall-and-shove-it/",
+		"title": "Take This On-Call Rotation and Shove It",
+		"author": "Scott Smitelli",
+		"authorLink": "https://www.scottsmitelli.com/",
+		"description": "Having worked a job where I was on call every other week (with a literal pager!), I can't agree more. When the cost of downtime can be measured in the hundreds of thousands of dollars, getting an extra comp day for being on call to prevent downtime just doesn't seem fair."
+	},
+	{
+		"link": "https://heydonworks.com/article/poisoning-well/",
+		"title": "Poisoning Well",
+		"author": "Heydon Pickering",
+		"authorLink": "https://heydonworks.com/",
+		"description": "Goddamn, even Heydon's nonsense is brilliant. I may have to end up trying this for myself."
+	},
+	{
+		"link": "https://webaim.org/projects/million/",
+		"title": "The WebAIM Million",
+		"description": "The annual report on the accessibility of the top 1,000,000 home pages dropped, and wouldn't you know it, the results are pretty bad!"
+	},
+	{
+		"link": "https://ishadeed.com/article/modern-attr/",
+		"title": "First Look at The Modern attr()",
+		"author": "Ahmad Shadeed",
+		"authorLink": "https://ishadeed.com/",
+		"description": "The implications of better attr() support are huge, although I can't help but imagine the Tailwind monstrosities that could arise from this."
 	}
 ]
