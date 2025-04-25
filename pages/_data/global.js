@@ -3,8 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import { imageSize } from 'image-size';
 
-const getImagePaths = () => {
-	const directoryPath = path.join(import.meta.dirname, '../../src/public/images/cats');
+const getImagePaths = (folderPath) => {
+	const directoryPath = path.join(import.meta.dirname, folderPath);
 	const files = fs
 		.readdirSync(directoryPath, { withFileTypes: true })
 		.filter((file) => !file.isDirectory() && file.name.endsWith('.jpg'))
@@ -33,24 +33,28 @@ const getImagePaths = () => {
 	return files;
 };
 
-const picturesOfCats = getImagePaths();
-const catsByMonth = picturesOfCats.reduce((monthsObj, picture) => {
-	const date = picture.name.substring(4, 12);
-	const monthSlug = `${date.slice(0, 4)}-${date.slice(4, 6)}`;
-	const monthDisplayName = new Date(monthSlug).toLocaleDateString(undefined, {
-		timeZone: 'UTC',
-		year: 'numeric',
-		month: 'long',
-	});
+const groupPicturesByMonth = (folderPath) => {
+	const pictures = getImagePaths(folderPath);
+	const picturesByMonth = pictures.reduce((monthsObj, picture) => {
+		const date = picture.name.substring(4, 12);
+		const monthSlug = `${date.slice(0, 4)}-${date.slice(4, 6)}`;
+		const monthDisplayName = new Date(monthSlug).toLocaleDateString(undefined, {
+			timeZone: 'UTC',
+			year: 'numeric',
+			month: 'long',
+		});
 
-	return {
-		...monthsObj,
-		[monthSlug]: {
-			name: monthDisplayName,
-			pictures: [...(monthsObj[monthSlug]?.pictures ?? []), picture],
-		},
-	};
-}, {});
+		return {
+			...monthsObj,
+			[monthSlug]: {
+				name: monthDisplayName,
+				pictures: [...(monthsObj[monthSlug]?.pictures ?? []), picture],
+			},
+		};
+	}, {});
+
+	return picturesByMonth;
+};
 
 export default {
 	// generate a random string for service worker versioning, such as "36f4-1234-8c7a"
@@ -62,6 +66,8 @@ export default {
 	year() {
 		return new Date().getFullYear();
 	},
-	picturesOfCats: getImagePaths(),
-	catsByMonth,
+	picturesOfCats: getImagePaths('../../src/public/images/cats'),
+	catsByMonth: groupPicturesByMonth('../../src/public/images/cats'),
+	picturesOfTravel: getImagePaths('../../src/public/images/travel'),
+	travelByMonth: groupPicturesByMonth('../../src/public/images/travel'),
 };

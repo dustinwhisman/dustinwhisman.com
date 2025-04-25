@@ -1,0 +1,40 @@
+---
+title: Pictures of Travel - Dustin Whisman
+description: Collections of photos from various vacations and traveling that I've done.
+layout: default
+---
+
+<h1>Pictures of Travel</h1>
+
+{% set imagesRendered = 0 %}
+{% for month, monthData in global.travelByMonth %}
+	{% if loop.index <= 3 %}
+		<h2>{{ monthData.name }}</h2>
+		<div class="cmp-pictures-of-cats__grid">
+			{% set altText %}Collection of pictures from vacation taken during {{ monthData.name }}.{% endset %}
+			{% for image in monthData.pictures %}
+				{% set imagesRendered = imagesRendered + 1 %}
+				{% if loop.index > 1 %}
+					{% set altText = "" %}
+				{% endif %}
+				<div
+					class="cmp-pictures-of-cats__cell"
+					style="--aspect-ratio: {{ image.aspectRatio }}"
+				>
+					<img
+						src="/images/travel/{{ image.name }}"
+						alt="{{ altText }}"
+						width="{{ image.width }}"
+						height="{{ image.height }}"
+						class="cmp-pictures-of-cats__image"
+						{% if index > lazyThreshold %}loading="lazy"{% endif %}>
+				</div>
+			{% endfor %}
+		</div>
+	{% elseif loop.index === 4 %}
+		<h2>Older Pictures</h2>
+		<p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
+	{% else %}
+		<p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
+	{% endif %}
+{% endfor %}
