@@ -1,0 +1,53 @@
+---
+pagination:
+  data: global.travelByMonth
+  size: 1
+  alias: month
+permalink: "travel/{{ month | slug }}/"
+eleventyExcludeFromCollections: true
+---
+
+{% extends 'partials/layout.njk' %}
+
+{% block title %}
+<title>{{ global.travelByMonth[month].name }} - Pictures of Travel - Dustin Whisman</title>
+{% endblock %}
+{% block description %}
+<meta name="description" content="Look at these pictures from vacation during {{ global.travelByMonth[month].name }}!">
+{% endblock %}
+
+{% block content %}
+<article class="cmp-container cmp-stack">
+	<h1>Pictures of Travel: {{ global.travelByMonth[month].name }}</h1>
+
+	<div class="cmp-pictures-of-cats__grid">
+		{% set altText %}Collection of pictures from travel, taken during {{ global.travelByMonth[month].name }}.{% endset %}
+		{% for image in global.travelByMonth[month].pictures %}
+			{% if loop.index > 1 %}
+				{% set altText = "" %}
+			{% endif %}
+			<div
+				class="cmp-pictures-of-cats__cell"
+				style="--aspect-ratio: {{ image.aspectRatio }}"
+			>
+				<img
+					src="/images/travel/{{ image.name }}"
+					alt="{{ altText }}"
+					width="{{ image.width }}"
+					height="{{ image.height }}"
+					class="cmp-pictures-of-cats__image"
+					{% if index > lazyThreshold %}loading="lazy"{% endif %}>
+			</div>
+		{% endfor %}
+	</div>
+
+	<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Pictures from travel by month">
+		{% if pagination.href.previous %}
+			<a href="{{ pagination.href.previous }}" class="cmp-navigation__previous">Newer pictures</a>
+		{% endif %}
+		{% if pagination.href.next %}
+			<a href="{{ pagination.href.next }}" class="cmp-navigation__next">Older pictures</a>
+		{% endif %}
+	</nav>
+</article>
+{% endblock %}
