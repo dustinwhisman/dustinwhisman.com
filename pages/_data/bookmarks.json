@@ -717,5 +717,91 @@
 		"author": "Ahmad Shadeed",
 		"authorLink": "https://ishadeed.com/",
 		"description": "The implications of better attr() support are huge, although I can't help but imagine the Tailwind monstrosities that could arise from this."
+	},
+	{
+		"link": "https://www.tpgi.com/celebrating-with-the-perfect-toast/",
+		"title": "Celebrating with The Perfect Toast",
+		"author": "Ian Lloyd",
+		"authorLink": "https://www.tpgi.com/author/lloydi/",
+		"description": "A fun journey through how to accessibly implement what seems like it should be an easy interface. Here be dragons."
+	},
+	{
+		"link": "https://alex.party/posts/2025-05-05-the-future-of-web-development-is-ai-get-on-or-get-left-behind/",
+		"title": "The future of web development is AI. Get on or get left behind.",
+		"author": "Alex Riviere",
+		"authorLink": "https://alex.party/",
+		"description": "The title's been through some revisions, but the core message remains the same."
+	},
+	{
+		"link": "https://www.sarasoueidan.com/blog/css-carousels-accessibility/",
+		"title": "Are 'CSS Carousels' accessible?",
+		"author": "Sara Soueidan",
+		"authorLink": "https://www.sarasoueidan.com/",
+		"description": "This is a good reminder to check their work whenever somebody says \"accessibility is built in!\""
+	},
+	{
+		"link": "https://molily.de/ai-environment/",
+		"title": "On the environmental impact of AI",
+		"author": "Mathias Schäfer",
+		"authorLink": "https://molily.de/",
+		"description": "Focusing on individual carbon footprints was a strategy developed by the oil industry to distract from major polluters, and the same thing is happening with arguing that a ChatGPT query isn't so bad, really."
+	},
+	{
+		"link": "https://www.craigabbott.co.uk/blog/deque-axe-assistant-first-impressions/",
+		"title": "Deque Axe Assistant - First impressions",
+		"author": "Craig Abbott",
+		"authorLink": "https://www.craigabbott.co.uk/",
+		"description": "Turns out even an LLM provided by an accessibility-focused org still has all the problems LLMs have. We're waaaaay further from 100% automatable accessibility testing than Deque would like to believe."
+	},
+	{
+		"link": "https://neal.fun/internet-roadtrip/",
+		"title": "Internet Roadtrip",
+		"author": "neal.fun",
+		"authorLink": "https://neal.fun/",
+		"description": "Hundreds or thousands of backseat drivers? Why not?"
+	},
+	{
+		"link": "https://aaardvarkaccessibility.com/wcag-plain-english/",
+		"title": "WCAG in Plain English",
+		"description": "Good for explaining WCAG to non-experts or if you just want a quick reference."
+	},
+	{
+		"link": "https://tante.cc/2025/05/23/on-vibe-coding/",
+		"title": "On \"Vibe Coding\"",
+		"author": "tante/Jürgen Geuter",
+		"authorLink": "https://tante.cc/",
+		"description": "Focusing solely on the final output, devaluing expertise in the name of \"democratization\", and ignoring externalities are not good ways to build a software industry."
+	},
+	{
+		"link": "https://www.wheresyoured.at/the-era-of-the-business-idiot/",
+		"title": "The Era Of The Business Idiot",
+		"author": "Ed Zitron",
+		"authorLink": "https://www.wheresyoured.at/",
+		"description": "A very long, but very detailed breakdown of why it feels like everyone in charge is so stupid these days."
+	},
+	{
+		"link": "https://apply.coop/",
+		"title": "apply.coop",
+		"description": "Interested in worker-owned companies and democratic management? This is a job board specifically for coops."
+	},
+	{
+		"link": "https://dansinker.com/posts/2025-05-23-who-cares/",
+		"title": "The Who Cares Era",
+		"author": "Dan Sinker",
+		"authorLink": "https://dansinker.com/",
+		"description": "Caring is a radical act when it's so easy to say, \"let the AI do it, nobody will notice, it's not worth it.\""
+	},
+	{
+		"link": "https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/",
+		"title": "We did the math on AI's energy footprint. Here's the story you haven't heard.",
+		"author": "James O'Donnell and Casey Crownhart",
+		"description": "None of this is sustainable, and no, AI isn't going to come up with the answer to climate change. Not knowing what to do about it isn't the problem."
+	},
+	{
+		"link": "https://whitep4nth3r.com/blog/the-promise-that-wasnt-kept/",
+		"title": "The promise that wasn't kept",
+		"author": "Salma Alam-Naylor",
+		"authorLink": "https://whitep4nth3r.com/",
+		"description": "Maybe we should focus on building things for humans rather than hyping the (questionable) tools used to build those things."
 	}
 ]
