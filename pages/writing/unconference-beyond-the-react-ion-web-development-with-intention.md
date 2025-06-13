@@ -13,14 +13,22 @@ tags:
 
 {% include 'partials/published-date.njk' %}
 
-Next week, on June 12th at 2-4 Eastern time, I'm going to be giving a talk with Jon Oliver (not that one) for Sparkbox's UnConference for this quarter. Our talk is the keynote and will cover the web development landscape in 2025, covering everything from React to... not React. Spoiler alert, I'll be advocating for web standards based approaches and Jon will highlight some ways to use React as best as you can.
+<p class="cmp-fine-print">
+	Updated:
+	<time datetime="2025-06-13T00:00:00.000Z">
+		6/13/2025
+	</time>
+</p>
 
-There are two other, shorter talks planned from Rise Erpelding about progressive enhancement and Kasey Bonifacio about how web development has changed over the years. [Here are more details and the sign-up form](https://us1.list-manage.com/survey?u=c2fcafb7ccc2db34e99075bb1&id=bbe9580703&attribution=false), so feel free to join us live or watch the talks after the fact!
+I gave a talk with Jon Oliver (not that one) for Sparkbox's UnConference for Spring 2025. Our talk was the keynote and covered the web development landscape in 2025, covering everything from React to... not React. Spoiler alert, I advocated for web standards based approaches and Jon highlighted some ways to use React as best as you can.
 
-I'll leave some supporting articles here, and once the videos and resources are live, I'll add them in as well:
+There were two other, shorter talks from Rise Erpelding about progressive enhancement and Kasey Bonifacio about how web development has changed from HTML-first to JavaScript-everywhere. Thanks for attending if you were there live, but if you missed it, don't worry, everything was recorded.
+
+I'll leave some supporting articles and resources here, and once the video is live, I'll add it in as well:
 
 - [The React Rendering Landscape in 2025](https://sparkbox.com/foundry/the-react-rendering-landcape-in-2025)
 - [The Landscape Beyond React](https://sparkbox.com/foundry/landscape_beyond_react)
 - [JSX Beyond React: An Intro to SolidJS](https://sparkbox.com/foundry/jsx_beyond_react_an_introduction_to_solidjs_for_developers)
+- [Do you want to build a website? Choose the right tool for the job (PDF)](/assets/Build-a-Website-Infographic.pdf)
 
 {% include 'partials/article-pagination.njk' %}
