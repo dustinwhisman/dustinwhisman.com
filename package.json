@@ -38,7 +38,7 @@
 		"@11ty/eleventy-plugin-rss": "^2.0.4",
 		"@axe-core/playwright": "^4.10.2",
 		"@eslint/js": "^9.29.0",
-		"@playwright/test": "^1.53.0",
+		"@playwright/test": "^1.53.1",
 		"check-node-version": "^4.2.1",
 		"dotenv": "^16.5.0",
 		"esbuild": "^0.25.5",
@@ -46,8 +46,8 @@
 		"eslint-config-prettier": "^10.1.5",
 		"globals": "^16.2.0",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.5.3",
-		"stylelint": "^16.20.0",
+		"prettier": "^3.6.0",
+		"stylelint": "^16.21.0",
 		"stylelint-config-standard": "^38.0.0"
 	},
 	"dependencies": {
