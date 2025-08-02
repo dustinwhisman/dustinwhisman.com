@@ -803,5 +803,96 @@
 		"author": "Salma Alam-Naylor",
 		"authorLink": "https://whitep4nth3r.com/",
 		"description": "Maybe we should focus on building things for humans rather than hyping the (questionable) tools used to build those things."
+	},
+	{
+		"link": "https://goodinternetmagazine.com/close-to-the-metal-web-design-and-the-browser/",
+		"title": "Close to the metal: web design and the browser",
+		"author": "Ovi Demetrian Jr.",
+		"authorLink": "https://goodinternetmagazine.com/author/ovi-demetrianjr/",
+		"description": "The concept that building websites is always hard is pretty harmful when you consider how many people opt for social media over carving out their own spaces. Just because websites can be complex doesn't mean they have to be."
+	},
+	{
+		"link": "https://www.oddcontrast.com/",
+		"title": "OddContrast",
+		"description": "Yet another contrast checker, but with tons of support for different color formats!"
+	},
+	{
+		"link": "https://ainowinstitute.org/publications/research/ai-now-2025-landscape-report",
+		"title": "Artificial Power: 2025 Landscape Report",
+		"author": "Kate Brennan, Amba Kak, and Dr. Sarah Myers West from the AI Now Institute",
+		"authorLink": "https://ainowinstitute.org/",
+		"description": "So it turns out this AI thing might not be as unambiguously good as boosters say it is. It might in fact be very bad."
+	},
+	{
+		"link": "https://blog.glyph.im/2025/06/i-think-im-done-thinking-about-genai-for-now.html",
+		"title": "I Think I'm Done Thinking About genAI For Now",
+		"author": "Glyph",
+		"authorLink": "https://blog.glyph.im/",
+		"description": "You and me both, buddy."
+	},
+	{
+		"link": "https://briefs.video/videos/introducing-webbed-sites/",
+		"title": "Introducing: Webbed Sites (Video)",
+		"author": "Heydon Pickering",
+		"authorLink": "https://briefs.video/",
+		"description": "DIVS"
+	},
+	{
+		"link": "https://nolanlawson.com/2025/06/16/selfish-reasons-for-building-accessible-uis/",
+		"title": "Selfish reasons for building accessible UIs",
+		"author": "Nolan Lawson",
+		"authorLink": "https://nolanlawson.com/",
+		"description": "In case you don't, like, care about other people, there are still reasons to build things to be accessible."
+	},
+	{
+		"link": "https://www.smashingmagazine.com/2025/06/what-i-wish-someone-told-me-aria/",
+		"title": "What I Wish Someone Told Me When I Was Getting Into ARIA",
+		"author": "Eric Bailey",
+		"authorLink": "https://www.smashingmagazine.com/author/eric-bailey/",
+		"description": "A good primer for anyone who has struggled to understand ARIA or is just learning about it now."
+	},
+	{
+		"link": "https://scrumplanning.com/",
+		"title": "scrumplanning.com",
+		"description": "I have my issues with story points, but at the very least, this is a better pointing poker than ones I've used before."
+	},
+	{
+		"link": "https://organizingmythoughts.org/some-thoughts-on-techno-fascism-from-socialism-2025/",
+		"title": "Some Thoughts on Techno-Fascism From Socialism 2025",
+		"author": "Kelly Hayes",
+		"authorLink": "https://organizingmythoughts.org/author/kelly/",
+		"description": "When we talk about technology, we're really talking about power and who is wielding it."
+	},
+	{
+		"link": "https://blog.cloudflare.com/introducing-pay-per-crawl/",
+		"title": "Introducing pay per crawl: Enabling content owners to charge AI crawlers for access",
+		"author": "Will Allen and Simon Newton from Cloudflare",
+		"description": "Good for HTTP 402, finally a chance to shine! I'm curious to see how this experiment shakes out."
+	},
+	{
+		"link": "https://afterlifepro.neocities.org/",
+		"title": "Kai's Internet Corner ^-^",
+		"description": "Some much needed whimsy, time to get spooky!"
+	},
+	{
+		"link": "https://www.joshwcomeau.com/svg/friendly-introduction-to-svg/",
+		"title": "A Friendly Introduction to SVG",
+		"author": "Josh W. Comeau",
+		"authorLink": "https://www.joshwcomeau.com/",
+		"description": "SVGs rule, and this is a good beginner's guide to learning how they work."
+	},
+	{
+		"link": "https://housefresh.com/beware-of-the-google-ai-salesman/",
+		"title": "Beware of the Google AI salesman and its cronies",
+		"author": "Gisele Navarro",
+		"authorLink": "https://housefresh.com/author/gisele/",
+		"description": "To summarize, Google no longer sends traffic to reputable sites, threatening their business models and the sources of information that previously made Google useful. And after all that, the AI answers aren't even good. Maybe switch to DuckDuckGo, they at least let you turn the AI overview off."
+	},
+	{
+		"link": "https://adrianroselli.com/2025/08/horizontal-scrolling-containers-are-not-a-content-strategy.html",
+		"title": "Horizontal Scrolling Containers Are Not a Content Strategy",
+		"author": "Adrian Roselli",
+		"authorLink": "https://adrianroselli.com/",
+		"description": "Shout out to all my designer friends who I've told to stop making me build carousels."
 	}
 ]
