@@ -894,5 +894,66 @@
 		"author": "Adrian Roselli",
 		"authorLink": "https://adrianroselli.com/",
 		"description": "Shout out to all my designer friends who I've told to stop making me build carousels."
+	},
+	{
+		"link": "https://oklchroma.utilitybend.com/",
+		"title": "OKLCHROMA",
+		"author": "Brecht De Ruyte",
+		"authorLink": "https://utilitybend.com/",
+		"description": "Pronouced like Oklahoma. This is a nice color palette generator using oklch and relative color syntax."
+	},
+	{
+		"link": "https://muan.co/posts/javascript",
+		"title": "JavaScript dos and donts",
+		"author": "Mu-An Chiou",
+		"authorLink": "https://muan.co/",
+		"description": "Rules to live by."
+	},
+	{
+		"link": "https://una.im/5-css-functions/",
+		"title": "5 Useful CSS functions using the new @function rule",
+		"author": "Una Kravets",
+		"authorLink": "https://una.im/",
+		"description": "I thought custom CSS functions were years out, so I'm surprised to see them already landing in Chrome (cross-browser support might still take years, to be fair)."
+	},
+	{
+		"link": "https://ncase.me/remember/",
+		"title": "How To Remember Anything Forever-ish",
+		"author": "Nicky Case",
+		"authorLink": "https://ncase.me/",
+		"description": "This is a cool learning technique with an even cooler description of how and why it works."
+	},
+	{
+		"link": "https://blog.glyph.im/2025/08/futzing-fraction.html",
+		"title": "The Futzing Fraction",
+		"author": "Glyph",
+		"authorLink": "https://blog.glyph.im/",
+		"description": "This goes a long way toward describing why generative AI hasn't resulted in the productivity gains that have been promised."
+	},
+	{
+		"link": "https://www.joshwcomeau.com/svg/interactive-guide-to-paths/",
+		"title": "An Interactive Guide to SVG Paths",
+		"author": "Josh W. Comeau",
+		"authorLink": "https://www.joshwcomeau.com/",
+		"description": "A strong case for writing your own SVGs by hand rather than using whatever your design tool exports."
+	},
+	{
+		"link": "https://picocss.com/",
+		"title": "Pico CSS",
+		"description": "This is sort of the anti-Tailwind, prioritizing solid HTML semantics and structure and minimizing class names."
+	},
+	{
+		"link": "https://www.joshwcomeau.com/animation/color-shifting/",
+		"title": "Color Shifting in CSS",
+		"author": "Josh W. Comeau",
+		"authorLink": "https://www.joshwcomeau.com/",
+		"description": "More great CSS techniques from Josh. I haven't taken his course on animations, but it's probably worthwhile."
+	},
+	{
+		"link": "https://productpicnic.beehiiv.com/p/the-people-are-the-process",
+		"title": "The people ARE the process",
+		"author": "Pavel Samsonov",
+		"authorLink": "https://productpicnic.beehiiv.com/",
+		"description": "Focusing on outputs rather than the process to get to those outputs will invariably lead to bad outcomes."
 	}
 ]
