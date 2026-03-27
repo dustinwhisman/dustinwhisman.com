@@ -955,5 +955,26 @@
 		"author": "Pavel Samsonov",
 		"authorLink": "https://productpicnic.beehiiv.com/",
 		"description": "Focusing on outputs rather than the process to get to those outputs will invariably lead to bad outcomes."
+	},
+	{
+		"link": "https://codegood.co/writing/why-your-best-engineers-are-interviewing-elsewhere",
+		"title": "Why Your Best Engineers Are Interviewing Elsewhere",
+		"author": "Lloyd Moore",
+		"authorLink": "https://codegood.co/",
+		"description": "Turns out structural issues and poor communication between levels of hierarchy are bad, actually."
+	},
+	{
+		"link": "https://ericwbailey.website/published/heres-how-to-instruct-a-llm-to-reference-the-aria-authoring-practices-guide/",
+		"title": "Here's how to instruct a LLM to reference the ARIA Authoring Practices Guide",
+		"author": "Eric Bailey",
+		"authorLink": "https://ericwbailey.website/",
+		"description": "If you must use these things, at least try to mitigate their obvious problems. Am I referring to LLMs or the Authoring Practices Guide? Why not both?"
+	},
+	{
+		"link": "https://www.focalcurve.com/journal/the-end/",
+		"title": "The End",
+		"author": "Craig Cook",
+		"authorLink": "https://www.focalcurve.com/",
+		"description": "This is resonating a little too well these days."
 	}
 ]
