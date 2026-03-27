@@ -179,6 +179,20 @@ const projects = [
 		classification: "Client Project",
 		roles: ["Individual Contributor"],
 	},
+	{
+		name: "University Website Pattern Library",
+		description: "Implementing foundational styles, components, and patterns to be used in a University's CMS to build out their redesigned site.",
+		startDate: "2025-06-01",
+		classification: "Client Project",
+		roles: ["Tech Lead", "Individual Contributor"],
+	},
+	{
+		name: "Mozilla Firefox",
+		description: "Writing custom stylelint rules to encourage design token usage, supporting design token overrides, and increasing design system adoption across the code base.",
+		startDate: "2025-10-01",
+		classification: "Client Project",
+		roles: ["Individual Contributor"],
+	}
 ].sort((a, b) => {
 	if (a.startDate < b.startDate) {
 		return 1;
