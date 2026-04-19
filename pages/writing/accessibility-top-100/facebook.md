@@ -53,7 +53,7 @@ There are a couple document structure issues as well. There’s no level one hea
 
 Let’s play a quick game. How many nested `<div>` elements deep is the `<img>` tag for that logo? Write your guesses in your notebook and then reveal the code to find the answer.
 
-<details class="cmp-stack">
+<details class="lyt-stack">
 <summary>Reveal the answer</summary>
 
 ```html
@@ -200,7 +200,7 @@ The radio buttons for gender are not grouped together using a `<fieldset>`, maki
 
 In a reversal from desktop, the inputs on mobile have visual labels instead of placeholders. However, they do not use `<label>` elements and they aren’t associated to the `<input>` elements, meaning the inputs don’t have accessible names. I bet you can’t guess what element they used instead of a `<label>`. Write your guesses in your notebook and then reveal the code to find the answer.
 
-<details class="cmp-stack">
+<details class="lyt-stack">
 <summary>Reveal the answer</summary>
 
 ```html

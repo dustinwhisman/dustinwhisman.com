@@ -30,7 +30,7 @@
 
 <body>
 	{% block header %}
-	<header class="cmp-container">
+	<header class="lyt-container">
 		<a href="#main-content" class="util-visually-hidden cmp-skip-to-content">Skip to content</a>
 		<nav aria-label="main navigation">
 			<ul class="cmp-navigation">
@@ -56,40 +56,42 @@
 		</nav>
 	</header>
 	{% endblock %}
-	<main id="main-content" tabindex="-1" class="cmp-container">
+	<main id="main-content" tabindex="-1" class="lyt-container">
 		{% block content %}
-		<article class="cmp-article__container cmp-stack">
+		<article class="cmp-article__container lyt-stack">
 			{{ content | safe }}
 		</article>
 		{% endblock %}
 	</main>
 	{% block footer %}
-	<footer class="cmp-container cmp-stack">
-		<a href="#end-of-footer" class="util-visually-hidden cmp-skip-to-content">Skip to the end of the footer</a>
-		<p class="cmp-fine-print">
-			Am I wrong on the internet? You can email me about it at <a
-			href="mailto:dustin@dustinwhisman.com">dustin@dustinwhisman.com</a> or
-			find me on <a rel="me"
-			href="https://mastodon.social/@dustinwhisman">Mastodon</a>. Do you have
-			a web project you need help with? You can either ask me about it or
-			contact <a href="https://sparkbox.com/contact">Sparkbox</a>.
-		</p>
-		<ul class="cmp-navigation">
-			<li>
-				<a href="https://github.com/dustinwhisman/dustinwhisman.com">View source</a>
-			</li>
-			<li>
-				<a href="/feed.xml">RSS feed</a>
-			</li>
-			<li>
-				<a id="end-of-footer" href="/copyright/">
-					© Copyright 2022 -
-					<span data-current-year>
-						{{ global.year() }}
-					</span>
-				</a>
-			</li>
-		</ul>
+	<footer class="lyt-container">
+		<div class="lyt-stack">
+			<a href="#end-of-footer" class="util-visually-hidden cmp-skip-to-content">Skip to the end of the footer</a>
+			<p class="cmp-fine-print">
+				Am I wrong on the internet? You can email me about it at <a
+				href="mailto:dustin@dustinwhisman.com">dustin@dustinwhisman.com</a> or
+				find me on <a rel="me"
+				href="https://mastodon.social/@dustinwhisman">Mastodon</a>. Do you have
+				a web project you need help with? You can either ask me about it or
+				contact <a href="https://sparkbox.com/contact">Sparkbox</a>.
+			</p>
+			<ul class="cmp-navigation">
+				<li>
+					<a href="https://github.com/dustinwhisman/dustinwhisman.com">View source</a>
+				</li>
+				<li>
+					<a href="/feed.xml">RSS feed</a>
+				</li>
+				<li>
+					<a id="end-of-footer" href="/copyright/">
+						© Copyright 2022 -
+						<span data-current-year>
+							{{ global.year() }}
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</footer>
 	{% endblock %}
 
