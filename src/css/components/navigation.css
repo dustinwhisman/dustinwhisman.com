@@ -17,3 +17,7 @@
     }
   }
 }
+
+.cmp-navigation--basic-pagination {
+  justify-content: space-between;
+}

@@ -40,7 +40,7 @@ layout: default
 				<a href="{{ article.url }}">{{ article.data.articleTitle }}</a>
 				<span>
 					<span class="util-visually-hidden">Published:</span>
-					<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+					<time datetime="{{ article.date.toISOString() }}" class="body-sm">
 						{{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
 					</time>
 				</span>

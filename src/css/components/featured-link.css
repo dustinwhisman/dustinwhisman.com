@@ -1,0 +1,6 @@
+.cmp-featured-link {
+  & + & {
+    margin-block-start: 1.5rem;
+  }
+}
+

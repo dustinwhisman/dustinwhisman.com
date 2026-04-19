@@ -16,12 +16,12 @@ pagination:
 </p>
 
 {% for link in links %}
-	<article class="lyt-stack lyt-stack--s-3">
-		<h2>
+	<article class="cmp-featured-link">
+		<h2 class="body-lg">
 			<a href="{{ link.link }}">{{ link.title }}</a>
 		</h2>
 		{% if link.author %}
-			<p>
+			<p class="body-sm">
 				{% if link.authorLink %}
 					<a href="{{ link.authorLink }}">{{ link.author }}</a>
 				{% else %}
