@@ -1,0 +1,14 @@
+.cmp-skip-to-content {
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-start: 1rem;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -0.25em;
+    background-color: var(--dw-background-color);
+  }
+}

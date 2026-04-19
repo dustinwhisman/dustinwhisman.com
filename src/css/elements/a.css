@@ -9,4 +9,8 @@ a {
     color: var(--dw-link-color-hover);
     text-decoration: none;
   }
+
+  &:focus-visible {
+    text-decoration: none;
+  }
 }
