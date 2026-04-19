@@ -1,0 +1,17 @@
+.cmp-about {
+  --about-image-size: 256px;
+  --about-section-gap: 1rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--about-section-gap);
+  align-items: end;
+}
+
+.cmp-about__image {
+  flex: 1 0 var(--about-image-size);
+}
+
+.cmp-about__description {
+  flex: 1 1 calc(var(--dw-max-content-width) - var(--about-image-size) - var(--about-section-gap));
+}
