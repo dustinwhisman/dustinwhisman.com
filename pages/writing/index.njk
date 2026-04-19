@@ -16,10 +16,10 @@ pagination:
 		<h2>All Posts</h2>
 		<a href="#collections" class="util-visually-hidden cmp-skip-to-content">Skip to Collections</a>
 
-		<ul class="cmp-article-listing__list">
+		<ul class="cmp-article-listing">
 			{% for article in articles %}
 				<li>
-					<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+					<a href="{{ article.url }}">{{ article.data.articleTitle }}</a>
 					<span>
 						<span class="util-visually-hidden">Published:</span>
 						<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
@@ -42,21 +42,21 @@ pagination:
 	<div class="lyt-stack cmp-writing-grid__sticky-section">
 		<h2 id="collections" tabindex="-1">Collections</h2>
 
-		<ul class="cmp-article-listing__list">
+		<ul class="cmp-article-listing">
 			<li>
-				<a href="/writing/accessibility-top-100/" class="cmp-article-listing__link">How accessible are the top 100 US sites?</a>
+				<a href="/writing/accessibility-top-100/">How accessible are the top 100 US sites?</a>
 			</li>
 			<li>
-				<a href="/writing/accessibility-how-tos/" class="cmp-article-listing__link">Accessibility how-tos</a>
+				<a href="/writing/accessibility-how-tos/">Accessibility how-tos</a>
 			</li>
 			<li>
-				<a href="/writing/certified-professional-in-accessibility-core-competencies-certification/" class="cmp-article-listing__link">Certified Professional in Accessibility Core Competencies (CPACC) certification notes</a>
+				<a href="/writing/certified-professional-in-accessibility-core-competencies-certification/">Certified Professional in Accessibility Core Competencies (CPACC) certification notes</a>
 			</li>
 			<li>
-				<a href="/writing/eleventy-starter-template/" class="cmp-article-listing__link">Building an Eleventy starter template</a>
+				<a href="/writing/eleventy-starter-template/">Building an Eleventy starter template</a>
 			</li>
 			<li>
-				<a href="/writing/web-accessibility-specialist-certification/" class="cmp-article-listing__link">Web Accessibility Specialist (WAS) certification notes</a>
+				<a href="/writing/web-accessibility-specialist-certification/">Web Accessibility Specialist (WAS) certification notes</a>
 			</li>
 		</ul>
 	</div>

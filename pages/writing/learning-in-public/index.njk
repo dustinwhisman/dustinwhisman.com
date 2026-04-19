@@ -14,10 +14,10 @@ pagination:
 
 <p>Anything that I would consider to be learning in public lives here. That could be notes from studying something specific, or random posts about something I learned about recently.</p>
 
-<ul class="cmp-article-listing__list">
+<ul class="cmp-article-listing">
 	{% for article in articles %}
 		<li>
-			<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+			<a href="{{ article.url }}">{{ article.data.articleTitle }}</a>
 			<span>
 				<span class="util-visually-hidden">Published:</span>
 				<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">

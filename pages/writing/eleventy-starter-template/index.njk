@@ -14,10 +14,10 @@ layout: default
 	of the box.
 </p>
 
-<ol class="cmp-article-listing__list">
+<ol class="cmp-article-listing">
 	{% for article in collections['eleventy starter template'] %}
 		<li>
-			<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+			<a href="{{ article.url }}">{{ article.data.articleTitle }}</a>
 			<span>
 				<span class="util-visually-hidden">Published:</span>
 				<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
