@@ -3,11 +3,11 @@
   --dw-neutral-text-color-light: var(--dw-color-gray-30);
   --dw-neutral-text-color-dark: var(--dw-color-gray-90);
   --dw-neutral-background-color-light: var(--dw-color-gray-100);
-  --dw-neutral-background-color-dark: var(--dw-color-gray-10);
+  --dw-neutral-background-color-dark: var(--dw-color-gray-20);
   --dw-neutral-border-color-light: var(--dw-color-gray-30);
   --dw-neutral-border-color-dark: var(--dw-color-gray-90);
-  --dw-neutral-shadow-color-light: var(--dw-color-gray-90);
-  --dw-neutral-shadow-color-dark: var(--dw-color-gray-30);
+  --dw-neutral-shadow-color-light: var(--dw-color-gray-50);
+  --dw-neutral-shadow-color-dark: var(--dw-color-gray-10);
   
   --dw-primary-text-color-light: var(--dw-color-blue-30);
   --dw-primary-text-color-dark: var(--dw-color-blue-90);
@@ -61,6 +61,11 @@
   --dw-link-color: var(--dw-primary-text-color);
   --dw-link-color-hover: var(--dw-accent-text-color);
   --dw-link-color-visited: var(--dw-secondary-text-color);
+  --dw-shadow-neutral:
+    0.3px 0.5px 0.7px oklch(from var(--dw-neutral-shadow-color) l c h / 0.36),
+    0.8px 1.6px 2px -0.8px oklch(from var(--dw-neutral-shadow-color) l c h / 0.36),
+    2.1px 4.1px 5.2px -1.7px oklch(from var(--dw-neutral-shadow-color) l c h / 0.36),
+    5px 10px 12.6px -2.5px oklch(from var(--dw-neutral-shadow-color) l c h / 0.36);
 
   @media (prefers-color-scheme: dark) {
     --dw-neutral-text-color: var(--dw-neutral-text-color-dark);

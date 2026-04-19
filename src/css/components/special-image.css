@@ -1,0 +1,15 @@
+.cmp-special-image {
+  border-radius: 0.5rem;
+  box-shadow: var(--dw-shadow-neutral);
+}
+
+.cmp-special-image--landscape {
+  position: relative;
+  inset-inline-start: 50%;
+  max-inline-size: min(100vw - (var(--dw-page-gutter) * 2), var(--dw-max-breakout-width));
+  transform: translateX(-50%);
+}
+
+picture:has(.cmp-special-image) + picture:has(.cmp-special-image) {
+  margin-block-start: 1rem;
+}

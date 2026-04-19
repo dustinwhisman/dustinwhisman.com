@@ -20,16 +20,14 @@ eleventyExcludeFromCollections: true
 <article class="lyt-stack">
 	<h1>Pictures of Cats: {{ global.catsByMonth[month].name }}</h1>
 
-	<div class="cmp-pictures-of-cats__grid">
-		{% set altText %}Collection of pictures of my cats, Goose and Barry, taken during {{ global.catsByMonth[month].name }}.{% endset %}
-		{% from 'partials/macros/cat-picture.njk' import catPicture %}
-		{% for image in global.catsByMonth[month].pictures %}
-			{% if loop.index > 1 %}
-				{% set altText = "" %}
-			{% endif %}
-			{{ catPicture(image, loop.index, 6, altText) }}
-		{% endfor %}
-	</div>
+	{% set altText %}Collection of pictures of my cats, Goose and Barry, taken during {{ global.catsByMonth[month].name }}.{% endset %}
+	{% from 'partials/macros/cat-picture.njk' import catPicture %}
+	{% for image in global.catsByMonth[month].pictures %}
+		{% if loop.index > 1 %}
+			{% set altText = "" %}
+		{% endif %}
+		{{ catPicture(image, loop.index, 6, altText) }}
+	{% endfor %}
 
 	<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Picture of cats by month">
 		{% if pagination.href.previous %}

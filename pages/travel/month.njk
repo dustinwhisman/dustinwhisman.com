@@ -20,26 +20,19 @@ eleventyExcludeFromCollections: true
 <article class="lyt-stack">
 	<h1>Pictures of Travel: {{ global.travelByMonth[month].name }}</h1>
 
-	<div class="cmp-pictures-of-cats__grid">
-		{% set altText %}Collection of pictures from travel, taken during {{ global.travelByMonth[month].name }}.{% endset %}
-		{% for image in global.travelByMonth[month].pictures %}
-			{% if loop.index > 1 %}
-				{% set altText = "" %}
-			{% endif %}
-			<div
-				class="cmp-pictures-of-cats__cell"
-				style="--aspect-ratio: {{ image.aspectRatio }}"
-			>
-				<img
-					src="/images/travel/{{ image.name }}"
-					alt="{{ altText }}"
-					width="{{ image.width }}"
-					height="{{ image.height }}"
-					class="cmp-pictures-of-cats__image"
-					{% if index > lazyThreshold %}loading="lazy"{% endif %}>
-			</div>
-		{% endfor %}
-	</div>
+	{% set altText %}Collection of pictures from travel, taken during {{ global.travelByMonth[month].name }}.{% endset %}
+	{% for image in global.travelByMonth[month].pictures %}
+		{% if loop.index > 1 %}
+			{% set altText = "" %}
+		{% endif %}
+		<img
+			src="/images/travel/{{ image.name }}"
+			alt="{{ altText }}"
+			width="{{ image.width }}"
+			height="{{ image.height }}"
+			class="cmp-special-image cmp-special-image--{{ image.orientation }}"
+			{% if index > lazyThreshold %}loading="lazy"{% endif %}>
+	{% endfor %}
 
 	<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Pictures from travel by month">
 		{% if pagination.href.previous %}
