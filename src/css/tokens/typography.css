@@ -2,7 +2,7 @@
   --dw-font-family-display: 'Bahnschrift', 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
   --dw-font-family-sans: 'Seravek', 'Gill Sans Nova', 'Ubuntu', 'Calibri', 'DejaVu Sans', source-sans-pro, sans-serif;
   --dw-font-family-serif: 'Rockwell', 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
-  --dw-font-family-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', 'Menlo', 'Consolas', 'DejaVu Sans Mono', monospace;
+  --dw-font-family-mono: "FontWithASyntaxHighlighter", ui-monospace, 'Cascadia Code', 'Source Code Pro', 'Menlo', 'Consolas', 'DejaVu Sans Mono', monospace;
   --dw-font-size-display-lg: 7.25rem;
   --dw-font-size-display-md: 5.5rem;
   --dw-font-size-display-sm: 4rem;
