@@ -21,7 +21,7 @@ layout: default
 				alt="{{ altText }}"
 				width="{{ image.width }}"
 				height="{{ image.height }}"
-				class="cmp-special-image cmp-special-image--{{ image.orientation }}"
+				class="cmp-special-image"
 				{% if index > lazyThreshold %}loading="lazy"{% endif %}>
 		{% endfor %}
 	{% elseif loop.index === 4 %}

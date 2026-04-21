@@ -26,7 +26,6 @@ const getImagePaths = (folderPath) => {
 				width,
 				height,
 				aspectRatio: width / height,
-				orientation: width > height ? 'landscape' : 'portrait',
 			};
 		});
 
