@@ -30,7 +30,7 @@ All I had to do for this was delete the `link` tag that referenced the third par
 
 Already this solved most of the issues flagged by Lighthouse and WebPageTest. My Lighthouse performance score went from 99 to 100, and the numbers look much better (to me) when used in certain contexts.
 
-<img src="/images/improving-my-sites-performance/improved-fonts.png" alt="A screenshot of text demonstrating that numbers have the same height and position when arranged side-by-side." class="cmp-article__image">
+<img src="/images/improving-my-sites-performance/improved-fonts.png" alt="A screenshot of text demonstrating that numbers have the same height and position when arranged side-by-side." class="cmp-article-image">
 
 ## Fixing CLS in the Navigation
 
@@ -120,7 +120,7 @@ Now when I run WebPageTest, the only issue that gets reported is that my `/style
 
 As for Lighthouse, it's 100s all around, no matter which page I've tested on. I also went ahead and enabled the Lighthouse integration in Netlify, so I'll at least see how the home page's performance changes on each deployment. And for what it's worth, that version gives me the green checkmark for PWA support 🤷
 
-<img src="/images/improving-my-sites-performance/lighthouse-after.png" alt="A screenshot of Lighthouse scores, showing 100 for each category and an icon representing full PWA support." class="cmp-article__image">
+<img src="/images/improving-my-sites-performance/lighthouse-after.png" alt="A screenshot of Lighthouse scores, showing 100 for each category and an icon representing full PWA support." class="cmp-article-image">
 
 This was a fun exercise, and I think the biggest takeaway for me is that no matter how good you think your site's performance is, it doesn't hurt to check every once in a while. You might find some low-hanging fruit or a lingering bug that would be way easier to fix now than when it's causing real problems down the road.
 

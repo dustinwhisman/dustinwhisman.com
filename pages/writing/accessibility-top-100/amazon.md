@@ -22,7 +22,7 @@ For this evaluation, I tested Amazon’s [home page](https://www.amazon.com/), a
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/amazon/pages-tested-h.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/amazon/pages-tested-v.png" alt="A composition of screenshots from the desktop version of amazon.com, showing the home page, a search results page, and a product page." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/amazon/pages-tested-v.png" alt="A composition of screenshots from the desktop version of amazon.com, showing the home page, a search results page, and a product page." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop</figcaption>
 </figure>
@@ -30,7 +30,7 @@ For this evaluation, I tested Amazon’s [home page](https://www.amazon.com/), a
 Once again, I am cursed to test duplicate versions of each of these pages because Amazon uses adaptive design rather than responsive design, serving up different versions of the page based on some sort of device detection. This seems to be a trend with sites that have been massive since before 2011.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/pages-tested-mobile.png" alt="A composition of screenshots from the mobile version of amazon.com, showing the home page, a search results page, and a product page." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/pages-tested-mobile.png" alt="A composition of screenshots from the mobile version of amazon.com, showing the home page, a search results page, and a product page." class="cmp-article-image">
 	<figcaption>These are the pages that were tested on mobile.</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ We have the usual suspects for accessibility issues for the home page: missing o
 For the alt text issues, there is one image that has no `alt` attribute (or `aria-label` or `title`), and it is wrapped by a link that also does not have an accessible name, so that’s sort of a double whammy. A screen reader user might hear something like “link, 351212e6-d905-4397-8838-b9a5bc65ffd3.jpg” or just “link” instead of anything useful. There are also a series of images that have alt text that matches visible text *and* the accessible name of the link wrapping the image, while *also* not describing the image at all.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/inappropriate-alt-text.png" alt="A screenshot showing a grid of images that each have short captions that, by themselves, don't describe the images." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/inappropriate-alt-text.png" alt="A screenshot showing a grid of images that each have short captions that, by themselves, don't describe the images." class="cmp-article-image">
 	<figcaption>A good test for whether you can treat images as decorative: if you remove the image, do you still have all the information you need?</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Since some of these images have additional context, like the Mean Girls link sho
 Looking into the content that isn’t contained by landmark regions, most of it is in the footer of the page, and for some reason, Amazon marks up a section as a `<table>` without a header row within a `<div>` with `role="navigation"`. It would be pretty trivial to style a `<nav>` full of the same links with CSS grid, so this choice doesn’t make sense to me and makes it much harder to understand and navigate via assistive tech.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/unnecessary-table.png" alt="A screenshot of part of amazon.com's footer that has no reason to be a table other than laying out items in a grid." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/unnecessary-table.png" alt="A screenshot of part of amazon.com's footer that has no reason to be a table other than laying out items in a grid." class="cmp-article-image">
 	<figcaption>CSS grid has been widely supported for many years.</figcaption>
 </figure>
 
@@ -67,14 +67,14 @@ There are a handful of links that have accessible names that don’t match the v
 The language selection link also has hover-only behavior that allows users to quickly choose supported languages, but none of that is exposed to keyboard users or screen reader users. Clicking the link goes to a page that achieves the same goal, so it’s not necessarily a blocker, though.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/country-link-with-hover-behavior.png" alt="A screenshot of a dropdown menu where the button shows an American flag and the language code for English." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/country-link-with-hover-behavior.png" alt="A screenshot of a dropdown menu where the button shows an American flag and the language code for English." class="cmp-article-image">
 	<figcaption>Do you have to choose a different region to choose languages other than English or Spanish?</figcaption>
 </figure>
 
 A lot of elements were flagged for color contrast issues and needing review to confirm that they were visible and focusable. These appear to be elements that are hidden by default, like for dropdown menus or a drawer component that is positioned off screen until the button to reveal it is pressed.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/hidden-elements.png" alt="A composition of screenshots showing the menus and drawers that become visible when hovered or clicked." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/hidden-elements.png" alt="A composition of screenshots showing the menus and drawers that become visible when hovered or clicked." class="cmp-article-image">
 	<figcaption>Color contrast seems fine, but the mechanism for hiding content gets flagged by tooling.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Once visible, I didn’t find any obvious contrast or keyboard access issues for
 There’s no reason this couldn’t be a `<button>` , but since they opted to use an `<a>` tag, they needed to hack it by setting `href="javascript: void(0)"` and `role="button"`, and then they needed to make sure that pressing the space key activated the button. They forgot to do that last part, though, so pressing space does nothing. Oh, and they didn’t do anything about the context menu that shows up when you right click links, so if you right click to open in a new tab, you’re taken to `about:blank#blocked` because the `href` is that JavaScript statement.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/context-menu-oops.png" alt="A screenshot of a context menu with the option to open a link in the new tab." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/context-menu-oops.png" alt="A screenshot of a context menu with the option to open a link in the new tab." class="cmp-article-image">
 	<figcaption>If you can't open it in a new tab, it really shouldn't be a link.</figcaption>
 </figure>
 
@@ -123,7 +123,7 @@ Perhaps most ironically, the link to `/gp/help/customer/accessibility` remains i
 The search control, similar to Wikipedia’s, does not make any attempt to follow ARIA practices for a combobox, essentially just treating it as an input. I’d like to see some user testing research on this pattern. It might very well be a better experience for screen reader users, but it certainly isn’t equivalent.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/search-control.png" alt="A screenshot of amazon.com's search control showing a list of suggested search terms." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/search-control.png" alt="A screenshot of amazon.com's search control showing a list of suggested search terms." class="cmp-article-image">
 	<figcaption>If the experience without the suggested terms is so good, maybe this could just be a basic input for everyone?</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ Keyboard access is mostly good—I didn’t find any focus traps, and while ther
 The page does not handle zooming well at all. Even at 200%, there are scrollbars in both horizontal and vertical directions. At 400% it becomes borderline unusable. No content is technically lost, but if you have low vision, it’s going to be incredibly difficult to find your way around. I have to imagine Amazon’s adaptive design is a major factor here. Basic media queries would go a long way toward fixing the zoom issues.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/home-page-zoom-issues.png" alt="A composition of screenshots showing amazon.com's home page zoomed in to 200% and 400% levels with bad results." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/home-page-zoom-issues.png" alt="A composition of screenshots showing amazon.com's home page zoomed in to 200% and 400% levels with bad results." class="cmp-article-image">
 	<figcaption>Approximately zero care went into making sure things worked well at different zoom levels.</figcaption>
 </figure>
 
@@ -223,7 +223,7 @@ There are also `<div>` elements given the role “img” that wrap actual `<img>
 Keyboard access is not as good on the search results page as it was on the home page. I noticed more instances where focus would get lost, and I thought that I had missed a link to skip to the filters. I didn’t miss it; it just turns out that it’s placed after all the results on the page. That means to get to the filters, you first have to tab through all the stuff that doesn’t match your criteria because you haven’t filtered anything yet. I kid you not, the last link you tab to before you get to the filters says, “Go back to filtering menu”. The link after that says, “Skip to main search results”. Based on the language of those links, they put the sections in the *wrong order*.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/links-in-wrong-order.png" alt="A side-by-side visual of two links. The first says go back to filtering menu. The second says skip to main search results." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/links-in-wrong-order.png" alt="A side-by-side visual of two links. The first says go back to filtering menu. The second says skip to main search results." class="cmp-article-image">
 	<figcaption>How can you go back if you were never there? Can you skip backwards?</figcaption>
 </figure>
 
@@ -303,7 +303,7 @@ There are fewer issues identified on mobile, likely because some of the more pro
 The tab order is a bit annoying and unpredictable on the product details page. When you skip to the main content, you end up in a secondary navigation menu that you can’t skip past, and then you end up on the “Add to Cart” section, which I’m fine with. Let people get to the important thing faster. After that, focus disappears briefly before moving to the image preview buttons that aren’t buttons. The focus styles on these are totally insufficient. They’re very light and subtle, so I missed them entirely at first, thinking focus was just gone.
 
 <figure>
-	<img src="/images/accessibility-top-100/amazon/wheres-the-focus.png" alt="A screenshot of the main product image with one of the thumbnail images focused with a nearly imperceptible outline." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/amazon/wheres-the-focus.png" alt="A screenshot of the main product image with one of the thumbnail images focused with a nearly imperceptible outline." class="cmp-article-image">
 	<figcaption>Give me thick, chunky outlines over subtle gradients any day.</figcaption>
 </figure>
 

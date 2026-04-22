@@ -22,7 +22,7 @@ Since Facebook requires an account to do anything, I tested the sign-up process.
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/facebook/pages-desktop.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/facebook/pages-desktop-vertical.png" alt="A composition of screenshots from the desktop version of facebook.com, showing the login page next to the same page with a sign-up modal dialog." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/facebook/pages-desktop-vertical.png" alt="A composition of screenshots from the desktop version of facebook.com, showing the login page next to the same page with a sign-up modal dialog." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
@@ -30,7 +30,7 @@ Since Facebook requires an account to do anything, I tested the sign-up process.
 Yet again, Facebook uses `m.facebook.com` to serve completely different code to mobile devices. I'll be thrilled when I get to a site on this list that uses basic responsive design.
 
 <figure>
-	<img src="/images/accessibility-top-100/facebook/pages-mobile.png" alt="A composition of screenshots from the mobile version of facebook.com, showing the login page next to one page that's part of the sign-up process." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/facebook/pages-mobile.png" alt="A composition of screenshots from the mobile version of facebook.com, showing the login page next to one page that's part of the sign-up process." class="cmp-article-image">
 	<figcaption>These are the pages that were tested on mobile.</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ The login page has color contrast issues, mostly for the links in the footer. Th
 There are a couple document structure issues as well. There’s no level one heading, even though the big blue “facebook” image seems like an ideal candidate.
 
 <figure>
-	<img src="/images/accessibility-top-100/facebook/logo-heading.png" alt="A screenshot of the Facebook logo above text that says 'Connect with friends and the world around you on Facebook.'" class="cmp-article__image">
+	<img src="/images/accessibility-top-100/facebook/logo-heading.png" alt="A screenshot of the Facebook logo above text that says 'Connect with friends and the world around you on Facebook.'" class="cmp-article-image">
 	<figcaption>It's big. It's blue. It's the most obvious choice to be the heading.</figcaption>
 </figure>
 
@@ -115,14 +115,14 @@ The worst issue is that Facebook disables zooming and scaling on mobile. I’m s
 Keyboard focus indicators have good contrast and the focus order makes intuitive sense, although there are a couple visually hidden links at the end of the page that are focusable but do not become visible when focused.
 
 <figure>
-	<img src="/images/accessibility-top-100/facebook/keyboard-focus-order.png" alt="A screenshot of the login page with dots and lines connecting each element that would be focused in order. The last two links aren't visible, but have dots shown for them anyway." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/facebook/keyboard-focus-order.png" alt="A screenshot of the login page with dots and lines connecting each element that would be focused in order. The last two links aren't visible, but have dots shown for them anyway." class="cmp-article-image">
 	<figcaption>Note how numbers 49 and 50 don't correlate to anything visible.</figcaption>
 </figure>
 
 At 200% zoom, everything reflows well and nothing causes overflow. The text scales up despite the pixel sizing, but that may not be the case for other zooming/scaling software that specifically targets text rather than the entire page. For example, changing my browser settings to set the default text size to “Very Large” changes nothing about the page. Elements start to overflow at 400% zoom level, but because there are so few elements, the page is still navigable and usable.
 
 <figure>
-	<img src="/images/accessibility-top-100/facebook/400-percent-zoom.png" alt="A screenshot of the page zoomed into 400%. The form controls for email and password are mostly visible, but they are overflowing past the edge of the screen." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/facebook/400-percent-zoom.png" alt="A screenshot of the page zoomed into 400%. The form controls for email and password are mostly visible, but they are overflowing past the edge of the screen." class="cmp-article-image">
 	<figcaption>It should be pretty easy to avoid this kind of overflow.</figcaption>
 </figure>
 
@@ -192,7 +192,7 @@ The links that are part of the paragraphs below the form do not have underlines 
 The radio buttons for gender are not grouped together using a `<fieldset>`, making the relationship from those inputs less clear. The relationship gets even less clear if you choose the third gender, “Custom”, which reveals a `<select>` control with options for pronouns and another `<input>` for specifying a gender. That last field is optional, but the others aren’t, so I’m confused about what’s optional here. It seems like this whole thing could be simplified by having one field for pronouns, since it seems like that’s the only thing that Facebook uses for automated messages.
 
 <figure>
-	<img src="/images/accessibility-top-100/facebook/the-three-genders.png" alt="A screenshot of the confusing options for specifying a gender. Three radio buttons give the options Female, Male, and Custom, while a dropdown is shown for pronouns and an optional text input is shown for gender." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/facebook/the-three-genders.png" alt="A screenshot of the confusing options for specifying a gender. Three radio buttons give the options Female, Male, and Custom, while a dropdown is shown for pronouns and an optional text input is shown for gender." class="cmp-article-image">
 	<figcaption>"It's not othering, it's customizing." - someone at Facebook</figcaption>
 </figure>
 
@@ -232,7 +232,7 @@ Once you’ve opened the sign-up modal dialog, there’s no way to close it with
 There’s a lot of inline validation in this form, and basically none of it is set up correctly. For example, this popup appears when you’ve tabbed out of the “First name” field and then back to it.
 
 <figure>
-	<img src="/images/accessibility-top-100/facebook/whats-your-name.png" alt="A screenshot of error validation showing a message that says What's your name? next to the input for first name." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/facebook/whats-your-name.png" alt="A screenshot of error validation showing a message that says What's your name? next to the input for first name." class="cmp-article-image">
 	<figcaption>Oh wow, such helpful validation instructions.</figcaption>
 </figure>
 
@@ -241,7 +241,7 @@ For people who can see it, that works. However, the `aria-describedby` attribute
 People who use screen readers often cycle through all the fields in a form to understand what needs to be filled in before entering any information, so this inline validation can be quite disruptive (especially when it’s broken like this).
 
 <figure>
-	<img src="/images/accessibility-top-100/facebook/validation.png" alt="A screenshot of the sign-up form with nearly all form controls highlighted red with error icons to indicate required fields." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/facebook/validation.png" alt="A screenshot of the sign-up form with nearly all form controls highlighted red with error icons to indicate required fields." class="cmp-article-image">
 	<figcaption>Validating on submit tends to be more usable and easier to implement, just saying.</figcaption>
 </figure>
 

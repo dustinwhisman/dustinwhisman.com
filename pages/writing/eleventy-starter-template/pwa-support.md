@@ -37,7 +37,7 @@ PWA Checklist
 
 Before we get started, let’s put together a list of what we need to do to make our starter template a PWA. We’ll be using Lighthouse to audit the site and we’ll use its recommendations to build up PWA support. We’ll start by running an audit in Chrome’s DevTools under the Lighthouse tab.
 
-<img src="/images/eleventy-series/no_pwa_support.png" alt="Image of a Lighthouse audit screen with six failures and two passes." class="cmp-article__image">
+<img src="/images/eleventy-series/no_pwa_support.png" alt="Image of a Lighthouse audit screen with six failures and two passes." class="cmp-article-image">
 
 We have quite a few failures in that audit, so let’s organize them in a checklist and then fix them one by one.
 
@@ -328,7 +328,7 @@ Now, whenever we build our site the service worker will be built using a differe
 
 We should be PWA-ready now! If we run another Lighthouse audit against our site, we should see something like this.
 
-<img src="/images/eleventy-series/with_pwa_support.png" alt="Image of a Lighthouse audit screen with all passes (eight) and zero failures." class="cmp-article__image">
+<img src="/images/eleventy-series/with_pwa_support.png" alt="Image of a Lighthouse audit screen with all passes (eight) and zero failures." class="cmp-article-image">
 
 ## What Next?
 

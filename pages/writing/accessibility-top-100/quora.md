@@ -22,13 +22,13 @@ Quora is kind of a strange case in that you can view questions if you find them 
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/quora/desktop-h.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/quora/desktop-v.png" alt="A composition of screenshots from the desktop version of quora.com, showing a question and answer page and the signup page." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/quora/desktop-v.png" alt="A composition of screenshots from the desktop version of quora.com, showing a question and answer page and the signup page." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
 
 <figure>
-	<img src="/images/accessibility-top-100/quora/mobile.png" alt="A composition of screenshots from quora.com on mobile, showing a question and answer page and the signup page." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/quora/mobile.png" alt="A composition of screenshots from quora.com on mobile, showing a question and answer page and the signup page." class="cmp-article-image">
 	<figcaption>These were the pages tested on mobile.</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ Here's what they actually did, and I'm hiding it behind a `<details>`/`<summary>
 If I were evaluating a code sample for an applicant and saw anything even close to that, they'd be disqualified immediately, regardless of experience level. For reference, this is what that list looks like.
 
 <figure>
-	<img src="/images/accessibility-top-100/quora/simple-list.png" alt="A list of simple blue hyperlinks, barely different from what user agent styles would provide." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/quora/simple-list.png" alt="A list of simple blue hyperlinks, barely different from what user agent styles would provide." class="cmp-article-image">
 	<figcaption>It took all that code to create this?</figcaption>
 </figure>
 
@@ -189,7 +189,7 @@ As usual, IBM Equal Access found more issues, including the following:
 Again, zooming is disabled on mobile, and although the automated tools couldn't pick it up, I'm certain that there are color contrast issues with the white text on the light background. The background image appears to be implemented differently as well, and it's composed of two images without alt text (or `alt=""`).
 
 <figure>
-	<img src="/images/accessibility-top-100/quora/poor-contrast.png" alt="The signup page for Quora, which has obviously poor color contrast that goes undetected because automated tools have trouble with background images." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/quora/poor-contrast.png" alt="The signup page for Quora, which has obviously poor color contrast that goes undetected because automated tools have trouble with background images." class="cmp-article-image">
 	<figcaption>Some of the white text might be borderline, but it's obviously not enough contrast for the links.</figcaption>
 </figure>
 
@@ -206,7 +206,7 @@ The signup process involves entering a confirmation code into an input that appe
 This led to a "One Last Step" page where you pick topics of interest to you before you can resume normal question and answer activities. However, this page is absolutely inaccessible via keyboard. No matter how much I tabbed or shift-tabbed, nothing changed on the page. No links or buttons received focus from what I could tell, so without a mouse, I'd be stuck here indefinitely.
 
 <figure>
-	<img src="/images/accessibility-top-100/quora/one-last-step.png" alt="A grid of topics with representative images for things like sports, movies, science, etc. followed by a continue button that is disabled until 5 topics are chosen." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/quora/one-last-step.png" alt="A grid of topics with representative images for things like sports, movies, science, etc. followed by a continue button that is disabled until 5 topics are chosen." class="cmp-article-image">
 	<figcaption>This is indeed the last step, since no other steps can be accessed beyond this.</figcaption>
 </figure>
 

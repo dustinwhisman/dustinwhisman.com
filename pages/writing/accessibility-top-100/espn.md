@@ -22,13 +22,13 @@ With it being a Sunday during football season, I decided to focus on NFL-centric
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/espn/desktop-h.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/espn/desktop-v.png" alt="A composition of screenshots from the desktop version of espn.com, showing the home page, the NFL scoreboard page, and the Denver Broncos overview page." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/espn/desktop-v.png" alt="A composition of screenshots from the desktop version of espn.com, showing the home page, the NFL scoreboard page, and the Denver Broncos overview page." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
 
 <figure>
-	<img src="/images/accessibility-top-100/espn/mobile.png" alt="A composition of screenshots from espn.com on mobile, showing the home page, the NFL scoreboard page, and the Denver Broncos overview page." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/espn/mobile.png" alt="A composition of screenshots from espn.com on mobile, showing the home page, the NFL scoreboard page, and the Denver Broncos overview page." class="cmp-article-image">
 	<figcaption>These were the pages tested on mobile.</figcaption>
 </figure>
 

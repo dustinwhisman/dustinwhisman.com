@@ -22,13 +22,13 @@ Since, at time of testing, an account is required to use the site, I tested the 
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/x-twitter/desktop-h.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/x-twitter/desktop-v.png" alt="A composition of screenshots from the desktop version of twitter.com, showing the login page, sign-up modal dialog, and home page." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/x-twitter/desktop-v.png" alt="A composition of screenshots from the desktop version of twitter.com, showing the login page, sign-up modal dialog, and home page." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
 
 <figure>
-	<img src="/images/accessibility-top-100/x-twitter/mobile.png" alt="A composition of screenshots from the mobile version of twitter.com, showing the login page, sign-up modal dialog, and home page." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/x-twitter/mobile.png" alt="A composition of screenshots from the mobile version of twitter.com, showing the login page, sign-up modal dialog, and home page." class="cmp-article-image">
 	<figcaption>These are the pages that were tested on mobile.</figcaption>
 </figure>
 
@@ -41,14 +41,14 @@ I tested X/Twitter on May 11th, 2024.
 The main login page fares pretty well, with the only critical issues being the color contrast on the “Create account” button (link) and disabling zoom on mobile devices. The contrast ratio in question is 3:1, so this could either be solved by adjusting the colors or by increasing the font size.
 
 <figure>
-	<img src="/images/accessibility-top-100/x-twitter/blue-contrast.png" alt="A screenshot showing the button with insufficient contrast." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/x-twitter/blue-contrast.png" alt="A screenshot showing the button with insufficient contrast." class="cmp-article-image">
 	<figcaption>Large text (14pt bold or 18pt regular) would do it.</figcaption>
 </figure>
 
 As for disabling zoom, there’s no excuse for that, but attempting to zoom in does make it pretty obvious that the “Sign up with Google” button is third-party content, dropped in via `iframe`.
 
 <figure>
-	<img src="/images/accessibility-top-100/x-twitter/broken-zoom.png" alt="A screenshot showing the Twitter login page zoomed in. The only element that changed size is the Google sign-in button, which is heavily obscured." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/x-twitter/broken-zoom.png" alt="A screenshot showing the Twitter login page zoomed in. The only element that changed size is the Google sign-in button, which is heavily obscured." class="cmp-article-image">
 	<figcaption>I'm sure this is what people want when they zoom in.</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ Also of note, they put `role="link"` on many links and `role="navigation"` on a 
 Focus styles are missing for some elements and incredibly subtle for others. I tried to emulate focus styles to grab a screenshot, but then I found that they’re not using `:focus` or `:focus-visible` in CSS to change the styles. That would be too easy. Instead, they’re toggling classes with JavaScript when links receive or lose focus. Baffling.
 
 <figure>
-	<img src="/images/accessibility-top-100/x-twitter/subtle-focus.png" alt="A screenshot showing how hard it is to tell which element has focus." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/x-twitter/subtle-focus.png" alt="A screenshot showing how hard it is to tell which element has focus." class="cmp-article-image">
 	<figcaption>Quick, tell me which element has focus.</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ There are skip links at the start of the page, however they do not become visibl
 The keyboard focus order becomes an issue if you can’t use those skip links. There are two sidebars, and you can tab through the first one, no problem. Then when you get to the main content, you can tab indefinitely, which will continue to load more posts, making it impossible to ever get to the second sidebar. The “Accessibility” link is in that sidebar, which is very cool, great job.
 
 <figure>
-	<img src="/images/accessibility-top-100/x-twitter/focus-order.png" alt="A screenshot showing the dots and lines connecting each focusable element. Many of them are highlighted as having potential issues." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/x-twitter/focus-order.png" alt="A screenshot showing the dots and lines connecting each focusable element. Many of them are highlighted as having potential issues." class="cmp-article-image">
 	<figcaption>In theory, you could get to that sidebar if you lost your internet connection.</figcaption>
 </figure>
 

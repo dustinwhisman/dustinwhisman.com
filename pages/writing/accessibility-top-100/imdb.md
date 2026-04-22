@@ -22,13 +22,13 @@ For IMDb, I tested the [home page](https://www.imdb.com/), the [search results p
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/imdb/desktop-h.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/imdb/desktop-v.png" alt="A composition of screenshots from the desktop version of imdb.com, showing the home page, the search page, and the movie page for Twisters." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/imdb/desktop-v.png" alt="A composition of screenshots from the desktop version of imdb.com, showing the home page, the search page, and the movie page for Twisters." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
 
 <figure>
-	<img src="/images/accessibility-top-100/imdb/mobile.png" alt="A composition of screenshots from the mobile version of imdb.com, showing the home page, the search page, and the movie page for Twisters." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/imdb/mobile.png" alt="A composition of screenshots from the mobile version of imdb.com, showing the home page, the search page, and the movie page for Twisters." class="cmp-article-image">
 	<figcaption>These are the pages that were tested on mobile.</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ It appears that most, if not all SVGs are given `role="presentation"`, which may
 The “Did you know” section has some… interesting design choices that lead to issues such as nested interactive controls.
 
 <figure>
-	<img src="/images/accessibility-top-100/imdb/goofs.png" alt="A screenshot of a problematic interface that has two links with button roles, partially obscured content, and two different buttons to expand that content, one of which is invisible." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/imdb/goofs.png" alt="A screenshot of a problematic interface that has two links with button roles, partially obscured content, and two different buttons to expand that content, one of which is invisible." class="cmp-article-image">
 	<figcaption>There are goofs here alright.</figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ As for actual behavior with search, the keyboard controls are mostly sensible, w
 Zooming in to 200% and 400% worked reasonably well on desktop—all the text scaled up as expected and there weren’t any obvious overflow or layout issues. The only issue at 400% was the “Back to top” button that floats over the content of the page, which ends up obscuring quite a bit at that size.
 
 <figure>
-	<img src="/images/accessibility-top-100/imdb/back-to-top.png" alt="A screenshot showing a zoomed in page with a large back-to-top button obscuring a significant amount of content." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/imdb/back-to-top.png" alt="A screenshot showing a zoomed in page with a large back-to-top button obscuring a significant amount of content." class="cmp-article-image">
 	<figcaption>No way this could get annoying when trying to read the movie trivia I came here for.</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ All other issues are repeats from other pages.
 There are more keyboard-only access issues caused by the carousels that we really should stop building (I will fight any designer who suggests one). On the main carousel at the top of the page, if it has already animated a few slides by the time keyboard focus arrives in the carousel, the focus indicator will be invisible until you end up focused on the current slide. Then, if you keep going, you can end up in weird states where two slides are partially visible.
 
 <figure>
-	<img src="/images/accessibility-top-100/imdb/broken-carousel.png" alt="A screenshot showing two halves of images from different movies side by side with one of them including a link that is focused." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/imdb/broken-carousel.png" alt="A screenshot showing two halves of images from different movies side by side with one of them including a link that is focused." class="cmp-article-image">
 	<figcaption>It's okay, you'll be able to see the rest of the image eventually.</figcaption>
 </figure>
 

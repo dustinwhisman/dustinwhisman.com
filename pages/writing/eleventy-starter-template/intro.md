@@ -49,7 +49,7 @@ If you click that button (or navigate to `github.com/ownername/reponame/generate
 - Set the repo to public or private
 - Choose whether to include all branches from the template repo
 
-<img src="/images/eleventy-series/create-from-template.png" alt="" class="cmp-article__image">
+<img src="/images/eleventy-series/create-from-template.png" alt="" class="cmp-article-image">
 
 Once you submit that form, you should have a brand new repo that’s identical to your template, but without any git history. It essentially takes a snapshot of the template repo and uses all of those files to create an initial commit for your new project.
 
