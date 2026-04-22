@@ -53,11 +53,6 @@ body > footer {
 	}
 }
 
-:where(h1, h2, h3, h4, h5, h6) {
-	overflow-wrap: break-word;
-	hyphens: auto;
-}
-
 :focus {
 	outline: 0.125em solid currentcolor;
 	outline-offset: 0.25em;

@@ -15,7 +15,7 @@ export default function (eleventyConfig) {
 	const md = markdownIt(markdownOptions).use(markdownItAnchor, {
 		level: 2,
 		permalink: markdownItAnchor.permalink.linkInsideHeader({
-			class: 'cmp-permalink__link',
+			class: 'cmp-permalink',
 			renderAttrs: (slug) => ({ 'aria-labelledby': slug }),
 			symbol: '<span aria-hidden="true">#</span>',
 			placement: 'after',
