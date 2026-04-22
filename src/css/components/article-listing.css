@@ -1,8 +1,4 @@
 .cmp-article-listing {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-
 	span {
 		display: block;
 	}

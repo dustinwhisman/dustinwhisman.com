@@ -1,5 +1,9 @@
 :is(ul, ol) {
 	padding-inline-start: 1.5rem;
+
+	li + li {
+		margin-block-start: 0.25rem;
+	}
 }
 
 ol ol {

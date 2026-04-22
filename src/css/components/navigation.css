@@ -7,6 +7,10 @@
 	padding-inline: 0;
 	font-size: var(--dw-font-size-body-lg);
 
+	li {
+		margin-block-start: 0;
+	}
+
 	a {
 		color: var(--dw-link-color);
 		text-decoration: none;
