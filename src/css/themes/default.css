@@ -66,6 +66,7 @@
 		--dw-secondary-background-color: var(--dw-secondary-background-color-dark);
 		--dw-secondary-border-color: var(--dw-secondary-border-color-dark);
 		--dw-secondary-shadow-color: var(--dw-secondary-shadow-color-dark);
+		--dw-code-text-color: var(--dw-code-text-color-dark);
 		--dw-code-background-color: var(--dw-code-background-color-dark);
 	}
 }
