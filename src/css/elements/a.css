@@ -1,16 +1,16 @@
 a {
-  color: var(--dw-link-color);
-    
-  &:visited {
-    color: var(--dw-link-color-visited);
-  }
-  
-  &:is(:hover, :active) {
-    color: var(--dw-link-color-hover);
-    text-decoration: none;
-  }
+	color: var(--dw-link-color);
 
-  &:focus-visible {
-    text-decoration: none;
-  }
+	&:visited {
+		color: var(--dw-link-color-visited);
+	}
+
+	&:is(:hover, :active) {
+		color: var(--dw-link-color-hover);
+		text-decoration: none;
+	}
+
+	&:focus-visible {
+		text-decoration: none;
+	}
 }

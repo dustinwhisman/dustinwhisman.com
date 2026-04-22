@@ -2,7 +2,7 @@ import markdownIt from 'markdown-it';
 import markdownItAnchor from 'markdown-it-anchor';
 import pluginRSS from '@11ty/eleventy-plugin-rss';
 
-export default function(eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
 
 	const markdownOptions = {
@@ -29,7 +29,7 @@ export default function(eleventyConfig) {
 			closingSingleTag: 'default',
 		},
 	});
-};
+}
 
 export const config = {
 	dir: {

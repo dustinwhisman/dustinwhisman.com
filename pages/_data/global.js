@@ -19,7 +19,7 @@ const getImagePaths = (folderPath) => {
 			return 0;
 		})
 		.map((file) => {
-			const buffer = fs.readFileSync(`${directoryPath}/${file.name}`)
+			const buffer = fs.readFileSync(`${directoryPath}/${file.name}`);
 			const { width, height } = imageSize(buffer);
 			return {
 				name: file.name,

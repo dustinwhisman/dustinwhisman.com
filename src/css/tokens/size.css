@@ -1,5 +1,5 @@
 :root {
-  --dw-page-gutter: 1.5rem;
-  --dw-max-content-width: 40rem;
-  --dw-max-line-length: 72ch;
+	--dw-page-gutter: 1.5rem;
+	--dw-max-content-width: 40rem;
+	--dw-max-line-length: 72ch;
 }

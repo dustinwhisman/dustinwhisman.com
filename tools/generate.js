@@ -184,9 +184,9 @@ const resolveFilePath = (collection, slug) => {
 			return path.join(process.cwd(), 'pages', 'writing', 'eleventy-starter-template', `${slug}.md`);
 		case collections.ACCESSIBILITY_TOP_100:
 			return path.join(process.cwd(), 'pages', 'writing', 'accessibility-top-100', `${slug}.md`);
-			case collections.ACCESSIBILITY_HOW_TOS:
-				return path.join(process.cwd(), 'pages', 'writing', 'accessibility-how-tos', `${slug}.md`);
-			default:
+		case collections.ACCESSIBILITY_HOW_TOS:
+			return path.join(process.cwd(), 'pages', 'writing', 'accessibility-how-tos', `${slug}.md`);
+		default:
 			return path.join(process.cwd(), 'pages', 'writing', `${slug}.md`);
 	}
 };

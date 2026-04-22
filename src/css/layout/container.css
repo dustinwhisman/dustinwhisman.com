@@ -1,7 +1,7 @@
 .lyt-container {
-  box-sizing: content-box;
-  max-inline-size: var(--dw-max-content-width);
-  padding-inline: var(--dw-page-gutter);
-  margin-inline: auto;
-  padding-block: 1rem;
+	box-sizing: content-box;
+	max-inline-size: var(--dw-max-content-width);
+	padding-inline: var(--dw-page-gutter);
+	margin-inline: auto;
+	padding-block: 1rem;
 }

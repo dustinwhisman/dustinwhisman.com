@@ -1,15 +1,15 @@
 :is(ul, ol) {
-  padding-inline-start: 1.5rem;
+	padding-inline-start: 1.5rem;
 }
 
 ol ol {
-  list-style-type: lower-alpha;
-  
-  ol {
-    list-style-type: lower-roman;
-  }
+	list-style-type: lower-alpha;
+
+	ol {
+		list-style-type: lower-roman;
+	}
 }
 
 :where(dt) {
-  font-weight: 700;
+	font-weight: 700;
 }

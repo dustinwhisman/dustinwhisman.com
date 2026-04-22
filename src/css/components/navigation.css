@@ -1,23 +1,23 @@
 .cmp-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 1rem;
-  padding-block: 1rem;
-  padding-inline: 0;
-  font-size: var(--dw-font-size-body-lg);
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 1rem;
+	padding-block: 1rem;
+	padding-inline: 0;
+	font-size: var(--dw-font-size-body-lg);
 
-  a {
-    color: var(--dw-link-color);
-    text-decoration: none;
+	a {
+		color: var(--dw-link-color);
+		text-decoration: none;
 
-    &:hover {
-      color: var(--dw-link-color-hover);
-      text-decoration: underline;
-    }
-  }
+		&:hover {
+			color: var(--dw-link-color-hover);
+			text-decoration: underline;
+		}
+	}
 }
 
 .cmp-navigation--basic-pagination {
-  justify-content: space-between;
+	justify-content: space-between;
 }

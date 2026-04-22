@@ -1,6 +1,6 @@
 :root {
-  color-scheme: light dark;
-  font-family: var(--dw-font-family-sans);
-  color: var(--dw-color);
-  background-color: var(--dw-background-color);
+	color-scheme: light dark;
+	font-family: var(--dw-font-family-sans);
+	color: var(--dw-color);
+	background-color: var(--dw-background-color);
 }

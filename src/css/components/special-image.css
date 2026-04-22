@@ -1,8 +1,8 @@
 .cmp-special-image {
-  border-radius: 0.5rem;
-  box-shadow: var(--dw-shadow-neutral);
+	border-radius: 0.5rem;
+	box-shadow: var(--dw-shadow-neutral);
 }
 
 picture:has(.cmp-special-image) + picture:has(.cmp-special-image) {
-  margin-block-start: 1rem;
+	margin-block-start: 1rem;
 }
