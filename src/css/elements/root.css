@@ -3,10 +3,10 @@
 	font-family: var(--dw-font-family-sans);
 	color: var(--dw-color);
 	background-color: var(--dw-background-color);
+}
 
-	@media (prefers-color-scheme: dark) {
-		& {
-			-webkit-font-smoothing: antialiased;
-		}
+@media (prefers-color-scheme: dark) {
+	:root {
+		-webkit-font-smoothing: antialiased;
 	}
 }
