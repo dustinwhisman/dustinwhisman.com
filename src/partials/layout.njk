@@ -55,38 +55,36 @@
 	{% endblock %}
 	<main id="main-content" tabindex="-1" class="lyt-container">
 		{% block content %}
-		<article class="cmp-article__container lyt-stack">
+		<article>
 			{{ content | safe }}
 		</article>
 		{% endblock %}
 	</main>
 	{% block footer %}
 	<footer class="lyt-container">
-		<div class="lyt-stack">
-			<a href="#end-of-footer" class="util-visually-hidden cmp-skip-to-content">Skip to the end of the footer</a>
-			<p class="body-sm">
-				Do you have a project that needs help getting off the ground? A website that needs an accessibility audit or remediation? Did you vibe code an app that's broken now and can't figure out why? Get in touch with me at <a href="mailto:dustin@dustinwhisman.com">dustin@dustinwhisman.com</a>.
-			</p>
-			<ul class="cmp-navigation">
-				<li>
-					<a href="https://github.com/dustinwhisman/">GitHub</a>
-				</li>
-				<li>
-					<a href="/feed.xml">RSS feed</a>
-				</li>
-				<li>
-					<a href="/search/">Search</a>
-				</li>
-				<li>
-					<a id="end-of-footer" href="/copyright/">
-						© Copyright 2022 -
-						<span data-current-year>
-							{{ global.year() }}
-						</span>
-					</a>
-				</li>
-			</ul>
-		</div>
+		<a href="#end-of-footer" class="util-visually-hidden cmp-skip-to-content">Skip to the end of the footer</a>
+		<p class="body-sm">
+			Do you have a project that needs help getting off the ground? A website that needs an accessibility audit or remediation? Did you vibe code an app that's broken now and can't figure out why? Get in touch with me at <a href="mailto:dustin@dustinwhisman.com">dustin@dustinwhisman.com</a>.
+		</p>
+		<ul class="cmp-navigation">
+			<li>
+				<a href="https://github.com/dustinwhisman/">GitHub</a>
+			</li>
+			<li>
+				<a href="/feed.xml">RSS feed</a>
+			</li>
+			<li>
+				<a href="/search/">Search</a>
+			</li>
+			<li>
+				<a id="end-of-footer" href="/copyright/">
+					© Copyright 2022 -
+					<span data-current-year>
+						{{ global.year() }}
+					</span>
+				</a>
+			</li>
+		</ul>
 	</footer>
 	{% endblock %}
 

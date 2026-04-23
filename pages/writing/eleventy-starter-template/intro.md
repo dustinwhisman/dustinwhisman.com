@@ -11,15 +11,6 @@ tags:
 
 # Setting up Future Projects for Success with Template Repositories
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/how_to_build_github_starter_templates_for_Eleventy_to_make_your_projects_easier">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 If you’re anything like me, you have a ton of side project ideas bouncing around your head, but you have a hard time getting past the project setup steps that have to happen before you can build the _thing_.

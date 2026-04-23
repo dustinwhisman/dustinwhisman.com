@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: Progressive Web App Support
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/eleventy_starter_repo_series_teaches_progressive_web_app_support_PWA">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [previous entry in this series](../eleventy-starter-legacy-js-and-typescript), we finished adding support for JavaScript and TypeScript, including linting, testing, and legacy builds for older browsers. This time, we’ll set up our starter template so that it has Progressive Web Application (PWA) support.

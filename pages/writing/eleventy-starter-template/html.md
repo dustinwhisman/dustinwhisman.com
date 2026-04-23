@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: HTML
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/building_an_eleventy_starter_template_with_flexible_html_linting_accessibility">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [last part of this series](../eleventy-starter-structure), we set up our initial project structure and configuration, and we created a minimal HTML layout that can be shared between different pages. In this article, we will make that HTML layout more flexible and dynamic, so we can modify it as needed on a page-by-page basis.

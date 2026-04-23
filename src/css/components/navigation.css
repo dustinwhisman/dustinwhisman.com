@@ -23,5 +23,7 @@
 }
 
 .cmp-navigation--basic-pagination {
+	font-size: var(--dw-font-size-body-md);
 	justify-content: space-between;
+	margin-block-start: 1rem;
 }

@@ -13,13 +13,6 @@ tags:
 
 {% include 'partials/published-date.njk' %}
 
-<p class="cmp-fine-print">
-	Updated:
-	<time datetime="2025-06-16T00:00:00.000Z">
-		6/16/2025
-	</time>
-</p>
-
 I gave a talk with Jon Oliver (not that one) for Sparkbox's UnConference for Spring 2025. Our talk was the keynote and covered the web development landscape in 2025, covering everything from React to... not React. Spoiler alert, I advocated for web standards based approaches and Jon highlighted some ways to use React as best as you can.
 
 There were two other, shorter talks from Rise Erpelding about progressive enhancement and Kasey Bonifacio about how web development has changed (for the worse, in my opinion). Thanks for attending if you were there live, but if you missed it, don't worry, everything was recorded.

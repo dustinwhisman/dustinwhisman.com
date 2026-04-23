@@ -6,6 +6,7 @@ pre {
 	white-space: pre;
 	max-inline-size: 100%;
 	overflow-x: auto;
+	margin-block-start: 1rem;
 }
 
 code {
