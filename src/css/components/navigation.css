@@ -19,6 +19,10 @@
 			color: var(--dw-link-color-hover);
 			text-decoration: underline;
 		}
+
+		&[aria-current] {
+			color: var(--dw-link-color-hover);
+		}
 	}
 }
 
