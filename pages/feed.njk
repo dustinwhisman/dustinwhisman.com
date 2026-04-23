@@ -29,7 +29,12 @@
 			<dc:creator>{{ metadata.author.name }}</dc:creator>
 			<pubDate>{{ post.date.toUTCString() }}</pubDate>
 			<guid>{{ absolutePostUrl }}</guid>
-			<description>{{ post.templateContent | renderTransforms(post.data.page, metadata.base) }}</description>
+			<description>
+				&lt;noscript&gt;
+					&lt;img src="https://tinylytics.app/pixel/BdG1QiBChswEkEpQfbqg.gif" alt=""&gt;
+				&lt;/noscript&gt;
+				{{ post.templateContent | renderTransforms(post.data.page, metadata.base) }}
+			</description>
 		</item>
 		{%- endfor %}
 	</channel>
