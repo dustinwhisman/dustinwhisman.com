@@ -4,15 +4,51 @@
 	max-width: 100%;
 	aspect-ratio: 1;
 	object-fit: cover;
-	animation: sprite 10s steps(30, jump-none) infinite;
+	animation: sprite 20s steps(2, jump-none) infinite;
 }
 
 @keyframes sprite {
-	from {
+	0% {
 		object-position: 0% 0%;
 	}
 
-	to {
+	19% {
+		object-position: 0% 0%;
+	}
+
+	20% {
+		object-position: 50% 0%;
+	}
+
+	21% {
+		object-position: 0% 0%;
+	}
+
+	59% {
+		object-position: 0% 0%;
+	}
+
+	60% {
+		object-position: 50% 0%;
+	}
+
+	61% {
+		object-position: 0% 0%;
+	}
+
+	89% {
+		object-position: 0% 0%;
+	}
+
+	90% {
 		object-position: 100% 0%;
+	}
+
+	99% {
+		object-position: 100% 0%;
+	}
+
+	100% {
+		object-position: 0% 0%;
 	}
 }
