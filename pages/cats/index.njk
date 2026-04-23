@@ -20,9 +20,8 @@ layout: default
 			{{ catPicture(image, imagesRendered, 4, altText) }}
 		{% endfor %}
 	{% elseif loop.index === 4 %}
-		<h2>Older Pictures</h2>
-		<p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
-	{% else %}
-		<p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
+		<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Picture of cats by month">
+			<a href="/cats/{{ month }}/">Older Pictures</a>
+		</nav>
 	{% endif %}
 {% endfor %}
