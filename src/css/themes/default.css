@@ -1,59 +1,39 @@
 :root,
 [data-theme] {
+	/* neutral colors */
 	--dw-neutral-text-color-light: var(--dw-color-gray-30);
 	--dw-neutral-text-color-dark: var(--dw-color-gray-90);
 	--dw-neutral-background-color-light: var(--dw-color-gray-100);
 	--dw-neutral-background-color-dark: var(--dw-color-gray-20);
-	--dw-neutral-border-color-light: var(--dw-color-gray-30);
-	--dw-neutral-border-color-dark: var(--dw-color-gray-90);
 	--dw-neutral-shadow-color-light: var(--dw-color-gray-50);
 	--dw-neutral-shadow-color-dark: var(--dw-color-gray-10);
+
+	/* primary, secondary, accent, and code colors */
 	--dw-primary-text-color-light: var(--dw-color-blue-50);
 	--dw-primary-text-color-dark: var(--dw-color-blue-90);
-	--dw-primary-background-color-light: var(--dw-color-blue-100);
-	--dw-primary-background-color-dark: var(--dw-color-blue-10);
-	--dw-primary-border-color-light: var(--dw-color-blue-30);
-	--dw-primary-border-color-dark: var(--dw-color-blue-90);
-	--dw-primary-shadow-color-light: var(--dw-color-blue-90);
-	--dw-primary-shadow-color-dark: var(--dw-color-blue-30);
 	--dw-secondary-text-color-light: var(--dw-color-purple-50);
 	--dw-secondary-text-color-dark: var(--dw-color-purple-80);
-	--dw-secondary-background-color-light: var(--dw-color-purple-100);
-	--dw-secondary-background-color-dark: var(--dw-color-purple-10);
-	--dw-secondary-border-color-light: var(--dw-color-purple-30);
-	--dw-secondary-border-color-dark: var(--dw-color-purple-90);
-	--dw-secondary-shadow-color-light: var(--dw-color-purple-90);
-	--dw-secondary-shadow-color-dark: var(--dw-color-purple-30);
 	--dw-accent-text-color-light: var(--dw-color-pink-50);
 	--dw-accent-text-color-dark: var(--dw-color-pink-80);
-	--dw-accent-background-color-light: var(--dw-color-pink-100);
-	--dw-accent-background-color-dark: var(--dw-color-pink-10);
 	--dw-accent-border-color-light: var(--dw-color-pink-30);
 	--dw-accent-border-color-dark: var(--dw-color-pink-90);
-	--dw-accent-shadow-color-light: var(--dw-color-pink-90);
-	--dw-accent-shadow-color-dark: var(--dw-color-pink-30);
 	--dw-code-text-color-light: var(--dw-color-gray-90);
 	--dw-code-text-color-dark: var(--dw-color-gray-90);
 	--dw-code-background-color-light: var(--dw-color-gray-30);
 	--dw-code-background-color-dark: var(--dw-color-gray-10);
+
+	/* light mode color definitions */
 	--dw-neutral-text-color: var(--dw-neutral-text-color-light);
 	--dw-neutral-background-color: var(--dw-neutral-background-color-light);
-	--dw-neutral-border-color: var(--dw-neutral-border-color-light);
 	--dw-neutral-shadow-color: var(--dw-neutral-shadow-color-light);
 	--dw-primary-text-color: var(--dw-primary-text-color-light);
-	--dw-primary-background-color: var(--dw-primary-background-color-light);
-	--dw-primary-border-color: var(--dw-primary-border-color-light);
-	--dw-primary-shadow-color: var(--dw-primary-shadow-color-light);
 	--dw-secondary-text-color: var(--dw-secondary-text-color-light);
-	--dw-secondary-background-color: var(--dw-secondary-background-color-light);
-	--dw-secondary-border-color: var(--dw-secondary-border-color-light);
-	--dw-secondary-shadow-color: var(--dw-secondary-shadow-color-light);
 	--dw-accent-text-color: var(--dw-accent-text-color-light);
-	--dw-accent-background-color: var(--dw-accent-background-color-light);
 	--dw-accent-border-color: var(--dw-accent-border-color-light);
-	--dw-accent-shadow-color: var(--dw-accent-shadow-color-light);
 	--dw-code-text-color: var(--dw-code-text-color-light);
 	--dw-code-background-color: var(--dw-code-background-color-light);
+
+	/* semantic definitions */
 	--dw-color: var(--dw-neutral-text-color);
 	--dw-background-color: var(--dw-neutral-background-color);
 	--dw-link-color: var(--dw-primary-text-color);
@@ -66,22 +46,14 @@
 		5px 10px 12.6px -2.5px oklch(from var(--dw-neutral-shadow-color) l c h / 36%);
 
 	@media (prefers-color-scheme: dark) {
+		/* dark mode color definitions */
 		--dw-neutral-text-color: var(--dw-neutral-text-color-dark);
 		--dw-neutral-background-color: var(--dw-neutral-background-color-dark);
-		--dw-neutral-border-color: var(--dw-neutral-border-color-dark);
 		--dw-neutral-shadow-color: var(--dw-neutral-shadow-color-dark);
 		--dw-primary-text-color: var(--dw-primary-text-color-dark);
-		--dw-primary-background-color: var(--dw-primary-background-color-dark);
-		--dw-primary-border-color: var(--dw-primary-border-color-dark);
-		--dw-primary-shadow-color: var(--dw-primary-shadow-color-dark);
 		--dw-secondary-text-color: var(--dw-secondary-text-color-dark);
-		--dw-secondary-background-color: var(--dw-secondary-background-color-dark);
-		--dw-secondary-border-color: var(--dw-secondary-border-color-dark);
-		--dw-secondary-shadow-color: var(--dw-secondary-shadow-color-dark);
 		--dw-accent-text-color: var(--dw-accent-text-color-dark);
-		--dw-accent-background-color: var(--dw-accent-background-color-dark);
 		--dw-accent-border-color: var(--dw-accent-border-color-dark);
-		--dw-accent-shadow-color: var(--dw-accent-shadow-color-dark);
 		--dw-code-text-color: var(--dw-code-text-color-dark);
 		--dw-code-background-color: var(--dw-code-background-color-dark);
 	}
