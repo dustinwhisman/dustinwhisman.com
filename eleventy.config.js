@@ -1,35 +1,21 @@
-import hljs from 'highlight.js';
 import markdownIt from 'markdown-it';
 import markdownItAnchor from 'markdown-it-anchor';
 import pluginRSS from '@11ty/eleventy-plugin-rss';
 
-export default function(eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
 
 	const markdownOptions = {
 		html: true,
-		highlight: function (str, lang) {
-			if (lang && hljs.getLanguage(lang)) {
-				try {
-					return `<pre tabindex="0" role="region" aria-label="Code sample"><code class="language-${lang}">${
-						hljs.highlight(str, {
-							language: lang,
-							ignoreIllegals: true,
-						}).value
-					}</code></pre>`;
-				} catch {
-					// swallow error, fall through to default case
-				}
-			}
-
-			return `<pre tabindex="0" role="region" aria-label="Code sample"><code>${markdownIt.utils.escapeHtml(str)}</code></pre>`;
+		highlight: function (str) {
+			return `<pre tabindex="0" role="region" aria-label="Code sample"><code>${md.utils.escapeHtml(str)}</code></pre>`;
 		},
 	};
 
 	const md = markdownIt(markdownOptions).use(markdownItAnchor, {
 		level: 2,
 		permalink: markdownItAnchor.permalink.linkInsideHeader({
-			class: 'cmp-permalink__link',
+			class: 'cmp-permalink',
 			renderAttrs: (slug) => ({ 'aria-labelledby': slug }),
 			symbol: '<span aria-hidden="true">#</span>',
 			placement: 'after',
@@ -43,7 +29,7 @@ export default function(eleventyConfig) {
 			closingSingleTag: 'default',
 		},
 	});
-};
+}
 
 export const config = {
 	dir: {

@@ -2,44 +2,30 @@
 permalink: /styles.css
 eleventyExcludeFromCollections: true
 ---
-@layer generic, elements, components, utilities;
-
-@layer generic {
-{% include 'css/generic/_reset.css' %}
-}
-
-@layer elements {
-{% include 'css/elements/_root.css' %}
-{% include 'css/elements/_headings.css' %}
-{% include 'css/elements/_p.css' %}
-{% include 'css/elements/_header.css' %}
-{% include 'css/elements/_footer.css' %}
-{% include 'css/elements/_pre-code.css' %}
-{% include 'css/elements/_a.css' %}
-{% include 'css/elements/_lists.css' %}
-{% include 'css/elements/_figcaption.css' %}
-{% include 'css/elements/_blockquote.css' %}
-{% include 'css/elements/_details.css' %}
-}
-
-@layer components {
-{% include 'css/components/_container.css' %}
-{% include 'css/components/_stack.css' %}
-{% include 'css/components/_skip-to-content.css' %}
-{% include 'css/components/_navigation.css' %}
-{% include 'css/components/_project.css' %}
-{% include 'css/components/_badge.css' %}
-{% include 'css/components/_article-listing.css' %}
-{% include 'css/components/_pictures-of-cats.css' %}
-{% include 'css/components/_it-me.css' %}
-{% include 'css/components/_fine-print.css' %}
-{% include 'css/components/_article.css' %}
-{% include 'css/components/_hljs.css' %}
-{% include 'css/components/_writing-grid.css' %}
-{% include 'css/components/_permalink.css' %}
-{% include 'css/components/_form.css' %}
-}
-
-@layer utilities {
-{% include 'css/utilities/_visually-hidden.css' %}
-}
+{% include 'css/tokens/color.css' %}
+{% include 'css/tokens/size.css' %}
+{% include 'css/tokens/typography.css' %}
+{% include 'css/themes/default.css' %}
+{% include 'css/generic/reset.css' %}
+{% include 'css/generic/fonts.css' %}
+{% include 'css/generic/typography.css' %}
+{% include 'css/elements/root.css' %}
+{% include 'css/elements/a.css' %}
+{% include 'css/elements/details-summary.css' %}
+{% include 'css/elements/figcaption.css' %}
+{% include 'css/elements/lists.css' %}
+{% include 'css/elements/pre-code.css' %}
+{% include 'css/layout/container.css' %}
+{% include 'css/layout/stack.css' %}
+{% include 'css/components/about.css' %}
+{% include 'css/components/article-image.css' %}
+{% include 'css/components/article-listing.css' %}
+{% include 'css/components/featured-link.css' %}
+{% include 'css/components/form.css' %}
+{% include 'css/components/navigation.css' %}
+{% include 'css/components/publish-date.css' %}
+{% include 'css/components/permalink.css' %}
+{% include 'css/components/self-sprite.css' %}
+{% include 'css/components/skip-to-content.css' %}
+{% include 'css/components/special-image.css' %}
+{% include 'css/utilities/visually-hidden.css' %}

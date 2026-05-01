@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: Legacy JS Builds and TypeScript Support
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/eleventy_starter_repo_series_teaches_typescript_support_and_legacy_javascript_builds_for_legacy_browsers">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [last part of this series](../eleventy-starter-javascript), we added support for JavaScript to our template repository—including a modern build process, linting, and testing. This time, we’ll expand our support for older browsers by setting up a legacy JS build and updating our repo to support TypeScript.

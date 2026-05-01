@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: CSS
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/building_css_support_into_my_github_starter_template_project">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [last part of this series](../eleventy-starter-html), we added support for dynamic HTML to our template repository. In this article, we will add support for CSS, authored in SCSS.

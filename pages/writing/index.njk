@@ -11,53 +11,45 @@ pagination:
 
 <h1>Writing</h1>
 
-<div class="cmp-writing-grid">
-	<div class="cmp-stack">
-		<h2>All Posts</h2>
-		<a href="#collections" class="util-visually-hidden cmp-skip-to-content">Skip to Collections</a>
+<h2>All Posts</h2>
+<ul class="cmp-article-listing">
+	{% for article in articles %}
+		<li>
+			<a href="{{ article.url }}">{{ article.data.articleTitle }}</a>
+			<span>
+				<span class="util-visually-hidden">Published:</span>
+				<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+					{{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
+				</time>
+			</span>
+		</li>
+	{% endfor %}
+</ul>
 
-		<ul class="cmp-article-listing__list">
-			{% for article in articles %}
-				<li>
-					<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
-					<span>
-						<span class="util-visually-hidden">Published:</span>
-						<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
-							{{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
-						</time>
-					</span>
-				</li>
-			{% endfor %}
-		</ul>
+<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Article pagination navigation">
+	{% if pagination.href.previous %}
+		<a href="{{ pagination.href.previous }}">Newer posts</a>
+	{% endif %}
+	{% if pagination.href.next %}
+		<a href="{{ pagination.href.next }}">Older posts</a>
+	{% endif %}
+</nav>
 
-		<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Article pagination navigation">
-			{% if pagination.href.previous %}
-				<a href="{{ pagination.href.previous }}" class="cmp-navigation__previous">Newer posts</a>
-			{% endif %}
-			{% if pagination.href.next %}
-				<a href="{{ pagination.href.next }}" class="cmp-navigation__next">Older posts</a>
-			{% endif %}
-		</nav>
-	</div>
-	<div class="cmp-stack cmp-writing-grid__sticky-section">
-		<h2 id="collections" tabindex="-1">Collections</h2>
-
-		<ul class="cmp-article-listing__list">
-			<li>
-				<a href="/writing/accessibility-top-100/" class="cmp-article-listing__link">How accessible are the top 100 US sites?</a>
-			</li>
-			<li>
-				<a href="/writing/accessibility-how-tos/" class="cmp-article-listing__link">Accessibility how-tos</a>
-			</li>
-			<li>
-				<a href="/writing/certified-professional-in-accessibility-core-competencies-certification/" class="cmp-article-listing__link">Certified Professional in Accessibility Core Competencies (CPACC) certification notes</a>
-			</li>
-			<li>
-				<a href="/writing/eleventy-starter-template/" class="cmp-article-listing__link">Building an Eleventy starter template</a>
-			</li>
-			<li>
-				<a href="/writing/web-accessibility-specialist-certification/" class="cmp-article-listing__link">Web Accessibility Specialist (WAS) certification notes</a>
-			</li>
-		</ul>
-	</div>
-</div>
+<h2 id="collections" tabindex="-1">Collections</h2>
+<ul class="cmp-article-listing">
+	<li>
+		<a href="/writing/accessibility-top-100/">How accessible are the top 100 US sites?</a>
+	</li>
+	<li>
+		<a href="/writing/accessibility-how-tos/">Accessibility how-tos</a>
+	</li>
+	<li>
+		<a href="/writing/certified-professional-in-accessibility-core-competencies-certification/">Certified Professional in Accessibility Core Competencies (CPACC) certification notes</a>
+	</li>
+	<li>
+		<a href="/writing/eleventy-starter-template/">Building an Eleventy starter template</a>
+	</li>
+	<li>
+		<a href="/writing/web-accessibility-specialist-certification/">Web Accessibility Specialist (WAS) certification notes</a>
+	</li>
+</ul>

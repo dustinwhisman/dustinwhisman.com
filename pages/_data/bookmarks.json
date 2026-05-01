@@ -976,5 +976,33 @@
 		"author": "Craig Cook",
 		"authorLink": "https://www.focalcurve.com/",
 		"description": "This is resonating a little too well these days."
+	},
+	{
+		"link": "https://dbushell.com/2026/04/02/css-subgrid-is-super-good/",
+		"title": "CSS subgrid is super good",
+		"author": "David Bushell",
+		"authorLink": "https://dbushell.com/",
+		"description": "Building things that need to be full-bleed or wider than everything else is so much easier and less error prone with the subgrid approach."
+	},
+	{
+		"link": "https://yatil.net/blog/screen-readers-are-not-testing-tools",
+		"title": "Screen readers are not testing tools",
+		"author": "Eric Eggert",
+		"authorLink": "https://yatil.net/",
+		"description": "Most of the time, it's better to check the accessibility tree, unless you're testing for something very specific."
+	},
+	{
+		"link": "https://daverupert.com/2026/04/inverted-light-dark/",
+		"title": "Inverted themes with light-dark()",
+		"author": "Dave Rupert",
+		"authorLink": "https://daverupert.com/",
+		"description": "Too bad light-dark() only works with colors for now, but even so, it makes theming so much easier."
+	},
+	{
+		"link": "https://piechowski.io/post/git-commands-before-reading-code/",
+		"title": "The Git Commands I Run Before Reading Any Code",
+		"author": "Ally Piechowski",
+		"authorLink": "https://piechowski.io/",
+		"description": "Mostly bookmarking these to use for future projects, seems like a really good way to get a sense of how healthy both the code and the team working in it are."
 	}
 ]

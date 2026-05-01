@@ -1,0 +1,118 @@
+* {
+	max-inline-size: var(--dw-max-line-length);
+}
+
+:is(html, body, div, header, nav, main, section, footer) {
+	max-inline-size: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6),
+:is(.heading-xxl, .heading-xl, .heading-lg, .heading-md, .heading-sm, .heading-xs) {
+	font-family: var(--dw-font-family-serif);
+	font-weight: 700;
+}
+
+:where(h1),
+.heading-xxl {
+	font-size: var(--dw-font-size-heading-xxl);
+}
+
+:where(h2),
+.heading-xl {
+	font-size: var(--dw-font-size-heading-xl);
+}
+
+:where(h3),
+.heading-lg {
+	font-size: var(--dw-font-size-heading-lg);
+}
+
+:where(h4),
+.heading-md {
+	font-size: var(--dw-font-size-heading-md);
+}
+
+:where(h5),
+.heading-sm {
+	font-size: var(--dw-font-size-heading-sm);
+}
+
+:where(h6),
+.heading-xs {
+	font-size: var(--dw-font-size-heading-xs);
+}
+
+:is(.display-lg, .display-md, .display-sm) {
+	font-family: var(--dw-font-family-display);
+	font-weight: 900;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+.display-lg {
+	font-size: var(--dw-font-size-display-lg);
+}
+
+.display-md {
+	font-size: var(--dw-font-size-display-md);
+}
+
+.display-sm {
+	font-size: var(--dw-font-size-display-sm);
+}
+
+:is(.body-lg, .body-md, .body-sm, blockquote) {
+	font-family: var(--dw-font-family-sans);
+	font-weight: 400;
+}
+
+:where(blockquote),
+.body-lg {
+	font-size: var(--dw-font-size-body-lg);
+}
+
+:where(p, ul, ol, dl),
+.body-md {
+	font-size: var(--dw-font-size-body-md);
+}
+
+:where(small, sub, sup),
+.body-sm {
+	font-size: var(--dw-font-size-body-sm);
+}
+
+:where(caption, figcaption) {
+	font-style: italic;
+}
+
+:where(img, picture) + figcaption {
+	text-align: center;
+}
+
+:where(blockquote) {
+	position: relative;
+
+	&::before {
+		content: open-quote;
+		position: absolute;
+		right: 100%;
+	}
+
+	& > :last-child::after {
+		content: close-quote;
+	}
+
+	& + figcaption {
+		font-style: normal;
+		margin-block-start: 0.25lh;
+
+		cite {
+			font-style: italic;
+		}
+	}
+}
+
+:where(code) {
+	font-family: var(--dw-font-family-mono);
+	font-size: var(--dw-font-size-body-sm);
+}

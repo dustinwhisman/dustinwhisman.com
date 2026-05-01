@@ -11,20 +11,17 @@ layout: default
 {% for month, monthData in global.catsByMonth %}
 	{% if loop.index <= 3 %}
 		<h2>{{ monthData.name }}</h2>
-		<div class="cmp-pictures-of-cats__grid">
-			{% set altText %}Collection of pictures of my cats, Goose and Barry, taken during {{ monthData.name }}.{% endset %}
-			{% for image in monthData.pictures %}
-				{% set imagesRendered = imagesRendered + 1 %}
-				{% if loop.index > 1 %}
-					{% set altText = "" %}
-				{% endif %}
-				{{ catPicture(image, imagesRendered, 4, altText) }}
-			{% endfor %}
-		</div>
+		{% set altText %}Collection of pictures of my cats, Goose and Barry, taken during {{ monthData.name }}.{% endset %}
+		{% for image in monthData.pictures %}
+			{% set imagesRendered = imagesRendered + 1 %}
+			{% if loop.index > 1 %}
+				{% set altText = "" %}
+			{% endif %}
+			{{ catPicture(image, imagesRendered, 4, altText) }}
+		{% endfor %}
 	{% elseif loop.index === 4 %}
-		<h2>Older Pictures</h2>
-		<p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
-	{% else %}
-		<p><a href="/cats/{{ month }}/">{{ monthData.name }}</a></p>
+		<nav class="cmp-navigation cmp-navigation--basic-pagination" aria-label="Picture of cats by month">
+			<a href="/cats/{{ month }}/">Older Pictures</a>
+		</nav>
 	{% endif %}
 {% endfor %}

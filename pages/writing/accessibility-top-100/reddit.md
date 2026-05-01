@@ -22,7 +22,7 @@ For reddit, I decided to test the [home page](https://www.reddit.com/) and the s
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/reddit/desktop-pages-h.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/reddit/desktop-pages-v.png" alt="A composition of screenshots from the desktop version of reddit.com, showing the home page, a subreddit page, and a post page." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/reddit/desktop-pages-v.png" alt="A composition of screenshots from the desktop version of reddit.com, showing the home page, a subreddit page, and a post page." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
@@ -30,7 +30,7 @@ For reddit, I decided to test the [home page](https://www.reddit.com/) and the s
 As seems to always be the case, different markup is served on desktop compared to mobile, despite very few visual differences. It mostly seems like an excuse to prompt users to use the mobile app instead, which I bet feels great for reddit’s web developers.
 
 <figure>
-	<img src="/images/accessibility-top-100/reddit/mobile-pages.png" alt="A composition of screenshots from the desktop version of reddit.com, showing the home page, a subreddit page, and a post page." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/reddit/mobile-pages.png" alt="A composition of screenshots from the desktop version of reddit.com, showing the home page, a subreddit page, and a post page." class="cmp-article-image">
 	<figcaption>These are the pages that were tested on mobile.</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ However [`<ul>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
 There’s also some weird stuff going on in some post previews. Here’s an example of a post that includes a table and multiple links.
 
 <figure>
-	<img src="/images/accessibility-top-100/reddit/unclickable-links.png" alt="A screenshot of a reddit post showing the box score from a hockey game, with several visible links to the NHL website as well as each team's websites." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/reddit/unclickable-links.png" alt="A screenshot of a reddit post showing the box score from a hockey game, with several visible links to the NHL website as well as each team's websites." class="cmp-article-image">
 	<figcaption>Quiz: which of these interactive elements can you actually interact with?</figcaption>
 </figure>
 

@@ -1,0 +1,4 @@
+.cmp-article-image {
+	margin-inline: auto;
+	border: 1px solid var(--dw-neutral-background-color-dark);
+}

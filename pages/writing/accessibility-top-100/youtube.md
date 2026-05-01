@@ -20,14 +20,14 @@ _This is part 2 of a [series](/writing/accessibility-top-100/) evaluating the ac
 For this evaluation, I focused on [YouTube’s home page](https://www.youtube.com/) and a video page, specifically the [_Godzilla x Kong_ trailer](https://www.youtube.com/watch?v=qqrpMRDuPfc) because it’s recent at time of writing and because movie trailers are largely visual, and I wanted to see how YouTube does with audio descriptions and transcripts (spoiler alert: not great).
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/pages-tested.png" alt="A composition of screenshots for two YouTube pages at desktop sizes." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/pages-tested.png" alt="A composition of screenshots for two YouTube pages at desktop sizes." class="cmp-article-image">
   <figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
 
 Similar to Wikipedia, YouTube uses adaptive design rather than responsive design to handle mobile browsers, so there’s the desktop [youtube.com](http://youtube.com) and the mobile [m.youtube.com](http://m.youtube.com) that serve completely different markup. I’ll start with the desktop version, then call out anything that’s substantially different for the mobile version.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/pages-tested-mobile.png" alt="A composition of screenshots for two YouTube pages at mobile screen sizes." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/pages-tested-mobile.png" alt="A composition of screenshots for two YouTube pages at mobile screen sizes." class="cmp-article-image">
   <figcaption>These are the pages that were tested on mobile.</figcaption>
 </figure>
 
@@ -48,14 +48,14 @@ Let’s start small and work our way up. The recommendations were pretty minor, 
 The interesting things to point out have to do with links in the video and livestream thumbnails. The links that aren’t tabbable are linked images that are redundant with other text links in the same area. Setting `tabindex="-1"`, which YouTube does, is fine for this, but I’d also add `aria-hidden="true"` to remove it from the accessibility tree. I’ll note that [MDN’s documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden) says not to use `aria-hidden` on focusable elements, but since `tabindex="-1"` removes it from the tab order, this should be an acceptable use case.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/video-thumbnail-avatar-code.png" alt="A screenshot of a video thumbnail with the redundant image link and the code for the image link's markup." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/video-thumbnail-avatar-code.png" alt="A screenshot of a video thumbnail with the redundant image link and the code for the image link's markup." class="cmp-article-image">
   <figcaption>There's no reason to focus on the image, since the channel link is right there.</figcaption>
 </figure>
 
 In the livestream thumbnails, there’s a red badge with an icon that says “LIVE” to indicate that it’s a livestream. However, YouTube sets `role="img"` on a `<div>` element that wraps a custom `<yt-icon>` element and a `<p>` tag, and paragraphs aren’t valid descendants of images. It’s a weird implementation for the very normal pattern of having an icon next to some text.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/livestream-thumbnail-plus-code.png" alt="A screenshot of a livestream thumbnail showing the odd markup for the badge." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/livestream-thumbnail-plus-code.png" alt="A screenshot of a livestream thumbnail showing the odd markup for the badge." class="cmp-article-image">
   <figcaption>How many custom elements does it take to put an icon next to some text?</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ The next most frequent violation is using the wrong ARIA roles for elements or d
 Keeping on the trend of using ARIA incorrectly, each YouTube Short marks up its title as an `<h3>` , but they also wrap that heading element with a `<div>` that has `role="heading"` without the required `aria-level` attribute. Setting aside whether it even makes sense to treat these titles as headings, there’s no reason to use that role. I’ll repeat: never use ARIA when you don’t have to.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/shorts-bad-headings.png" alt="A screenshot of YouTube Shorts along with the badly implemented heading code." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/shorts-bad-headings.png" alt="A screenshot of YouTube Shorts along with the badly implemented heading code." class="cmp-article-image">
   <figcaption>Only you can prevent rampant ARIA misuse.</figcaption>
 </figure>
 
@@ -87,14 +87,14 @@ Going down the list, it’s clear that ARIA is not well understood. We’ve got 
 YouTube’s keyboard focus indicators are pretty inconsistent. Sometimes there’s a nice, obvious outline around a link, sometimes the border of a button or form control just slightly changes color or gets thicker, often times the background color changes slightly, and sometimes there’s simply no change to indicate focus. The instances where there are no changes violate [WCAG 2.2 success criterion 2.4.7 Focus Visible (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html), and many of the other subtle changes violate [2.4.13 Focus Appearance (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html).
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/focus-before-after.png" alt="A side-by-side comparison of the non-focused menu button and the focused button." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/focus-before-after.png" alt="A side-by-side comparison of the non-focused menu button and the focused button." class="cmp-article-image">
   <figcaption>When you draw attention to it, it seems obvious, but I didn't notice the change when I started testing.</figcaption>
 </figure>
 
 There is some odd behavior with the main menu that’s worth calling out. By default, the menu is expanded and appears as a sidebar, but when you press the button, it collapses to show only a subset of icons. As an aside, I don’t really understand the utility of this feature. I guess it lets users de-clutter the interface a bit? It doesn’t really save that much space. Anyway, if you collapse the sidebar, your focus doesn’t move, allowing you to keep tabbing through the page as though you had done nothing. However, if the sidebar is collapsed and you activate the same button, it moves focus to the sidebar, bypassing the other navigation, whether you expected that to happen or not. It’s odd behavior, but I don’t think I can call it inaccessible, since users still *can* go back via `Shift`-`Tab`.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/pointless-menu-collapse.png" alt="A screenshot of the menu before and after it's been collapsed." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/pointless-menu-collapse.png" alt="A screenshot of the menu before and after it's been collapsed." class="cmp-article-image">
   <figcaption>What is the point of saving this space?</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ Another keyboard issue happens when you open the action menu for a video (three 
 It’s also worth noting that there’s zero ARIA roles or attributes to make this button/menu accessible to screen readers, so I guess `role="text"` was important enough to include for some `<span>` elements, but it wasn’t important enough for this more complex control. Never use ARIA when you don’t have to, but always use ARIA when you do have to.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/options-button-dropdown.png" alt="A screenshot of the dropdown menu with options to add to queue, download, or share the video." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/options-button-dropdown.png" alt="A screenshot of the dropdown menu with options to add to queue, download, or share the video." class="cmp-article-image">
   <figcaption>If your keyboard focus escapes this dropdown, good luck finding it.</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ The desktop focus styles were bad, but the mobile ones simply do not exist, so f
 Now about those tabs I mentioned earlier. The ones I want to look at first are the ones at the bottom of the screen for “Home”, “Shorts”, and “Library”.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/navigation-tabs.png" alt="A screenshot of the navigation tabs, if you can even call them tabs." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/navigation-tabs.png" alt="A screenshot of the navigation tabs, if you can even call them tabs." class="cmp-article-image">
   <figcaption>I guess they kind of visually resemble tabs? These should clearly just be links.</figcaption>
 </figure>
 
@@ -218,7 +218,7 @@ First, there isn’t an `<a>` tag in sight, and yet when you tap one of these—
 Second, why are these tabs at all? As far as I can tell, there are no `tabpanel` roles to be found. Wait, didn’t I say there was another tab control earlier? Yes, yes I did. That is for these filter buttons at the top of the page that narrow down the videos that are shown. Those are also wrapped in an element with `role="tablist"` for unclear reasons, and there are no `<button>` elements for 40 miles. It’s a `<div>` and `<span>` party, where the rules are made up and the points don’t matter.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/home-page-filters.png" alt="A screenshot of the other tabs, which don't really behave like tabs." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/home-page-filters.png" alt="A screenshot of the other tabs, which don't really behave like tabs." class="cmp-article-image">
   <figcaption>Is anyone else tired? I’m tired.</figcaption>
 </figure>
 
@@ -258,7 +258,7 @@ I’m not going to cover all the issues that were also present on the home page 
 For the video player itself, there are several inputs that don’t have visible labels. This covers the playback slider for scrubbing through the video, the volume slider, and a third mystery control that I couldn’t figure out what it was (maybe chapter selection?). It’s interesting to me that the automated tooling surfaced those and not all the other buttons that have no visual text label. They have `title` attributes, so maybe that’s satisfying the tool. Visual labels *may* not be necessary for these buttons because they’ve been widely used for many years now, but what’s the harm in having a little text? Just stick it under the icon, it’s fine.
 
 <figure>
-  <img src="/images/accessibility-top-100/youtube/player-controls.png" alt="A screenshot of the video player controls, none of which have visual labels." class="cmp-article__image">
+  <img src="/images/accessibility-top-100/youtube/player-controls.png" alt="A screenshot of the video player controls, none of which have visual labels." class="cmp-article-image">
   <figcaption>Imagine a world where you wouldn't need to guess what icons meant.</figcaption>
 </figure>
 

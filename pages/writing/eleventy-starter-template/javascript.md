@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: JavaScript
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/building_javascript_into_my_github_starter_template_project">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [previous part of this series](../eleventy-starter-css), we added CSS support to our template repository. This time, we will be adding support for JavaScript, including a modern bundling process, linting, and testing.

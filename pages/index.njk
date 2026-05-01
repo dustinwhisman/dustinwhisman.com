@@ -8,42 +8,37 @@ layout: default
 	Dustin Whisman: Web Developer
 </h1>
 
-<div class="cmp-it-me">
-	<picture>
-		<source srcset="/images/beautiful-shining-face.avif" type="image/avif">
-		<source srcset="/images/beautiful-shining-face.webp" type="image/webp">
+<div class="cmp-about">
+	<div class="cmp-about__image">
 		<img
-			src="/images/beautiful-shining-face.jpg"
-			alt="One of few salvageable photos of me from vacation in Switzerland. I'm almost smiling like a normal person."
-			class="cmp-it-me__image"
-			width="200"
-			height="200"
+			src="/images/d-sprite.png"
+			alt="A pixel art rendering of my face, which is secretly an animation that periodically switches from a neutral expression to a suspicious eyebrow arch, with some blinking."
+			class="cmp-self-sprite"
+			width="256"
+			height="256"
+			style="object-fit: cover; object-position: 0% 0%;"
 		>
-	</picture>
-	<p>
-		Hi, I'm Dustin. I'm a web developer at
-		<a href="https://sparkbox.com">Sparkbox</a>, where I usually write HTML,
-		CSS, and JavaScript, but I'll mix it up with other languages or native
-		applications if necessary.
-	</p>
-	<p>
-		My specialty is accessibility (I have a <a
-		href="https://www.accessibilityassociation.org/s/wascertification">certification</a>,
-		for whatever that's worth), but I'm a problem solver to my core. If
-		there's a weird project with niche technology, I'm happy to jump in there
-		and see what I can figure out.
-	</p>
+	</div>
+	<div class="cmp-about__description">
+		<p>
+			Hi, I'm Dustin Whisman. I'm a web developer with over a decade of experience solving problems and building high quality user experiences.
+		</p>
+		<p>
+			I'm a <a href="https://www.accessibilityassociation.org/s/wascertification">Web Accessibility Specialist</a>,
+			and while my bread and butter is HTML, CSS, and JavaScript, I'm comfortable jumping into any language or framework.
+		</p>
+	</div>
 </div>
 
 <h2>Recent Writing</h2>
-<ul class="cmp-article-listing__list">
+<ul class="cmp-article-listing">
 	{% for article in collections.writing | reverse %}
 		{% if loop.index <= 5 %}
 			<li>
-				<a href="{{ article.url }}" class="cmp-article-listing__link">{{ article.data.articleTitle }}</a>
+				<a href="{{ article.url }}">{{ article.data.articleTitle }}</a>
 				<span>
 					<span class="util-visually-hidden">Published:</span>
-					<time datetime="{{ article.date.toISOString() }}" class="cmp-badge">
+					<time datetime="{{ article.date.toISOString() }}" class="body-sm">
 						{{ article.date.toLocaleDateString(undefined, { timeZone: 'UTC' }) }}
 					</time>
 				</span>
@@ -52,26 +47,28 @@ layout: default
 	{% endfor %}
 </ul>
 
-<h2>Recent Projects</h2>
-<ul class="cmp-project__list">
-	{% from 'partials/macros/project-card.njk' import projectCard %}
-	{% for project in projects.recentProjects %}
-		<li>
-			{{ projectCard(project, 'h3') }}
-		</li>
-	{% endfor %}
+<h2>Work</h2>
+<p>
+	I've worked on lots of projects that fall into a handful of main categories. I've also served as individual contributor, technical lead, architect, product owner, and mentor for other developers, depending on what's most useful to the team at the time.
+</p>
+<ul>
+	<li>Accessibility Audits and Remediation</li>
+	<li>CMS Migrations</li>
+	<li>Design Systems</li>
+	<li>E-Commerce</li>
+	<li>Feature Development (basic web development)</li>
+	<li>Oddball Projects (deviations from typical web development)</li>
+	<li>Side Projects and Experiments</li>
 </ul>
 
 <h2>Recent Pictures of Cats</h2>
-<div class="cmp-pictures-of-cats__grid">
-	{% set altText = "Collection of the most recent pictures of my cats, Goose and Barry." %}
-	{% from 'partials/macros/cat-picture.njk' import catPicture %}
-	{% for image in global.picturesOfCats %}
-		{% if loop.index <= 4 %}
-			{% if loop.index > 1 %}
-				{% set altText = "" %}
-			{% endif %}
-			{{ catPicture(image, loop.index, 0, altText) }}
+{% set altText = "Collection of the most recent pictures of my cats, Goose and Barry." %}
+{% from 'partials/macros/cat-picture.njk' import catPicture %}
+{% for image in global.picturesOfCats %}
+	{% if loop.index <= 4 %}
+		{% if loop.index > 1 %}
+			{% set altText = "" %}
 		{% endif %}
-	{% endfor %}
-</div>
+		{{ catPicture(image, loop.index, 0, altText) }}
+	{% endif %}
+{% endfor %}

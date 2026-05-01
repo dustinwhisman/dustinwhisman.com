@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: Progressive Web App Support
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/eleventy_starter_repo_series_teaches_progressive_web_app_support_PWA">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [previous entry in this series](../eleventy-starter-legacy-js-and-typescript), we finished adding support for JavaScript and TypeScript, including linting, testing, and legacy builds for older browsers. This time, we’ll set up our starter template so that it has Progressive Web Application (PWA) support.
@@ -37,7 +28,7 @@ PWA Checklist
 
 Before we get started, let’s put together a list of what we need to do to make our starter template a PWA. We’ll be using Lighthouse to audit the site and we’ll use its recommendations to build up PWA support. We’ll start by running an audit in Chrome’s DevTools under the Lighthouse tab.
 
-<img src="/images/eleventy-series/no_pwa_support.png" alt="Image of a Lighthouse audit screen with six failures and two passes." class="cmp-article__image">
+<img src="/images/eleventy-series/no_pwa_support.png" alt="Image of a Lighthouse audit screen with six failures and two passes." class="cmp-article-image">
 
 We have quite a few failures in that audit, so let’s organize them in a checklist and then fix them one by one.
 
@@ -328,7 +319,7 @@ Now, whenever we build our site the service worker will be built using a differe
 
 We should be PWA-ready now! If we run another Lighthouse audit against our site, we should see something like this.
 
-<img src="/images/eleventy-series/with_pwa_support.png" alt="Image of a Lighthouse audit screen with all passes (eight) and zero failures." class="cmp-article__image">
+<img src="/images/eleventy-series/with_pwa_support.png" alt="Image of a Lighthouse audit screen with all passes (eight) and zero failures." class="cmp-article-image">
 
 ## What Next?
 

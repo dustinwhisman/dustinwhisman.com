@@ -20,12 +20,12 @@ _This is part 9 of a [series](/writing/accessibility-top-100/) evaluating the ac
 The home page and an article page made the most sense to test, but due to the prevalence of paywalls on the New York Times, those were tested as well. No subscriptions were paid to bypass paywalls—it was mostly a process of trial and error to figure out how to be able to read the whole article.
 
 <figure>
-	<img src="/images/accessibility-top-100/nytimes/desktop.png" alt="A composition of screenshots from nytimes.com on desktop including the home page and a paywalled article that does not include any visible text related to the actual article." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/nytimes/desktop.png" alt="A composition of screenshots from nytimes.com on desktop including the home page and a paywalled article that does not include any visible text related to the actual article." class="cmp-article-image">
 	<figcaption>These were the pages tested on desktop.</figcaption>
 </figure>
 
 <figure>
-	<img src="/images/accessibility-top-100/nytimes/mobile.png" alt="A composition of screenshots from nytimes.com on mobile including the home page and a paywalled article that includes very little visible text related to the actual article." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/nytimes/mobile.png" alt="A composition of screenshots from nytimes.com on mobile including the home page and a paywalled article that includes very little visible text related to the actual article." class="cmp-article-image">
 	<figcaption>These were the pages tested on mobile.</figcaption>
 </figure>
 

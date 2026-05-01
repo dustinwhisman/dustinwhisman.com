@@ -46,9 +46,11 @@ const showResults = (results, shouldFocus = false) => {
 
 		results.forEach(({ title, url, date, description }) => {
 			resultsHTML += `
-				<h2><a href="${url}">${title}</a></h2>
-				<p class="cmp-fine-print">Published: ${date}</p>
-				<p>${description}</p>
+				<div class="cmp-featured-link">
+					<h2 class="body-lg"><a href="${url}">${title}</a></h2>
+					<p class="body-sm">Published: ${date}</p>
+					<p>${description}</p>
+				</div>
 			`;
 		});
 

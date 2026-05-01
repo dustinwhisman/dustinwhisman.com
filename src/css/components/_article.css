@@ -1,7 +1,0 @@
-.cmp-article__container {
-	container-type: inline-size;
-}
-
-.cmp-article__image {
-	margin: var(--size-s0) auto;
-}

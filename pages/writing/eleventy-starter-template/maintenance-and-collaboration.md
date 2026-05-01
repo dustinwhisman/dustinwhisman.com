@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: Maintenance and Collaboration
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/eleventy_starter_repo_conclusion_teaches_maintenance_collaboration_tools">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [previous entry in this series](../eleventy-starter-pwa-support), we added Progressive Web App support to our project template. To finish, we will add some configuration and tooling that makes collaboration and maintenance easier for projects using the template.
@@ -243,7 +234,7 @@ The goal of this template is to prompt users and collaborators to provide as muc
 
 With these templates in place, you can see them show up as options on the [new issue page](https://github.com/dustin-jw/eleventy-starter/issues/new/choose). Note how the descriptions we set in the templates show up as hint text for each option.
 
-<img src="/images/eleventy-series/issue-prompts.png" alt="Screenshot showing hint text previewing under each option." class="cmp-article__image">
+<img src="/images/eleventy-series/issue-prompts.png" alt="Screenshot showing hint text previewing under each option." class="cmp-article-image">
 
 To see how the Bug Report template looks when fully filled out, you can see [this issue](https://github.com/dustin-jw/eleventy-starter/issues/21), created specifically for this article and definitely not as an oversight when building the project.
 

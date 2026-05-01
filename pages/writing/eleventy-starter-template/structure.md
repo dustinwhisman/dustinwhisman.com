@@ -11,15 +11,6 @@ tags:
 
 # Building an Eleventy Starter Template: Project Setup and Configuration
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/setting_up_my_project_to_build_a_github_starter_template_and_create_HTML_page">the article on the Foundry</a>
-  or go to the
-  <a href="https://sparkbox.com/foundry/series/building_an_eleventy_starter_template">landing page for the whole series</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 In the [introduction to this series](../eleventy-starter-intro), we set some goals for an ideal starter template using Eleventy. In this entry, we’ll go over how to set up the project structure and configuration. At the end, we’ll build our first HTML page.

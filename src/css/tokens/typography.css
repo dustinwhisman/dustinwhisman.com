@@ -1,0 +1,23 @@
+:root {
+	--dw-font-family-display:
+		'Bahnschrift', 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed,
+		sans-serif;
+	--dw-font-family-sans:
+		'Seravek', 'Gill Sans Nova', 'Ubuntu', 'Calibri', 'DejaVu Sans', source-sans-pro, sans-serif;
+	--dw-font-family-serif: 'Rockwell', 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+	--dw-font-family-mono:
+		'FontWithASyntaxHighlighter', ui-monospace, 'Cascadia Code', 'Source Code Pro', 'Menlo', 'Consolas',
+		'DejaVu Sans Mono', monospace;
+	--dw-font-size-display-lg: 7.25rem;
+	--dw-font-size-display-md: 5.5rem;
+	--dw-font-size-display-sm: 4rem;
+	--dw-font-size-heading-xxl: 3rem;
+	--dw-font-size-heading-xl: 2.25rem;
+	--dw-font-size-heading-lg: 1.75rem;
+	--dw-font-size-heading-md: 1.25rem;
+	--dw-font-size-heading-sm: 1rem;
+	--dw-font-size-heading-xs: 0.875rem;
+	--dw-font-size-body-lg: 1.5rem;
+	--dw-font-size-body-md: 1.25rem;
+	--dw-font-size-body-sm: 1rem;
+}

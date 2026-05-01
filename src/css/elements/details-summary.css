@@ -1,0 +1,7 @@
+summary {
+	cursor: pointer;
+
+	& + * {
+		margin-block-start: 1rem;
+	}
+}

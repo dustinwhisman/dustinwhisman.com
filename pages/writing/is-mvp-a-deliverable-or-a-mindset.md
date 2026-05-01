@@ -11,13 +11,6 @@ tags:
 
 # Is MVP a Deliverable or a Mindset?
 
-<p class="cmp-fine-print">
-  This was originally published on the
-  <a href="https://sparkbox.com/foundry">Sparkbox Foundry</a>.
-  You can read
-  <a href="https://sparkbox.com/foundry/MVP_mindset_progressive_enhancement_minimum_viable_experience_MVP_process_and_tooling_decisions">the original article there</a>.
-</p>
-
 {% include 'partials/published-date.njk' %}
 
 A Minimum Viable Product (MVP) is generally understood as an early, basic version of a product that could be released to the public or shown to users to gather feedback. Starting with the minimum requirements allows teams to focus and iterate on a smaller set of features before adapting to feedback, making improvements, and adding other features.

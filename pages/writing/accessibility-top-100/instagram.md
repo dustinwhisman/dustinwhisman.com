@@ -22,7 +22,7 @@ Unless you have a direct link to a post or reel or whatever, you need an account
 <figure>
 	<picture>
 		<source srcset="/images/accessibility-top-100/instagram/desktop-h.png" media="(min-width: 50rem)">
-		<img src="/images/accessibility-top-100/instagram/desktop-v.png" alt="A composition of screenshots from the desktop version of instagram.com, showing the login page, a page for following accounts, and the home page for logged in users." class="cmp-article__image">
+		<img src="/images/accessibility-top-100/instagram/desktop-v.png" alt="A composition of screenshots from the desktop version of instagram.com, showing the login page, a page for following accounts, and the home page for logged in users." class="cmp-article-image">
 	</picture>
 	<figcaption>These are the pages that were tested on desktop.</figcaption>
 </figure>
@@ -30,7 +30,7 @@ Unless you have a direct link to a post or reel or whatever, you need an account
 The mobile pages were just different enough to need some extra testing, although those differences were mainly on the login and signup pages.
 
 <figure>
-	<img src="/images/accessibility-top-100/instagram/mobile.png" alt="A composition of screenshots from the mobile version of instagram.com, showing the login page, a page for following accounts, and the home page for logged in users." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/instagram/mobile.png" alt="A composition of screenshots from the mobile version of instagram.com, showing the login page, a page for following accounts, and the home page for logged in users." class="cmp-article-image">
 	<figcaption>These are the pages that were tested on mobile.</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ I tested Instagram on July 20th, 2024.
 When opening developer tools to run the automated scans as I usually do, I noticed this subtle message in the console, which definitely inspires confidence in Meta’s ability to build and operate a secure website.
 
 <figure>
-	<img src="/images/accessibility-top-100/instagram/security-warning.png" alt="A developer tools console with this message: Stop! This is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or 'hack' someone's account, it is a scam and will give them access to your Instagram account. See https://www.facebook.com/selfxss for more information." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/instagram/security-warning.png" alt="A developer tools console with this message: Stop! This is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or 'hack' someone's account, it is a scam and will give them access to your Instagram account. See https://www.facebook.com/selfxss for more information." class="cmp-article-image">
 	<figcaption>You could use two-factor authentication, or you know, you could do this.</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ In the login form, the submit button is disabled until you fill out all the fiel
 When I attempted to login with a made-up username and password, I expected to get an error message like “That password is incorrect” or something to that effect. Instead, I was redirected to a page with a CAPTCHA that wasn’t keyboard-accessible for the visual method (click on all the images with cars), so I tried the audio method. It played an inscrutable sound clip that I had to guess what was being said and type it into a form. I think I could have typed anything, and it would have accepted it, but anyway, only after having done all that, did I get the message saying “Sorry, your password was incorrect. Please double-check your password.” Those steps are in the wrong order, and [don’t make me tap the other sign about using CAPTCHAs](/writing/accessibility-how-tos/how-to-avoid-accessibility-issues-with-captchas/).
 
 <figure>
-	<img src="/images/accessibility-top-100/instagram/failed-login.png" alt="A screenshot of the error message, post-CAPTCHA, with a wall of text about weak passwords and the merits of CAPTCHAs to combat harmful conduct." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/instagram/failed-login.png" alt="A screenshot of the error message, post-CAPTCHA, with a wall of text about weak passwords and the merits of CAPTCHAs to combat harmful conduct." class="cmp-article-image">
 	<figcaption>They couldn't have figured out the password was wrong before all this?</figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ As expected, after the relatively simple interfaces for login and signup, the ma
 It’s unclear what the purpose of the buttons is supposed to be, since activating any of these button-link combos acts as following a link. There are hover interactions to show popover-type content, so maybe the buttons were supposed to reveal those popovers. They don’t, though, so oops.
 
 <figure>
-	<img src="/images/accessibility-top-100/instagram/hover-interaction.png" alt="A screenshot of the popover that appears on hover and focus. There are a handful of links, buttons, and images that are completely inaccessible via keyboard or screen reader." class="cmp-article__image">
+	<img src="/images/accessibility-top-100/instagram/hover-interaction.png" alt="A screenshot of the popover that appears on hover and focus. There are a handful of links, buttons, and images that are completely inaccessible via keyboard or screen reader." class="cmp-article-image">
 	<figcaption>The popover also appears on keyboard focus, but there's no way to tab to any of the interactive content it contains.</figcaption>
 </figure>
 

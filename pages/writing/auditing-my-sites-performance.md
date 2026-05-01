@@ -17,7 +17,7 @@ A coworker recently challenged us fellow developers to run some audits with Ligh
 
 To start, I ran Lighthouse on a fresh version of Chrome, meaning no extensions. Here are the results for my home page:
 
-<img src="/images/auditing-my-sites-performance/lighthouse-before.png" alt="A screenshot of lighthouse scores, which all have a score of 100 except for performance, which has 99. The PWA check indicates that the site is not a PWA." class="cmp-article__image">
+<img src="/images/auditing-my-sites-performance/lighthouse-before.png" alt="A screenshot of lighthouse scores, which all have a score of 100 except for performance, which has 99. The PWA check indicates that the site is not a PWA." class="cmp-article-image">
 
 Pretty good I would say! But two things already stand out to me. 100 is clearly a better number than 99, and I thought I had checked everything off the PWA list already, so why doesn’t Lighthouse show my site as PWA-ready?
 
@@ -31,7 +31,7 @@ My home page’s score of 99 might not be representative of the whole site, so I
 
 When I look at the details for performance, I can see that I get dinged for using third party fonts, which are render-blocking.
 
-<img src="/images/auditing-my-sites-performance/performance-fonts.png" alt="A screenshot of performance details indicating that third party fonts delay the rendering of a page by 0.77 seconds." class="cmp-article__image">
+<img src="/images/auditing-my-sites-performance/performance-fonts.png" alt="A screenshot of performance details indicating that third party fonts delay the rendering of a page by 0.77 seconds." class="cmp-article-image">
 
 Fair enough, but it’s not a massive performance issue, and I could do any of these things to address it without much effort:
 
@@ -41,7 +41,7 @@ Fair enough, but it’s not a massive performance issue, and I could do any of t
 
 WebPageTest reported other issues with the fonts, like them not being on CDNs and stuff like that. I think I’ll go ahead and replace them with system fonts, partially for performance and partially because I’m not too attached to the fonts I chose. For example:
 
-<img src="/images/auditing-my-sites-performance/uneven-numbers.png" alt="An example of numbers displaying strangely for text including '1.3.6'. The 3 is lower than the 1, and the 6 is higher than the 3 and the 1." class="cmp-article__image">
+<img src="/images/auditing-my-sites-performance/uneven-numbers.png" alt="An example of numbers displaying strangely for text including '1.3.6'. The 3 is lower than the 1, and the 6 is higher than the 3 and the 1." class="cmp-article-image">
 
 I mean, what’s going on with these numbers? I’m sure there’s a way to normalize the height, but I think I’d rather just ditch the font for now.
 
@@ -51,7 +51,7 @@ My `/styles.css` file is considered a blocking resource, so occasionally Lightho
 
 One issue detected on my [`/projects` page](/projects/) has to do with my `aria-current` styles for the links in the header.
 
-<img src="/images/auditing-my-sites-performance/cumulative-layout-shift.png" alt="A visualization of subsequent links being displaced when the styles are applied to an earlier link in the navigation." class="cmp-article__image">
+<img src="/images/auditing-my-sites-performance/cumulative-layout-shift.png" alt="A visualization of subsequent links being displaced when the styles are applied to an earlier link in the navigation." class="cmp-article-image">
 
 What’s happening is that as the CSS applies the styling, which is a text-transform to make the current page’s link uppercase, there’s a layout shift that pushes the other links to the right. Cumulative Layout Shift (CLS) is penalized somewhat harshly, so the page that this was caught on scored 89 out of 100 for performance. So I’ll definitely want to change those styles.
 
@@ -73,7 +73,7 @@ Do I care that much about this? Not really, but I would rather not have unnecess
 
 Going back to the mystery of why Lighthouse says my site isn’t PWA-ready, it shows this message about the `display` property needing to be either “standalone”, “fullscreen”, or “minimal-ui”.
 
-<img src="/images/auditing-my-sites-performance/display-mode.png" alt="A screenshot from a Lighthouse report explaining that the display property must be one of three values." class="cmp-article__image">
+<img src="/images/auditing-my-sites-performance/display-mode.png" alt="A screenshot from a Lighthouse report explaining that the display property must be one of three values." class="cmp-article-image">
 
 This seems like a strange “requirement” to me. I recently changed my `display` property to “browser” because I decided it made more sense to open my site in a way that still had the browser chrome. My site is inherently “webby”, with links to other pages and external sites, and it’s not a super interactive app, so making it feel like a native app doesn’t make sense to me.
 

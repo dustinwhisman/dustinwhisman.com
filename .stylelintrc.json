@@ -1,8 +1,8 @@
 {
-  "extends": ["stylelint-config-standard"],
-  "rules": {
-    "import-notation": "string",
-    "selector-class-pattern": null,
-    "media-feature-range-notation": null
-  }
+	"extends": ["stylelint-config-standard"],
+	"rules": {
+		"import-notation": "string",
+		"selector-class-pattern": null,
+		"media-feature-range-notation": null
+	}
 }
