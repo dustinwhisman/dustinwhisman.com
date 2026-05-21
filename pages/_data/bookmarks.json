@@ -1004,5 +1004,73 @@
 		"author": "Ally Piechowski",
 		"authorLink": "https://piechowski.io/",
 		"description": "Mostly bookmarking these to use for future projects, seems like a really good way to get a sense of how healthy both the code and the team working in it are."
+	},
+	{
+		"link": "https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems",
+		"title": "If you thought the speed of writing code was your problem - you have bigger problems",
+		"author": "Andrew Murphy",
+		"authorLink": "https://andrewmurphy.io/",
+		"description": "Writing code has never been the bottleneck."
+	},
+	{
+		"link": "https://dev.to/cameron-accesslint/introducing-accesslintjest-progressive-accessibility-testing-for-jest-3i7j",
+		"title": "Introducing @accesslint/jest: progressive accessibility testing for Jest",
+		"author": "Cameron Cundiff",
+		"authorLink": "https://dev.to/cameron-accesslint",
+		"description": "This is a clever approach to dealing with failing automated accessibility tests. You don't want to ignore them, but you can't necessarily fix them all right away, so compare new tests runs to the baseline and pass/fail them based on that."
+	},
+	{
+		"link": "https://una.im/advanced-contrast-color",
+		"title": "contrast-color() beyond black & white",
+		"author": "Una Kravets",
+		"authorLink": "https://una.im/",
+		"description": "The biggest limitation with contrast-color() is the black/white result. This approach may solve that."
+	},
+	{
+		"link": "https://www.joshwcomeau.com/animation/scroll-driven-animations/",
+		"title": "Scroll-Driven Animations",
+		"author": "Josh W. Comeau",
+		"authorLink": "https://www.joshwcomeau.com/",
+		"description": "Great breakdown of new-ish CSS features that I haven't gotten around to tinkering with yet."
+	},
+	{
+		"link": "https://kittygiraudel.com/2026/05/05/optimizing-images-with-11ty-on-netlify/",
+		"title": "Optimizing Images with Eleventy on Netlify",
+		"author": "Kitty Giraudel",
+		"authorLink": "https://kittygiraudel.com/",
+		"description": "Saving this for later, considering the volume of cat pictures I have on this site."
+	},
+	{
+		"link": "https://nooneshappy.com/article/native-apps-should-be-avoided-whenever-possible/",
+		"title": "Native Apps Should Be Avoided Whenever Possible",
+		"author": "No One's Happy",
+		"authorLink": "https://nooneshappy.com/",
+		"description": "One has to wonder why certain websites insist so much that you use their app instead."
+	},
+	{
+		"link": "https://annaecook.com/writing/2026/ai-doesnt-fix-accessible-systems-it-depends-on-them",
+		"title": "AI Doesn't Fix Accessible Systems. It Depends on Them.",
+		"author": "Anna E. Cook",
+		"authorLink": "https://annaecook.com/",
+		"description": "Something like 96% of website home pages have detectable accessibility issues. Surely nothing bad could come from training AI on something so riddled with errors?"
+	},
+	{
+		"link": "https://www.davidmello.com/software-testing/test-automation/playwright-accessibility-testing-axe-lighthouse-limitations",
+		"title": "Playwright Accessibility Testing: What axe and Lighthouse Miss",
+		"author": "David Mello",
+		"authorLink": "https://www.davidmello.com/",
+		"description": "Automated testing can only get you so far. If you want to improve it, you have to put in the work."
+	},
+	{
+		"link": "https://sinceyouarrived.world/taken",
+		"title": "Taken",
+		"description": "Spooky."
+	},
+	{
+		"link": "https://www.craigabbott.co.uk/blog/2026/our-css-isnt-opinionated-enough/",
+		"title": "Our CSS isn't opinionated enough",
+		"author": "Craig Abbott",
+		"authorLink": "https://www.craigabbott.co.uk/",
+		"description": "I'm a big fan of tag and attribute selectors to enforce accessibility where possible."
 	}
 ]

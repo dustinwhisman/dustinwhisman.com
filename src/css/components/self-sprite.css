@@ -1,54 +1,110 @@
 .cmp-self-sprite {
+	--frame-stare: 0% 0%;
+	--frame-blink: calc(100% / 9) 0%;
+	--frame-eyebrow: calc((100% / 9) * 2) 0%;
+	--frame-tail: calc((100% / 9) * 3) 0%;
+	--frame-tail-1: calc((100% / 9) * 4) 0%;
+	--frame-goose-peek: calc((100% / 9) * 5) 0%;
+	--frame-goose-medium: calc((100% / 9) * 6) 0%;
+	--frame-goose-surprise: calc((100% / 9) * 7) 0%;
+	--frame-goose-calm: calc((100% / 9) * 8) 0%;
+	--frame-goose-bye: 100% 0%;
+
 	width: 256px;
 	height: 256px;
 	max-width: 100%;
 	aspect-ratio: 1;
 	object-fit: cover;
-	animation: sprite 20s steps(2, jump-none) infinite;
+	object-position: 0% 0%;
+	animation: sprite 30s steps(2, jump-none) infinite;
 }
 
 @keyframes sprite {
 	0% {
-		object-position: 0% 0%;
+		object-position: var(--frame-stare);
 	}
 
-	19% {
-		object-position: 0% 0%;
+	16% {
+		object-position: var(--frame-stare);
 	}
 
-	20% {
-		object-position: 50% 0%;
+	17% {
+		object-position: var(--frame-blink);
 	}
 
-	21% {
-		object-position: 0% 0%;
+	18% {
+		object-position: var(--frame-stare)
 	}
 
-	59% {
-		object-position: 0% 0%;
+	32% {
+		object-position: var(--frame-stare)
 	}
 
-	60% {
-		object-position: 50% 0%;
+	33% {
+		object-position: var(--frame-blink)
 	}
 
-	61% {
-		object-position: 0% 0%;
+	34% {
+		object-position: var(--frame-stare)
 	}
 
-	89% {
-		object-position: 0% 0%;
+	43% {
+		object-position: var(--frame-stare)
 	}
 
-	90% {
-		object-position: 100% 0%;
+	45% {
+		object-position: var(--frame-eyebrow)
 	}
 
-	99% {
-		object-position: 100% 0%;
+	52% {
+		object-position: var(--frame-stare)
+	}
+
+	64% {
+		object-position: var(--frame-stare)
+	}
+
+	65% {
+		object-position: var(--frame-tail)
+	}
+
+	70% {
+		object-position: var(--frame-tail-1)
+	}
+
+	77% {
+		object-position: var(--frame-stare)
+	}
+
+	85% {
+		object-position: var(--frame-stare)
+	}
+
+	86% {
+		object-position: var(--frame-goose-peek)
+	}
+
+	88% {
+		object-position: var(--frame-goose-surprise)
+	}
+
+	91% {
+		object-position: var(--frame-goose-calm)
+	}
+
+	93% {
+		object-position: var(--frame-goose-bye)
+	}
+
+	94% {
+		object-position: var(--frame-goose-medium)
+	}
+
+	95% {
+		object-position: var(--frame-stare)
 	}
 
 	100% {
-		object-position: 0% 0%;
+		object-position: var(--frame-stare)
 	}
 }
