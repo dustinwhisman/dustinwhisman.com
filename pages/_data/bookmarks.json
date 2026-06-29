@@ -1072,5 +1072,31 @@
 		"author": "Craig Abbott",
 		"authorLink": "https://www.craigabbott.co.uk/",
 		"description": "I'm a big fan of tag and attribute selectors to enforce accessibility where possible."
+	},
+	{
+		"link": "https://isaiprofitable.com/",
+		"title": "Is AI Profitable Yet?",
+		"description": "No."
+	},
+	{
+		"link": "https://blog.johanneslink.net/2025/11/04/to-gen-or-not-to-gen/",
+		"title": "To Gen or Not To Gen: The Ethical Use of Generative AI",
+		"author": "Johannes Link",
+		"authorLink": "https://blog.johanneslink.net/",
+		"description": "The \"Harmful Aspects of GenAI\" is a doozy."
+	},
+	{
+		"link": "https://annaecook.com/writing/2026/designing-with-mustard",
+		"title": "Designing with Mustard",
+		"author": "Anna E. Cook",
+		"authorLink": "https://annaecook.com/",
+		"description": "Sometimes absurd situations call for absurdity to make your point. Nicely done."
+	},
+	{
+		"link": "https://hyperblam.how/",
+		"title": "Hyperblam",
+		"author": "Heydon Pickering",
+		"authorLink": "https://heydonworks.com/",
+		"description": "I know HTML, but I don't know music at all. This is super cool and maybe it will be the thing that makes it click for me."
 	}
 ]
